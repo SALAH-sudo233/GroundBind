@@ -1,0 +1,116 @@
+{
+  "baseline_commit": "03eadf015b335a6f17238e2470d81776259524c4",
+  "paper_version": "0.51",
+  "files": [
+    {
+      "source": "/Users/yyyb/Documents/Codex/2026-09-29/new-chat/outputs/migration/results/V-SIGHT-assets/agentic_probe/collect_jevhead.py",
+      "target": "method/collect_jevhead.py",
+      "sha256": "e88484b8868e84f1433ec34fb5dd17da45c7dcd28c7fb74255811520cc999380"
+    },
+    {
+      "source": "/Users/yyyb/Documents/Codex/2026-09-29/new-chat/outputs/migration/results/V-SIGHT-assets/agentic_probe/deploy_upstream.py",
+      "target": "method/deploy_upstream.py",
+      "sha256": "b45f154bd3e526312ba91e375915a07d8791bb1fb9c2bcb0c47f739be784537c"
+    },
+    {
+      "source": "/Users/yyyb/Documents/Codex/2026-09-29/new-chat/outputs/migration/results/V-SIGHT-assets/agentic_probe/simple_relations.py",
+      "target": "method/simple_relations.py",
+      "sha256": "9234b7a5bce3a3f58d28380d249450aa33d45684352b259342386908a4b381ea"
+    },
+    {
+      "source": "/Users/yyyb/Documents/Codex/2026-09-29/new-chat/outputs/migration/results/V-SIGHT-assets/agentic_probe/test_simple_relations.py",
+      "target": "method/test_simple_relations.py",
+      "sha256": "50be3f42c21a420afa569cb2b35cb5a820a02de60be8f60e1eb96d6742539127"
+    },
+    {
+      "source": "/Users/yyyb/Documents/Codex/2026-09-29/new-chat/outputs/migration/results/V-SIGHT-assets/agentic_probe/eval_combo.py",
+      "target": "method/eval_combo.py",
+      "sha256": "4055cc31a01a324874a85fd9baa81fe18962edc5f18eb1e5eb6a1e5f92679c5e"
+    },
+    {
+      "source": "/Users/yyyb/Documents/Codex/2026-09-29/new-chat/outputs/migration/results/V-SIGHT-assets/agentic_probe/eval_final_report.py",
+      "target": "method/eval_final_report.py",
+      "sha256": "98210c16299a46e6d8ebe4d6dcfb9ecf5c09edf489f0e824a140aa9eebda42cd"
+    },
+    {
+      "source": "/Users/yyyb/Documents/Codex/2026-09-29/new-chat/outputs/migration/results/V-SIGHT-assets/agentic_probe/eval_cbr_paper_aligned.py",
+      "target": "method/eval_cbr_paper_aligned.py",
+      "sha256": "b6819edb1961a95c2662d88740401f3f55d3ee6b40e696a81fcfe0545acc0cdb"
+    },
+    {
+      "source": "/Users/yyyb/Documents/Codex/2026-09-29/new-chat/outputs/migration/results/V-SIGHT-assets/agentic_probe/eval_cbr_fairness.py",
+      "target": "method/eval_cbr_fairness.py",
+      "sha256": "49cda6def5ba47148dfb2370b468a5add1e461c2c6b16ae989155cb79b3e0606"
+    },
+    {
+      "source": "/Users/yyyb/Documents/Codex/2026-09-29/new-chat/outputs/migration/results/V-SIGHT-assets/agentic_probe/eval_upstream.py",
+      "target": "method/eval_upstream.py",
+      "sha256": "4eb3bfcf495831d0ca0978700570a189a5a6a666350902ea9b0078a824358635"
+    },
+    {
+      "source": "/Users/yyyb/Documents/Codex/2026-09-29/new-chat/outputs/migration/results/V-SIGHT-assets/agentic_probe/canon_roots_paper.json",
+      "target": "method/canon_roots_paper.json",
+      "sha256": "d2c7897808188c46d90a13762c9a2fa7122700a6ffbf175c5c63903505acb1b2"
+    },
+    {
+      "source": "/Users/yyyb/Documents/Codex/2026-09-29/new-chat/outputs/migration/results/V-SIGHT-assets/jev_scout/s5_omni_filter.py",
+      "target": "method/s5_omni_filter.py",
+      "sha256": "6623d1bd9cd627a64229fa15b0ff817152a6f1666caeca048b198b8bd2c17c81"
+    },
+    {
+      "source": "work/v050-remote/jev_verifier.py",
+      "target": "training/jev_verifier.py",
+      "sha256": "61cd4d3f58591d7e459b08c7452b964feb817466d1a7f3484b7b67cf91ef0176"
+    },
+    {
+      "source": "work/v050-remote/run_jev.sh",
+      "target": "training/run_jev.sh",
+      "sha256": "d2bf8592fac95363ee055e23e79a6580ab21536d44551991535c06c5897ec776"
+    },
+    {
+      "source": "/Users/yyyb/Documents/Codex/2026-09-29/new-chat/outputs/migration/results/V-SIGHT-assets/agentic_probe/MITIGATION_FRAMEWORK_REPORT.md",
+      "target": "evidence/MITIGATION_FRAMEWORK_REPORT.md",
+      "sha256": "817f3513805ebfb88d559a0222d2882063771fdc26e5fa9388849211e694b61a"
+    },
+    {
+      "source": "/Users/yyyb/Documents/Codex/2026-09-29/new-chat/outputs/migration/results/V-SIGHT-assets/agentic_probe/combo.json",
+      "target": "evidence/combo.json",
+      "sha256": "447c4a005895362e73eca49707bdc88f07edd4fb2a5011672f05107443dbcabc"
+    },
+    {
+      "source": "/Users/yyyb/Documents/Codex/2026-09-29/new-chat/outputs/migration/results/V-SIGHT-assets/agentic_probe/combo.txt",
+      "target": "evidence/combo.txt",
+      "sha256": "1a933eb41109ba9510344d0e1dba0fad5b84fb441a4e88d6cfefce823aae4cb4"
+    },
+    {
+      "source": "/Users/yyyb/Documents/Codex/2026-09-29/new-chat/outputs/migration/results/V-SIGHT-assets/agentic_probe/final_report.json",
+      "target": "evidence/final_report.json",
+      "sha256": "1614e7daf1bf923ea73b8b7d8bfcb6c71bdd7fa036ba9505aaa0749323121642"
+    },
+    {
+      "source": "/Users/yyyb/Documents/Codex/2026-09-29/new-chat/outputs/migration/results/V-SIGHT-assets/agentic_probe/final_report.txt",
+      "target": "evidence/final_report.txt",
+      "sha256": "fccd5a59a8ce9d474fb7fcac4f07f4f0c71eb11becc06ac8c97855254ea7159a"
+    },
+    {
+      "source": "/Users/yyyb/Documents/Codex/2026-09-29/new-chat/outputs/migration/results/V-SIGHT-assets/agentic_probe/cbr_3lines.json",
+      "target": "evidence/cbr_3lines.json",
+      "sha256": "4ec1c51d9964ac206a2b65b307ebe204aa52d5b17d053f5977282afae48bec0b"
+    },
+    {
+      "source": "/Users/yyyb/Documents/Codex/2026-09-29/new-chat/outputs/migration/results/V-SIGHT-assets/agentic_probe/cbr_3lines.txt",
+      "target": "evidence/cbr_3lines.txt",
+      "sha256": "7cdd9d646491284a130d41dffe151df7714576b6bb8c089f185184df635a6ec5"
+    },
+    {
+      "source": "/Users/yyyb/Documents/Codex/2026-09-29/new-chat/outputs/migration/results/V-SIGHT-assets/agentic_probe/cbr_fairness.json",
+      "target": "evidence/cbr_fairness.json",
+      "sha256": "c746b2f03b5e16796ea6701b459c1e965f68537abc4220acef830c4cd3bc12de"
+    },
+    {
+      "source": "/Users/yyyb/Documents/Codex/2026-09-29/new-chat/outputs/migration/archives/V-SIGHT-before-v050-20260929/legacy/candidate_pool_v1/data/refcocog_500_dev.semantic_strict.json",
+      "target": "benchmark/refcocog_500_dev.semantic_strict.json",
+      "sha256": "23ad4c0d93128a787995f7810b977745f9747378ac21b2bd13f4a6f14b58311f"
+    }
+  ]
+}

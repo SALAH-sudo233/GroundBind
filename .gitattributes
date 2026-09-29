@@ -1,0 +1,6 @@
+# Imported research snapshots are byte-preserved for SHA-256 provenance.
+# Inherited CRLF and whitespace are intentional; new docs use normal checks.
+method/** -text -whitespace
+training/** -text -whitespace
+evidence/** -text -whitespace
+benchmark/** -text -whitespace
