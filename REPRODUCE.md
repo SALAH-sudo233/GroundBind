@@ -17,6 +17,7 @@
 | 基准规格（500 组 / 2500 项） | `~/benchmark/repaired/refcocog_500_dev.semantic_strict.json` | ✅ |
 | 图像 | `~/models/LENS/data/refcoco/train2014` | ✅ 82,783 张 |
 | 上游候选 `records.jsonl` | 见 `canon_roots_paper.json` 逐模型映射 | ✅ **13/13 全部存在** |
+| t1 / t3 / t4 任务记录 | 同上 `records.jsonl`，按 `task` 字段区分 | ✅ t1/t4 各 2,500 行，t3 各 500 行 |
 | 纠正坐标候选 | `canon_roots_coordfix.json`，UniVG-R1 / visual-rft 指向 `~/benchmark/coordfix_500` | ✅ 13/13 |
 | JEV-2B 基座 | `~/.cache/huggingface/hub/models--Qwen--Qwen3.5-2B` | ✅ |
 | JEV-2B LoRA adapter | `~/SVD/grpo_verifier/runs/jev_verifier_v2/adapter_final/` | ✅ 10,045,000 B |
@@ -63,11 +64,16 @@ python3 render_paper_tables.py --panel appendixC  # 纠正坐标两模型
 ```sh
 cd ~/SVD/agentic_probe
 python3 eval_paper_tables.py --target 0.95 --json-out paper_tables.json   # ~4 min
+python3 eval_tasks_t1_t3_t4.py --json-out tasks_t1_t3_t4.json   # t1/t3/t4，~2 min
 python3 export_cf_cbr.py                 # 两模型四类未过滤 CBR
 python3 diag_final_policy.py             # 四策略对照
 python3 eval_matched.py --base-target 0.95 --json-out matched_retention.json
 python3 audit_routing_fixed.py           # 路由合法性收据
 ```
+
+`eval_tasks_t1_t3_t4.py` 直接读 `records.jsonl`，不依赖验证器打分文件，
+所以它比其他脚本少一层前置条件。它**逐任务解析 run**：`canon_roots_paper.json`
+只保证 t2 规范框，t1 与 t3 可能在别的 run（见下表）。
 
 读上表的打分文件，不加载模型、不占 GPU。`eval_paper_tables.py` 内建校验门：
 未过滤 CBR 必须匹配独立导出的 `cf_cbr_4types.json`，否则明确标记 FAIL。
@@ -106,9 +112,28 @@ bash run_jevhead.sh          # JEV 头独立采集
 | RL 适配家族同三项 | **0.4240 / 42.9% / 68.83%** | 论文 §4.1 |
 | 未过滤 FGR（13 模型） | **59.23%** | `paper_tables.json` → `main13` |
 | 仅支持核验 FGR（11 模型面板） | **22.98%** | 论文 Table 3 第二行 |
+| t1 错误接受率，通用 / RL 家族 | **29.44% / 33.03%** | 论文 §4.1 / `eval_tasks_t1_t3_t4.py` |
 
 前两项是 `export_cf_cbr.py` 与 `eval_paper_tables.py` 的硬门；
-§4.1 四项是 `render_paper_tables.py` 的硬门。
+§4.1 的定位四项是 `render_paper_tables.py` 的硬门；
+t1 错误接受率两项是 `eval_tasks_t1_t3_t4.py` 的硬门（不符即打印 MISMATCH）。
+
+### t1 / t3 的 run 归属（易错点）
+
+`canon_roots_paper.json` 只保证各模型的 **t2** 规范框，其他任务未必在同一 run：
+
+| 任务 | 归属 | 说明 |
+|---|---|---|
+| t1 | 多数在 canon root | **Qwen3-VL-8B 例外**，在 `refcocog_eval_11models_500_repaired/run_500_semantic_strict` |
+| t3 | 全部 13 模型 | 只存在于 `refcocog_eval_13models_4tasks_500/run_20260918_125802` |
+| t4 | 全部在 canon root | 无例外 |
+
+**漏掉 Qwen3-VL-8B 的后果是具体的**：通用家族错误接受率会变成 31.35%（12 模型），
+与论文的 29.44% 对不上 1.91pp。脚本逐任务解析并把实际使用的 run 记入
+`tasks_t1_t3_t4.json` 的 `run_provenance`。
+
+回退搜索**拒绝 500 行以下的候选**，因为 `~/benchmark/smoke13_out/` 下有同名的 40 行
+smoke 记录，一旦被取用会把真实面板悄悄换成玩具面板。
 
 **重算已发表指标时不要自行添加条件**（例如排除退化框）。CBR 契约见根 `README.md`。
 

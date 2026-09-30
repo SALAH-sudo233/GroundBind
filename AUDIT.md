@@ -61,6 +61,20 @@ with receipts**, and one new item (6) records a difference against the paper PDF
    An earlier version of this item was worded in a way that invited the reading
    "the pipeline cannot be reproduced"; that reading was wrong.
 
+7. **Task coverage — RESOLVED 2026-10-01, all four tasks now have receipts.**
+   The repo previously backed only direct grounding (t2). Table 1 defines four tasks,
+   and section 4.1 quotes a false-accept contrast that no repo file could produce.
+   The records were on vlm1 all along (t1 and t4: 13 models x 2,500 rows; t3: 500 rows
+   each) and no script had ever read them. `reviewer_v060/eval_tasks_t1_t3_t4.py`
+   now evaluates expression verification, pure captioning and joint grounding, gated
+   on reproducing the published 29.44% / 33.03% family false-accept averages
+   (measured 29.4375% / 33.0278%, both PASS). Receipt:
+   `reviewer_v060/tasks_t1_t3_t4.json`, including `run_provenance` per model per task.
+   **Caveat worth carrying into the paper:** `canon_roots_paper.json` guarantees only
+   the t2 canonical boxes. Qwen3-VL-8B's t1 lives in a different run, and t3 exists
+   only in the 4tasks run. Resolving tasks naively against the canonical root drops
+   Qwen3-VL-8B from t1 and yields 31.35% instead of the published 29.44%.
+
 6. **NEW — the repo's mitigation row differs from the paper PDF's third row.**
    Recomputation reproduces Table 3's **first two rows** bit-for-bit (max deviation
    0.018pp, rounding). The **third row differs on every entry, each in our favour**:
