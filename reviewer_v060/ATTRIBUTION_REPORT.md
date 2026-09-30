@@ -1,5 +1,11 @@
 # Attribution and scope findings — v0.60 review cycle
 
+> **⚠️ 本文「Required paper changes」第 1、3 条已撤回，先读 `CORRECTION.md`。**
+> 「把方法范围限定为有语义互斥对立配置的空间关系」与 v0.62 论调相反 ——
+> 论文明确写「缓释效果覆盖四类而非仅限关系」「结构化比较增强通用支持核验，
+> 而不是把整个方法限定为关系处理」。作用域门的作用是保护另三类不被池化污染，
+> 不是限制适用范围。三项对照（文本先验、等预算、错图）本身有效，降为附录级机制证据。
+
 **Date:** 2026-09-30  
 **Models:** 13 (InternVL3.5-8B, LENS, Orsta-7B, Qwen3-VL-8B, Seg-R1, Seg-zero, TreeVGR, UniVG-R1, Vision-R1, VisionReasoner, llava-ov-7b, qwen2.5-vl-7b, visual-rft)  
 **Probe coverage:** 12,631 rows (6,816 opposed predicates + 5,815 next_to)
