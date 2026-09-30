@@ -1,0 +1,46 @@
+{
+  "UniVG-R1": {
+    "n_c": 254,
+    "root": "/home/u2025141034/benchmark/coordfix_500",
+    "cbr": {
+      "object": 38.582677165354326,
+      "co_occurrence": 37.00787401574803,
+      "attribute": 50.78740157480315,
+      "relation": 55.118110236220474
+    },
+    "published_relation": 55.1,
+    "reproduces_published_relation": true,
+    "original_coords": {
+      "n_c": 30,
+      "root": "/home/u2025141034/benchmark/refcocog_eval_11models_500_repaired/run_500_semantic_strict",
+      "cbr": {
+        "object": 33.33333333333333,
+        "co_occurrence": 46.666666666666664,
+        "attribute": 40.0,
+        "relation": 46.666666666666664
+      }
+    }
+  },
+  "visual-rft": {
+    "n_c": 211,
+    "root": "/home/u2025141034/benchmark/coordfix_500",
+    "cbr": {
+      "object": 3.7914691943127963,
+      "co_occurrence": 14.691943127962084,
+      "attribute": 18.48341232227488,
+      "relation": 37.91469194312796
+    },
+    "published_relation": 37.9,
+    "reproduces_published_relation": true,
+    "original_coords": {
+      "n_c": 26,
+      "root": "/home/u2025141034/benchmark/refcocog_eval_13models_4tasks_500/run_20260918_125802",
+      "cbr": {
+        "object": 0.0,
+        "co_occurrence": 11.538461538461538,
+        "attribute": 19.230769230769234,
+        "relation": 11.538461538461538
+      }
+    }
+  }
+}

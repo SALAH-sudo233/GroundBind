@@ -1,0 +1,18 @@
+{
+  "total": {},
+  "per_model": {
+    "InternVL3.5-8B": {},
+    "LENS": {},
+    "Orsta-7B": {},
+    "Qwen3-VL-8B": {},
+    "Seg-R1": {},
+    "Seg-zero": {},
+    "TreeVGR": {},
+    "UniVG-R1": {},
+    "Vision-R1": {},
+    "VisionReasoner": {},
+    "llava-ov-7b": {},
+    "qwen2.5-vl-7b": {},
+    "visual-rft": {}
+  }
+}

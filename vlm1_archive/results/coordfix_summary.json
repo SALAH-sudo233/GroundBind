@@ -1,0 +1,20 @@
+{
+  "UniVG-R1": {
+    "t2_rows": 2500,
+    "rescaled": 2496,
+    "no_box": 4,
+    "degenerate_before": 979,
+    "degenerate_after": 0,
+    "positives": 500,
+    "pos_acc50": 0.508
+  },
+  "visual-rft": {
+    "t2_rows": 2500,
+    "rescaled": 991,
+    "no_box": 1509,
+    "degenerate_before": 296,
+    "degenerate_after": 0,
+    "positives": 500,
+    "pos_acc50": 0.422
+  }
+}

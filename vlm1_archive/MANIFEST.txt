@@ -1,0 +1,70 @@
+V-SIGHT vlm1 experiment archive -- staged 2026-09-30
+source: vlm1:~/SVD/agentic_probe
+
+INCLUDED
+  code/       all analysis + collection scripts (.py) and run wrappers (.sh).
+              audit_routing_BROKEN_readpath.py is kept ON PURPOSE as the defect
+              exhibit: its records_for() read <root>/<model>/<task>/records.jsonl
+              while the real layout is <root>/<model>/records.jsonl with a task
+              field, so every counter stayed 0 and the routing-legality claim had
+              no receipt. audit_routing_fixed.py is the working version.
+  reports/    authoritative result reports.
+  reports/historical/  earlier stage reports, superseded in part; each states its
+              own retracted numbers in its header.
+  results/    authoritative result summaries (JSON) + tables/ (text renderings).
+  results/version_audit/  superseded or defective aggregates, kept for provenance
+              only, NEVER for main-table numbers.
+
+EXCLUDED (and why)
+  *_shard*.jsonl            merged into the corresponding *_all.jsonl; verified
+                            line-for-line equal for jevhead, jevheadprobe, sel2b,
+                            swap, trprobe_jev, trprobe_omni.
+                            EXCEPTION: r1probe_all.jsonl is 6034 lines while its
+                            shards total 13562 -- it is a FILTERED subset, not a
+                            concatenation, so the r1probe shards are NOT redundant
+                            and remain on the server.
+  probecf_omni_WRONGSCOPE.jsonl  wrong scope: collected over all 13 models while
+                            coordinate correction applies only to UniVG-R1 and
+                            visual-rft. probecf_omni.jsonl is the correct file.
+                            REVIEWER_EVIDENCE.md records this as 4600 wasted rows.
+  smoke*.jsonl              smoke tests, 4-16 lines each.
+  *.jsonl (bulk scores)     92M of per-sample scores stay on the server; the repo
+                            carries the summaries computed from them.
+  *.log                     51 run logs stay on the server.
+  probe_textroute_all.jsonl derivable: equals probe_upstream.jsonl (13562 rows,
+                            routed_by null) plus trprobe_omni_all.jsonl (11870
+                            rows, routed_by query_text) = 25432, verified.
+  rev_omni_frontier.json    strict subset of reviewer_both.json (omni arm only,
+                            20 vs 40 entries, 54 vs 144 stats).
+
+CREDENTIAL SCAN
+  Pattern set: password assignment, passwd, sk- API keys, Bearer headers, token
+  assignment, PEM BEGIN blocks, AKIA access keys, ssh-rsa material.
+  Scanned every staged .py .sh .md .txt .json on the server: ZERO matches.
+
+CONTRACT NOTE FOR ANY REUSE
+  CBR: theta=0.5 positive correctness, rho=0.8 similarity against the POSITIVE
+  PREDICTED box, denominator = shared eligible count n_c, refusals count zero but
+  stay in the denominator, c_i=0 removes the whole group. eval_cbr_paper_aligned.py
+  asserts all four types share one eligibility set. Do not add conditions to this
+  contract when recomputing published numbers.
+
+POST-EXTRACTION DEDUPE (done locally, 2026-10-01)
+  34 files were byte-identical to content the repo already tracks and were removed
+  from this archive rather than stored twice:
+    9 scripts already in method/        (eval_cbr_paper_aligned, eval_combo,
+                                         eval_upstream, collect_jevhead,
+                                         deploy_upstream, eval_cbr_fairness,
+                                         eval_final_report, simple_relations,
+                                         test_simple_relations)
+    9 scripts already in reviewer_v060/ (audit_routing_fixed, eval_unified,
+                                         eval_matched, eval_attribution,
+                                         eval_scoped, diag_gap_vs_prior,
+                                         diag_type_gate, diag_final_policy,
+                                         export_cf_cbr)
+    8 result JSONs already in reviewer_v060/
+    7 result JSONs/tables already in evidence/
+    1 report already in evidence/       (MITIGATION_FRAMEWORK_REPORT.md)
+  cf_cbr_4types.json and export_cf_cbr.py were moved into reviewer_v060/ because
+  they are new work from this session, not archival material.
+  Verified with cmp before each deletion; nothing was removed on a name match alone.

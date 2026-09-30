@@ -24,6 +24,23 @@
 | `eval_scoped.py` | 按「谓词是否有真实对立配置」分作用域重做决定性比较 | `scoped.json` |
 | `diag_type_gate.py` | **四策略对照 + 路由逐类触发率 + 逐类 gap AUROC**（定位池化污染） | `type_gate.json` |
 | `diag_final_policy.py` | **support / A_all / A_reject / A_reject_opp 最终口径** | `final_policy.json` |
+| `export_cf_cbr.py` | 两个纠正坐标模型的**四类未过滤 CBR**（补论文横线列） | `cf_cbr_4types.json` |
+
+## 纠正坐标后的四类未过滤 CBR（%）
+
+论文 Table 2 / Figure 3 / Table A5 只给了这两个模型的 relation CBR，另三类是横线。补齐如下
+（relation 逐位复现已发表的 55.1 / 37.9，作为导出正确性的校验锚点）：
+
+| 模型 | n_c | object | co_occurrence | attribute | relation |
+|---|---|---|---|---|---|
+| UniVG-R1 | 254 | **38.6** | **37.0** | **50.8** | 55.1 ✓ |
+| Visual-RFT | 211 | **3.8** | **14.7** | **18.5** | 37.9 ✓ |
+
+口径原样继承 `eval_cbr_paper_aligned.py`，未加任何条件。
+Visual-RFT 呈现完整难度阶梯（3.8 → 14.7 → 18.5 → 37.9），与 §4.2 论调一致；
+UniVG-R1 四类偏平（38.6 / 37.0 / 50.8 / 55.1），因其对 99.8% 负例出框、几乎不拒绝。
+旧坐标口径的同一计算（UniVG-R1 33.3/46.7/40.0/46.7 n_c=30；Visual-RFT 0.0/11.5/19.2/11.5 n_c=26）
+样本量仅 26–30、难度阶梯不成立，**只作版本审计，不进主表**。
 
 依赖：`eval_upstream.py`、`eval_cbr_paper_aligned.py`、`simple_relations.py`、`canon_roots_paper.json`、
 `canon_roots_coordfix.json` 及既有打分文件（见 `RESULTS_v060.md` 末尾清单）。
