@@ -1,60 +1,138 @@
 # Right Region, Wrong Reference
 
-Diagnosing and Mitigating Grounding Hallucinations — v0.51 paper method
+Diagnosing and Mitigating Grounding Hallucinations — V-SIGHT
 
-This checkout retains **Relation-Contrastive Verification**, the method selected for the **v0.51 paper**: JEV-2B and
-OmniVerifier-7B score the same upstream candidate, compare alternative relations
-within each verifier, and combine their readings into a keep/reject decision.
-The candidate coordinates remain fixed. V-SIGHT-Bench, FGR, conditional box reuse
-(CBR), and positive localization retention remain part of the evaluation.
+模型可以定位真实物体，却把该区域指派给图像并不支持的表达。本仓库诊断这一错配，
+并以**自适应结构化核验（Adaptive Structured Verification）**缓释基准中的四类幻觉。
 
-This is a curated research snapshot, not a newly validated release. Original
-source files and reported results are retained byte-for-byte. See
-[AUDIT.md](AUDIT.md) before rerunning or interpreting the results.
+**核心论点**：正确框住一个物体，不等于该区域满足完整指称。定位与拒绝不是同一种能力。
+论文的主要贡献是**问题发现与 benchmark 评测**；方法部分服务于这一诊断。
 
-## Start here
+## 方法边界
 
-- [Method and recorded results](evidence/MITIGATION_FRAMEWORK_REPORT.md)
-- [Combined-arm results](evidence/combo.json): B0, B1 and A2, including single-arm controls
-- `method/eval_combo.py`: four-feature fusion and cross-fitted evaluation
-- `method/collect_jevhead.py`: JEV original/rival readings
-- `method/deploy_upstream.py`, `method/s5_omni_filter.py`: Omni rival collection and scorer
-- `method/simple_relations.py`: relation alternatives
-- `training/jev_verifier.py`, `training/run_jev.sh`: recorded JEV training source
-- `benchmark/refcocog_500_dev.semantic_strict.json`: preserved benchmark specification
-- [File provenance](provenance.json) and [historical recovery](HISTORY.md)
+共享支持核验对**全部四类**幻觉生效：任务适配的概率式评分器 JEV-2B 与冻结的
+OmniVerifier-7B 读同一图像、同一上游候选，两项连续分数 `s0 = (sJ,0, sO,0)` 进支持判决头，
+而不是两个硬投票。查询结构决定是否加深证据：存在合法谓词替代时，替代表达与原表达在
+**固定图像、固定候选**上竞争支持，差值 `δv` 在同一评分器内部计算（**不跨评分器相减**），
+增强证据 `z = [s0, δJ, δO]`。
 
-## Method boundary
+**框坐标不变，无重定位、无候选切换、无人工复核环路、无 agentic 环路。**
+关系是最大的残余错误来源，不是唯一处理对象 —— 结构化比较**增强**通用支持核验，
+而不是把方法限定为关系处理。单臂对照是必要消融，不是替代方法。
 
-Both verifiers contribute an original-expression score and an internal relation
-gap. Differences are **not** taken between different verifiers. The full arm
-uses four features; single-arm controls are necessary ablations, not alternative
-current methods. No relocalization, proposal switching, human-review loop, TRACE,
-CCV/CABLE or agentic flywheel is presented as the current method.
+## 结果（target 0.95，模型等权）
 
-The recorded combined arm reports ALL FGR 59.20% → 22.15%, relation CBR
-40.1% → 18.7%, and positive mIoU 0.3738 → 0.3549 (~94.9% retained).
-These are inherited results, **not experiments rerun during cleanup**. They do
-not establish lossless filtering or superiority on every type; attribute CBR is
-worse than the JEV-only control. See the report and audit for remaining issues.
+### 候选一致面板（11 模型，论文 Table 3）
 
-## Verification and execution
+| 配置 | FGR | object CBR | co_occ CBR | attr CBR | relation CBR | 正确保留 | mIoU |
+|---|---|---|---|---|---|---|---|
+| 未过滤 | 58.36% | 15.61% | 25.59% | 33.84% | 42.11% | 100.00% | 0.4221 |
+| 仅支持核验 | 22.98% | 1.76% | 9.23% | 8.57% | 26.83% | 94.33% | 0.3971 |
+| **自适应结构化核验** | **19.30%** | **1.76%** | **9.16%** | **8.50%** | **18.56%** | **91.51%** | **0.3860** |
 
-CPU-only relation-template tests:
+逐类 FGR：object 36.67 → 6.29 → 6.20、co_occurrence 55.78 → 18.60 → 18.25、
+attribute 63.58 → 17.75 → 17.64、relation 77.42 → 49.29 → 35.09（%）。
+
+**四类同向改善，无一类变差。** 凭据：`reviewer_v060/paper_tables.json`。
+
+### 纠正坐标模型（2 模型，附录 C）
+
+| 配置 | FGR | object CBR | co_occ CBR | attr CBR | relation CBR | 正确保留 | mIoU |
+|---|---|---|---|---|---|---|---|
+| 未过滤 | 64.03% | 21.19% | 25.85% | 34.64% | 46.52% | 100.00% | 0.4525 |
+| 仅支持核验 | 20.15% | 1.26% | 9.19% | 6.94% | 28.83% | 93.93% | 0.4231 |
+| 自适应结构化核验 | 18.40% | 1.26% | 8.56% | 6.50% | 23.62% | 92.82% | 0.4184 |
+
+UniVG-R1 n_c=254、visual-rft n_c=211（坐标纠正后）。未过滤四类 CBR 分别为
+38.6/37.0/50.8/55.1 与 3.8/14.7/18.5/37.9，其中 relation 逐位复现已发表的 55.1 / 37.9。
+
+### 与论文 PDF 的一处差异
+
+复算逐位复现了 Table 3 的**前两行**（最大偏差 0.018pp，纯舍入）。**第三行全部不一致，
+且每一项都更好**：FGR 21.55 → 19.30、attribute CBR 10.21 → 8.50、relation CBR 19.29 → 18.56、
+正确保留 91.99 → 91.51。
+
+原因：PDF 第三行的策略让探针头决定**所有被路由的行**。合法文本路由在四类上都触发
+（object 23.8% / co_occ 32.6% / attr 34.9% / relation 49.0%），于是另三类的行被交给
+**跨类型池化拟合**的判决头，而 gap 权重按类型符号相反（object +0.418 / co_occ +0.334 /
+attr +0.283 / **relation −0.673**），互相污染。这就是 PDF 里 attribute CBR 从 8.55 反弹到
+10.21 的来源。
+
+本仓库改用**单调门 + 作用域门**：探针头只能 keep→reject 不能翻案，且只在谓词存在真实对立
+配置时生效，被门挡住的行**逐位沿用支持核验决策**。前三类只走一次 Omni 后验、不经结构化词表
+竞争打分，因此必须严格增量。详见 `reviewer_v060/CORRECTION.md`。
+
+## 目录
+
+| 路径 | 内容 |
+|---|---|
+| `method/` | 论文方法脚本：四特征融合、CBR 契约、上游部署、谓词表 |
+| `reviewer_v060/eval_paper_tables.py` | **主表复算的唯一来源**（未在 `method/` 重复，因其依赖同目录的 `eval_unified` / `eval_attribution`） |
+| `training/` | JEV-2B 训练源（LoRA + 标量读数，2,506,752 参数） |
+| `benchmark/` | 500 图像组规格，四类负例各 500 |
+| `evidence/` | v0.51 继承结果（**部分数字已作废，见下**） |
+| `reviewer_v060/` | 审稿补充实验：统一候选、同保留曲线、归因对照、论文表格复算 |
+| `vlm1_archive/` | vlm1 服务器产物归档（71 文件），含刻意保留的错误证物 |
+
+## 先读
+
+1. `reviewer_v060/paper_tables.json` — **主表凭据**，含未过滤 CBR 校验门
+2. `reviewer_v060/CORRECTION.md` — 更正记录：撤回「另三类变差」与「方法只适用于关系」
+3. `reviewer_v060/RESULTS_v060.md` — P0-1 候选统一、P0-3 同保留曲线、W1 路由收据
+4. `AUDIT.md` — 遗留实现/报告不一致
+5. `vlm1_archive/README.md` — 服务器产物索引与排除理由
+
+## 不可引用的数字
+
+- **ALL FGR 59.20% → 22.15%、relation CBR 40.1% → 18.7%、positive mIoU 0.3738 → 0.3549**
+  —— v0.51 继承值，出自**非法元数据门控**（读 `hallucination_type` 真值标签），
+  `vlm1_archive/reports/REVIEWER_EVIDENCE.md` 已列为作废。当前口径见上表。
+- **「缓释只在 relation 触发、另三类恰好 0.00pp 不变」** —— 同一非法门的产物。
+  合法文本路由在四类上都触发。
+- **「专用模型 94% 正例定位失败」** —— 坐标口径 bug，非模型能力。UniVG-R1 成功正例
+  30 → 254、mIoU 0.1122 → 0.4936；visual-rft 26 → 211、0.1047 → 0.4114。
+- **跨评分器相减的 null**（Pearson r = 0.32）与**字母序对立词对照臂**（AUROC 0.8651，
+  泄漏谓词先验）。
+
+## 复现
+
+纯 CPU 复算（打分文件已存在，不需要 GPU、不需要重跑推理），在 vlm1 `~/SVD/agentic_probe/`：
+
+```sh
+python3 eval_paper_tables.py --target 0.95 --json-out paper_tables.json   # 主表 + 附录 C
+python3 export_cf_cbr.py            # 两个纠正坐标模型的四类未过滤 CBR
+python3 eval_unified.py --target 0.95 --json-out unified_13models_095.json
+python3 eval_matched.py --base-target 0.95 --json-out matched_retention.json
+python3 diag_final_policy.py        # 四策略对照，证明单调门保护另三类
+python3 audit_routing_fixed.py      # 路由合法性收据
+```
+
+CPU-only 谓词模板测试：
 
 ```sh
 python3 -m unittest discover -s method -p 'test_*.py' -v
 ```
 
-The preserved collection and evaluation scripts describe the original Linux
-workspace (`~/SVD/agentic_probe`, `~/SVD/grpo_verifier`) and canonical run map.
-They are **not portable standalone launchers**. Full reproduction additionally
-requires the original per-model `records.jsonl`, verifier caches, model weights,
-image files, the JEV adapter/head/temperature, and the matching GPU environment.
-The Mac cleanup does not supply those weights or run training. Do not execute
-`training/run_jev.sh` merely to browse this repository.
+保留的采集与评测脚本描述原 Linux 工作区（`~/SVD/agentic_probe`、`~/SVD/grpo_verifier`）
+与规范 run 映射，**不是可移植的独立启动器**。完整复现（重跑采集）还需要：逐模型
+`records.jsonl`、验证器缓存、模型权重、图像文件、JEV adapter/head/temperature 及匹配的
+GPU 环境。本仓库不提供权重，也不在此运行训练 —— 不要为了浏览仓库而执行 `training/run_jev.sh`。
 
-The v0.51 LaTeX/PDF artifacts are referenced in the chat “重构论文第一阶段” but
-were not present in the local migration. This checkout does not pretend to
-contain that paper source. The user selected v0.51 as the current authority. V-SIGHT-Bench remains the
-benchmark name; numerical results are unchanged from the source report.
+## 评测契约（复算前必读）
+
+**CBR**：θ=0.5 判正例正确、ρ=0.8 相似度**对正例预测框**计算（语义是「复用自己刚画的框」，
+不是对 GT 框）、分母为共享合格数 `n_c`、拒绝计零但**留在分母**、`c_i=0` 整组移出、
+无合格正例记 undefined。`method/eval_cbr_paper_aligned.py` 有 assert 强制四类共享同一合格集。
+
+**FGR**：分母固定 2000（每类 500）。**mIoU**：分母固定 500，拒绝计零，已输出但退化的框
+仍计出框事件。合格集与正例参照框**缓释前冻结**，不因拒绝重算资格。
+
+**校准**：判决头与阈值按图像级两折交叉拟合，两分支以 Rcorrect 共同校准；评价报告**实际达到**
+的保留率，不是校准目标。
+
+**重算已发表指标时不要自行添加条件**（例如排除退化框），否则与论文对不上。
+
+## 溯源
+
+`provenance.json` 记录 22 个文件的 sha256 与来源路径；`HISTORY.md` 为历史恢复记录。
+本仓库是策划过的研究快照，不是新验证的 release；原始文件与已报告结果逐位保留。
