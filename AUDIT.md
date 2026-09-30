@@ -73,9 +73,13 @@ with receipts**, and one new item (6) records a difference against the paper PDF
    `reviewer_v060/export_cf_joint.py` reuses the t2 correction unchanged and is gated
    on reproducing the published t2 CBR for both models (PASS). Receipt:
    `cf_joint_grounding.json`, writeup `JOINT_GROUNDING_CF.md`.
-   **Consequence for the paper:** the t4 family averages in this README were computed
-   with uncorrected boxes for these two models and understate them. Corrected:
-   n_correct 247 / 207, mIoU 0.4820 / 0.4249.
+   **Now folded into the t4 panel.** `eval_tasks_t1_t3_t4.py` re-derives t4 boxes for
+   these two models and emits both versions; a second gate requires bit-for-bit
+   agreement with `export_cf_joint.py` (247/247 and 207/207, PASS). The correction
+   moves the positive side only: 13-model positive success 29.49% -> 35.60%, mIoU
+   0.3118 -> 0.3639, while FGR barely moves (48.26% -> 48.25%). Uncorrected, UniVG-R1's
+   t4 reads 5.60% positive success at mIoU 0.1127 -- the same broken pair the reviewer
+   objected to for t2.
 
 7. **Task coverage — RESOLVED 2026-10-01, all four tasks now have receipts.**
    The repo previously backed only direct grounding (t2). Table 1 defines four tasks,

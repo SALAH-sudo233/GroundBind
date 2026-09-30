@@ -19,6 +19,15 @@ FIELD SEMANTICS, read off the records rather than assumed:
       target_coverage / amber_cosine  present on all 32500 rows
   t3  one query-free caption per image, 500 rows per model
 
+COORDINATE CORRECTION ON t4. UniVG-R1 and visual-rft emit boxes in a 0-1000
+normalised frame. write_rescaled_run.py repaired that for t2 only (its filter is
+T2 = ('t2','t2_vqa_grounding')), so t4 kept the defect: raw [54,700,236,999] stored as
+[54,428,236,428], a zero-height box. Left uncorrected, UniVG-R1's t4 positive success
+reads 5.6% with mIoU 0.1127 -- the same broken pair the reviewer objected to for t2.
+This script therefore re-derives t4 boxes for those two models from raw_output_text
+via export_cf_joint.rescale(), the same correction t2 uses, and reports both versions
+so the swap is visible rather than silent.
+
 TASK RECORDS LIVE IN DIFFERENT RUNS. canon_roots_paper.json points each model at the
 run holding its canonical t2 boxes, but that run does not always carry the other
 tasks: Qwen3-VL-8B has no t1 there (it is in refcocog_eval_11models_500_repaired) and
@@ -48,6 +57,8 @@ PROBE = os.path.expanduser('~/SVD/agentic_probe')
 HERE = os.path.dirname(os.path.abspath(__file__))
 HT4 = ['object', 'co_occurrence', 'attribute', 'relation']
 GENERAL = {'InternVL3.5-8B', 'Qwen3-VL-8B', 'llava-ov-7b', 'qwen2.5-vl-7b'}
+# models whose raw boxes are 0-1000 normalised; t4 was never repaired for them
+COORDFIX_T4 = {'UniVG-R1', 'visual-rft'}
 
 
 # fallback runs searched, in order, when a task is absent from the canonical root
@@ -117,8 +128,25 @@ def eval_t1(rows):
                 roh=st.mean([by[h] for h in HT4[2:]]) if all(by[h] is not None for h in HT4[2:]) else None)
 
 
-def eval_t4(rows):
-    """Joint grounding: caption hallucination, coverage, plus FGR/mIoU/pos-success."""
+def eval_t4(rows, coordfix=False):
+    """Joint grounding: caption hallucination, coverage, plus FGR/mIoU/pos-success.
+
+    coordfix=True re-derives every box from raw_output_text with the t2 correction,
+    then recomputes IoU against the untouched GT. Rows with no parseable box keep a
+    zero IoU and count as a genuine no-output.
+    """
+    if coordfix:
+        import export_cf_joint as CF
+        cache = {}
+        fixed = []
+        for r in rows:
+            r = dict(r)
+            box = CF.rescale(r, cache)
+            r['pred_bbox_xyxy'] = box
+            r['iou'] = CF.iou(box, r.get('gt_bbox_xyxy')) if box else 0.0
+            r['pred_found'] = bool(box)
+            fixed.append(r)
+        rows = fixed
     pos = [r for r in rows if r.get('label_exists') is True]
     neg = [r for r in rows if r.get('label_exists') is False]
     if not pos or not neg:
@@ -219,7 +247,12 @@ def main():
         r4, u4 = resolve(canon[m], m, 't4_caption_grounding')
         v1 = eval_t1(r1) if r1 else None
         v3 = eval_t3(r3) if r3 else None
-        v4 = eval_t4(r4) if r4 else None
+        v4 = eval_t4(r4, coordfix=m in COORDFIX_T4) if r4 else None
+        if r4 and m in COORDFIX_T4:
+            raw4 = eval_t4(r4, coordfix=False)
+            v4['uncorrected'] = {k: raw4[k] for k in
+                                 ('fgr', 'pos_success', 'pos_miou', 'boh', 'roh')}
+            v4['coordfix_applied'] = True
         if v1:
             t1[m] = v1
         if v3:
@@ -239,6 +272,24 @@ def main():
     show('TASK t3  pure captioning, no query (%d models)' % len(t3), t3,
          [('capHallu', 'caption_hallu'), ('coverage', 'target_coverage'),
           ('amberCos', 'amber_cosine')])
+    cf = [m for m in t4 if t4[m].get('coordfix_applied')]
+    if cf:
+        print()
+        print('=' * 118)
+        print('t4 COORDINATE CORRECTION applied to %s' % ', '.join(sorted(cf)))
+        print('=' * 118)
+        print('%-14s %-14s %9s %9s %9s' % ('model', 'version', 'FGR', 'posSucc', 'mIoU'))
+        for m in sorted(cf):
+            u = t4[m]['uncorrected']
+            print('%-14s %-14s %8.2f%% %8.2f%% %9.4f'
+                  % (m, 'uncorrected', u['fgr'] * 100, u['pos_success'] * 100,
+                     u['pos_miou']))
+            print('%-14s %-14s %8.2f%% %8.2f%% %9.4f'
+                  % ('', 'corrected', t4[m]['fgr'] * 100,
+                     t4[m]['pos_success'] * 100, t4[m]['pos_miou']))
+        print('\n  Leaving t4 uncorrected reproduces the defect the reviewer raised:')
+        print('  a positive-success rate near 5%% with mIoU near 0.11.')
+
     show('TASK t4  joint grounding (%d models)' % len(t4), t4,
          [('FGR', 'fgr'), ('BOH', 'boh'), ('ROH', 'roh'),
           ('posSucc', 'pos_success'), ('mIoU', 'pos_miou'),
@@ -275,8 +326,33 @@ def main():
     print('\n  %s' % ('both PASS -- t1 reproduces the paper'
                       if allok else 'MISMATCH -- check which run each model came from'))
 
+    # second gate: the corrected t4 must match the independent export_cf_joint run
+    t4gate = None
+    ref = os.path.join(HERE, 'cf_joint_grounding.json')
+    if cf and os.path.exists(ref):
+        R = json.load(open(ref))['models']
+        print()
+        print('=' * 118)
+        print('GATE: corrected t4 versus the independent export_cf_joint receipt')
+        print('=' * 118)
+        t4gate = True
+        for m in sorted(cf):
+            if m not in R:
+                continue
+            mine, ref_m = t4[m], R[m]['t4_joint']
+            dn = abs(mine['pos_success'] * 500 - ref_m['n_correct'])
+            di = abs(mine['pos_miou'] - ref_m['pos_miou'])
+            ok = dn < 0.5 and di < 1e-9
+            t4gate &= ok
+            print('  %-12s n_correct %d vs %d, mIoU %.4f vs %.4f  %s'
+                  % (m, round(mine['pos_success'] * 500), ref_m['n_correct'],
+                     mine['pos_miou'], ref_m['pos_miou'], 'PASS' if ok else 'FAIL'))
+        print('\n  %s' % ('two independent scripts agree bit for bit'
+                          if t4gate else 'MISMATCH -- do not use these t4 numbers'))
+
     json.dump(dict(t1=t1, t3=t3, t4=t4, run_provenance=prov,
-                   section41_gate_passed=bool(allok)),
+                   section41_gate_passed=bool(allok),
+                   t4_coordfix_gate_passed=t4gate),
               open(os.path.join(HERE, a.json_out), 'w'),
               indent=2, ensure_ascii=False, default=str)
     print('\nwrote %s' % a.json_out)
