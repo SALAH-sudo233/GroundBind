@@ -179,8 +179,10 @@ def main():
               load_probe('probecf_omni.jsonl', 'z', COORDFIX_MODELS),
               load_probe('probecf_jev.jsonl', 'z_head', COORDFIX_MODELS))
 
+    p13, a13, c13 = panel(sorted(canon), canon, cfroots, probes, a.target,
+                          '[MAIN] unified 13-model panel (recommended)')
     p11, a11, c11 = panel(consistent, canon, cfroots, probes, a.target,
-                          '[Table 3] candidate-consistent panel')
+                          '[Table 3] candidate-consistent panel (PDF reconciliation)')
     p2, a2, c2 = panel(corrected, canon, cfroots, probes, a.target,
                        '[Appendix C] coordinate-corrected models')
 
@@ -201,6 +203,7 @@ def main():
     print('\ngate: %s' % ('PASS' if allok else 'FAIL -- do not use these tables'))
 
     out = dict(target=a.target,
+               main13=dict(models=c13, per=p13, pooled=a13),
                table3=dict(models=c11, per=p11, pooled=a11),
                appendixC=dict(models=c2, per=p2, pooled=a2),
                unfiltered_cbr_gate_passed=bool(allok))

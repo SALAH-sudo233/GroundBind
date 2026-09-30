@@ -21,7 +21,8 @@ attribute 0.349 / relation 0.490），收据见 `reviewer_v060/audit_routing_fix
 
 | 想要的数字 | 去哪里取 |
 |---|---|
-| 主表三行（11 模型面板） | `reviewer_v060/paper_tables.json` → `table3.pooled` |
+| **主表三行（13 模型，推荐）** | `reviewer_v060/paper_tables.json` → `main13.pooled` |
+| 主表三行（11 模型，PDF 对账用） | `reviewer_v060/paper_tables.json` → `table3.pooled` |
 | 纠正坐标模型缓释（附录 C） | `reviewer_v060/paper_tables.json` → `appendixC.pooled` |
 | 两个纠正坐标模型的四类未过滤 CBR | `reviewer_v060/cf_cbr_4types.json` |
 | 13 模型统一候选表 | `reviewer_v060/unified_13models_095.json` |
