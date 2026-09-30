@@ -25,7 +25,35 @@
 | `diag_type_gate.py` | **四策略对照 + 路由逐类触发率 + 逐类 gap AUROC**（定位池化污染） | `type_gate.json` |
 | `diag_final_policy.py` | **support / A_all / A_reject / A_reject_opp 最终口径** | `final_policy.json` |
 | `export_cf_cbr.py` | 两个纠正坐标模型的**四类未过滤 CBR**（补论文横线列） | `cf_cbr_4types.json` |
-| `eval_paper_tables.py` | **论文主表复算**：11 模型面板 + 纠正坐标模型附录，带未过滤 CBR 校验门 | `paper_tables.json` |
+| `eval_paper_tables.py` | **论文主表复算**：13 模型主面板 + 11 模型对账 + 纠正坐标附录，带未过滤 CBR 校验门 | `paper_tables.json` |
+| `render_paper_tables.py` | **按论文指标名渲染 Table 2 / Table 3**（BOH/ROH、正例成功率、家族聚合），自带四道校验门 | 终端输出 |
+
+## 按论文指标查看两张表
+
+`paper_tables.json` 存的是逐模型分臂结果，而论文印的是 BOH / ROH / 正例成功率 / 家族聚合，
+且 `pooled` 块**根本不含 BOH/ROH**。这两张表此前靠手工拼装 —— 别人复不出来。改用脚本：
+
+```sh
+python3 render_paper_tables.py                  # 13 模型主面板
+python3 render_paper_tables.py --panel table3    # 11 模型，与 PDF 对账
+python3 render_paper_tables.py --panel appendixC # 纠正坐标两模型
+```
+
+纯本地运行，不需要服务器和 GPU。它**重算而非信任**：BOH/ROH 从 `by_ht` 重新推导、
+pooled 从逐模型重新平均、家族聚合对齐论文 §4.1 印出的数字，任一不符即 `exit 1` 并拒绝出表。
+
+四道门实测（篡改注入验证，确认门会失败而非空转）：
+
+| 注入 | 结果 |
+|---|---|
+| 未篡改 | exit 0，all gates PASS |
+| 单模型 `boh` +0.01 | exit 1，`BOH/ROH do not match by_ht` |
+| `pooled.full.FGR` +0.5 | exit 1，`pooled block disagrees with per-model mean` |
+| 单模型 `pos_miou` +0.01 | exit 1，同上（经家族聚合放大后被捕获） |
+| 上游 `unfiltered_cbr_gate_passed=False` | exit 1，拒绝读入 |
+
+§4.1 家族统计逐位复现论文原文：通用 mIoU 0.4331 / 正例成功 45.0% / FGR 37.64%，
+RL 适配 0.4240 / 42.9% / 68.83% —— 这佐证仓库这批 13 模型数据就是论文所用那批。
 
 ## 论文主表复算（target 0.95）
 
