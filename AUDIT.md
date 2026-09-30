@@ -130,12 +130,50 @@ with receipts**, and one new item (6) records a difference against the paper PDF
   (UniVG-R1 33.3/46.7/40.0/46.7 at n_c=30; visual-rft 0.0/11.5/19.2/11.5 at n_c=26)
   — version audit only; at that sample size the difficulty ladder does not hold.
 
+## 9. Mitigation was only ever measured on direct grounding — RESOLVED
+
+Every mitigation number in the paper came from t2. The joint-grounding task (t4) had
+benchmark numbers but no mitigation, so "the framework mitigates hallucination" rested
+on one task out of four.
+
+Closed by collecting verifier scores on t4 boxes and re-running the same policy:
+`collect_t4_mitigation.py` + `eval_t4_mitigation.py` → `t4_mitigation.json`,
+documented in `reviewer_v060/T4_MITIGATION.md`.
+
+**t2 scores could not be reused.** `collect_jevhead.py` and
+`collect_probe_textroute.py` both hard-filter `task == 't2_vqa_grounding'`. The
+verifier scores one specific box, and the t4 box differs from the t2 box for the same
+query because emitting a caption moves the box. Reusing t2 scores would be the same
+error class as subtracting across two scorers. 59,025 fresh forward passes
+(z0 18,553 / jev 18,553 / rival 21,919), 8 shards, 25.4 min, zero errors, counts
+matching the plan item for item.
+
+Result (13 models, target 0.95): FGR 48.24% → 19.70% → 18.45%,
+correct retention 100% → 93.95% → 92.99%.
+
+**Four types, zero regressions, 13/13 models improved** — object −0.231pp
+CI[−0.415,−0.092], co_occurrence −0.723pp CI[−1.108,−0.385], attribute −1.046pp
+CI[−1.554,−0.585], relation −2.985pp CI[−3.723,−2.246]; worse-model count 0/13 on
+every type. This is the strict-additivity requirement holding on a second task: the
+first three types are mitigated by a single Omni posterior and never enter predicate
+competitive scoring, so any regression there would be an implementation bug. The
+check is built into the script and prints REGRESSION if it ever fails.
+
+The full arm costs *less* on t4 than on t2 (FGR 18.45% vs 19.16%, retention 92.99% vs
+91.71%), so the framework is not specific to direct grounding.
+
+Not matched-retention: this is a single operating point. On t2 the gain roughly halved
+under matched retention; the t4 matched comparison has not been run.
+
 ## Validation scope
 
 Validated on the Mac: preserved-source SHA-256 checks, Python syntax, local helper
-imports, the relation-template tests. Validated on vlm1 (CPU only, no GPU, no model
-re-inference): the recomputations listed above, each gated on reproducing a
+imports, the relation-template tests. Validated on vlm1 (CPU only for items 1–8, no
+model re-inference): the recomputations listed above, each gated on reproducing a
 published anchor — `eval_paper_tables.py` refuses to be trusted unless the
 unfiltered CBR matches the independent `export_cf_cbr.py` output, which in turn
 reproduces the published relation CBR 55.1 / 37.9 bit-for-bit.
-Not claimed: GPU collection, training, and paper compilation.
+
+Item 9 **did** use the GPUs: 8×RTX4090 for 25.4 min of verifier scoring. It wrote only
+to the new `t4mitig/` directory and left every L2 input untouched.
+Not claimed: training, upstream candidate re-generation, and paper compilation.

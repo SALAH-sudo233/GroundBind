@@ -66,6 +66,7 @@ cd ~/SVD/agentic_probe
 python3 eval_paper_tables.py --target 0.95 --json-out paper_tables.json   # ~4 min
 python3 eval_tasks_t1_t3_t4.py --json-out tasks_t1_t3_t4.json   # t1/t3/t4，~2 min
 python3 export_cf_joint.py               # 纠正坐标后的 t4，~2 min（需读图像取宽高）
+python3 eval_t4_mitigation.py --target 0.95 --json-out t4_mitigation.json  # t4 缓释，~3 min
 python3 export_cf_cbr.py                 # 两模型四类未过滤 CBR
 python3 diag_final_policy.py             # 四策略对照
 python3 eval_matched.py --base-target 0.95 --json-out matched_retention.json
@@ -78,6 +79,40 @@ python3 audit_routing_fixed.py           # 路由合法性收据
 
 读上表的打分文件，不加载模型、不占 GPU。`eval_paper_tables.py` 内建校验门：
 未过滤 CBR 必须匹配独立导出的 `cf_cbr_4types.json`，否则明确标记 FAIL。
+
+### L2.5 t4 缓释打分采集（vlm1，8 卡 25 分钟，输出独立不覆盖）
+
+```sh
+cd ~/SVD/agentic_probe
+export LD_LIBRARY_PATH=$HOME/.miniconda3/envs/grpo_ayb/lib:$LD_LIBRARY_PATH
+P=$HOME/.miniconda3/envs/grpo_ayb/bin/python
+mkdir -p t4mitig
+for i in 0 1 2 3 4 5 6 7; do
+  CUDA_VISIBLE_DEVICES=$i nohup $P collect_t4_mitigation.py \
+    --out t4mitig/t4_shard$i.jsonl --shard $i --nshard 8 --arms omni,jev \
+    > t4mitig/shard$i.log 2>&1 &
+done
+```
+
+两模型（Omni-7B + JEV-2B）同驻单卡约 21.8 GB / 24.5 GB。输出 append-only、
+按 `(model, sid, variant)` 可续跑，**写进 `t4mitig/` 独立目录，不覆盖 L2 的任何输入**。
+`--plan-only` 先看工作量而不占 GPU。
+
+验收：8 个日志都出现 `ALLDONE`，总行数 **59,025**
+（z0 18,553 / jev 18,553 / rival 21,919），`error` 字段全空。
+
+**坑一**：`wc -l` 在进程运行中会低报——每 200 行才 flush，各分片刷新点错开。
+我据此误判过 shard0 卡死（`wc` 报 200，实际已写 1800）。判断进度用 `python3`
+逐文件计数或读日志的 `N scored` 行，别用 `wc -l` 比较分片快慢。
+
+**坑二**：JEV 的 prompt 必须从 `collect_jevhead.PROMPT` 导入，不能自己重写。
+标量头读的是**最后一个 prompt 位置**的隐状态，模板改一个字就偏移；
+手写短模板会让 z 整体偏约 −2，而 AUROC 几乎不变（共模偏移不改变序），
+所以「消融通过」不能证明阈值可用。
+
+**坑三**：t2 的打分文件不可复用于 t4。`collect_jevhead.py` 与
+`collect_probe_textroute.py` 都硬过滤 `task == 't2_vqa_grounding'`；
+验证器打的是某个具体框的分，而同一 query 的 t4 框与 t2 框不同（多产出描述会让框移动）。
 
 ### L3 采集重跑（vlm1，需 GPU）
 
@@ -115,6 +150,9 @@ bash run_jevhead.sh          # JEV 头独立采集
 | 仅支持核验 FGR（11 模型面板） | **22.98%** | 论文 Table 3 第二行 |
 | t1 错误接受率，通用 / RL 家族 | **29.44% / 33.03%** | 论文 §4.1 / `eval_tasks_t1_t3_t4.py` |
 | 纠正坐标 t4 的 n_correct / mIoU | **247 / 0.4820** 与 **207 / 0.4249** | `export_cf_joint.py`（门为 t2 复现） |
+| t4 缓释三臂 FGR（13 模型） | **48.24% → 19.70% → 18.45%** | `t4_mitigation.json` |
+| t4 完整臂四类零回退 | 四类变差模型数均 **0/13** | `eval_t4_mitigation.py` 的严格增量检查 |
+| t4 打分采集总行数 | **59,025**（18,553 / 18,553 / 21,919） | `t4mitig/t4_shard*.jsonl` |
 
 前两项是 `export_cf_cbr.py` 与 `eval_paper_tables.py` 的硬门；
 §4.1 的定位四项是 `render_paper_tables.py` 的硬门；

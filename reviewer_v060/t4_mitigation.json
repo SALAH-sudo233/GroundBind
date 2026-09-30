@@ -1,0 +1,1209 @@
+{
+  "per": {
+    "InternVL3.5-8B": {
+      "unfiltered": {
+        "n_pos": 500,
+        "n_neg": 2000,
+        "n_neg_by_ht": {
+          "object": 500,
+          "co_occurrence": 500,
+          "attribute": 500,
+          "relation": 500
+        },
+        "fgr": 0.3985,
+        "by_ht": {
+          "object": 0.158,
+          "co_occurrence": 0.396,
+          "attribute": 0.41,
+          "relation": 0.63
+        },
+        "boh": 0.277,
+        "roh": 0.52,
+        "pos_keep": 0.982,
+        "pos_miou": 0.31934681910749413,
+        "correct_retain": 1.0,
+        "n_eligible": 150,
+        "cbr": {
+          "object": 0.06666666666666667,
+          "co_occurrence": 0.15333333333333332,
+          "attribute": 0.2,
+          "relation": 0.2866666666666667
+        }
+      },
+      "support": {
+        "n_pos": 500,
+        "n_neg": 2000,
+        "n_neg_by_ht": {
+          "object": 500,
+          "co_occurrence": 500,
+          "attribute": 500,
+          "relation": 500
+        },
+        "fgr": 0.2125,
+        "by_ht": {
+          "object": 0.056,
+          "co_occurrence": 0.18,
+          "attribute": 0.168,
+          "relation": 0.446
+        },
+        "boh": 0.118,
+        "roh": 0.307,
+        "pos_keep": 0.898,
+        "pos_miou": 0.2966072217017855,
+        "correct_retain": 0.9466666666666667,
+        "n_eligible": 150,
+        "cbr": {
+          "object": 0.013333333333333334,
+          "co_occurrence": 0.08666666666666667,
+          "attribute": 0.07333333333333333,
+          "relation": 0.18
+        }
+      },
+      "full": {
+        "n_pos": 500,
+        "n_neg": 2000,
+        "n_neg_by_ht": {
+          "object": 500,
+          "co_occurrence": 500,
+          "attribute": 500,
+          "relation": 500
+        },
+        "fgr": 0.201,
+        "by_ht": {
+          "object": 0.056,
+          "co_occurrence": 0.174,
+          "attribute": 0.162,
+          "relation": 0.412
+        },
+        "boh": 0.11499999999999999,
+        "roh": 0.287,
+        "pos_keep": 0.892,
+        "pos_miou": 0.2960272303782104,
+        "correct_retain": 0.9466666666666667,
+        "n_eligible": 150,
+        "cbr": {
+          "object": 0.013333333333333334,
+          "co_occurrence": 0.08666666666666667,
+          "attribute": 0.06666666666666667,
+          "relation": 0.16
+        }
+      }
+    },
+    "LENS": {
+      "unfiltered": {
+        "n_pos": 500,
+        "n_neg": 2000,
+        "n_neg_by_ht": {
+          "object": 500,
+          "co_occurrence": 500,
+          "attribute": 500,
+          "relation": 500
+        },
+        "fgr": 0.2845,
+        "by_ht": {
+          "object": 0.208,
+          "co_occurrence": 0.268,
+          "attribute": 0.302,
+          "relation": 0.36
+        },
+        "boh": 0.238,
+        "roh": 0.33099999999999996,
+        "pos_keep": 0.478,
+        "pos_miou": 0.25202812598971164,
+        "correct_retain": 1.0,
+        "n_eligible": 128,
+        "cbr": {
+          "object": 0.234375,
+          "co_occurrence": 0.1875,
+          "attribute": 0.3125,
+          "relation": 0.3671875
+        }
+      },
+      "support": {
+        "n_pos": 500,
+        "n_neg": 2000,
+        "n_neg_by_ht": {
+          "object": 500,
+          "co_occurrence": 500,
+          "attribute": 500,
+          "relation": 500
+        },
+        "fgr": 0.096,
+        "by_ht": {
+          "object": 0.024,
+          "co_occurrence": 0.074,
+          "attribute": 0.084,
+          "relation": 0.202
+        },
+        "boh": 0.049,
+        "roh": 0.14300000000000002,
+        "pos_keep": 0.414,
+        "pos_miou": 0.22685353396152969,
+        "correct_retain": 0.9140625,
+        "n_eligible": 128,
+        "cbr": {
+          "object": 0.0234375,
+          "co_occurrence": 0.0703125,
+          "attribute": 0.046875,
+          "relation": 0.25
+        }
+      },
+      "full": {
+        "n_pos": 500,
+        "n_neg": 2000,
+        "n_neg_by_ht": {
+          "object": 500,
+          "co_occurrence": 500,
+          "attribute": 500,
+          "relation": 500
+        },
+        "fgr": 0.0925,
+        "by_ht": {
+          "object": 0.024,
+          "co_occurrence": 0.074,
+          "attribute": 0.08,
+          "relation": 0.192
+        },
+        "boh": 0.049,
+        "roh": 0.136,
+        "pos_keep": 0.412,
+        "pos_miou": 0.22685353396152969,
+        "correct_retain": 0.9140625,
+        "n_eligible": 128,
+        "cbr": {
+          "object": 0.0234375,
+          "co_occurrence": 0.0703125,
+          "attribute": 0.046875,
+          "relation": 0.234375
+        }
+      }
+    },
+    "Orsta-7B": {
+      "unfiltered": {
+        "n_pos": 500,
+        "n_neg": 2000,
+        "n_neg_by_ht": {
+          "object": 500,
+          "co_occurrence": 500,
+          "attribute": 500,
+          "relation": 500
+        },
+        "fgr": 0.3755,
+        "by_ht": {
+          "object": 0.124,
+          "co_occurrence": 0.328,
+          "attribute": 0.38,
+          "relation": 0.67
+        },
+        "boh": 0.226,
+        "roh": 0.525,
+        "pos_keep": 0.944,
+        "pos_miou": 0.2948392669767932,
+        "correct_retain": 1.0,
+        "n_eligible": 139,
+        "cbr": {
+          "object": 0.0,
+          "co_occurrence": 0.10071942446043165,
+          "attribute": 0.11510791366906475,
+          "relation": 0.2158273381294964
+        }
+      },
+      "support": {
+        "n_pos": 500,
+        "n_neg": 2000,
+        "n_neg_by_ht": {
+          "object": 500,
+          "co_occurrence": 500,
+          "attribute": 500,
+          "relation": 500
+        },
+        "fgr": 0.1665,
+        "by_ht": {
+          "object": 0.044,
+          "co_occurrence": 0.13,
+          "attribute": 0.138,
+          "relation": 0.354
+        },
+        "boh": 0.087,
+        "roh": 0.246,
+        "pos_keep": 0.786,
+        "pos_miou": 0.27166732508825214,
+        "correct_retain": 0.9568345323741008,
+        "n_eligible": 139,
+        "cbr": {
+          "object": 0.0,
+          "co_occurrence": 0.06474820143884892,
+          "attribute": 0.050359712230215826,
+          "relation": 0.1223021582733813
+        }
+      },
+      "full": {
+        "n_pos": 500,
+        "n_neg": 2000,
+        "n_neg_by_ht": {
+          "object": 500,
+          "co_occurrence": 500,
+          "attribute": 500,
+          "relation": 500
+        },
+        "fgr": 0.1485,
+        "by_ht": {
+          "object": 0.042,
+          "co_occurrence": 0.12,
+          "attribute": 0.118,
+          "relation": 0.314
+        },
+        "boh": 0.081,
+        "roh": 0.216,
+        "pos_keep": 0.752,
+        "pos_miou": 0.2598235371491358,
+        "correct_retain": 0.9280575539568345,
+        "n_eligible": 139,
+        "cbr": {
+          "object": 0.0,
+          "co_occurrence": 0.06474820143884892,
+          "attribute": 0.03597122302158273,
+          "relation": 0.1223021582733813
+        }
+      }
+    },
+    "Qwen3-VL-8B": {
+      "unfiltered": {
+        "n_pos": 500,
+        "n_neg": 2000,
+        "n_neg_by_ht": {
+          "object": 500,
+          "co_occurrence": 500,
+          "attribute": 500,
+          "relation": 500
+        },
+        "fgr": 0.2245,
+        "by_ht": {
+          "object": 0.064,
+          "co_occurrence": 0.174,
+          "attribute": 0.208,
+          "relation": 0.452
+        },
+        "boh": 0.119,
+        "roh": 0.33,
+        "pos_keep": 0.906,
+        "pos_miou": 0.4585498664304882,
+        "correct_retain": 1.0,
+        "n_eligible": 232,
+        "cbr": {
+          "object": 0.017241379310344827,
+          "co_occurrence": 0.07758620689655173,
+          "attribute": 0.1206896551724138,
+          "relation": 0.3232758620689655
+        }
+      },
+      "support": {
+        "n_pos": 500,
+        "n_neg": 2000,
+        "n_neg_by_ht": {
+          "object": 500,
+          "co_occurrence": 500,
+          "attribute": 500,
+          "relation": 500
+        },
+        "fgr": 0.145,
+        "by_ht": {
+          "object": 0.04,
+          "co_occurrence": 0.106,
+          "attribute": 0.108,
+          "relation": 0.326
+        },
+        "boh": 0.073,
+        "roh": 0.217,
+        "pos_keep": 0.81,
+        "pos_miou": 0.4219760824104721,
+        "correct_retain": 0.9224137931034483,
+        "n_eligible": 232,
+        "cbr": {
+          "object": 0.01293103448275862,
+          "co_occurrence": 0.06465517241379311,
+          "attribute": 0.06896551724137931,
+          "relation": 0.22844827586206898
+        }
+      },
+      "full": {
+        "n_pos": 500,
+        "n_neg": 2000,
+        "n_neg_by_ht": {
+          "object": 500,
+          "co_occurrence": 500,
+          "attribute": 500,
+          "relation": 500
+        },
+        "fgr": 0.133,
+        "by_ht": {
+          "object": 0.038,
+          "co_occurrence": 0.098,
+          "attribute": 0.102,
+          "relation": 0.294
+        },
+        "boh": 0.068,
+        "roh": 0.19799999999999998,
+        "pos_keep": 0.786,
+        "pos_miou": 0.41216562839591553,
+        "correct_retain": 0.9008620689655172,
+        "n_eligible": 232,
+        "cbr": {
+          "object": 0.01293103448275862,
+          "co_occurrence": 0.06465517241379311,
+          "attribute": 0.06465517241379311,
+          "relation": 0.2025862068965517
+        }
+      }
+    },
+    "Seg-R1": {
+      "unfiltered": {
+        "n_pos": 500,
+        "n_neg": 2000,
+        "n_neg_by_ht": {
+          "object": 500,
+          "co_occurrence": 500,
+          "attribute": 500,
+          "relation": 500
+        },
+        "fgr": 0.316,
+        "by_ht": {
+          "object": 0.088,
+          "co_occurrence": 0.27,
+          "attribute": 0.304,
+          "relation": 0.602
+        },
+        "boh": 0.179,
+        "roh": 0.45299999999999996,
+        "pos_keep": 0.946,
+        "pos_miou": 0.40589561024862353,
+        "correct_retain": 1.0,
+        "n_eligible": 205,
+        "cbr": {
+          "object": 0.03902439024390244,
+          "co_occurrence": 0.1902439024390244,
+          "attribute": 0.23902439024390243,
+          "relation": 0.4926829268292683
+        }
+      },
+      "support": {
+        "n_pos": 500,
+        "n_neg": 2000,
+        "n_neg_by_ht": {
+          "object": 500,
+          "co_occurrence": 500,
+          "attribute": 500,
+          "relation": 500
+        },
+        "fgr": 0.175,
+        "by_ht": {
+          "object": 0.048,
+          "co_occurrence": 0.132,
+          "attribute": 0.142,
+          "relation": 0.378
+        },
+        "boh": 0.09,
+        "roh": 0.26,
+        "pos_keep": 0.812,
+        "pos_miou": 0.3766321879765391,
+        "correct_retain": 0.9365853658536586,
+        "n_eligible": 205,
+        "cbr": {
+          "object": 0.01951219512195122,
+          "co_occurrence": 0.1073170731707317,
+          "attribute": 0.11219512195121951,
+          "relation": 0.33658536585365856
+        }
+      },
+      "full": {
+        "n_pos": 500,
+        "n_neg": 2000,
+        "n_neg_by_ht": {
+          "object": 500,
+          "co_occurrence": 500,
+          "attribute": 500,
+          "relation": 500
+        },
+        "fgr": 0.171,
+        "by_ht": {
+          "object": 0.048,
+          "co_occurrence": 0.13,
+          "attribute": 0.138,
+          "relation": 0.368
+        },
+        "boh": 0.089,
+        "roh": 0.253,
+        "pos_keep": 0.81,
+        "pos_miou": 0.3766321879765391,
+        "correct_retain": 0.9365853658536586,
+        "n_eligible": 205,
+        "cbr": {
+          "object": 0.01951219512195122,
+          "co_occurrence": 0.1073170731707317,
+          "attribute": 0.11219512195121951,
+          "relation": 0.32195121951219513
+        }
+      }
+    },
+    "Seg-zero": {
+      "unfiltered": {
+        "n_pos": 500,
+        "n_neg": 2000,
+        "n_neg_by_ht": {
+          "object": 500,
+          "co_occurrence": 500,
+          "attribute": 500,
+          "relation": 500
+        },
+        "fgr": 0.38,
+        "by_ht": {
+          "object": 0.112,
+          "co_occurrence": 0.362,
+          "attribute": 0.356,
+          "relation": 0.69
+        },
+        "boh": 0.237,
+        "roh": 0.5229999999999999,
+        "pos_keep": 0.962,
+        "pos_miou": 0.4548557376228223,
+        "correct_retain": 1.0,
+        "n_eligible": 232,
+        "cbr": {
+          "object": 0.05603448275862069,
+          "co_occurrence": 0.2025862068965517,
+          "attribute": 0.23706896551724138,
+          "relation": 0.47413793103448276
+        }
+      },
+      "support": {
+        "n_pos": 500,
+        "n_neg": 2000,
+        "n_neg_by_ht": {
+          "object": 500,
+          "co_occurrence": 500,
+          "attribute": 500,
+          "relation": 500
+        },
+        "fgr": 0.186,
+        "by_ht": {
+          "object": 0.042,
+          "co_occurrence": 0.144,
+          "attribute": 0.144,
+          "relation": 0.414
+        },
+        "boh": 0.093,
+        "roh": 0.27899999999999997,
+        "pos_keep": 0.85,
+        "pos_miou": 0.42447897346244146,
+        "correct_retain": 0.9439655172413793,
+        "n_eligible": 232,
+        "cbr": {
+          "object": 0.021551724137931036,
+          "co_occurrence": 0.09051724137931035,
+          "attribute": 0.08620689655172414,
+          "relation": 0.3017241379310345
+        }
+      },
+      "full": {
+        "n_pos": 500,
+        "n_neg": 2000,
+        "n_neg_by_ht": {
+          "object": 500,
+          "co_occurrence": 500,
+          "attribute": 500,
+          "relation": 500
+        },
+        "fgr": 0.182,
+        "by_ht": {
+          "object": 0.042,
+          "co_occurrence": 0.144,
+          "attribute": 0.142,
+          "relation": 0.4
+        },
+        "boh": 0.093,
+        "roh": 0.271,
+        "pos_keep": 0.848,
+        "pos_miou": 0.4244434195025533,
+        "correct_retain": 0.9439655172413793,
+        "n_eligible": 232,
+        "cbr": {
+          "object": 0.021551724137931036,
+          "co_occurrence": 0.09051724137931035,
+          "attribute": 0.08620689655172414,
+          "relation": 0.2801724137931034
+        }
+      }
+    },
+    "TreeVGR": {
+      "unfiltered": {
+        "n_pos": 500,
+        "n_neg": 2000,
+        "n_neg_by_ht": {
+          "object": 500,
+          "co_occurrence": 500,
+          "attribute": 500,
+          "relation": 500
+        },
+        "fgr": 0.595,
+        "by_ht": {
+          "object": 0.292,
+          "co_occurrence": 0.562,
+          "attribute": 0.65,
+          "relation": 0.876
+        },
+        "boh": 0.42700000000000005,
+        "roh": 0.763,
+        "pos_keep": 0.964,
+        "pos_miou": 0.27485381964282946,
+        "correct_retain": 1.0,
+        "n_eligible": 126,
+        "cbr": {
+          "object": 0.0,
+          "co_occurrence": 0.07142857142857142,
+          "attribute": 0.06349206349206349,
+          "relation": 0.1349206349206349
+        }
+      },
+      "support": {
+        "n_pos": 500,
+        "n_neg": 2000,
+        "n_neg_by_ht": {
+          "object": 500,
+          "co_occurrence": 500,
+          "attribute": 500,
+          "relation": 500
+        },
+        "fgr": 0.222,
+        "by_ht": {
+          "object": 0.052,
+          "co_occurrence": 0.184,
+          "attribute": 0.182,
+          "relation": 0.47
+        },
+        "boh": 0.118,
+        "roh": 0.32599999999999996,
+        "pos_keep": 0.83,
+        "pos_miou": 0.2539453927148174,
+        "correct_retain": 0.9444444444444444,
+        "n_eligible": 126,
+        "cbr": {
+          "object": 0.0,
+          "co_occurrence": 0.031746031746031744,
+          "attribute": 0.031746031746031744,
+          "relation": 0.06349206349206349
+        }
+      },
+      "full": {
+        "n_pos": 500,
+        "n_neg": 2000,
+        "n_neg_by_ht": {
+          "object": 500,
+          "co_occurrence": 500,
+          "attribute": 500,
+          "relation": 500
+        },
+        "fgr": 0.213,
+        "by_ht": {
+          "object": 0.048,
+          "co_occurrence": 0.182,
+          "attribute": 0.176,
+          "relation": 0.446
+        },
+        "boh": 0.11499999999999999,
+        "roh": 0.311,
+        "pos_keep": 0.822,
+        "pos_miou": 0.2532015051934246,
+        "correct_retain": 0.9444444444444444,
+        "n_eligible": 126,
+        "cbr": {
+          "object": 0.0,
+          "co_occurrence": 0.031746031746031744,
+          "attribute": 0.023809523809523808,
+          "relation": 0.06349206349206349
+        }
+      }
+    },
+    "UniVG-R1": {
+      "unfiltered": {
+        "n_pos": 500,
+        "n_neg": 2000,
+        "n_neg_by_ht": {
+          "object": 500,
+          "co_occurrence": 500,
+          "attribute": 500,
+          "relation": 500
+        },
+        "fgr": 0.874,
+        "by_ht": {
+          "object": 0.69,
+          "co_occurrence": 0.884,
+          "attribute": 0.934,
+          "relation": 0.988
+        },
+        "boh": 0.7869999999999999,
+        "roh": 0.9610000000000001,
+        "pos_keep": 0.996,
+        "pos_miou": 0.4820197453283952,
+        "correct_retain": 1.0,
+        "n_eligible": 247,
+        "cbr": {
+          "object": 0.2591093117408907,
+          "co_occurrence": 0.3441295546558704,
+          "attribute": 0.47368421052631576,
+          "relation": 0.5506072874493927
+        }
+      },
+      "support": {
+        "n_pos": 500,
+        "n_neg": 2000,
+        "n_neg_by_ht": {
+          "object": 500,
+          "co_occurrence": 500,
+          "attribute": 500,
+          "relation": 500
+        },
+        "fgr": 0.2695,
+        "by_ht": {
+          "object": 0.076,
+          "co_occurrence": 0.23,
+          "attribute": 0.214,
+          "relation": 0.558
+        },
+        "boh": 0.153,
+        "roh": 0.386,
+        "pos_keep": 0.9,
+        "pos_miou": 0.44724037553090495,
+        "correct_retain": 0.9271255060728745,
+        "n_eligible": 247,
+        "cbr": {
+          "object": 0.020242914979757085,
+          "co_occurrence": 0.11336032388663968,
+          "attribute": 0.10526315789473684,
+          "relation": 0.32388663967611336
+        }
+      },
+      "full": {
+        "n_pos": 500,
+        "n_neg": 2000,
+        "n_neg_by_ht": {
+          "object": 500,
+          "co_occurrence": 500,
+          "attribute": 500,
+          "relation": 500
+        },
+        "fgr": 0.2635,
+        "by_ht": {
+          "object": 0.076,
+          "co_occurrence": 0.228,
+          "attribute": 0.212,
+          "relation": 0.538
+        },
+        "boh": 0.152,
+        "roh": 0.375,
+        "pos_keep": 0.894,
+        "pos_miou": 0.44497939100468303,
+        "correct_retain": 0.9230769230769231,
+        "n_eligible": 247,
+        "cbr": {
+          "object": 0.020242914979757085,
+          "co_occurrence": 0.10931174089068826,
+          "attribute": 0.10526315789473684,
+          "relation": 0.30364372469635625
+        }
+      }
+    },
+    "Vision-R1": {
+      "unfiltered": {
+        "n_pos": 500,
+        "n_neg": 2000,
+        "n_neg_by_ht": {
+          "object": 500,
+          "co_occurrence": 500,
+          "attribute": 500,
+          "relation": 500
+        },
+        "fgr": 0.438,
+        "by_ht": {
+          "object": 0.162,
+          "co_occurrence": 0.396,
+          "attribute": 0.454,
+          "relation": 0.74
+        },
+        "boh": 0.279,
+        "roh": 0.597,
+        "pos_keep": 0.974,
+        "pos_miou": 0.3045982271331809,
+        "correct_retain": 1.0,
+        "n_eligible": 148,
+        "cbr": {
+          "object": 0.0,
+          "co_occurrence": 0.08108108108108109,
+          "attribute": 0.08108108108108109,
+          "relation": 0.14864864864864866
+        }
+      },
+      "support": {
+        "n_pos": 500,
+        "n_neg": 2000,
+        "n_neg_by_ht": {
+          "object": 500,
+          "co_occurrence": 500,
+          "attribute": 500,
+          "relation": 500
+        },
+        "fgr": 0.2145,
+        "by_ht": {
+          "object": 0.054,
+          "co_occurrence": 0.17,
+          "attribute": 0.178,
+          "relation": 0.456
+        },
+        "boh": 0.112,
+        "roh": 0.317,
+        "pos_keep": 0.85,
+        "pos_miou": 0.28298234545209694,
+        "correct_retain": 0.9256756756756757,
+        "n_eligible": 148,
+        "cbr": {
+          "object": 0.0,
+          "co_occurrence": 0.033783783783783786,
+          "attribute": 0.013513513513513514,
+          "relation": 0.060810810810810814
+        }
+      },
+      "full": {
+        "n_pos": 500,
+        "n_neg": 2000,
+        "n_neg_by_ht": {
+          "object": 500,
+          "co_occurrence": 500,
+          "attribute": 500,
+          "relation": 500
+        },
+        "fgr": 0.188,
+        "by_ht": {
+          "object": 0.052,
+          "co_occurrence": 0.152,
+          "attribute": 0.154,
+          "relation": 0.394
+        },
+        "boh": 0.102,
+        "roh": 0.274,
+        "pos_keep": 0.814,
+        "pos_miou": 0.2765505129348231,
+        "correct_retain": 0.9121621621621622,
+        "n_eligible": 148,
+        "cbr": {
+          "object": 0.0,
+          "co_occurrence": 0.033783783783783786,
+          "attribute": 0.006756756756756757,
+          "relation": 0.060810810810810814
+        }
+      }
+    },
+    "VisionReasoner": {
+      "unfiltered": {
+        "n_pos": 500,
+        "n_neg": 2000,
+        "n_neg_by_ht": {
+          "object": 500,
+          "co_occurrence": 500,
+          "attribute": 500,
+          "relation": 500
+        },
+        "fgr": 0.4595,
+        "by_ht": {
+          "object": 0.152,
+          "co_occurrence": 0.458,
+          "attribute": 0.464,
+          "relation": 0.764
+        },
+        "boh": 0.305,
+        "roh": 0.614,
+        "pos_keep": 0.98,
+        "pos_miou": 0.4167192820371916,
+        "correct_retain": 1.0,
+        "n_eligible": 207,
+        "cbr": {
+          "object": 0.05314009661835749,
+          "co_occurrence": 0.2946859903381642,
+          "attribute": 0.30917874396135264,
+          "relation": 0.5507246376811594
+        }
+      },
+      "support": {
+        "n_pos": 500,
+        "n_neg": 2000,
+        "n_neg_by_ht": {
+          "object": 500,
+          "co_occurrence": 500,
+          "attribute": 500,
+          "relation": 500
+        },
+        "fgr": 0.2315,
+        "by_ht": {
+          "object": 0.056,
+          "co_occurrence": 0.2,
+          "attribute": 0.19,
+          "relation": 0.48
+        },
+        "boh": 0.128,
+        "roh": 0.33499999999999996,
+        "pos_keep": 0.876,
+        "pos_miou": 0.39497890825427845,
+        "correct_retain": 0.9565217391304348,
+        "n_eligible": 207,
+        "cbr": {
+          "object": 0.028985507246376812,
+          "co_occurrence": 0.14492753623188406,
+          "attribute": 0.13043478260869565,
+          "relation": 0.3961352657004831
+        }
+      },
+      "full": {
+        "n_pos": 500,
+        "n_neg": 2000,
+        "n_neg_by_ht": {
+          "object": 500,
+          "co_occurrence": 500,
+          "attribute": 500,
+          "relation": 500
+        },
+        "fgr": 0.2195,
+        "by_ht": {
+          "object": 0.052,
+          "co_occurrence": 0.194,
+          "attribute": 0.184,
+          "relation": 0.448
+        },
+        "boh": 0.123,
+        "roh": 0.316,
+        "pos_keep": 0.858,
+        "pos_miou": 0.3893901550016716,
+        "correct_retain": 0.9420289855072463,
+        "n_eligible": 207,
+        "cbr": {
+          "object": 0.028985507246376812,
+          "co_occurrence": 0.14492753623188406,
+          "attribute": 0.12077294685990338,
+          "relation": 0.36231884057971014
+        }
+      }
+    },
+    "llava-ov-7b": {
+      "unfiltered": {
+        "n_pos": 500,
+        "n_neg": 2000,
+        "n_neg_by_ht": {
+          "object": 500,
+          "co_occurrence": 500,
+          "attribute": 500,
+          "relation": 500
+        },
+        "fgr": 0.932,
+        "by_ht": {
+          "object": 0.878,
+          "co_occurrence": 0.94,
+          "attribute": 0.936,
+          "relation": 0.974
+        },
+        "boh": 0.909,
+        "roh": 0.9550000000000001,
+        "pos_keep": 0.97,
+        "pos_miou": 0.2200716027435923,
+        "correct_retain": 1.0,
+        "n_eligible": 81,
+        "cbr": {
+          "object": 0.6666666666666666,
+          "co_occurrence": 0.691358024691358,
+          "attribute": 0.8148148148148148,
+          "relation": 0.8765432098765432
+        }
+      },
+      "support": {
+        "n_pos": 500,
+        "n_neg": 2000,
+        "n_neg_by_ht": {
+          "object": 500,
+          "co_occurrence": 500,
+          "attribute": 500,
+          "relation": 500
+        },
+        "fgr": 0.231,
+        "by_ht": {
+          "object": 0.056,
+          "co_occurrence": 0.198,
+          "attribute": 0.194,
+          "relation": 0.476
+        },
+        "boh": 0.127,
+        "roh": 0.33499999999999996,
+        "pos_keep": 0.824,
+        "pos_miou": 0.2056371537765246,
+        "correct_retain": 0.9629629629629629,
+        "n_eligible": 81,
+        "cbr": {
+          "object": 0.012345679012345678,
+          "co_occurrence": 0.1728395061728395,
+          "attribute": 0.14814814814814814,
+          "relation": 0.43209876543209874
+        }
+      },
+      "full": {
+        "n_pos": 500,
+        "n_neg": 2000,
+        "n_neg_by_ht": {
+          "object": 500,
+          "co_occurrence": 500,
+          "attribute": 500,
+          "relation": 500
+        },
+        "fgr": 0.203,
+        "by_ht": {
+          "object": 0.044,
+          "co_occurrence": 0.174,
+          "attribute": 0.162,
+          "relation": 0.432
+        },
+        "boh": 0.10899999999999999,
+        "roh": 0.297,
+        "pos_keep": 0.772,
+        "pos_miou": 0.19717298784396772,
+        "correct_retain": 0.9259259259259259,
+        "n_eligible": 81,
+        "cbr": {
+          "object": 0.012345679012345678,
+          "co_occurrence": 0.14814814814814814,
+          "attribute": 0.12345679012345678,
+          "relation": 0.38271604938271603
+        }
+      }
+    },
+    "qwen2.5-vl-7b": {
+      "unfiltered": {
+        "n_pos": 500,
+        "n_neg": 2000,
+        "n_neg_by_ht": {
+          "object": 500,
+          "co_occurrence": 500,
+          "attribute": 500,
+          "relation": 500
+        },
+        "fgr": 0.3385,
+        "by_ht": {
+          "object": 0.1,
+          "co_occurrence": 0.29,
+          "attribute": 0.326,
+          "relation": 0.638
+        },
+        "boh": 0.195,
+        "roh": 0.482,
+        "pos_keep": 0.944,
+        "pos_miou": 0.42231170179780486,
+        "correct_retain": 1.0,
+        "n_eligible": 212,
+        "cbr": {
+          "object": 0.0330188679245283,
+          "co_occurrence": 0.16981132075471697,
+          "attribute": 0.2169811320754717,
+          "relation": 0.4339622641509434
+        }
+      },
+      "support": {
+        "n_pos": 500,
+        "n_neg": 2000,
+        "n_neg_by_ht": {
+          "object": 500,
+          "co_occurrence": 500,
+          "attribute": 500,
+          "relation": 500
+        },
+        "fgr": 0.1785,
+        "by_ht": {
+          "object": 0.046,
+          "co_occurrence": 0.144,
+          "attribute": 0.154,
+          "relation": 0.37
+        },
+        "boh": 0.095,
+        "roh": 0.262,
+        "pos_keep": 0.816,
+        "pos_miou": 0.39129524494656703,
+        "correct_retain": 0.9386792452830188,
+        "n_eligible": 212,
+        "cbr": {
+          "object": 0.02358490566037736,
+          "co_occurrence": 0.09433962264150944,
+          "attribute": 0.11320754716981132,
+          "relation": 0.2783018867924528
+        }
+      },
+      "full": {
+        "n_pos": 500,
+        "n_neg": 2000,
+        "n_neg_by_ht": {
+          "object": 500,
+          "co_occurrence": 500,
+          "attribute": 500,
+          "relation": 500
+        },
+        "fgr": 0.164,
+        "by_ht": {
+          "object": 0.044,
+          "co_occurrence": 0.136,
+          "attribute": 0.14,
+          "relation": 0.336
+        },
+        "boh": 0.09,
+        "roh": 0.23800000000000002,
+        "pos_keep": 0.81,
+        "pos_miou": 0.38933743953291766,
+        "correct_retain": 0.9339622641509434,
+        "n_eligible": 212,
+        "cbr": {
+          "object": 0.02358490566037736,
+          "co_occurrence": 0.09433962264150944,
+          "attribute": 0.10377358490566038,
+          "relation": 0.24056603773584906
+        }
+      }
+    },
+    "visual-rft": {
+      "unfiltered": {
+        "n_pos": 500,
+        "n_neg": 2000,
+        "n_neg_by_ht": {
+          "object": 500,
+          "co_occurrence": 500,
+          "attribute": 500,
+          "relation": 500
+        },
+        "fgr": 0.6555,
+        "by_ht": {
+          "object": 0.506,
+          "co_occurrence": 0.618,
+          "attribute": 0.646,
+          "relation": 0.852
+        },
+        "boh": 0.562,
+        "roh": 0.749,
+        "pos_keep": 0.974,
+        "pos_miou": 0.4248545006077211,
+        "correct_retain": 1.0,
+        "n_eligible": 207,
+        "cbr": {
+          "object": 0.17391304347826086,
+          "co_occurrence": 0.2463768115942029,
+          "attribute": 0.3526570048309179,
+          "relation": 0.4975845410628019
+        }
+      },
+      "support": {
+        "n_pos": 500,
+        "n_neg": 2000,
+        "n_neg_by_ht": {
+          "object": 500,
+          "co_occurrence": 500,
+          "attribute": 500,
+          "relation": 500
+        },
+        "fgr": 0.2325,
+        "by_ht": {
+          "object": 0.066,
+          "co_occurrence": 0.184,
+          "attribute": 0.202,
+          "relation": 0.478
+        },
+        "boh": 0.125,
+        "roh": 0.33999999999999997,
+        "pos_keep": 0.882,
+        "pos_miou": 0.3985816058936933,
+        "correct_retain": 0.9371980676328503,
+        "n_eligible": 207,
+        "cbr": {
+          "object": 0.024154589371980676,
+          "co_occurrence": 0.0966183574879227,
+          "attribute": 0.11594202898550725,
+          "relation": 0.2995169082125604
+        }
+      },
+      "full": {
+        "n_pos": 500,
+        "n_neg": 2000,
+        "n_neg_by_ht": {
+          "object": 500,
+          "co_occurrence": 500,
+          "attribute": 500,
+          "relation": 500
+        },
+        "fgr": 0.2195,
+        "by_ht": {
+          "object": 0.064,
+          "co_occurrence": 0.176,
+          "attribute": 0.192,
+          "relation": 0.446
+        },
+        "boh": 0.12,
+        "roh": 0.319,
+        "pos_keep": 0.874,
+        "pos_miou": 0.396846194797557,
+        "correct_retain": 0.9371980676328503,
+        "n_eligible": 207,
+        "cbr": {
+          "object": 0.024154589371980676,
+          "co_occurrence": 0.0966183574879227,
+          "attribute": 0.1111111111111111,
+          "relation": 0.26570048309178745
+        }
+      }
+    }
+  },
+  "pooled": {
+    "unfiltered": {
+      "fgr": 0.48242307692307695,
+      "boh": 0.3646153846153846,
+      "roh": 0.6002307692307692,
+      "correct_retain": 1.0,
+      "pos_miou": 0.36391879274358835,
+      "cbr": {
+        "object": 0.12301460810832604,
+        "co_occurrence": 0.21621849450537367,
+        "attribute": 0.2720215365680492,
+        "relation": 0.4117514960399234
+      }
+    },
+    "support": {
+      "fgr": 0.19696153846153847,
+      "boh": 0.10523076923076922,
+      "roh": 0.2886923076923077,
+      "correct_retain": 0.939472001264732,
+      "pos_miou": 0.3379135654746079,
+      "cbr": {
+        "object": 0.015390721795908602,
+        "co_occurrence": 0.0901409243861509,
+        "attribute": 0.08432236856725513,
+        "relation": 0.251792482925902
+      }
+    },
+    "full": {
+      "fgr": 0.1845,
+      "boh": 0.10046153846153846,
+      "roh": 0.26853846153846156,
+      "correct_retain": 0.9299229573526578,
+      "pos_miou": 0.3341095172056099,
+      "cbr": {
+        "object": 0.015390721795908602,
+        "co_occurrence": 0.0879301596922553,
+        "attribute": 0.07750107323585656,
+        "relation": 0.2308180775588096
+      }
+    }
+  },
+  "target": 0.95,
+  "n_models": 13,
+  "strict_additive": true,
+  "coordfix_t4": [
+    "UniVG-R1",
+    "visual-rft"
+  ]
+}
