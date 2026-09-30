@@ -96,6 +96,7 @@ attr +0.283 / **relation −0.673**），互相污染。这就是 PDF 里 attrib
 
 ## 先读
 
+0. `REPRODUCE.md` — **全流程复现清单**：vlm1 上的确切路径、四个复现层级、验收锚点
 1. `reviewer_v060/paper_tables.json` — **主表凭据**，含未过滤 CBR 校验门
 2. `reviewer_v060/CORRECTION.md` — 更正记录：撤回「另三类变差」与「方法只适用于关系」
 3. `reviewer_v060/RESULTS_v060.md` — P0-1 候选统一、P0-3 同保留曲线、W1 路由收据
@@ -133,10 +134,14 @@ CPU-only 谓词模板测试：
 python3 -m unittest discover -s method -p 'test_*.py' -v
 ```
 
-保留的采集与评测脚本描述原 Linux 工作区（`~/SVD/agentic_probe`、`~/SVD/grpo_verifier`）
-与规范 run 映射，**不是可移植的独立启动器**。完整复现（重跑采集）还需要：逐模型
-`records.jsonl`、验证器缓存、模型权重、图像文件、JEV adapter/head/temperature 及匹配的
-GPU 环境。本仓库不提供权重，也不在此运行训练 —— 不要为了浏览仓库而执行 `training/run_jev.sh`。
+**全流程要素都在 vlm1 上**，已于 2026-10-01 逐项实测核验：13/13 逐模型 `records.jsonl`、
+82,783 张图像、JEV adapter + `head_final.pt` + `temperature.json`（T = 1.7765671239028529）、
+OmniVerifier-7B 及 13 个上游 checkpoint 全部存在。确切路径、四个复现层级
+（出表 / CPU 汇总 / GPU 采集 / 训练）与验收锚点见 **`REPRODUCE.md`**。
+
+本**仓库**本身不含权重、图像与打分缓存，所以「在本目录里 clone 就能复现」不成立；
+但这是仓库边界，不是工作的边界。采集脚本描述原 Linux 工作区路径，不是可移植启动器。
+不要为了浏览仓库而执行 `training/run_jev.sh`。
 
 ## 评测契约（复算前必读）
 

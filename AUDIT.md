@@ -48,11 +48,18 @@ with receipts**, and one new item (6) records a difference against the paper PDF
    saved training run and checkpoint provenance before claiming byte-identical
    training and scoring prompts. Do not silently rewrite either template.
 
-4. **Reproduction dependencies.** This checkout lacks the per-model canonical
-   upstream `records.jsonl`, verifier score caches, model weights, image files and
-   the JEV adapter/head/temperature. Source availability plus imported result JSON
-   is not a fresh reproduction. The CPU recomputation scripts in `reviewer_v060/`
-   run against the score files on vlm1, not against anything in this repo.
+4. **Reproduction dependencies — scope corrected 2026-10-01.** This *checkout* lacks
+   the per-model canonical upstream `records.jsonl`, verifier score caches, model
+   weights, image files and the JEV adapter/head/temperature, so source availability
+   plus imported result JSON is not a fresh reproduction **of this directory alone**.
+   That is a statement about the repo, not about the work: **the full pipeline does
+   exist on vlm1 and was verified element by element on 2026-10-01** — 13/13
+   `records.jsonl` present, 82,783 images, JEV adapter + `head_final.pt` +
+   `temperature.json` (T = 1.7765671239028529), OmniVerifier-7B and all 13 upstream
+   checkpoints. Paths, the four reproduction levels (render / CPU recompute / GPU
+   collection / training) and the acceptance anchors are recorded in `REPRODUCE.md`.
+   An earlier version of this item was worded in a way that invited the reading
+   "the pipeline cannot be reproduced"; that reading was wrong.
 
 6. **NEW — the repo's mitigation row differs from the paper PDF's third row.**
    Recomputation reproduces Table 3's **first two rows** bit-for-bit (max deviation
