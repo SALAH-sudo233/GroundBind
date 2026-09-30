@@ -1,0 +1,63 @@
+{
+  "models": {
+    "UniVG-R1": {
+      "t2_gatecheck": {
+        "n_positives": 500,
+        "n_correct": 254,
+        "pos_success": 0.508,
+        "pos_miou": 0.493647832569325,
+        "positives_parsed": 500,
+        "cbr": {
+          "object": 0.3858267716535433,
+          "co_occurrence": 0.3700787401574803,
+          "attribute": 0.5078740157480315,
+          "relation": 0.5511811023622047
+        }
+      },
+      "t4_joint": {
+        "n_positives": 500,
+        "n_correct": 247,
+        "pos_success": 0.494,
+        "pos_miou": 0.48201974532839553,
+        "positives_parsed": 498,
+        "cbr": {
+          "object": 0.2591093117408907,
+          "co_occurrence": 0.3441295546558704,
+          "attribute": 0.47368421052631576,
+          "relation": 0.5506072874493927
+        }
+      }
+    },
+    "visual-rft": {
+      "t2_gatecheck": {
+        "n_positives": 500,
+        "n_correct": 211,
+        "pos_success": 0.422,
+        "pos_miou": 0.4114082769055346,
+        "positives_parsed": 426,
+        "cbr": {
+          "object": 0.037914691943127965,
+          "co_occurrence": 0.14691943127962084,
+          "attribute": 0.1848341232227488,
+          "relation": 0.3791469194312796
+        }
+      },
+      "t4_joint": {
+        "n_positives": 500,
+        "n_correct": 207,
+        "pos_success": 0.414,
+        "pos_miou": 0.4248545006077209,
+        "positives_parsed": 487,
+        "cbr": {
+          "object": 0.17391304347826086,
+          "co_occurrence": 0.2463768115942029,
+          "attribute": 0.3526570048309179,
+          "relation": 0.4975845410628019
+        }
+      }
+    }
+  },
+  "gate_passed": true,
+  "scale": 1000.0,
+  "note": "t4 boxes corrected here; ~/benchmark/coordfix_500 left t4 uncorrected because write_rescaled_run.py filters on t2 only"
+}

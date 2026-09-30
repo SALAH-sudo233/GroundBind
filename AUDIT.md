@@ -61,6 +61,22 @@ with receipts**, and one new item (6) records a difference against the paper PDF
    An earlier version of this item was worded in a way that invited the reading
    "the pipeline cannot be reproduced"; that reading was wrong.
 
+8. **The coordinate correction never reached t4 — RESOLVED 2026-10-01.**
+   `write_rescaled_run.py` filters on `T2 = ('t2', 't2_vqa_grounding')`, so every other
+   task was copied through verbatim. Verified, not assumed: t4 boxes in
+   `~/benchmark/coordfix_500` are byte-identical to the uncorrected run for both
+   affected models (2500/2500), while t2 boxes differ on 2496/2500 and 974/2500.
+   The published joint-grounding figures for UniVG-R1 and Visual-RFT therefore carried
+   the same 0-1000-read-as-pixels defect the reviewer raised for t2, and the repo's t4
+   script inherited it by reading the stored `iou`. Example: raw `[54,700,236,999]`
+   stored as `[54,428,236,428]`, a zero-height box after clipping.
+   `reviewer_v060/export_cf_joint.py` reuses the t2 correction unchanged and is gated
+   on reproducing the published t2 CBR for both models (PASS). Receipt:
+   `cf_joint_grounding.json`, writeup `JOINT_GROUNDING_CF.md`.
+   **Consequence for the paper:** the t4 family averages in this README were computed
+   with uncorrected boxes for these two models and understate them. Corrected:
+   n_correct 247 / 207, mIoU 0.4820 / 0.4249.
+
 7. **Task coverage — RESOLVED 2026-10-01, all four tasks now have receipts.**
    The repo previously backed only direct grounding (t2). Table 1 defines four tasks,
    and section 4.1 quotes a false-accept contrast that no repo file could produce.

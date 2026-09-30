@@ -28,6 +28,24 @@
 | `eval_paper_tables.py` | **论文主表复算**：13 模型主面板 + 11 模型对账 + 纠正坐标附录，带未过滤 CBR 校验门 | `paper_tables.json` |
 | `render_paper_tables.py` | **按论文指标名渲染 Table 2 / Table 3**（BOH/ROH、正例成功率、家族聚合），自带四道校验门 | 终端输出 |
 | `eval_tasks_t1_t3_t4.py` | **另三项任务评测**：表达核验 / 图像描述 / 联合定位，带 §4.1 硬门 | `tasks_t1_t3_t4.json` |
+| `export_cf_joint.py` | **纠正坐标后的联合定位**（M2 的 12 个缺项），带 t2 复现硬门 | `cf_joint_grounding.json` |
+
+## M2 补全：纠正坐标后的联合定位
+
+详见 `JOINT_GROUNDING_CF.md`。要点：`write_rescaled_run.py` 的过滤器是
+`T2 = ('t2','t2_vqa_grounding')`，**坐标纠正从未作用于 t4** —— 实测 coordfix run 里两个
+模型的 t4 框与未纠正 run 逐位相同（2500/2500），而 t2 分别差 2496 与 974 行。
+
+| 模型 | n_correct | mIoU | CBR obj | CBR cooc | CBR attr | CBR rel |
+|---|---|---|---|---|---|---|
+| UniVG-R1 | 247 | 0.4820 | 25.91% | 34.41% | 47.37% | 55.06% |
+| Visual-RFT | 207 | 0.4249 | 17.39% | 24.64% | 35.27% | 49.76% |
+
+校验门：同一代码路径限制到 t2 必须复现已发表的 38.6/37.0/50.8/55.1 与
+3.8/14.7/18.5/37.9，两模型全部命中 PASS，否则 `exit 1` 拒绝输出 t4。
+
+**Visual-RFT 的联合定位框复用全面恶化**（object 3.79 → 17.39，4.6 倍），
+是「同时生成语言与区域会改变接受行为」在 CBR 上的直接证据。
 
 ## 四项任务凭据（此前只有 t2）
 

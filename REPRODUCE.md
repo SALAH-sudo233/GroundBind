@@ -65,6 +65,7 @@ python3 render_paper_tables.py --panel appendixC  # 纠正坐标两模型
 cd ~/SVD/agentic_probe
 python3 eval_paper_tables.py --target 0.95 --json-out paper_tables.json   # ~4 min
 python3 eval_tasks_t1_t3_t4.py --json-out tasks_t1_t3_t4.json   # t1/t3/t4，~2 min
+python3 export_cf_joint.py               # 纠正坐标后的 t4，~2 min（需读图像取宽高）
 python3 export_cf_cbr.py                 # 两模型四类未过滤 CBR
 python3 diag_final_policy.py             # 四策略对照
 python3 eval_matched.py --base-target 0.95 --json-out matched_retention.json
@@ -113,6 +114,7 @@ bash run_jevhead.sh          # JEV 头独立采集
 | 未过滤 FGR（13 模型） | **59.23%** | `paper_tables.json` → `main13` |
 | 仅支持核验 FGR（11 模型面板） | **22.98%** | 论文 Table 3 第二行 |
 | t1 错误接受率，通用 / RL 家族 | **29.44% / 33.03%** | 论文 §4.1 / `eval_tasks_t1_t3_t4.py` |
+| 纠正坐标 t4 的 n_correct / mIoU | **247 / 0.4820** 与 **207 / 0.4249** | `export_cf_joint.py`（门为 t2 复现） |
 
 前两项是 `export_cf_cbr.py` 与 `eval_paper_tables.py` 的硬门；
 §4.1 的定位四项是 `render_paper_tables.py` 的硬门；
