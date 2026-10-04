@@ -153,6 +153,28 @@ t2 打分不可复用，因为验证器打的是具体框的分而 t4 框与 t2 
 而它的 t3 无查询描述幻觉只有 4.20%。同一模型在联合任务下描述质量崩塌，
 引用 t4 描述指标时应单独说明这一点。
 
+### 同保留对照：结构证据的独立判别力集中在 relation
+
+固定工作点（target 0.95）的增益里，有多少来自结构证据本身、有多少只是更强的拒绝？
+把两臂拉到**相同保留率**再比（凭据 `reviewer_v060/matched_retention_current.json`，
+说明 `reviewer_v060/E3_MATCHED_RETENTION.md`，13/13 模型落在共同可达区间）：
+
+| 指标 | Δ（完整臂 − 支持核验） | CI | 变差模型 |
+|---|---|---|---|
+| relation FGR | **−7.88pp** | [−9.43, −6.30] | **0/13** |
+| relation CBR | **−5.15pp** | [−6.73, −3.52] | **0/13** |
+| ALL FGR | **+0.16pp** | [−0.56, +0.94] | 7/13 |
+
+relation 上是真增量；整体 ALL FGR 在同保留下**不显著**（CI 跨零）——
+relation 仅占负例约 1/4，收益被另三类稀释。主表 ALL FGR −3.39pp 中超出 relation 贡献的
+部分来自更低的保留率，不是结构证据的额外判别力。
+
+**固定 target 下前三类零回退**（13×3 = 39 个单元：CBR 改善 7 / 不变 32 / 变差 0；
+FGR 改善 20 / 不变 19 / 变差 0）。作用域门让不在作用域内的行逐位沿用支持判决，
+结构门碰不到非关系候选。同保留对照中前三类 CBR 的上升是**对照构造的伪影**：
+完整臂要回到支持臂的保留率，target 需平均放松到 0.9738（+0.0238），
+支持门阈值随之变松 —— 归因在支持门，不在结构门。两套数字口径不同，不可混用。
+
 ### 与论文 PDF 的一处差异
 
 复算逐位复现了 Table 3 的**前两行**（最大偏差 0.018pp，纯舍入）。**第三行全部不一致，
@@ -210,7 +232,7 @@ attr +0.283 / **relation −0.673**），互相污染。这就是 PDF 里 attrib
 python3 eval_paper_tables.py --target 0.95 --json-out paper_tables.json   # 主表 + 附录 C
 python3 export_cf_cbr.py            # 两个纠正坐标模型的四类未过滤 CBR
 python3 eval_unified.py --target 0.95 --json-out unified_13models_095.json
-python3 eval_matched.py --base-target 0.95 --json-out matched_retention.json
+python3 eval_matched_current.py --base-target 0.95 --json-out matched_retention_current.json
 python3 diag_final_policy.py        # 四策略对照，证明单调门保护另三类
 python3 audit_routing_fixed.py      # 路由合法性收据
 ```

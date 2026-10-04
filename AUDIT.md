@@ -35,9 +35,11 @@ with receipts**, and one new item (6) records a difference against the paper PDF
 
 5. **Evaluation limits — the named controls have now been run.** Text-prior,
    matched-retention and routing audits are done: `reviewer_v060/attribution.json`
-   (text prior, equal-budget paraphrase, wrong-image), `matched_retention.json`
-   (achieved-retention curves, Eq. (12) feasibility 26/26 folds, image-clustered CI
-   over the 500 source images), `audit_routing_fixed.json` (routing). The fixed
+   (text prior, equal-budget paraphrase, wrong-image), 
+   `matched_retention_current.json` (当前策略 `A_reject_opp` 同保留对照，13/13 模型，
+   relation FGR −7.88pp CI[−9.43,−6.30] 零回退、ALL FGR +0.16pp CI 跨零不显著；
+   旧产物 `matched_retention_WITHDRAWN_A_all.json` 已被 CORRECTION.md 撤回),
+   `audit_routing_fixed.json` (routing). The fixed
    eligibility set, full FGR/mIoU denominators and image-level split discipline are
    preserved throughout. Single-arm controls remain necessary ablations.
 

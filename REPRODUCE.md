@@ -69,7 +69,7 @@ python3 export_cf_joint.py               # 纠正坐标后的 t4，~2 min（需�
 python3 eval_t4_mitigation.py --target 0.95 --json-out t4_mitigation.json  # t4 缓释，~3 min
 python3 export_cf_cbr.py                 # 两模型四类未过滤 CBR
 python3 diag_final_policy.py             # 四策略对照
-python3 eval_matched.py --base-target 0.95 --json-out matched_retention.json
+python3 eval_matched_current.py --base-target 0.95 --json-out matched_retention_current.json
 python3 audit_routing_fixed.py           # 路由合法性收据
 ```
 

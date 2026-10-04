@@ -26,7 +26,8 @@ attribute 0.349 / relation 0.490），收据见 `reviewer_v060/audit_routing_fix
 | 纠正坐标模型缓释（附录 C） | `reviewer_v060/paper_tables.json` → `appendixC.pooled` |
 | 两个纠正坐标模型的四类未过滤 CBR | `reviewer_v060/cf_cbr_4types.json` |
 | 13 模型统一候选表 | `reviewer_v060/unified_13models_095.json` |
-| 同保留率曲线与匹配比较 | `reviewer_v060/matched_retention.json` |
+| 同保留率曲线与匹配比较（当前策略 `A_reject_opp`） | `reviewer_v060/matched_retention_current.json` |
+| 同保留率旧产物（策略 `A_all`，已由 CORRECTION.md 撤回） | `reviewer_v060/matched_retention_WITHDRAWN_A_all.json` |
 | 路由合法性收据 | `reviewer_v060/audit_routing_fixed.json` |
 | 策略对照（证明单调门保护另三类） | `reviewer_v060/final_policy.json`、`type_gate.json` |
 | 撤回记录与根因 | `reviewer_v060/CORRECTION.md` |

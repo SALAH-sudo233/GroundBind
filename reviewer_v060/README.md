@@ -18,7 +18,8 @@
 |---|---|---|
 | `audit_routing_fixed.py` | 修复原审计的 records 读取 bug（原脚本计数器全为 0，路由合法性此前无收据） | `audit_routing_fixed.json` |
 | `eval_unified.py` | **逐模型**解析候选来源，产出一致的 13 模型纠正候选主表 | `unified_13models_095.json` |
-| `eval_matched.py` | 保留率扫描 + 同保留匹配比较 + 式(12) 可行带 + 图像聚类 bootstrap | `matched_retention.json` |
+| `eval_matched.py` | 保留率扫描 + 同保留匹配比较 + 式(12) 可行带 + 图像聚类 bootstrap | `matched_retention_WITHDRAWN_A_all.json`（旧策略，已撤回） |
+| `eval_matched_current.py` | **当前策略** `A_reject_opp` 的同保留对照（单调门+作用域门） | `matched_retention_current.json` / `E3_MATCHED_RETENTION.md` |
 | `eval_attribution.py` | [A] 词先验 [B] 等预算改写 [C] 错图对照 | `attribution.json` |
 | `diag_gap_vs_prior.py` | gap 与谓词身份的冗余性诊断（ANOVA R²、残差 AUROC、词内 AUROC） | `gap_vs_prior.json` |
 | `eval_scoped.py` | 按「谓词是否有真实对立配置」分作用域重做决定性比较 | `scoped.json` |
