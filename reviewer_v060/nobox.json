@@ -1,0 +1,107 @@
+{
+ "n": 11909,
+ "n_pos": 3424,
+ "n_neg": 8485,
+ "dz_mean": -0.041632071621662846,
+ "dz_median": -0.24995994567871094,
+ "auroc_box": 0.5923226254137318,
+ "auroc_nobox": 0.6293870367718734,
+ "auroc_drop": -0.037064411358141536,
+ "per_model": {
+  "InternVL3.5-8B": {
+   "auroc_box": 0.5771966298282087,
+   "auroc_nobox": 0.6064987051829157,
+   "drop": -0.02930207535470697,
+   "n_pos": 296,
+   "n_neg": 741
+  },
+  "LENS": {
+   "auroc_box": 0.7013940426923609,
+   "auroc_nobox": 0.7136803607592548,
+   "drop": -0.012286318066893842,
+   "n_pos": 287,
+   "n_neg": 1108
+  },
+  "Orsta-7B": {
+   "auroc_box": 0.48019818722943725,
+   "auroc_nobox": 0.5260551948051948,
+   "drop": -0.04585700757575756,
+   "n_pos": 280,
+   "n_neg": 528
+  },
+  "Qwen3-VL-8B": {
+   "auroc_box": 0.4050127659574468,
+   "auroc_nobox": 0.4481617021276596,
+   "drop": -0.043148936170212815,
+   "n_pos": 235,
+   "n_neg": 250
+  },
+  "Seg-R1": {
+   "auroc_box": 0.554564039408867,
+   "auroc_nobox": 0.5933990147783251,
+   "drop": -0.038834975369458125,
+   "n_pos": 290,
+   "n_neg": 700
+  },
+  "Seg-zero": {
+   "auroc_box": 0.6806246433575626,
+   "auroc_nobox": 0.7174570311216274,
+   "drop": -0.03683238776406483,
+   "n_pos": 297,
+   "n_neg": 1127
+  },
+  "TreeVGR": {
+   "auroc_box": 0.6112016858633011,
+   "auroc_nobox": 0.6644400916434039,
+   "drop": -0.05323840578010275,
+   "n_pos": 282,
+   "n_neg": 907
+  },
+  "UniVG-R1": {
+   "auroc_box": 0.6899231524816548,
+   "auroc_nobox": 0.7222511122667129,
+   "drop": -0.03232795978505809,
+   "n_pos": 189,
+   "n_neg": 641
+  },
+  "Vision-R1": {
+   "auroc_box": 0.43278264075926637,
+   "auroc_nobox": 0.4907175836860331,
+   "drop": -0.05793494292676671,
+   "n_pos": 276,
+   "n_neg": 452
+  },
+  "VisionReasoner": {
+   "auroc_box": 0.6305755972422639,
+   "auroc_nobox": 0.6672331783442894,
+   "drop": -0.03665758110202555,
+   "n_pos": 297,
+   "n_neg": 945
+  },
+  "llava-ov-7b": {
+   "auroc_box": 0.48306185714797695,
+   "auroc_nobox": 0.5078262194029316,
+   "drop": -0.024764362254954653,
+   "n_pos": 262,
+   "n_neg": 426
+  },
+  "qwen2.5-vl-7b": {
+   "auroc_box": 0.4328518463331902,
+   "auroc_nobox": 0.4725175517788432,
+   "drop": -0.03966570544565301,
+   "n_pos": 271,
+   "n_neg": 421
+  },
+  "visual-rft": {
+   "auroc_box": 0.48952683506379463,
+   "auroc_nobox": 0.5465416602097216,
+   "drop": -0.057014825145926984,
+   "n_pos": 162,
+   "n_neg": 239
+  }
+ },
+ "model_level_drop_mean": -0.039066575595506296,
+ "models_degraded": 0,
+ "n_models": 13,
+ "note": "z = Omni true-vs-false logit diff; label: htype==positive -> 1. box draws red rect at candidate bbox; nobox removes it and asks about \"the image\". Lower no-box AUROC => verifier uses the region."
+}

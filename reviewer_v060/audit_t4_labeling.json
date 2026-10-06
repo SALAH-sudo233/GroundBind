@@ -1,0 +1,75 @@
+{
+ "pos_total": 6500,
+ "pos_iou_ge_half": 2314,
+ "drew": 2314,
+ "not_drew": 0,
+ "excluded_fraction": 0.0,
+ "per_model": {
+  "InternVL3.5-8B": {
+   "iou_ge_half": 150,
+   "drew": 150,
+   "not_drew": 0
+  },
+  "LENS": {
+   "iou_ge_half": 128,
+   "drew": 128,
+   "not_drew": 0
+  },
+  "Orsta-7B": {
+   "iou_ge_half": 139,
+   "drew": 139,
+   "not_drew": 0
+  },
+  "Qwen3-VL-8B": {
+   "iou_ge_half": 232,
+   "drew": 232,
+   "not_drew": 0
+  },
+  "Seg-R1": {
+   "iou_ge_half": 205,
+   "drew": 205,
+   "not_drew": 0
+  },
+  "Seg-zero": {
+   "iou_ge_half": 232,
+   "drew": 232,
+   "not_drew": 0
+  },
+  "TreeVGR": {
+   "iou_ge_half": 126,
+   "drew": 126,
+   "not_drew": 0
+  },
+  "UniVG-R1": {
+   "iou_ge_half": 247,
+   "drew": 247,
+   "not_drew": 0
+  },
+  "Vision-R1": {
+   "iou_ge_half": 148,
+   "drew": 148,
+   "not_drew": 0
+  },
+  "VisionReasoner": {
+   "iou_ge_half": 207,
+   "drew": 207,
+   "not_drew": 0
+  },
+  "llava-ov-7b": {
+   "iou_ge_half": 81,
+   "drew": 81,
+   "not_drew": 0
+  },
+  "qwen2.5-vl-7b": {
+   "iou_ge_half": 212,
+   "drew": 212,
+   "not_drew": 0
+  },
+  "visual-rft": {
+   "iou_ge_half": 207,
+   "drew": 207,
+   "not_drew": 0
+  }
+ },
+ "note": "t2 and t4 use identical label = (is_pos and iou>=0.5); drew(t4) == valid_box(t2) eligibility, not a label change"
+}

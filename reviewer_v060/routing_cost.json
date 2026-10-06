@@ -1,0 +1,497 @@
+{
+ "pooled": {
+  "total_rows": 32500,
+  "struct_fire_rate": 0.20972307692307693,
+  "fallback_rate": 0.11107692307692307,
+  "support_omni_calls": 32500,
+  "support_jev_calls": 32500,
+  "extra_omni_calls_from_rivals": 13632,
+  "extra_call_overhead_pct": 41.94461538461539,
+  "mean_rivals_per_fired": 2,
+  "by_htype_fire_rate": {
+   "attribute": {
+    "total": 6500,
+    "fired": 947,
+    "rate": 0.1456923076923077
+   },
+   "co_occurrence": {
+    "total": 6500,
+    "fired": 841,
+    "rate": 0.12938461538461538
+   },
+   "object": {
+    "total": 6500,
+    "fired": 628,
+    "rate": 0.09661538461538462
+   },
+   "positive": {
+    "total": 6500,
+    "fired": 1491,
+    "rate": 0.22938461538461538
+   },
+   "relation": {
+    "total": 6500,
+    "fired": 2909,
+    "rate": 0.44753846153846155
+   }
+  }
+ },
+ "per_model": {
+  "InternVL3.5-8B": {
+   "rows": 2500,
+   "support_omni_calls": 2500,
+   "support_jev_calls": 2500,
+   "struct_fired": 559,
+   "rival_omni_calls": 1118,
+   "fallback_no_evidence": 243,
+   "by_htype_fire": {
+    "positive": {
+     "total": 500,
+     "fired": 123,
+     "rate": 0.246
+    },
+    "object": {
+     "total": 500,
+     "fired": 34,
+     "rate": 0.068
+    },
+    "co_occurrence": {
+     "total": 500,
+     "fired": 64,
+     "rate": 0.128
+    },
+    "attribute": {
+     "total": 500,
+     "fired": 88,
+     "rate": 0.176
+    },
+    "relation": {
+     "total": 500,
+     "fired": 250,
+     "rate": 0.5
+    }
+   }
+  },
+  "LENS": {
+   "rows": 2500,
+   "support_omni_calls": 2500,
+   "support_jev_calls": 2500,
+   "struct_fired": 724,
+   "rival_omni_calls": 1448,
+   "fallback_no_evidence": 78,
+   "by_htype_fire": {
+    "positive": {
+     "total": 500,
+     "fired": 117,
+     "rate": 0.234
+    },
+    "object": {
+     "total": 500,
+     "fired": 105,
+     "rate": 0.21
+    },
+    "co_occurrence": {
+     "total": 500,
+     "fired": 116,
+     "rate": 0.232
+    },
+    "attribute": {
+     "total": 500,
+     "fired": 108,
+     "rate": 0.216
+    },
+    "relation": {
+     "total": 500,
+     "fired": 278,
+     "rate": 0.556
+    }
+   }
+  },
+  "Orsta-7B": {
+   "rows": 2500,
+   "support_omni_calls": 2500,
+   "support_jev_calls": 2500,
+   "struct_fired": 438,
+   "rival_omni_calls": 876,
+   "fallback_no_evidence": 364,
+   "by_htype_fire": {
+    "positive": {
+     "total": 500,
+     "fired": 115,
+     "rate": 0.23
+    },
+    "object": {
+     "total": 500,
+     "fired": 18,
+     "rate": 0.036
+    },
+    "co_occurrence": {
+     "total": 500,
+     "fired": 39,
+     "rate": 0.078
+    },
+    "attribute": {
+     "total": 500,
+     "fired": 60,
+     "rate": 0.12
+    },
+    "relation": {
+     "total": 500,
+     "fired": 206,
+     "rate": 0.412
+    }
+   }
+  },
+  "Qwen3-VL-8B": {
+   "rows": 2500,
+   "support_omni_calls": 2500,
+   "support_jev_calls": 2500,
+   "struct_fired": 256,
+   "rival_omni_calls": 512,
+   "fallback_no_evidence": 546,
+   "by_htype_fire": {
+    "positive": {
+     "total": 500,
+     "fired": 92,
+     "rate": 0.184
+    },
+    "object": {
+     "total": 500,
+     "fired": 6,
+     "rate": 0.012
+    },
+    "co_occurrence": {
+     "total": 500,
+     "fired": 17,
+     "rate": 0.034
+    },
+    "attribute": {
+     "total": 500,
+     "fired": 23,
+     "rate": 0.046
+    },
+    "relation": {
+     "total": 500,
+     "fired": 118,
+     "rate": 0.236
+    }
+   }
+  },
+  "Seg-R1": {
+   "rows": 2500,
+   "support_omni_calls": 2500,
+   "support_jev_calls": 2500,
+   "struct_fired": 541,
+   "rival_omni_calls": 1082,
+   "fallback_no_evidence": 261,
+   "by_htype_fire": {
+    "positive": {
+     "total": 500,
+     "fired": 119,
+     "rate": 0.238
+    },
+    "object": {
+     "total": 500,
+     "fired": 42,
+     "rate": 0.084
+    },
+    "co_occurrence": {
+     "total": 500,
+     "fired": 59,
+     "rate": 0.118
+    },
+    "attribute": {
+     "total": 500,
+     "fired": 84,
+     "rate": 0.168
+    },
+    "relation": {
+     "total": 500,
+     "fired": 237,
+     "rate": 0.474
+    }
+   }
+  },
+  "Seg-zero": {
+   "rows": 2500,
+   "support_omni_calls": 2500,
+   "support_jev_calls": 2500,
+   "struct_fired": 740,
+   "rival_omni_calls": 1480,
+   "fallback_no_evidence": 62,
+   "by_htype_fire": {
+    "positive": {
+     "total": 500,
+     "fired": 124,
+     "rate": 0.248
+    },
+    "object": {
+     "total": 500,
+     "fired": 112,
+     "rate": 0.224
+    },
+    "co_occurrence": {
+     "total": 500,
+     "fired": 117,
+     "rate": 0.234
+    },
+    "attribute": {
+     "total": 500,
+     "fired": 107,
+     "rate": 0.214
+    },
+    "relation": {
+     "total": 500,
+     "fired": 280,
+     "rate": 0.56
+    }
+   }
+  },
+  "TreeVGR": {
+   "rows": 2500,
+   "support_omni_calls": 2500,
+   "support_jev_calls": 2500,
+   "struct_fired": 638,
+   "rival_omni_calls": 1276,
+   "fallback_no_evidence": 164,
+   "by_htype_fire": {
+    "positive": {
+     "total": 500,
+     "fired": 118,
+     "rate": 0.236
+    },
+    "object": {
+     "total": 500,
+     "fired": 60,
+     "rate": 0.12
+    },
+    "co_occurrence": {
+     "total": 500,
+     "fired": 93,
+     "rate": 0.186
+    },
+    "attribute": {
+     "total": 500,
+     "fired": 103,
+     "rate": 0.206
+    },
+    "relation": {
+     "total": 500,
+     "fired": 264,
+     "rate": 0.528
+    }
+   }
+  },
+  "UniVG-R1": {
+   "rows": 2500,
+   "support_omni_calls": 2500,
+   "support_jev_calls": 2500,
+   "struct_fired": 759,
+   "rival_omni_calls": 1518,
+   "fallback_no_evidence": 43,
+   "by_htype_fire": {
+    "positive": {
+     "total": 500,
+     "fired": 124,
+     "rate": 0.248
+    },
+    "object": {
+     "total": 500,
+     "fired": 123,
+     "rate": 0.246
+    },
+    "co_occurrence": {
+     "total": 500,
+     "fired": 120,
+     "rate": 0.24
+    },
+    "attribute": {
+     "total": 500,
+     "fired": 110,
+     "rate": 0.22
+    },
+    "relation": {
+     "total": 500,
+     "fired": 282,
+     "rate": 0.564
+    }
+   }
+  },
+  "Vision-R1": {
+   "rows": 2500,
+   "support_omni_calls": 2500,
+   "support_jev_calls": 2500,
+   "struct_fired": 406,
+   "rival_omni_calls": 812,
+   "fallback_no_evidence": 396,
+   "by_htype_fire": {
+    "positive": {
+     "total": 500,
+     "fired": 116,
+     "rate": 0.232
+    },
+    "object": {
+     "total": 500,
+     "fired": 17,
+     "rate": 0.034
+    },
+    "co_occurrence": {
+     "total": 500,
+     "fired": 37,
+     "rate": 0.074
+    },
+    "attribute": {
+     "total": 500,
+     "fired": 45,
+     "rate": 0.09
+    },
+    "relation": {
+     "total": 500,
+     "fired": 191,
+     "rate": 0.382
+    }
+   }
+  },
+  "VisionReasoner": {
+   "rows": 2500,
+   "support_omni_calls": 2500,
+   "support_jev_calls": 2500,
+   "struct_fired": 662,
+   "rival_omni_calls": 1324,
+   "fallback_no_evidence": 140,
+   "by_htype_fire": {
+    "positive": {
+     "total": 500,
+     "fired": 124,
+     "rate": 0.248
+    },
+    "object": {
+     "total": 500,
+     "fired": 74,
+     "rate": 0.148
+    },
+    "co_occurrence": {
+     "total": 500,
+     "fired": 94,
+     "rate": 0.188
+    },
+    "attribute": {
+     "total": 500,
+     "fired": 95,
+     "rate": 0.19
+    },
+    "relation": {
+     "total": 500,
+     "fired": 275,
+     "rate": 0.55
+    }
+   }
+  },
+  "llava-ov-7b": {
+   "rows": 2500,
+   "support_omni_calls": 2500,
+   "support_jev_calls": 2500,
+   "struct_fired": 382,
+   "rival_omni_calls": 764,
+   "fallback_no_evidence": 420,
+   "by_htype_fire": {
+    "positive": {
+     "total": 500,
+     "fired": 104,
+     "rate": 0.208
+    },
+    "object": {
+     "total": 500,
+     "fired": 10,
+     "rate": 0.02
+    },
+    "co_occurrence": {
+     "total": 500,
+     "fired": 26,
+     "rate": 0.052
+    },
+    "attribute": {
+     "total": 500,
+     "fired": 47,
+     "rate": 0.094
+    },
+    "relation": {
+     "total": 500,
+     "fired": 195,
+     "rate": 0.39
+    }
+   }
+  },
+  "qwen2.5-vl-7b": {
+   "rows": 2500,
+   "support_omni_calls": 2500,
+   "support_jev_calls": 2500,
+   "struct_fired": 385,
+   "rival_omni_calls": 770,
+   "fallback_no_evidence": 417,
+   "by_htype_fire": {
+    "positive": {
+     "total": 500,
+     "fired": 113,
+     "rate": 0.226
+    },
+    "object": {
+     "total": 500,
+     "fired": 16,
+     "rate": 0.032
+    },
+    "co_occurrence": {
+     "total": 500,
+     "fired": 33,
+     "rate": 0.066
+    },
+    "attribute": {
+     "total": 500,
+     "fired": 42,
+     "rate": 0.084
+    },
+    "relation": {
+     "total": 500,
+     "fired": 181,
+     "rate": 0.362
+    }
+   }
+  },
+  "visual-rft": {
+   "rows": 2500,
+   "support_omni_calls": 2500,
+   "support_jev_calls": 2500,
+   "struct_fired": 326,
+   "rival_omni_calls": 652,
+   "fallback_no_evidence": 476,
+   "by_htype_fire": {
+    "positive": {
+     "total": 500,
+     "fired": 102,
+     "rate": 0.204
+    },
+    "object": {
+     "total": 500,
+     "fired": 11,
+     "rate": 0.022
+    },
+    "co_occurrence": {
+     "total": 500,
+     "fired": 26,
+     "rate": 0.052
+    },
+    "attribute": {
+     "total": 500,
+     "fired": 35,
+     "rate": 0.07
+    },
+    "relation": {
+     "total": 500,
+     "fired": 152,
+     "rate": 0.304
+    }
+   }
+  }
+ },
+ "note": "support verification = 1 Omni + 1 JEV per candidate (100%); structural probe fires only when predicate in OPPOSED and enhancement scores usable; rivals<=2 extra Omni each."
+}

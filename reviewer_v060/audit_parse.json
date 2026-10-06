@@ -1,0 +1,620 @@
+{
+ "per_model": {
+  "InternVL3.5-8B": {
+   "t1": {
+    "n": 2500,
+    "parse_ok_rate": 1.0,
+    "pe_true": 951,
+    "pe_false": 1549,
+    "pe_none": 0,
+    "none_rate": 0.0,
+    "empty_rate": 0.0,
+    "mean_tokens": 1.0448,
+    "top_methods": {
+     "prefix": 2500
+    }
+   },
+   "t2": {
+    "n": 2500,
+    "parse_ok_rate": 1.0,
+    "pe_true": 0,
+    "pe_false": 0,
+    "pe_none": 2500,
+    "none_rate": 1.0,
+    "empty_rate": 0.0,
+    "mean_tokens": 14.0468,
+    "top_methods": {
+     "auto_xyxy": 1723,
+     "not_found": 777
+    }
+   },
+   "t4": {
+    "n": 2500,
+    "parse_ok_rate": 0.0,
+    "pe_true": 1288,
+    "pe_false": 1212,
+    "pe_none": 0,
+    "none_rate": 0.0,
+    "empty_rate": 0.0,
+    "mean_tokens": 40.3912,
+    "top_methods": {
+     "None": 2500
+    }
+   },
+   "t3": {
+    "n": 500,
+    "parse_ok_rate": 0.0,
+    "pe_true": 0,
+    "pe_false": 0,
+    "pe_none": 500,
+    "none_rate": 1.0,
+    "empty_rate": 1.0,
+    "mean_tokens": 49.352,
+    "top_methods": {
+     "None": 500
+    }
+   }
+  },
+  "LENS": {
+   "t1": {
+    "n": 2500,
+    "parse_ok_rate": 0.996,
+    "pe_true": 1137,
+    "pe_false": 1363,
+    "pe_none": 0,
+    "none_rate": 0.0,
+    "empty_rate": 0.0,
+    "mean_tokens": 14.494,
+    "top_methods": {
+     "prefix": 2453,
+     "single_token": 37,
+     "parse_fail_default_no": 10
+    }
+   },
+   "t2": {
+    "n": 2500,
+    "parse_ok_rate": 0.988,
+    "pe_true": 0,
+    "pe_false": 0,
+    "pe_none": 2500,
+    "none_rate": 1.0,
+    "empty_rate": 0.0,
+    "mean_tokens": 50.252,
+    "top_methods": {
+     "json_bbox": 2338,
+     "not_found": 99,
+     "no_bbox": 30
+    }
+   },
+   "t4": {
+    "n": 2500,
+    "parse_ok_rate": 0.0,
+    "pe_true": 807,
+    "pe_false": 1693,
+    "pe_none": 0,
+    "none_rate": 0.0,
+    "empty_rate": 0.0,
+    "mean_tokens": 94.2416,
+    "top_methods": {
+     "None": 2500
+    }
+   },
+   "t3": {
+    "n": 500,
+    "parse_ok_rate": 0.0,
+    "pe_true": 0,
+    "pe_false": 0,
+    "pe_none": 500,
+    "none_rate": 1.0,
+    "empty_rate": 1.0,
+    "mean_tokens": 216.126,
+    "top_methods": {
+     "None": 500
+    }
+   }
+  },
+  "Orsta-7B": {
+   "t1": {
+    "n": 2500,
+    "parse_ok_rate": 1.0,
+    "pe_true": 969,
+    "pe_false": 1531,
+    "pe_none": 0,
+    "none_rate": 0.0,
+    "empty_rate": 0.0,
+    "mean_tokens": 2.4408,
+    "top_methods": {
+     "prefix": 2500
+    }
+   },
+   "t2": {
+    "n": 2500,
+    "parse_ok_rate": 1.0,
+    "pe_true": 0,
+    "pe_false": 0,
+    "pe_none": 2500,
+    "none_rate": 1.0,
+    "empty_rate": 0.0,
+    "mean_tokens": 12.3584,
+    "top_methods": {
+     "auto_xyxy": 1362,
+     "not_found": 1136,
+     "auto_xywh": 2
+    }
+   },
+   "t4": {
+    "n": 2500,
+    "parse_ok_rate": 0.0,
+    "pe_true": 1223,
+    "pe_false": 1277,
+    "pe_none": 0,
+    "none_rate": 0.0,
+    "empty_rate": 0.0,
+    "mean_tokens": 42.0784,
+    "top_methods": {
+     "None": 2500
+    }
+   }
+  },
+  "Qwen3-VL-8B": {
+   "t2": {
+    "n": 2500,
+    "parse_ok_rate": 1.0,
+    "pe_true": 0,
+    "pe_false": 0,
+    "pe_none": 2500,
+    "none_rate": 1.0,
+    "empty_rate": 0.0,
+    "mean_tokens": 8.9428,
+    "top_methods": {
+     "not_found": 1650,
+     "auto_xyxy": 850
+    }
+   },
+   "t4": {
+    "n": 2500,
+    "parse_ok_rate": 0.0,
+    "pe_true": 902,
+    "pe_false": 1598,
+    "pe_none": 0,
+    "none_rate": 0.0,
+    "empty_rate": 0.0,
+    "mean_tokens": 48.0204,
+    "top_methods": {
+     "None": 2500
+    }
+   }
+  },
+  "Seg-R1": {
+   "t1": {
+    "n": 2500,
+    "parse_ok_rate": 1.0,
+    "pe_true": 806,
+    "pe_false": 1694,
+    "pe_none": 0,
+    "none_rate": 0.0,
+    "empty_rate": 0.0,
+    "mean_tokens": 2.0,
+    "top_methods": {
+     "prefix": 2500
+    }
+   },
+   "t2": {
+    "n": 2500,
+    "parse_ok_rate": 1.0,
+    "pe_true": 0,
+    "pe_false": 0,
+    "pe_none": 2500,
+    "none_rate": 1.0,
+    "empty_rate": 0.0,
+    "mean_tokens": 25.0252,
+    "top_methods": {
+     "auto_xyxy": 965,
+     "not_found": 773,
+     "json_bbox": 762
+    }
+   },
+   "t4": {
+    "n": 2500,
+    "parse_ok_rate": 0.0,
+    "pe_true": 1105,
+    "pe_false": 1395,
+    "pe_none": 0,
+    "none_rate": 0.0,
+    "empty_rate": 0.0,
+    "mean_tokens": 51.6084,
+    "top_methods": {
+     "None": 2500
+    }
+   },
+   "t3": {
+    "n": 500,
+    "parse_ok_rate": 0.0,
+    "pe_true": 0,
+    "pe_false": 0,
+    "pe_none": 500,
+    "none_rate": 1.0,
+    "empty_rate": 1.0,
+    "mean_tokens": 166.194,
+    "top_methods": {
+     "None": 500
+    }
+   }
+  },
+  "Seg-zero": {
+   "t1": {
+    "n": 2500,
+    "parse_ok_rate": 0.9916,
+    "pe_true": 1379,
+    "pe_false": 1121,
+    "pe_none": 0,
+    "none_rate": 0.0,
+    "empty_rate": 0.0,
+    "mean_tokens": 80.4816,
+    "top_methods": {
+     "prefix": 2468,
+     "parse_fail_default_no": 21,
+     "single_token": 11
+    }
+   },
+   "t2": {
+    "n": 2500,
+    "parse_ok_rate": 1.0,
+    "pe_true": 0,
+    "pe_false": 0,
+    "pe_none": 2500,
+    "none_rate": 1.0,
+    "empty_rate": 0.0,
+    "mean_tokens": 150.8768,
+    "top_methods": {
+     "json_bbox": 2441,
+     "not_found": 58,
+     "auto_xyxy": 1
+    }
+   },
+   "t4": {
+    "n": 2500,
+    "parse_ok_rate": 0.0,
+    "pe_true": 1241,
+    "pe_false": 1259,
+    "pe_none": 0,
+    "none_rate": 0.0,
+    "empty_rate": 0.0,
+    "mean_tokens": 129.6776,
+    "top_methods": {
+     "None": 2500
+    }
+   }
+  },
+  "TreeVGR": {
+   "t1": {
+    "n": 2500,
+    "parse_ok_rate": 0.7516,
+    "pe_true": 1411,
+    "pe_false": 1089,
+    "pe_none": 0,
+    "none_rate": 0.0,
+    "empty_rate": 0.0,
+    "mean_tokens": 122.3972,
+    "top_methods": {
+     "prefix": 1707,
+     "parse_fail_default_no": 621,
+     "single_token": 172
+    }
+   },
+   "t2": {
+    "n": 2500,
+    "parse_ok_rate": 0.9704,
+    "pe_true": 0,
+    "pe_false": 0,
+    "pe_none": 2500,
+    "none_rate": 1.0,
+    "empty_rate": 0.0,
+    "mean_tokens": 127.662,
+    "top_methods": {
+     "auto_xyxy": 1988,
+     "not_found": 436,
+     "no_bbox": 74
+    }
+   },
+   "t4": {
+    "n": 2500,
+    "parse_ok_rate": 0.0,
+    "pe_true": 1673,
+    "pe_false": 827,
+    "pe_none": 0,
+    "none_rate": 0.0,
+    "empty_rate": 0.0,
+    "mean_tokens": 122.4688,
+    "top_methods": {
+     "None": 2500
+    }
+   }
+  },
+  "UniVG-R1": {
+   "t1": {
+    "n": 2500,
+    "parse_ok_rate": 0.6276,
+    "pe_true": 683,
+    "pe_false": 1817,
+    "pe_none": 0,
+    "none_rate": 0.0,
+    "empty_rate": 0.0,
+    "mean_tokens": 54.7068,
+    "top_methods": {
+     "prefix": 1561,
+     "parse_fail_default_no": 931,
+     "single_token": 8
+    }
+   },
+   "t2": {
+    "n": 2500,
+    "parse_ok_rate": 0.9996,
+    "pe_true": 0,
+    "pe_false": 0,
+    "pe_none": 2500,
+    "none_rate": 1.0,
+    "empty_rate": 0.0,
+    "mean_tokens": 100.3132,
+    "top_methods": {
+     "paren_bbox": 2496,
+     "not_found": 3,
+     "no_bbox": 1
+    }
+   },
+   "t4": {
+    "n": 2500,
+    "parse_ok_rate": 0.0,
+    "pe_true": 2246,
+    "pe_false": 254,
+    "pe_none": 0,
+    "none_rate": 0.0,
+    "empty_rate": 0.0,
+    "mean_tokens": 105.5344,
+    "top_methods": {
+     "None": 2500
+    }
+   }
+  },
+  "Vision-R1": {
+   "t1": {
+    "n": 2500,
+    "parse_ok_rate": 1.0,
+    "pe_true": 1070,
+    "pe_false": 1430,
+    "pe_none": 0,
+    "none_rate": 0.0,
+    "empty_rate": 0.0,
+    "mean_tokens": 2.0,
+    "top_methods": {
+     "prefix": 2500
+    }
+   },
+   "t2": {
+    "n": 2500,
+    "parse_ok_rate": 1.0,
+    "pe_true": 0,
+    "pe_false": 0,
+    "pe_none": 2500,
+    "none_rate": 1.0,
+    "empty_rate": 0.0,
+    "mean_tokens": 10.992,
+    "top_methods": {
+     "not_found": 1270,
+     "auto_xyxy": 1227,
+     "auto_xywh": 3
+    }
+   },
+   "t4": {
+    "n": 2500,
+    "parse_ok_rate": 0.0,
+    "pe_true": 1365,
+    "pe_false": 1135,
+    "pe_none": 0,
+    "none_rate": 0.0,
+    "empty_rate": 0.0,
+    "mean_tokens": 42.3748,
+    "top_methods": {
+     "None": 2500
+    }
+   }
+  },
+  "VisionReasoner": {
+   "t1": {
+    "n": 2500,
+    "parse_ok_rate": 0.9988,
+    "pe_true": 1323,
+    "pe_false": 1177,
+    "pe_none": 0,
+    "none_rate": 0.0,
+    "empty_rate": 0.0,
+    "mean_tokens": 66.16,
+    "top_methods": {
+     "prefix": 2496,
+     "parse_fail_default_no": 3,
+     "single_token": 1
+    }
+   },
+   "t2": {
+    "n": 2500,
+    "parse_ok_rate": 1.0,
+    "pe_true": 0,
+    "pe_false": 0,
+    "pe_none": 2500,
+    "none_rate": 1.0,
+    "empty_rate": 0.0,
+    "mean_tokens": 128.7076,
+    "top_methods": {
+     "json_bbox": 2117,
+     "not_found": 383
+    }
+   },
+   "t4": {
+    "n": 2500,
+    "parse_ok_rate": 0.0,
+    "pe_true": 1409,
+    "pe_false": 1091,
+    "pe_none": 0,
+    "none_rate": 0.0,
+    "empty_rate": 0.0,
+    "mean_tokens": 110.1776,
+    "top_methods": {
+     "None": 2500
+    }
+   }
+  },
+  "llava-ov-7b": {
+   "t1": {
+    "n": 2500,
+    "parse_ok_rate": 1.0,
+    "pe_true": 1394,
+    "pe_false": 1106,
+    "pe_none": 0,
+    "none_rate": 0.0,
+    "empty_rate": 0.0,
+    "mean_tokens": 2.0,
+    "top_methods": {
+     "prefix": 2500
+    }
+   },
+   "t2": {
+    "n": 2500,
+    "parse_ok_rate": 1.0,
+    "pe_true": 0,
+    "pe_false": 0,
+    "pe_none": 2500,
+    "none_rate": 1.0,
+    "empty_rate": 0.0,
+    "mean_tokens": 13.6884,
+    "top_methods": {
+     "not_found": 1374,
+     "auto_xyxy": 1126
+    }
+   },
+   "t4": {
+    "n": 2500,
+    "parse_ok_rate": 0.0,
+    "pe_true": 2349,
+    "pe_false": 151,
+    "pe_none": 0,
+    "none_rate": 0.0,
+    "empty_rate": 0.0,
+    "mean_tokens": 50.426,
+    "top_methods": {
+     "None": 2500
+    }
+   },
+   "t3": {
+    "n": 500,
+    "parse_ok_rate": 0.0,
+    "pe_true": 0,
+    "pe_false": 0,
+    "pe_none": 500,
+    "none_rate": 1.0,
+    "empty_rate": 1.0,
+    "mean_tokens": 15.47,
+    "top_methods": {
+     "None": 500
+    }
+   }
+  },
+  "qwen2.5-vl-7b": {
+   "t1": {
+    "n": 2500,
+    "parse_ok_rate": 1.0,
+    "pe_true": 868,
+    "pe_false": 1632,
+    "pe_none": 0,
+    "none_rate": 0.0,
+    "empty_rate": 0.0,
+    "mean_tokens": 2.0,
+    "top_methods": {
+     "prefix": 2500
+    }
+   },
+   "t2": {
+    "n": 2500,
+    "parse_ok_rate": 1.0,
+    "pe_true": 0,
+    "pe_false": 0,
+    "pe_none": 2500,
+    "none_rate": 1.0,
+    "empty_rate": 0.0,
+    "mean_tokens": 10.376,
+    "top_methods": {
+     "not_found": 1342,
+     "auto_xyxy": 1158
+    }
+   },
+   "t4": {
+    "n": 2500,
+    "parse_ok_rate": 0.0,
+    "pe_true": 1149,
+    "pe_false": 1351,
+    "pe_none": 0,
+    "none_rate": 0.0,
+    "empty_rate": 0.0,
+    "mean_tokens": 40.304,
+    "top_methods": {
+     "None": 2500
+    }
+   }
+  },
+  "visual-rft": {
+   "t1": {
+    "n": 2500,
+    "parse_ok_rate": 1.0,
+    "pe_true": 970,
+    "pe_false": 1530,
+    "pe_none": 0,
+    "none_rate": 0.0,
+    "empty_rate": 0.0,
+    "mean_tokens": 7.0084,
+    "top_methods": {
+     "prefix": 2500
+    }
+   },
+   "t2": {
+    "n": 2500,
+    "parse_ok_rate": 1.0,
+    "pe_true": 0,
+    "pe_false": 0,
+    "pe_none": 2500,
+    "none_rate": 1.0,
+    "empty_rate": 0.0,
+    "mean_tokens": 55.6852,
+    "top_methods": {
+     "not_found": 1509,
+     "auto_xyxy": 991
+    }
+   },
+   "t4": {
+    "n": 2500,
+    "parse_ok_rate": 0.0,
+    "pe_true": 1874,
+    "pe_false": 626,
+    "pe_none": 0,
+    "none_rate": 0.0,
+    "empty_rate": 0.0,
+    "mean_tokens": 83.2912,
+    "top_methods": {
+     "None": 2500
+    }
+   },
+   "t3": {
+    "n": 500,
+    "parse_ok_rate": 0.0,
+    "pe_true": 0,
+    "pe_false": 0,
+    "pe_none": 500,
+    "none_rate": 1.0,
+    "empty_rate": 1.0,
+    "mean_tokens": 61.626,
+    "top_methods": {
+     "None": 500
+    }
+   }
+  }
+ },
+ "note": "pred_exists False or None both counted as reject; parse_valid is the unified parser success flag; FGR denominator uses the same eligibility across models"
+}
