@@ -159,7 +159,15 @@ t_full = 第 need 高的 s_full 分数
 
 t2 定位任务：所有模型 `pred_exists=None`（grounding 用 IoU 判定，无 exists 标志），解析成功率 97–100%。
 
-**诚实说明（已知边界，对应 E1）.** UniVG-R1 与 TreeVGR 在 t1 的高解析失败率是真实现象。评测代码把 `pred_exists=None` 计为"正确拒绝"（`is True` 判定），因此这两个模型报告的实为 **FAR 下界（FAR_min）**，其 FGR 读数需结合解析失败率一并解读。论文将对这两个模型单列脚注，不与高解析率模型混为同一精度口径。其余 11 模型解析率 ≥99%，拒绝口径公平可比。
+**实质修正（源头口径改动）.** UniVG-R1（37.2%）与 TreeVGR（24.8%）的高解析失败率会污染 FA/TPR/BA——原评测把解析失败默认为 NO（`pred_exists=False`），在分母里等效"模型说不支持"，导致：
+- UniVG-R1：当前 BA=60.42% → 修正后（仅 parse_valid 子集）**73.08%**（+12.66pp）
+- TreeVGR：当前 BA=76.60% → 修正后 **66.78%**（−9.82pp，虚高被纠正）
+
+修正方案：改 `eval_tasks_t1_t3_t4.py` 的 `eval_t1()` 函数，**FA/TPR/BA 只在 parse_valid 样本上计算**（abstention 口径），解析失败率作为独立的"响应完整性"指标（abstention_pos/neg/all）并列报告，不塞进 YES/NO 二分。这区分了"模型判断为否"与"模型没给出可读判断"。
+
+修正后 13 模型重排序：TreeVGR 从第 8 跌至**最后一名**（BA=66.78%），UniVG-R1 从垫底升至第 10（BA=73.08%）——两个被污染模型位置几乎对调。其余 11 模型 abstention≤0.84%，Δ_BA≈0，排序不受影响。**主论点"语言判断 vs 定位行为差异"不仅幸存，反而更干净**：这两个模型恰是"定位通道输出框、语言判断通道解析失败"脱节最明显的案例——高弃权率本身就是"语言判断不可靠"的直接证据。
+
+修正已应用于 `eval_tasks_t1_t3_t4.py` L113-133（eval_t1 函数），产出新字段 `abstention_pos/neg/all` 及修正 FA/TPR/BA。旧口径数字已不可追溯（默认 NO 是人为污染，非真实模型输出）。
 
 ---
 
@@ -191,7 +199,8 @@ t2 定位任务：所有模型 `pred_exists=None`（grounding 用 IoU 判定，�
 | Q4 | `eval_refit_struct.py` | `refit_struct.json` | CPU 重算 |
 | Q5(去框) | `collect_nobox.py` + `eval_nobox.py` | `nobox.json` + `nobox_shard*.jsonl` | GPU 采集(11,909)+分析 |
 | Q7 | `eval_lomo.py` | `lomo.json` | CPU 重算 |
-| Q8 | `audit_parse.py` | `audit_parse.json` | CPU 审计 |
+| Q8 (审计) | `audit_parse.py` / `audit_parse_impact.py` | `audit_parse.json` / `audit_parse_impact.json` | CPU 审计 |
+| Q8 (修正) | `eval_abstention.py` + `eval_tasks_t1_t3_t4.py`(eval_t1 源头改) | `abstention.json` / `tasks_t1_t4.json` | CPU 重算 |
 | Q9 | `eval_routing_cost.py` | `routing_cost.json` | CPU 统计 |
 | Q1/Q5(换图/先验) | （既有）`attribution.json` / `gap_vs_prior.json` | — | 既有 |
 

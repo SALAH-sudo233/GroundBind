@@ -110,24 +110,30 @@ def eval_t1(rows):
     neg = [r for r in rows if r.get('label_exists') is False]
     if not pos or not neg:
         return None
-    # pred_exists True == model says the expression is supported
-    fa = sum(1 for r in neg if r.get('pred_exists') is True) / len(neg)
-    tpr = sum(1 for r in pos if r.get('pred_exists') is True) / len(pos)
+    # ABSTENTION 口径：只在 parse_valid 样本上计算 FA/TPR/BA
+    pos_ans = [r for r in pos if r.get('parse_valid', True)]
+    neg_ans = [r for r in neg if r.get('parse_valid', True)]
+    if not pos_ans or not neg_ans:
+        return None
+    fa = sum(1 for r in neg_ans if r.get('pred_exists') is True) / len(neg_ans)
+    tpr = sum(1 for r in pos_ans if r.get('pred_exists') is True) / len(pos_ans)
     bal = (tpr + (1.0 - fa)) / 2.0
-    bad = sum(1 for r in rows if not r.get('parse_valid'))
+    # 弃权率（响应完整性），pos/neg 分报以暴露不对称
+    abst_pos = 1 - len(pos_ans) / len(pos)
+    abst_neg = 1 - len(neg_ans) / len(neg)
+    abst_all = 1 - (len(pos_ans) + len(neg_ans)) / (len(pos) + len(neg))
+    # by-type FA（neg answered 上）
     by = {}
     for h in HT4:
-        sub = [r for r in neg if r.get('hallucination_type') == h]
-        by[h] = (sum(1 for r in sub if r.get('pred_exists') is True) / len(sub)
-                 if sub else None)
-    return dict(n_pos=len(pos), n_neg=len(neg), false_accept=fa,
-                true_accept=tpr, balanced_acc=bal,
-                parse_invalid=bad, parse_invalid_rate=bad / len(rows),
+        sub = [r for r in neg_ans if r.get('hallucination_type') == h]
+        by[h] = (sum(1 for r in sub if r.get('pred_exists') is True) / len(sub)) if sub else None
+    return dict(n_pos=len(pos), n_neg=len(neg),
+                n_pos_answered=len(pos_ans), n_neg_answered=len(neg_ans),
+                abstention_pos=abst_pos, abstention_neg=abst_neg, abstention_all=abst_all,
+                false_accept=fa, true_accept=tpr, balanced_acc=bal,
                 false_accept_by_type=by,
                 boh=st.mean([by[h] for h in HT4[:2]]) if all(by[h] is not None for h in HT4[:2]) else None,
                 roh=st.mean([by[h] for h in HT4[2:]]) if all(by[h] is not None for h in HT4[2:]) else None)
-
-
 def eval_t4(rows, coordfix=False):
     """Joint grounding: caption hallucination, coverage, plus FGR/mIoU/pos-success.
 
@@ -268,7 +274,7 @@ def main():
     show('TASK t1  expression verification (%d models)' % len(t1), t1,
          [('falseAcc', 'false_accept'), ('trueAcc', 'true_accept'),
           ('balancedAcc', 'balanced_acc'), ('BOH', 'boh'), ('ROH', 'roh'),
-          ('parseBad', 'parse_invalid_rate')])
+          ('abstain%', 'abstention_all')])
     show('TASK t3  pure captioning, no query (%d models)' % len(t3), t3,
          [('capHallu', 'caption_hallu'), ('coverage', 'target_coverage'),
           ('amberCos', 'amber_cosine')])
