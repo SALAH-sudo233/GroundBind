@@ -1,4 +1,4 @@
-# V-SIGHT v0.60 审稿意见补充实验结果
+# GroundBind v0.60 审稿意见补充实验结果
 
 > **⚠️ 部分结论已更正，先读 `CORRECTION.md`。**
 > 本文中「object/co_occurrence/attribute FGR 显著变差」「ALL FGR 不显著」「同保留下 ALL FGR +2.05pp」

@@ -1,6 +1,8 @@
-# Right Region, Wrong Reference
+# GroundBind: Right Region, Wrong Reference
 
-Diagnosing and Mitigating Grounding Hallucinations — V-SIGHT
+Diagnosing and Mitigating Grounding Hallucinations
+
+> 项目旧代号为 V-SIGHT；论文与 benchmark 统一命名为 **GroundBind**。仓库历史产物（bundle、旧 PDF、`V-SIGHT-assets` 本地路径）保留原文件名以维持可溯源。
 
 模型可以定位真实物体，却把该区域指派给图像并不支持的表达。本仓库诊断这一错配，
 并以**自适应结构化核验（Adaptive Structured Verification）**缓释基准中的四类幻觉。
