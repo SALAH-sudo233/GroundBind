@@ -1,0 +1,83 @@
+{
+ "n": 12729,
+ "n_pos": 3606,
+ "n_neg": 9123,
+ "auroc_text": 0.4486381929249538,
+ "auroc_text_ci": [
+  0.4382337061211085,
+  0.4594631975195226
+ ],
+ "auroc_nobox_image": null,
+ "auroc_boxed_image": null,
+ "visual_gain": null,
+ "per_model": {
+  "InternVL3.5-8B": {
+   "auroc_text": 0.443923934055513,
+   "n_pos": 296,
+   "n_neg": 741
+  },
+  "LENS": {
+   "auroc_text": 0.4550887103615336,
+   "n_pos": 287,
+   "n_neg": 1109
+  },
+  "Orsta-7B": {
+   "auroc_text": 0.437696158008658,
+   "n_pos": 280,
+   "n_neg": 528
+  },
+  "Qwen3-VL-8B": {
+   "auroc_text": 0.46151489361702125,
+   "n_pos": 235,
+   "n_neg": 250
+  },
+  "Seg-R1": {
+   "auroc_text": 0.44611330049261083,
+   "n_pos": 290,
+   "n_neg": 700
+  },
+  "Seg-zero": {
+   "auroc_text": 0.451689327465725,
+   "n_pos": 297,
+   "n_neg": 1127
+  },
+  "TreeVGR": {
+   "auroc_text": 0.44878877446495735,
+   "n_pos": 282,
+   "n_neg": 907
+  },
+  "UniVG-R1": {
+   "auroc_text": 0.4529399864163813,
+   "n_pos": 297,
+   "n_neg": 1165
+  },
+  "Vision-R1": {
+   "auroc_text": 0.43984064383737337,
+   "n_pos": 276,
+   "n_neg": 452
+  },
+  "VisionReasoner": {
+   "auroc_text": 0.4454990825361196,
+   "n_pos": 297,
+   "n_neg": 945
+  },
+  "llava-ov-7b": {
+   "auroc_text": 0.4490242984625309,
+   "n_pos": 262,
+   "n_neg": 426
+  },
+  "qwen2.5-vl-7b": {
+   "auroc_text": 0.43872873408068996,
+   "n_pos": 271,
+   "n_neg": 421
+  },
+  "visual-rft": {
+   "auroc_text": 0.4468111999229584,
+   "n_pos": 236,
+   "n_neg": 352
+  }
+ },
+ "model_level_text_auroc_mean": 0.4475122341324671,
+ "verdict": "\u63a5\u8fd10.5\uff1a\u65e0\u663e\u8457 lexical artifact",
+ "note": "z_text = Omni true-vs-false logit diff with a fixed gray blank image (no visual signal). label: htype==positive->1. AUROC~0.5 means the claim text alone cannot separate pos/neg -> no lexical artifact."
+}
