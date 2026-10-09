@@ -1,0 +1,22 @@
+{
+  "arm": "omni",
+  "model": "qwen25",
+  "example_index": 5,
+  "sample_id": "hallu_000215_COCO_train2014_000000106438__rel",
+  "hallucination_type": "relation",
+  "query": "the cell phone in the person's hand to the left of the purple phone",
+  "candidate_bbox_xyxy": null,
+  "upstream_record_sha256": "5ab93551a89cdaeef960e72d0cc7f596c31a5c1bf5fff0de9895ab87a896b516",
+  "source_record": "/home/u2025141034/benchmark/rrwr_20261010_t3_attention/attention/results/qwen25/05_relation_grounding.json",
+  "image_sha256": "5ddddd877cf5fb63a7bd0cd015f8c2f1e98f1c8d96c0eb49ed86a4a3b1e5b0c6",
+  "source_model_path": "/home/u2025141034/models/OmniVerifier-7B",
+  "torch": "2.12.1+cu126",
+  "transformers": "5.12.1",
+  "drew": false,
+  "original": null,
+  "rivals": [],
+  "reason": "original_no_box",
+  "attention_available": false,
+  "seconds": 0.00023558316752314568,
+  "peak_allocated_gb": 16.592876032
+}

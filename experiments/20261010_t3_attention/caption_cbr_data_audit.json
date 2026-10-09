@@ -1,0 +1,1908 @@
+{
+  "audit_date": "2026-10-10",
+  "scope": "read-only caption and CBR source audit; no source evaluation, manuscript, external or synced files modified",
+  "remote_identity": {
+    "origin": "git@github.com:SALAH-sudo233/GroundBind.git",
+    "commit": "8c5b7b1c1bb9db8e4d086bb45499ea963ca84729"
+  },
+  "sources": [
+    {
+      "path": "/Users/yyyb/.codex/.chatgpt-projects/g-p-6a9fadb9a6ec8191bbc34778fa9b4a7d/.build/groundbind_construction_cases_20261008/remote/reviewer_v060/tasks_t1_t3_t4.json",
+      "sha256": "8a28d4c36964b8486b1314a5ffdcc7614cb55dc3e23ac9dc3d717811af2f1e70",
+      "repository_path": "reviewer_v060/tasks_t1_t3_t4.json",
+      "git_blob_byte_exact": true,
+      "git_commit": "8c5b7b1c1bb9db8e4d086bb45499ea963ca84729"
+    },
+    {
+      "path": "/Users/yyyb/.codex/.chatgpt-projects/g-p-6a9fadb9a6ec8191bbc34778fa9b4a7d/.build/groundbind_construction_cases_20261008/remote/reviewer_v060/tasks_t1_t4.json",
+      "sha256": "1e464143db2253805f9acdcd77744bdbf27be807ffd743411affe77ef5158cbd",
+      "repository_path": "reviewer_v060/tasks_t1_t4.json",
+      "git_blob_byte_exact": true,
+      "git_commit": "8c5b7b1c1bb9db8e4d086bb45499ea963ca84729"
+    },
+    {
+      "path": "/Users/yyyb/.codex/.chatgpt-projects/g-p-6a9fadb9a6ec8191bbc34778fa9b4a7d/.build/groundbind_construction_cases_20261008/remote/reviewer_v060/eval_tasks_t1_t3_t4.py",
+      "sha256": "03fc30cff4b5a7a3f980cceaaa535aca929ef5b2c6b80b836511e90ec80bdc76",
+      "repository_path": "reviewer_v060/eval_tasks_t1_t3_t4.py",
+      "git_blob_byte_exact": true,
+      "git_commit": "8c5b7b1c1bb9db8e4d086bb45499ea963ca84729"
+    },
+    {
+      "path": "/Users/yyyb/.codex/.chatgpt-projects/g-p-6a9fadb9a6ec8191bbc34778fa9b4a7d/.build/groundbind_construction_cases_20261008/remote/evidence/cbr_3lines.json",
+      "sha256": "4ec1c51d9964ac206a2b65b307ebe204aa52d5b17d053f5977282afae48bec0b",
+      "repository_path": "evidence/cbr_3lines.json",
+      "git_blob_byte_exact": true,
+      "git_commit": "8c5b7b1c1bb9db8e4d086bb45499ea963ca84729"
+    },
+    {
+      "path": "/Users/yyyb/.codex/.chatgpt-projects/g-p-6a9fadb9a6ec8191bbc34778fa9b4a7d/.build/groundbind_construction_cases_20261008/remote/reviewer_v060/cf_cbr_4types.json",
+      "sha256": "84e78e8cbe1c0ee6885d6b5fb1a10912576508938d66749f6cd5323cde3f34a3",
+      "repository_path": "reviewer_v060/cf_cbr_4types.json",
+      "git_blob_byte_exact": true,
+      "git_commit": "8c5b7b1c1bb9db8e4d086bb45499ea963ca84729"
+    },
+    {
+      "path": "/Users/yyyb/.codex/.chatgpt-projects/g-p-6a9fadb9a6ec8191bbc34778fa9b4a7d/.build/groundbind_construction_cases_20261008/remote/reviewer_v060/export_cf_cbr.py",
+      "sha256": "00ba7688741eed7c175c4e982006bca4fb2b09339b690a00bb1864d4997cf98d",
+      "repository_path": "reviewer_v060/export_cf_cbr.py",
+      "git_blob_byte_exact": true,
+      "git_commit": "8c5b7b1c1bb9db8e4d086bb45499ea963ca84729"
+    },
+    {
+      "path": "/Users/yyyb/.codex/.chatgpt-projects/g-p-6a9fadb9a6ec8191bbc34778fa9b4a7d/.build/groundbind_construction_cases_20261008/remote/method/eval_cbr_paper_aligned.py",
+      "sha256": "b6819edb1961a95c2662d88740401f3f55d3ee6b40e696a81fcfe0545acc0cdb",
+      "repository_path": "method/eval_cbr_paper_aligned.py",
+      "git_blob_byte_exact": true,
+      "git_commit": "8c5b7b1c1bb9db8e4d086bb45499ea963ca84729"
+    },
+    {
+      "path": "/Users/yyyb/.codex/.chatgpt-projects/g-p-6a9fadb9a6ec8191bbc34778fa9b4a7d/.build/groundbind_construction_cases_20261008/remote/reviewer_v060/t4_mitigation.json",
+      "sha256": "86d07c142cd3af5241ec648265b1aaaf61b0b4872eff7fd6be3f3fee4d5be0a2",
+      "repository_path": "reviewer_v060/t4_mitigation.json",
+      "git_blob_byte_exact": true,
+      "git_commit": "8c5b7b1c1bb9db8e4d086bb45499ea963ca84729"
+    },
+    {
+      "path": "/Users/yyyb/Documents/Codex/2026-09-29/new-chat/outputs/migration/results/V-SIGHT-assets/repo/benchmark/eval_13models_4tasks/13models_4tasks_metrics.json",
+      "sha256": "1a9195c1c7adde1472a8392a984e0d832f94746ae4e7b6686c3163197f520967"
+    },
+    {
+      "path": "/Users/yyyb/Documents/Codex/2026-09-29/new-chat/outputs/migration/results/V-SIGHT-assets/t3_caption/t3_metrics.py",
+      "sha256": "22c787c3951c47f876e89c3b38d3c62c13350aff7435dda13d63bf09cc5e9bdd"
+    },
+    {
+      "path": "/Users/yyyb/Documents/论文/_NAACL2027__RRWR_AnonymousSubmission/tables/apd_other_tasks_en.tex",
+      "sha256": "4cd3bf30b68bfa37ee0f28eb71f412fe8583472f722adf5db9058446d454a31b"
+    },
+    {
+      "path": "/Users/yyyb/Documents/论文/_NAACL2027__RRWR_AnonymousSubmission/tables/apd_cbr_direct_en.tex",
+      "sha256": "f82200f2047aa92bb6e5b45651d9c1a3e23dd6647271988fc86b517b59553f67"
+    },
+    {
+      "path": "/Users/yyyb/Documents/论文/_NAACL2027__RRWR_AnonymousSubmission/tables/apd_cbr_joint_en.tex",
+      "sha256": "8b4694c561114238e47e6163a487fb4255e0059c8cdd195c535fee807791cd0c"
+    }
+  ],
+  "caption": {
+    "ready_EOH_ROH_FAR_available": false,
+    "reason": "All 13 existing query-free caption evaluations score only 500 object-type units; association is unscored and ROH denominator is zero. Captions have no support-judgment fields. The stored object-claim error cannot supply the required two-type EOH average or ROH FAR.",
+    "existing_metric_name": "query-free annotated object-claim error rate",
+    "not_a_CHAIR_to_FAR_relabel": true,
+    "per_model": {
+      "InternVL3.5-8B": {
+        "model_display": "InternVL3.5",
+        "family": "general",
+        "raw_summary": {
+          "n": 500,
+          "caption_hallu": 0.044,
+          "n_scored": 500,
+          "target_coverage": null,
+          "amber_cosine": 0.4993601850773588,
+          "hallu_units_mean": 0.044
+        },
+        "legacy_type_summary": {
+          "t3_n": 500,
+          "t3_scored_n": 500,
+          "t3_caption_hallu": 0.044,
+          "t3_n_boh": 500,
+          "t3_hallu_boh": 0.044,
+          "t3_n_roh": 0,
+          "t3_hallu_roh": null,
+          "t3_coverage": 0.554,
+          "t3_amber": 0.499360185077359,
+          "t3_parse_fail": 0,
+          "t3_unlisted_exploratory": 0.322
+        },
+        "caption_error_count_recovered_from_summary": 22,
+        "object_claim_error_percent": 4.3999999999999995,
+        "target_coverage_percent": 55.400000000000006,
+        "caption_FAR_EOH_percent": null,
+        "caption_FAR_ROH_percent": null,
+        "run": "/home/u2025141034/benchmark/refcocog_eval_13models_4tasks_500/run_20260918_125802"
+      },
+      "LENS": {
+        "model_display": "LENS",
+        "family": "RL",
+        "raw_summary": {
+          "n": 500,
+          "caption_hallu": 0.042,
+          "n_scored": 500,
+          "target_coverage": null,
+          "amber_cosine": 0.3547392279332256,
+          "hallu_units_mean": 0.042
+        },
+        "legacy_type_summary": {
+          "t3_n": 500,
+          "t3_scored_n": 500,
+          "t3_caption_hallu": 0.042,
+          "t3_n_boh": 500,
+          "t3_hallu_boh": 0.042,
+          "t3_n_roh": 0,
+          "t3_hallu_roh": null,
+          "t3_coverage": 0.536,
+          "t3_amber": 0.3547392279332253,
+          "t3_parse_fail": 8,
+          "t3_unlisted_exploratory": 0.292
+        },
+        "caption_error_count_recovered_from_summary": 21,
+        "object_claim_error_percent": 4.2,
+        "target_coverage_percent": 53.6,
+        "caption_FAR_EOH_percent": null,
+        "caption_FAR_ROH_percent": null,
+        "run": "/home/u2025141034/benchmark/refcocog_eval_13models_4tasks_500/run_20260918_125802"
+      },
+      "Orsta-7B": {
+        "model_display": "Orsta",
+        "family": "RL",
+        "raw_summary": {
+          "n": 500,
+          "caption_hallu": 0.048,
+          "n_scored": 500,
+          "target_coverage": null,
+          "amber_cosine": 0.5047359112298025,
+          "hallu_units_mean": 0.048
+        },
+        "legacy_type_summary": {
+          "t3_n": 500,
+          "t3_scored_n": 500,
+          "t3_caption_hallu": 0.048,
+          "t3_n_boh": 500,
+          "t3_hallu_boh": 0.048,
+          "t3_n_roh": 0,
+          "t3_hallu_roh": null,
+          "t3_coverage": 0.602,
+          "t3_amber": 0.5047359112298021,
+          "t3_parse_fail": 0,
+          "t3_unlisted_exploratory": 0.326
+        },
+        "caption_error_count_recovered_from_summary": 24,
+        "object_claim_error_percent": 4.8,
+        "target_coverage_percent": 60.199999999999996,
+        "caption_FAR_EOH_percent": null,
+        "caption_FAR_ROH_percent": null,
+        "run": "/home/u2025141034/benchmark/refcocog_eval_13models_4tasks_500/run_20260918_125802"
+      },
+      "Qwen3-VL-8B": {
+        "model_display": "Qwen3-VL",
+        "family": "general",
+        "raw_summary": {
+          "n": 500,
+          "caption_hallu": 0.044,
+          "n_scored": 500,
+          "target_coverage": null,
+          "amber_cosine": 0.5178275521505301,
+          "hallu_units_mean": 0.044
+        },
+        "legacy_type_summary": {
+          "t3_n": 500,
+          "t3_scored_n": 500,
+          "t3_caption_hallu": 0.044,
+          "t3_n_boh": 500,
+          "t3_hallu_boh": 0.044,
+          "t3_n_roh": 0,
+          "t3_hallu_roh": null,
+          "t3_coverage": 0.57,
+          "t3_amber": 0.5178275521505303,
+          "t3_parse_fail": 0,
+          "t3_unlisted_exploratory": 0.338
+        },
+        "caption_error_count_recovered_from_summary": 22,
+        "object_claim_error_percent": 4.3999999999999995,
+        "target_coverage_percent": 56.99999999999999,
+        "caption_FAR_EOH_percent": null,
+        "caption_FAR_ROH_percent": null,
+        "run": "/home/u2025141034/benchmark/refcocog_eval_13models_4tasks_500/run_20260918_125802"
+      },
+      "Seg-R1": {
+        "model_display": "Seg-R1",
+        "family": "RL",
+        "raw_summary": {
+          "n": 500,
+          "caption_hallu": 0.05,
+          "n_scored": 500,
+          "target_coverage": null,
+          "amber_cosine": 0.4830264820285823,
+          "hallu_units_mean": 0.05
+        },
+        "legacy_type_summary": {
+          "t3_n": 500,
+          "t3_scored_n": 500,
+          "t3_caption_hallu": 0.05,
+          "t3_n_boh": 500,
+          "t3_hallu_boh": 0.05,
+          "t3_n_roh": 0,
+          "t3_hallu_roh": null,
+          "t3_coverage": 0.616,
+          "t3_amber": 0.4830264820285823,
+          "t3_parse_fail": 0,
+          "t3_unlisted_exploratory": 0.34
+        },
+        "caption_error_count_recovered_from_summary": 25,
+        "object_claim_error_percent": 5.0,
+        "target_coverage_percent": 61.6,
+        "caption_FAR_EOH_percent": null,
+        "caption_FAR_ROH_percent": null,
+        "run": "/home/u2025141034/benchmark/refcocog_eval_13models_4tasks_500/run_20260918_125802"
+      },
+      "Seg-zero": {
+        "model_display": "Seg-Zero",
+        "family": "RL",
+        "raw_summary": {
+          "n": 500,
+          "caption_hallu": 0.05,
+          "n_scored": 500,
+          "target_coverage": null,
+          "amber_cosine": 0.4861505758571519,
+          "hallu_units_mean": 0.05
+        },
+        "legacy_type_summary": {
+          "t3_n": 500,
+          "t3_scored_n": 500,
+          "t3_caption_hallu": 0.05,
+          "t3_n_boh": 500,
+          "t3_hallu_boh": 0.05,
+          "t3_n_roh": 0,
+          "t3_hallu_roh": null,
+          "t3_coverage": 0.57,
+          "t3_amber": 0.48615057585715227,
+          "t3_parse_fail": 0,
+          "t3_unlisted_exploratory": 0.322
+        },
+        "caption_error_count_recovered_from_summary": 25,
+        "object_claim_error_percent": 5.0,
+        "target_coverage_percent": 56.99999999999999,
+        "caption_FAR_EOH_percent": null,
+        "caption_FAR_ROH_percent": null,
+        "run": "/home/u2025141034/benchmark/refcocog_eval_13models_4tasks_500/run_20260918_125802"
+      },
+      "TreeVGR": {
+        "model_display": "TreeVGR",
+        "family": "RL",
+        "raw_summary": {
+          "n": 500,
+          "caption_hallu": 0.038,
+          "n_scored": 500,
+          "target_coverage": null,
+          "amber_cosine": 0.4708689518263777,
+          "hallu_units_mean": 0.038
+        },
+        "legacy_type_summary": {
+          "t3_n": 500,
+          "t3_scored_n": 500,
+          "t3_caption_hallu": 0.038,
+          "t3_n_boh": 500,
+          "t3_hallu_boh": 0.038,
+          "t3_n_roh": 0,
+          "t3_hallu_roh": null,
+          "t3_coverage": 0.49,
+          "t3_amber": 0.4708689518263771,
+          "t3_parse_fail": 0,
+          "t3_unlisted_exploratory": 0.33
+        },
+        "caption_error_count_recovered_from_summary": 19,
+        "object_claim_error_percent": 3.8,
+        "target_coverage_percent": 49.0,
+        "caption_FAR_EOH_percent": null,
+        "caption_FAR_ROH_percent": null,
+        "run": "/home/u2025141034/benchmark/refcocog_eval_13models_4tasks_500/run_20260918_125802"
+      },
+      "UniVG-R1": {
+        "model_display": "UniVG-R1",
+        "family": "RL",
+        "raw_summary": {
+          "n": 500,
+          "caption_hallu": 0.042,
+          "n_scored": 500,
+          "target_coverage": null,
+          "amber_cosine": 0.46497823375915553,
+          "hallu_units_mean": 0.042
+        },
+        "legacy_type_summary": {
+          "t3_n": 500,
+          "t3_scored_n": 500,
+          "t3_caption_hallu": 0.042,
+          "t3_n_boh": 500,
+          "t3_hallu_boh": 0.042,
+          "t3_n_roh": 0,
+          "t3_hallu_roh": null,
+          "t3_coverage": 0.6,
+          "t3_amber": 0.4649782337591554,
+          "t3_parse_fail": 0,
+          "t3_unlisted_exploratory": 0.276
+        },
+        "caption_error_count_recovered_from_summary": 21,
+        "object_claim_error_percent": 4.2,
+        "target_coverage_percent": 60.0,
+        "caption_FAR_EOH_percent": null,
+        "caption_FAR_ROH_percent": null,
+        "run": "/home/u2025141034/benchmark/refcocog_eval_13models_4tasks_500/run_20260918_125802"
+      },
+      "Vision-R1": {
+        "model_display": "Vision-R1",
+        "family": "RL",
+        "raw_summary": {
+          "n": 500,
+          "caption_hallu": 0.052,
+          "n_scored": 500,
+          "target_coverage": null,
+          "amber_cosine": 0.49476577860323767,
+          "hallu_units_mean": 0.052
+        },
+        "legacy_type_summary": {
+          "t3_n": 500,
+          "t3_scored_n": 500,
+          "t3_caption_hallu": 0.052,
+          "t3_n_boh": 500,
+          "t3_hallu_boh": 0.052,
+          "t3_n_roh": 0,
+          "t3_hallu_roh": null,
+          "t3_coverage": 0.616,
+          "t3_amber": 0.49476577860323817,
+          "t3_parse_fail": 0,
+          "t3_unlisted_exploratory": 0.332
+        },
+        "caption_error_count_recovered_from_summary": 26,
+        "object_claim_error_percent": 5.2,
+        "target_coverage_percent": 61.6,
+        "caption_FAR_EOH_percent": null,
+        "caption_FAR_ROH_percent": null,
+        "run": "/home/u2025141034/benchmark/refcocog_eval_13models_4tasks_500/run_20260918_125802"
+      },
+      "VisionReasoner": {
+        "model_display": "VisionReasoner",
+        "family": "RL",
+        "raw_summary": {
+          "n": 500,
+          "caption_hallu": 0.046,
+          "n_scored": 500,
+          "target_coverage": null,
+          "amber_cosine": 0.49173339559017937,
+          "hallu_units_mean": 0.046
+        },
+        "legacy_type_summary": {
+          "t3_n": 500,
+          "t3_scored_n": 500,
+          "t3_caption_hallu": 0.046,
+          "t3_n_boh": 500,
+          "t3_hallu_boh": 0.046,
+          "t3_n_roh": 0,
+          "t3_hallu_roh": null,
+          "t3_coverage": 0.626,
+          "t3_amber": 0.49173339559017903,
+          "t3_parse_fail": 0,
+          "t3_unlisted_exploratory": 0.34
+        },
+        "caption_error_count_recovered_from_summary": 23,
+        "object_claim_error_percent": 4.6,
+        "target_coverage_percent": 62.6,
+        "caption_FAR_EOH_percent": null,
+        "caption_FAR_ROH_percent": null,
+        "run": "/home/u2025141034/benchmark/refcocog_eval_13models_4tasks_500/run_20260918_125802"
+      },
+      "llava-ov-7b": {
+        "model_display": "LLaVA-OV",
+        "family": "general",
+        "raw_summary": {
+          "n": 500,
+          "caption_hallu": 0.02,
+          "n_scored": 500,
+          "target_coverage": null,
+          "amber_cosine": 0.4719420102085978,
+          "hallu_units_mean": 0.02
+        },
+        "legacy_type_summary": {
+          "t3_n": 500,
+          "t3_scored_n": 500,
+          "t3_caption_hallu": 0.02,
+          "t3_n_boh": 500,
+          "t3_hallu_boh": 0.02,
+          "t3_n_roh": 0,
+          "t3_hallu_roh": null,
+          "t3_coverage": 0.29,
+          "t3_amber": 0.47194201020859783,
+          "t3_parse_fail": 0,
+          "t3_unlisted_exploratory": 0.156
+        },
+        "caption_error_count_recovered_from_summary": 10,
+        "object_claim_error_percent": 2.0,
+        "target_coverage_percent": 28.999999999999996,
+        "caption_FAR_EOH_percent": null,
+        "caption_FAR_ROH_percent": null,
+        "run": "/home/u2025141034/benchmark/refcocog_eval_13models_4tasks_500/run_20260918_125802"
+      },
+      "qwen2.5-vl-7b": {
+        "model_display": "Qwen2.5-VL",
+        "family": "general",
+        "raw_summary": {
+          "n": 500,
+          "caption_hallu": 0.044,
+          "n_scored": 500,
+          "target_coverage": null,
+          "amber_cosine": 0.49391384602165894,
+          "hallu_units_mean": 0.044
+        },
+        "legacy_type_summary": {
+          "t3_n": 500,
+          "t3_scored_n": 500,
+          "t3_caption_hallu": 0.044,
+          "t3_n_boh": 500,
+          "t3_hallu_boh": 0.044,
+          "t3_n_roh": 0,
+          "t3_hallu_roh": null,
+          "t3_coverage": 0.614,
+          "t3_amber": 0.49391384602165933,
+          "t3_parse_fail": 0,
+          "t3_unlisted_exploratory": 0.332
+        },
+        "caption_error_count_recovered_from_summary": 22,
+        "object_claim_error_percent": 4.3999999999999995,
+        "target_coverage_percent": 61.4,
+        "caption_FAR_EOH_percent": null,
+        "caption_FAR_ROH_percent": null,
+        "run": "/home/u2025141034/benchmark/refcocog_eval_13models_4tasks_500/run_20260918_125802"
+      },
+      "visual-rft": {
+        "model_display": "Visual-RFT",
+        "family": "RL",
+        "raw_summary": {
+          "n": 500,
+          "caption_hallu": 0.038,
+          "n_scored": 500,
+          "target_coverage": null,
+          "amber_cosine": 0.5077291633563255,
+          "hallu_units_mean": 0.038
+        },
+        "legacy_type_summary": {
+          "t3_n": 500,
+          "t3_scored_n": 500,
+          "t3_caption_hallu": 0.038,
+          "t3_n_boh": 500,
+          "t3_hallu_boh": 0.038,
+          "t3_n_roh": 0,
+          "t3_hallu_roh": null,
+          "t3_coverage": 0.554,
+          "t3_amber": 0.5077291633563255,
+          "t3_parse_fail": 0,
+          "t3_unlisted_exploratory": 0.326
+        },
+        "caption_error_count_recovered_from_summary": 19,
+        "object_claim_error_percent": 3.8,
+        "target_coverage_percent": 55.400000000000006,
+        "caption_FAR_EOH_percent": null,
+        "caption_FAR_ROH_percent": null,
+        "run": "/home/u2025141034/benchmark/refcocog_eval_13models_4tasks_500/run_20260918_125802"
+      }
+    },
+    "family_means": {
+      "general": {
+        "n_models": 4,
+        "object_claim_error_percent": 3.8,
+        "target_coverage_percent": 50.699999999999996,
+        "FAR_EOH_percent": null,
+        "FAR_ROH_percent": null
+      },
+      "RL": {
+        "n_models": 9,
+        "object_claim_error_percent": 4.511111111111111,
+        "target_coverage_percent": 57.888888888888886,
+        "FAR_EOH_percent": null,
+        "FAR_ROH_percent": null
+      }
+    },
+    "local_raw_caption_models": [
+      "InternVL3.5-8B",
+      "LENS"
+    ],
+    "other_11_raw_caption_models_locally_missing": [
+      "Orsta-7B",
+      "Qwen3-VL-8B",
+      "Seg-R1",
+      "Seg-zero",
+      "TreeVGR",
+      "UniVG-R1",
+      "Vision-R1",
+      "VisionReasoner",
+      "llava-ov-7b",
+      "qwen2.5-vl-7b",
+      "visual-rft"
+    ],
+    "summary_target_coverage_field_bug": "tasks_t1_t3_t4.json/t3 uses target_coverage but raw caption records use target_covered; the correct existing coverage values are in 13models_4tasks_metrics.json and current appendix. No cache field changed.",
+    "joint_caption_distinction": "t4 caption_hallu_neg is generated text conditioned on the explicit referring query, assessed on negative queries; it is not query-free captioning and cannot replace the caption task.",
+    "prospective_re_evaluation_note": "Scoring the unchanged captions against association, attribute and relation annotation units would be a new derived evaluation, rather than aggregation of existing outcomes; no such re-evaluation performed here."
+  },
+  "CBR": {
+    "unit": "percent",
+    "types_in_order": [
+      "object",
+      "co_occurrence",
+      "attribute",
+      "relation"
+    ],
+    "contract": {
+      "eligibility": "valid positive predicted region with IoU against annotated ground truth >= 0.5",
+      "reuse": "IoU of negative predicted region against original positive prediction >= 0.8",
+      "denominator": "original fixed n_c for each model shared across all four types; negative refusals remain included",
+      "EOH": "arithmetic mean of object and co_occurrence CBR",
+      "ROH": "arithmetic mean of attribute and relation CBR",
+      "family_aggregation": "equal arithmetic model weight from full-precision sources; never pooling numerators by n_c"
+    },
+    "direct": {
+      "per_model": {
+        "InternVL3.5-8B": {
+          "model_display": "InternVL3.5",
+          "family": "general",
+          "n_c": 234,
+          "cbr_percent_by_type": {
+            "object": 7.6923076923076925,
+            "co_occurrence": 23.504273504273502,
+            "attribute": 45.72649572649573,
+            "relation": 43.58974358974359
+          },
+          "EOH_percent": 15.598290598290598,
+          "ROH_percent": 44.65811965811966,
+          "reuse_counts": {
+            "object": 18,
+            "co_occurrence": 55,
+            "attribute": 107,
+            "relation": 102
+          },
+          "count_provenance": "recomputed from local raw records",
+          "source": "evidence/cbr_3lines.json:alignment_B0_full500"
+        },
+        "LENS": {
+          "model_display": "LENS",
+          "family": "RL",
+          "n_c": 248,
+          "cbr_percent_by_type": {
+            "object": 48.79032258064516,
+            "co_occurrence": 51.61290322580645,
+            "attribute": 68.54838709677419,
+            "relation": 67.33870967741935
+          },
+          "EOH_percent": 50.20161290322581,
+          "ROH_percent": 67.94354838709677,
+          "reuse_counts": {
+            "object": 121,
+            "co_occurrence": 128,
+            "attribute": 170,
+            "relation": 167
+          },
+          "count_provenance": "recomputed from local raw records",
+          "source": "evidence/cbr_3lines.json:alignment_B0_full500"
+        },
+        "Orsta-7B": {
+          "model_display": "Orsta",
+          "family": "RL",
+          "n_c": 151,
+          "cbr_percent_by_type": {
+            "object": 0.6622516556291391,
+            "co_occurrence": 8.609271523178808,
+            "attribute": 11.258278145695364,
+            "relation": 15.894039735099339
+          },
+          "EOH_percent": 4.635761589403974,
+          "ROH_percent": 13.576158940397352,
+          "reuse_counts": {
+            "object": 1,
+            "co_occurrence": 13,
+            "attribute": 17,
+            "relation": 24
+          },
+          "count_provenance": "exact integer recovery from stored full-precision rates and fixed n_c",
+          "source": "evidence/cbr_3lines.json:alignment_B0_full500"
+        },
+        "Qwen3-VL-8B": {
+          "model_display": "Qwen3-VL",
+          "family": "general",
+          "n_c": 238,
+          "cbr_percent_by_type": {
+            "object": 2.100840336134454,
+            "co_occurrence": 10.92436974789916,
+            "attribute": 19.327731092436977,
+            "relation": 33.193277310924366
+          },
+          "EOH_percent": 6.512605042016807,
+          "ROH_percent": 26.26050420168067,
+          "reuse_counts": {
+            "object": 5,
+            "co_occurrence": 26,
+            "attribute": 46,
+            "relation": 79
+          },
+          "count_provenance": "exact integer recovery from stored full-precision rates and fixed n_c",
+          "source": "evidence/cbr_3lines.json:alignment_B0_full500"
+        },
+        "Seg-R1": {
+          "model_display": "Seg-R1",
+          "family": "RL",
+          "n_c": 261,
+          "cbr_percent_by_type": {
+            "object": 22.22222222222222,
+            "co_occurrence": 36.39846743295019,
+            "attribute": 46.74329501915709,
+            "relation": 58.620689655172406
+          },
+          "EOH_percent": 29.310344827586206,
+          "ROH_percent": 52.68199233716474,
+          "reuse_counts": {
+            "object": 58,
+            "co_occurrence": 95,
+            "attribute": 122,
+            "relation": 153
+          },
+          "count_provenance": "exact integer recovery from stored full-precision rates and fixed n_c",
+          "source": "evidence/cbr_3lines.json:alignment_B0_full500"
+        },
+        "Seg-zero": {
+          "model_display": "Seg-Zero",
+          "family": "RL",
+          "n_c": 275,
+          "cbr_percent_by_type": {
+            "object": 41.45454545454545,
+            "co_occurrence": 47.27272727272727,
+            "attribute": 60.72727272727273,
+            "relation": 64.0
+          },
+          "EOH_percent": 44.36363636363636,
+          "ROH_percent": 62.36363636363636,
+          "reuse_counts": {
+            "object": 114,
+            "co_occurrence": 130,
+            "attribute": 167,
+            "relation": 176
+          },
+          "count_provenance": "recomputed from local raw records",
+          "source": "evidence/cbr_3lines.json:alignment_B0_full500"
+        },
+        "TreeVGR": {
+          "model_display": "TreeVGR",
+          "family": "RL",
+          "n_c": 131,
+          "cbr_percent_by_type": {
+            "object": 4.580152671755725,
+            "co_occurrence": 10.687022900763358,
+            "attribute": 12.977099236641221,
+            "relation": 16.030534351145036
+          },
+          "EOH_percent": 7.633587786259541,
+          "ROH_percent": 14.50381679389313,
+          "reuse_counts": {
+            "object": 6,
+            "co_occurrence": 14,
+            "attribute": 17,
+            "relation": 21
+          },
+          "count_provenance": "exact integer recovery from stored full-precision rates and fixed n_c",
+          "source": "evidence/cbr_3lines.json:alignment_B0_full500"
+        },
+        "UniVG-R1": {
+          "model_display": "UniVG-R1",
+          "family": "RL",
+          "n_c": 254,
+          "cbr_percent_by_type": {
+            "object": 38.582677165354326,
+            "co_occurrence": 37.00787401574803,
+            "attribute": 50.78740157480315,
+            "relation": 55.118110236220474
+          },
+          "EOH_percent": 37.79527559055118,
+          "ROH_percent": 52.95275590551181,
+          "reuse_counts": {
+            "object": 98,
+            "co_occurrence": 94,
+            "attribute": 129,
+            "relation": 140
+          },
+          "count_provenance": "exact integer recovery from stored full-precision rates and fixed n_c",
+          "source": "reviewer_v060/cf_cbr_4types.json"
+        },
+        "Vision-R1": {
+          "model_display": "Vision-R1",
+          "family": "RL",
+          "n_c": 148,
+          "cbr_percent_by_type": {
+            "object": 1.3513513513513513,
+            "co_occurrence": 7.4324324324324325,
+            "attribute": 8.783783783783784,
+            "relation": 14.18918918918919
+          },
+          "EOH_percent": 4.391891891891892,
+          "ROH_percent": 11.486486486486488,
+          "reuse_counts": {
+            "object": 2,
+            "co_occurrence": 11,
+            "attribute": 13,
+            "relation": 21
+          },
+          "count_provenance": "exact integer recovery from stored full-precision rates and fixed n_c",
+          "source": "evidence/cbr_3lines.json:alignment_B0_full500"
+        },
+        "VisionReasoner": {
+          "model_display": "VisionReasoner",
+          "family": "RL",
+          "n_c": 253,
+          "cbr_percent_by_type": {
+            "object": 33.99209486166008,
+            "co_occurrence": 48.22134387351779,
+            "attribute": 52.96442687747036,
+            "relation": 63.24110671936759
+          },
+          "EOH_percent": 41.10671936758894,
+          "ROH_percent": 58.102766798418976,
+          "reuse_counts": {
+            "object": 86,
+            "co_occurrence": 122,
+            "attribute": 134,
+            "relation": 160
+          },
+          "count_provenance": "recomputed from local raw records",
+          "source": "evidence/cbr_3lines.json:alignment_B0_full500"
+        },
+        "llava-ov-7b": {
+          "model_display": "LLaVA-OV",
+          "family": "general",
+          "n_c": 186,
+          "cbr_percent_by_type": {
+            "object": 4.301075268817205,
+            "co_occurrence": 18.27956989247312,
+            "attribute": 18.27956989247312,
+            "relation": 42.473118279569896
+          },
+          "EOH_percent": 11.290322580645162,
+          "ROH_percent": 30.376344086021508,
+          "reuse_counts": {
+            "object": 8,
+            "co_occurrence": 34,
+            "attribute": 34,
+            "relation": 79
+          },
+          "count_provenance": "exact integer recovery from stored full-precision rates and fixed n_c",
+          "source": "evidence/cbr_3lines.json:alignment_B0_full500"
+        },
+        "qwen2.5-vl-7b": {
+          "model_display": "Qwen2.5-VL",
+          "family": "general",
+          "n_c": 242,
+          "cbr_percent_by_type": {
+            "object": 4.545454545454546,
+            "co_occurrence": 18.59504132231405,
+            "attribute": 26.859504132231404,
+            "relation": 44.62809917355372
+          },
+          "EOH_percent": 11.570247933884298,
+          "ROH_percent": 35.743801652892564,
+          "reuse_counts": {
+            "object": 11,
+            "co_occurrence": 45,
+            "attribute": 65,
+            "relation": 108
+          },
+          "count_provenance": "exact integer recovery from stored full-precision rates and fixed n_c",
+          "source": "evidence/cbr_3lines.json:alignment_B0_full500"
+        },
+        "visual-rft": {
+          "model_display": "Visual-RFT",
+          "family": "RL",
+          "n_c": 211,
+          "cbr_percent_by_type": {
+            "object": 3.7914691943127963,
+            "co_occurrence": 14.691943127962084,
+            "attribute": 18.48341232227488,
+            "relation": 37.91469194312796
+          },
+          "EOH_percent": 9.24170616113744,
+          "ROH_percent": 28.19905213270142,
+          "reuse_counts": {
+            "object": 8,
+            "co_occurrence": 31,
+            "attribute": 39,
+            "relation": 80
+          },
+          "count_provenance": "exact integer recovery from stored full-precision rates and fixed n_c",
+          "source": "reviewer_v060/cf_cbr_4types.json"
+        }
+      },
+      "family_means": {
+        "general": {
+          "models": [
+            "InternVL3.5-8B",
+            "Qwen3-VL-8B",
+            "llava-ov-7b",
+            "qwen2.5-vl-7b"
+          ],
+          "n_models": 4,
+          "sum_n_c_context_only_not_weight": 900,
+          "cbr_percent_by_type": {
+            "object": 4.659919460678474,
+            "co_occurrence": 17.825813616739957,
+            "attribute": 27.548325210909308,
+            "relation": 40.97105958844789
+          },
+          "EOH_percent": 11.242866538709215,
+          "ROH_percent": 34.2596923996786,
+          "display_2dp": {
+            "object": "4.66",
+            "co_occurrence": "17.83",
+            "attribute": "27.55",
+            "relation": "40.97",
+            "EOH": "11.24",
+            "ROH": "34.26"
+          }
+        },
+        "RL": {
+          "models": [
+            "LENS",
+            "Orsta-7B",
+            "Seg-R1",
+            "Seg-zero",
+            "TreeVGR",
+            "UniVG-R1",
+            "Vision-R1",
+            "VisionReasoner",
+            "visual-rft"
+          ],
+          "n_models": 9,
+          "sum_n_c_context_only_not_weight": 1932,
+          "cbr_percent_by_type": {
+            "object": 21.71412079527514,
+            "co_occurrence": 29.103776200565157,
+            "attribute": 36.80815075376364,
+            "relation": 43.59411905630459
+          },
+          "EOH_percent": 25.40894849792015,
+          "ROH_percent": 40.20113490503412,
+          "display_2dp": {
+            "object": "21.71",
+            "co_occurrence": "29.10",
+            "attribute": "36.81",
+            "relation": "43.59",
+            "EOH": "25.41",
+            "ROH": "40.20"
+          }
+        },
+        "all": {
+          "models": [
+            "InternVL3.5-8B",
+            "LENS",
+            "Orsta-7B",
+            "Qwen3-VL-8B",
+            "Seg-R1",
+            "Seg-zero",
+            "TreeVGR",
+            "UniVG-R1",
+            "Vision-R1",
+            "VisionReasoner",
+            "llava-ov-7b",
+            "qwen2.5-vl-7b",
+            "visual-rft"
+          ],
+          "n_models": 13,
+          "sum_n_c_context_only_not_weight": 2832,
+          "cbr_percent_by_type": {
+            "object": 16.46667423078386,
+            "co_occurrence": 25.63363386708048,
+            "attribute": 33.95897366365462,
+            "relation": 42.78702383542561
+          },
+          "EOH_percent": 21.050154048932168,
+          "ROH_percent": 38.37299874954011,
+          "display_2dp": {
+            "object": "16.47",
+            "co_occurrence": "25.63",
+            "attribute": "33.96",
+            "relation": "42.79",
+            "EOH": "21.05",
+            "ROH": "38.37"
+          }
+        }
+      },
+      "current_table_checks": [
+        {
+          "model": "Qwen3-VL-8B",
+          "passed": true,
+          "table_n_c": 238,
+          "table_cbr_percent": {
+            "object": 2.1,
+            "co_occurrence": 10.92,
+            "attribute": 19.33,
+            "relation": 33.19
+          }
+        },
+        {
+          "model": "qwen2.5-vl-7b",
+          "passed": true,
+          "table_n_c": 242,
+          "table_cbr_percent": {
+            "object": 4.55,
+            "co_occurrence": 18.6,
+            "attribute": 26.86,
+            "relation": 44.63
+          }
+        },
+        {
+          "model": "InternVL3.5-8B",
+          "passed": true,
+          "table_n_c": 234,
+          "table_cbr_percent": {
+            "object": 7.69,
+            "co_occurrence": 23.5,
+            "attribute": 45.73,
+            "relation": 43.59
+          }
+        },
+        {
+          "model": "llava-ov-7b",
+          "passed": true,
+          "table_n_c": 186,
+          "table_cbr_percent": {
+            "object": 4.3,
+            "co_occurrence": 18.28,
+            "attribute": 18.28,
+            "relation": 42.47
+          }
+        },
+        {
+          "model": "LENS",
+          "passed": true,
+          "table_n_c": 248,
+          "table_cbr_percent": {
+            "object": 48.79,
+            "co_occurrence": 51.61,
+            "attribute": 68.55,
+            "relation": 67.34
+          }
+        },
+        {
+          "model": "Orsta-7B",
+          "passed": true,
+          "table_n_c": 151,
+          "table_cbr_percent": {
+            "object": 0.66,
+            "co_occurrence": 8.61,
+            "attribute": 11.26,
+            "relation": 15.89
+          }
+        },
+        {
+          "model": "Seg-R1",
+          "passed": true,
+          "table_n_c": 261,
+          "table_cbr_percent": {
+            "object": 22.22,
+            "co_occurrence": 36.4,
+            "attribute": 46.74,
+            "relation": 58.62
+          }
+        },
+        {
+          "model": "Seg-zero",
+          "passed": true,
+          "table_n_c": 275,
+          "table_cbr_percent": {
+            "object": 41.45,
+            "co_occurrence": 47.27,
+            "attribute": 60.73,
+            "relation": 64.0
+          }
+        },
+        {
+          "model": "TreeVGR",
+          "passed": true,
+          "table_n_c": 131,
+          "table_cbr_percent": {
+            "object": 4.58,
+            "co_occurrence": 10.69,
+            "attribute": 12.98,
+            "relation": 16.03
+          }
+        },
+        {
+          "model": "UniVG-R1",
+          "passed": true,
+          "table_n_c": 254,
+          "table_cbr_percent": {
+            "object": 38.58,
+            "co_occurrence": 37.01,
+            "attribute": 50.79,
+            "relation": 55.12
+          }
+        },
+        {
+          "model": "Vision-R1",
+          "passed": true,
+          "table_n_c": 148,
+          "table_cbr_percent": {
+            "object": 1.35,
+            "co_occurrence": 7.43,
+            "attribute": 8.78,
+            "relation": 14.19
+          }
+        },
+        {
+          "model": "VisionReasoner",
+          "passed": true,
+          "table_n_c": 253,
+          "table_cbr_percent": {
+            "object": 33.99,
+            "co_occurrence": 48.22,
+            "attribute": 52.96,
+            "relation": 63.24
+          }
+        },
+        {
+          "model": "visual-rft",
+          "passed": true,
+          "table_n_c": 211,
+          "table_cbr_percent": {
+            "object": 3.79,
+            "co_occurrence": 14.69,
+            "attribute": 18.48,
+            "relation": 37.91
+          }
+        }
+      ]
+    },
+    "joint_optional": {
+      "per_model": {
+        "InternVL3.5-8B": {
+          "model_display": "InternVL3.5",
+          "family": "general",
+          "n_c": 150,
+          "cbr_percent_by_type": {
+            "object": 6.666666666666667,
+            "co_occurrence": 15.333333333333332,
+            "attribute": 20.0,
+            "relation": 28.666666666666668
+          },
+          "EOH_percent": 11.0,
+          "ROH_percent": 24.333333333333336,
+          "reuse_counts": {
+            "object": 10,
+            "co_occurrence": 23,
+            "attribute": 30,
+            "relation": 43
+          },
+          "count_provenance": "exact integer recovery from stored full-precision rates and fixed n_c",
+          "source": "reviewer_v060/t4_mitigation.json:per/InternVL3.5-8B/unfiltered"
+        },
+        "LENS": {
+          "model_display": "LENS",
+          "family": "RL",
+          "n_c": 128,
+          "cbr_percent_by_type": {
+            "object": 23.4375,
+            "co_occurrence": 18.75,
+            "attribute": 31.25,
+            "relation": 36.71875
+          },
+          "EOH_percent": 21.09375,
+          "ROH_percent": 33.984375,
+          "reuse_counts": {
+            "object": 30,
+            "co_occurrence": 24,
+            "attribute": 40,
+            "relation": 47
+          },
+          "count_provenance": "exact integer recovery from stored full-precision rates and fixed n_c",
+          "source": "reviewer_v060/t4_mitigation.json:per/LENS/unfiltered"
+        },
+        "Orsta-7B": {
+          "model_display": "Orsta",
+          "family": "RL",
+          "n_c": 139,
+          "cbr_percent_by_type": {
+            "object": 0.0,
+            "co_occurrence": 10.071942446043165,
+            "attribute": 11.510791366906476,
+            "relation": 21.58273381294964
+          },
+          "EOH_percent": 5.0359712230215825,
+          "ROH_percent": 16.546762589928058,
+          "reuse_counts": {
+            "object": 0,
+            "co_occurrence": 14,
+            "attribute": 16,
+            "relation": 30
+          },
+          "count_provenance": "exact integer recovery from stored full-precision rates and fixed n_c",
+          "source": "reviewer_v060/t4_mitigation.json:per/Orsta-7B/unfiltered"
+        },
+        "Qwen3-VL-8B": {
+          "model_display": "Qwen3-VL",
+          "family": "general",
+          "n_c": 232,
+          "cbr_percent_by_type": {
+            "object": 1.7241379310344827,
+            "co_occurrence": 7.758620689655173,
+            "attribute": 12.068965517241379,
+            "relation": 32.327586206896555
+          },
+          "EOH_percent": 4.741379310344827,
+          "ROH_percent": 22.198275862068968,
+          "reuse_counts": {
+            "object": 4,
+            "co_occurrence": 18,
+            "attribute": 28,
+            "relation": 75
+          },
+          "count_provenance": "exact integer recovery from stored full-precision rates and fixed n_c",
+          "source": "reviewer_v060/t4_mitigation.json:per/Qwen3-VL-8B/unfiltered"
+        },
+        "Seg-R1": {
+          "model_display": "Seg-R1",
+          "family": "RL",
+          "n_c": 205,
+          "cbr_percent_by_type": {
+            "object": 3.902439024390244,
+            "co_occurrence": 19.024390243902438,
+            "attribute": 23.902439024390244,
+            "relation": 49.26829268292683
+          },
+          "EOH_percent": 11.463414634146341,
+          "ROH_percent": 36.58536585365854,
+          "reuse_counts": {
+            "object": 8,
+            "co_occurrence": 39,
+            "attribute": 49,
+            "relation": 101
+          },
+          "count_provenance": "exact integer recovery from stored full-precision rates and fixed n_c",
+          "source": "reviewer_v060/t4_mitigation.json:per/Seg-R1/unfiltered"
+        },
+        "Seg-zero": {
+          "model_display": "Seg-Zero",
+          "family": "RL",
+          "n_c": 232,
+          "cbr_percent_by_type": {
+            "object": 5.603448275862069,
+            "co_occurrence": 20.25862068965517,
+            "attribute": 23.70689655172414,
+            "relation": 47.41379310344828
+          },
+          "EOH_percent": 12.93103448275862,
+          "ROH_percent": 35.560344827586206,
+          "reuse_counts": {
+            "object": 13,
+            "co_occurrence": 47,
+            "attribute": 55,
+            "relation": 110
+          },
+          "count_provenance": "exact integer recovery from stored full-precision rates and fixed n_c",
+          "source": "reviewer_v060/t4_mitigation.json:per/Seg-zero/unfiltered"
+        },
+        "TreeVGR": {
+          "model_display": "TreeVGR",
+          "family": "RL",
+          "n_c": 126,
+          "cbr_percent_by_type": {
+            "object": 0.0,
+            "co_occurrence": 7.142857142857142,
+            "attribute": 6.349206349206349,
+            "relation": 13.492063492063492
+          },
+          "EOH_percent": 3.571428571428571,
+          "ROH_percent": 9.920634920634921,
+          "reuse_counts": {
+            "object": 0,
+            "co_occurrence": 9,
+            "attribute": 8,
+            "relation": 17
+          },
+          "count_provenance": "exact integer recovery from stored full-precision rates and fixed n_c",
+          "source": "reviewer_v060/t4_mitigation.json:per/TreeVGR/unfiltered"
+        },
+        "UniVG-R1": {
+          "model_display": "UniVG-R1",
+          "family": "RL",
+          "n_c": 247,
+          "cbr_percent_by_type": {
+            "object": 25.910931174089068,
+            "co_occurrence": 34.41295546558704,
+            "attribute": 47.368421052631575,
+            "relation": 55.06072874493927
+          },
+          "EOH_percent": 30.161943319838052,
+          "ROH_percent": 51.21457489878542,
+          "reuse_counts": {
+            "object": 64,
+            "co_occurrence": 85,
+            "attribute": 117,
+            "relation": 136
+          },
+          "count_provenance": "exact integer recovery from stored full-precision rates and fixed n_c",
+          "source": "reviewer_v060/t4_mitigation.json:per/UniVG-R1/unfiltered"
+        },
+        "Vision-R1": {
+          "model_display": "Vision-R1",
+          "family": "RL",
+          "n_c": 148,
+          "cbr_percent_by_type": {
+            "object": 0.0,
+            "co_occurrence": 8.108108108108109,
+            "attribute": 8.108108108108109,
+            "relation": 14.864864864864865
+          },
+          "EOH_percent": 4.054054054054054,
+          "ROH_percent": 11.486486486486488,
+          "reuse_counts": {
+            "object": 0,
+            "co_occurrence": 12,
+            "attribute": 12,
+            "relation": 22
+          },
+          "count_provenance": "exact integer recovery from stored full-precision rates and fixed n_c",
+          "source": "reviewer_v060/t4_mitigation.json:per/Vision-R1/unfiltered"
+        },
+        "VisionReasoner": {
+          "model_display": "VisionReasoner",
+          "family": "RL",
+          "n_c": 207,
+          "cbr_percent_by_type": {
+            "object": 5.314009661835748,
+            "co_occurrence": 29.468599033816425,
+            "attribute": 30.917874396135264,
+            "relation": 55.072463768115945
+          },
+          "EOH_percent": 17.391304347826086,
+          "ROH_percent": 42.99516908212561,
+          "reuse_counts": {
+            "object": 11,
+            "co_occurrence": 61,
+            "attribute": 64,
+            "relation": 114
+          },
+          "count_provenance": "exact integer recovery from stored full-precision rates and fixed n_c",
+          "source": "reviewer_v060/t4_mitigation.json:per/VisionReasoner/unfiltered"
+        },
+        "llava-ov-7b": {
+          "model_display": "LLaVA-OV",
+          "family": "general",
+          "n_c": 81,
+          "cbr_percent_by_type": {
+            "object": 66.66666666666666,
+            "co_occurrence": 69.1358024691358,
+            "attribute": 81.48148148148148,
+            "relation": 87.65432098765432
+          },
+          "EOH_percent": 67.90123456790123,
+          "ROH_percent": 84.5679012345679,
+          "reuse_counts": {
+            "object": 54,
+            "co_occurrence": 56,
+            "attribute": 66,
+            "relation": 71
+          },
+          "count_provenance": "exact integer recovery from stored full-precision rates and fixed n_c",
+          "source": "reviewer_v060/t4_mitigation.json:per/llava-ov-7b/unfiltered"
+        },
+        "qwen2.5-vl-7b": {
+          "model_display": "Qwen2.5-VL",
+          "family": "general",
+          "n_c": 212,
+          "cbr_percent_by_type": {
+            "object": 3.30188679245283,
+            "co_occurrence": 16.9811320754717,
+            "attribute": 21.69811320754717,
+            "relation": 43.39622641509434
+          },
+          "EOH_percent": 10.141509433962264,
+          "ROH_percent": 32.54716981132076,
+          "reuse_counts": {
+            "object": 7,
+            "co_occurrence": 36,
+            "attribute": 46,
+            "relation": 92
+          },
+          "count_provenance": "exact integer recovery from stored full-precision rates and fixed n_c",
+          "source": "reviewer_v060/t4_mitigation.json:per/qwen2.5-vl-7b/unfiltered"
+        },
+        "visual-rft": {
+          "model_display": "Visual-RFT",
+          "family": "RL",
+          "n_c": 207,
+          "cbr_percent_by_type": {
+            "object": 17.391304347826086,
+            "co_occurrence": 24.637681159420293,
+            "attribute": 35.26570048309179,
+            "relation": 49.75845410628019
+          },
+          "EOH_percent": 21.014492753623188,
+          "ROH_percent": 42.512077294685994,
+          "reuse_counts": {
+            "object": 36,
+            "co_occurrence": 51,
+            "attribute": 73,
+            "relation": 103
+          },
+          "count_provenance": "exact integer recovery from stored full-precision rates and fixed n_c",
+          "source": "reviewer_v060/t4_mitigation.json:per/visual-rft/unfiltered"
+        }
+      },
+      "family_means": {
+        "general": {
+          "models": [
+            "InternVL3.5-8B",
+            "Qwen3-VL-8B",
+            "llava-ov-7b",
+            "qwen2.5-vl-7b"
+          ],
+          "n_models": 4,
+          "sum_n_c_context_only_not_weight": 675,
+          "cbr_percent_by_type": {
+            "object": 19.58983951420516,
+            "co_occurrence": 27.302222141899,
+            "attribute": 33.81214005156751,
+            "relation": 48.01120006907797
+          },
+          "EOH_percent": 23.44603082805208,
+          "ROH_percent": 40.91167006032274,
+          "display_2dp": {
+            "object": "19.59",
+            "co_occurrence": "27.30",
+            "attribute": "33.81",
+            "relation": "48.01",
+            "EOH": "23.45",
+            "ROH": "40.91"
+          }
+        },
+        "RL": {
+          "models": [
+            "LENS",
+            "Orsta-7B",
+            "Seg-R1",
+            "Seg-zero",
+            "TreeVGR",
+            "UniVG-R1",
+            "Vision-R1",
+            "VisionReasoner",
+            "visual-rft"
+          ],
+          "n_models": 9,
+          "sum_n_c_context_only_not_weight": 1639,
+          "cbr_percent_by_type": {
+            "object": 9.062181387111469,
+            "co_occurrence": 19.097239365487752,
+            "attribute": 24.264381925799327,
+            "relation": 38.13690495284317
+          },
+          "EOH_percent": 14.07971037629961,
+          "ROH_percent": 31.200643439321247,
+          "display_2dp": {
+            "object": "9.06",
+            "co_occurrence": "19.10",
+            "attribute": "24.26",
+            "relation": "38.14",
+            "EOH": "14.08",
+            "ROH": "31.20"
+          }
+        },
+        "all": {
+          "models": [
+            "InternVL3.5-8B",
+            "LENS",
+            "Orsta-7B",
+            "Qwen3-VL-8B",
+            "Seg-R1",
+            "Seg-zero",
+            "TreeVGR",
+            "UniVG-R1",
+            "Vision-R1",
+            "VisionReasoner",
+            "llava-ov-7b",
+            "qwen2.5-vl-7b",
+            "visual-rft"
+          ],
+          "n_models": 13,
+          "sum_n_c_context_only_not_weight": 2314,
+          "cbr_percent_by_type": {
+            "object": 12.301460810832603,
+            "co_occurrence": 21.62184945053737,
+            "attribute": 27.20215365680492,
+            "relation": 41.17514960399234
+          },
+          "EOH_percent": 16.961655130684985,
+          "ROH_percent": 34.18865163039863,
+          "display_2dp": {
+            "object": "12.30",
+            "co_occurrence": "21.62",
+            "attribute": "27.20",
+            "relation": "41.18",
+            "EOH": "16.96",
+            "ROH": "34.19"
+          }
+        }
+      },
+      "current_table_checks": [
+        {
+          "model": "Qwen3-VL-8B",
+          "passed": true,
+          "table_n_c": 232,
+          "table_cbr_percent": {
+            "object": 1.7,
+            "co_occurrence": 7.8,
+            "attribute": 12.1,
+            "relation": 32.3
+          }
+        },
+        {
+          "model": "qwen2.5-vl-7b",
+          "passed": true,
+          "table_n_c": 212,
+          "table_cbr_percent": {
+            "object": 3.3,
+            "co_occurrence": 17.0,
+            "attribute": 21.7,
+            "relation": 43.4
+          }
+        },
+        {
+          "model": "InternVL3.5-8B",
+          "passed": true,
+          "table_n_c": 150,
+          "table_cbr_percent": {
+            "object": 6.7,
+            "co_occurrence": 15.3,
+            "attribute": 20.0,
+            "relation": 28.7
+          }
+        },
+        {
+          "model": "llava-ov-7b",
+          "passed": true,
+          "table_n_c": 81,
+          "table_cbr_percent": {
+            "object": 66.7,
+            "co_occurrence": 69.1,
+            "attribute": 81.5,
+            "relation": 87.7
+          }
+        },
+        {
+          "model": "LENS",
+          "passed": true,
+          "table_n_c": 128,
+          "table_cbr_percent": {
+            "object": 23.4,
+            "co_occurrence": 18.8,
+            "attribute": 31.2,
+            "relation": 36.7
+          }
+        },
+        {
+          "model": "Orsta-7B",
+          "passed": true,
+          "table_n_c": 139,
+          "table_cbr_percent": {
+            "object": 0.0,
+            "co_occurrence": 10.1,
+            "attribute": 11.5,
+            "relation": 21.6
+          }
+        },
+        {
+          "model": "Seg-R1",
+          "passed": true,
+          "table_n_c": 205,
+          "table_cbr_percent": {
+            "object": 3.9,
+            "co_occurrence": 19.0,
+            "attribute": 23.9,
+            "relation": 49.3
+          }
+        },
+        {
+          "model": "Seg-zero",
+          "passed": true,
+          "table_n_c": 232,
+          "table_cbr_percent": {
+            "object": 5.6,
+            "co_occurrence": 20.3,
+            "attribute": 23.7,
+            "relation": 47.4
+          }
+        },
+        {
+          "model": "TreeVGR",
+          "passed": true,
+          "table_n_c": 126,
+          "table_cbr_percent": {
+            "object": 0.0,
+            "co_occurrence": 7.1,
+            "attribute": 6.3,
+            "relation": 13.5
+          }
+        },
+        {
+          "model": "UniVG-R1",
+          "passed": true,
+          "table_n_c": 247,
+          "table_cbr_percent": {
+            "object": 25.91,
+            "co_occurrence": 34.41,
+            "attribute": 47.37,
+            "relation": 55.06
+          }
+        },
+        {
+          "model": "Vision-R1",
+          "passed": true,
+          "table_n_c": 148,
+          "table_cbr_percent": {
+            "object": 0.0,
+            "co_occurrence": 8.1,
+            "attribute": 8.1,
+            "relation": 14.9
+          }
+        },
+        {
+          "model": "VisionReasoner",
+          "passed": true,
+          "table_n_c": 207,
+          "table_cbr_percent": {
+            "object": 5.3,
+            "co_occurrence": 29.5,
+            "attribute": 30.9,
+            "relation": 55.1
+          }
+        },
+        {
+          "model": "visual-rft",
+          "passed": true,
+          "table_n_c": 207,
+          "table_cbr_percent": {
+            "object": 17.39,
+            "co_occurrence": 24.64,
+            "attribute": 35.27,
+            "relation": 49.76
+          }
+        }
+      ]
+    }
+  },
+  "local_raw_audits": [
+    {
+      "source": {
+        "path": "/Users/yyyb/.codex/.chatgpt-projects/g-p-6a9fadb9a6ec8191bbc34778fa9b4a7d/.build/groundbind_construction_cases_20261008/raw/home/u2025141034/benchmark/refcocog_eval_11models_500_repaired/run_500_semantic_strict/Seg-zero/records.jsonl",
+        "sha256": "f926213886a75f625ace6261053cd3e466351de077431fe38fb00a888bde7bf7"
+      },
+      "model": "Seg-zero",
+      "task_counts": {
+        "t1_discriminative_vqa": 2500,
+        "t2_vqa_grounding": 2500,
+        "t4_caption_grounding": 2500
+      },
+      "direct_cbr_recomputed": {
+        "n_c": 275,
+        "counts": {
+          "object": 114,
+          "co_occurrence": 130,
+          "attribute": 167,
+          "relation": 176
+        }
+      }
+    },
+    {
+      "source": {
+        "path": "/Users/yyyb/.codex/.chatgpt-projects/g-p-6a9fadb9a6ec8191bbc34778fa9b4a7d/.build/groundbind_construction_cases_20261008/raw/home/u2025141034/benchmark/refcocog_eval_11models_500_repaired/run_500_semantic_strict/VisionReasoner/records.jsonl",
+        "sha256": "25a546e1f5047ccf92bd0c5be9fffb6dde1fd4c9f32422c1ccf78a8b58631936"
+      },
+      "model": "VisionReasoner",
+      "task_counts": {
+        "t1_discriminative_vqa": 2500,
+        "t2_vqa_grounding": 2500,
+        "t4_caption_grounding": 2500
+      },
+      "direct_cbr_recomputed": {
+        "n_c": 253,
+        "counts": {
+          "object": 86,
+          "co_occurrence": 122,
+          "attribute": 134,
+          "relation": 160
+        }
+      }
+    },
+    {
+      "source": {
+        "path": "/Users/yyyb/.codex/.chatgpt-projects/g-p-6a9fadb9a6ec8191bbc34778fa9b4a7d/.build/groundbind_construction_cases_20261008/raw/home/u2025141034/benchmark/refcocog_eval_13models_4tasks_500/run_20260918_125802/InternVL3.5-8B/records.jsonl",
+        "sha256": "46d9f7228207d545f24c5855627a91617fe70c65e40fd33080f13402c5489309"
+      },
+      "model": "InternVL3.5-8B",
+      "task_counts": {
+        "t1_discriminative_vqa": 2500,
+        "t2_vqa_grounding": 2500,
+        "t4_caption_grounding": 2500,
+        "t3_pure_caption": 500
+      },
+      "caption": {
+        "n": 500,
+        "types": {
+          "object": 500
+        },
+        "groups": {
+          "BOH": 500
+        },
+        "query_roles": {
+          "positive": 500
+        },
+        "scored_n": 500,
+        "object_error_count": 22,
+        "target_covered_count": 277,
+        "label_exists_field_count": 0,
+        "pred_exists_field_count": 0,
+        "record_keys": [
+          "amber_cosine",
+          "amber_cosine_penalized",
+          "base_sample_id",
+          "caption",
+          "caption_target_hallucination",
+          "caption_target_hallucination_unit_count",
+          "caption_target_hallucination_units",
+          "generated_token_count",
+          "hallucination_group",
+          "hallucination_type",
+          "inference_reused",
+          "latency_sec",
+          "model",
+          "neg_sim",
+          "parse_failure",
+          "pos_sim",
+          "prompt_token_count",
+          "query_role",
+          "raw_output",
+          "reuse_source",
+          "sample_id",
+          "source",
+          "target_covered",
+          "task",
+          "units_available",
+          "unlisted_objects"
+        ]
+      },
+      "direct_cbr_recomputed": {
+        "n_c": 234,
+        "counts": {
+          "object": 18,
+          "co_occurrence": 55,
+          "attribute": 107,
+          "relation": 102
+        }
+      }
+    },
+    {
+      "source": {
+        "path": "/Users/yyyb/.codex/.chatgpt-projects/g-p-6a9fadb9a6ec8191bbc34778fa9b4a7d/.build/groundbind_construction_cases_20261008/raw/home/u2025141034/benchmark/refcocog_eval_13models_4tasks_500/run_20260918_125802/LENS/records.jsonl",
+        "sha256": "e3e05c84a011aac0caaba187358dc1644a2fe0d9cfee02d9607881212d57c49f"
+      },
+      "model": "LENS",
+      "task_counts": {
+        "t1_discriminative_vqa": 2500,
+        "t2_vqa_grounding": 2500,
+        "t4_caption_grounding": 2500,
+        "t3_pure_caption": 500
+      },
+      "caption": {
+        "n": 500,
+        "types": {
+          "object": 500
+        },
+        "groups": {
+          "BOH": 500
+        },
+        "query_roles": {
+          "positive": 500
+        },
+        "scored_n": 500,
+        "object_error_count": 21,
+        "target_covered_count": 268,
+        "label_exists_field_count": 0,
+        "pred_exists_field_count": 0,
+        "record_keys": [
+          "amber_cosine",
+          "amber_cosine_penalized",
+          "base_sample_id",
+          "caption",
+          "caption_target_hallucination",
+          "caption_target_hallucination_unit_count",
+          "caption_target_hallucination_units",
+          "generated_token_count",
+          "hallucination_group",
+          "hallucination_type",
+          "inference_reused",
+          "latency_sec",
+          "model",
+          "neg_sim",
+          "parse_failure",
+          "pos_sim",
+          "prompt_token_count",
+          "query_role",
+          "raw_output",
+          "reuse_source",
+          "sample_id",
+          "source",
+          "target_covered",
+          "task",
+          "units_available",
+          "unlisted_objects"
+        ]
+      },
+      "direct_cbr_recomputed": {
+        "n_c": 248,
+        "counts": {
+          "object": 121,
+          "co_occurrence": 128,
+          "attribute": 170,
+          "relation": 167
+        }
+      }
+    }
+  ],
+  "checks": {
+    "caption_object_scores_agree_between_two_existing_summaries": true,
+    "all_13_caption_ROH_denominators_zero": true,
+    "local_two_caption_models_match_existing_object_scores_and_coverage": true,
+    "four_local_direct_CBR_models_match_full_precision_sources_from_integer_counts": true,
+    "all_13_direct_and_joint_CBR_tables_match_existing_sources_at_published_precision": true,
+    "all_source_files_unchanged": true,
+    "no_sources_directory_modified": true,
+    "no_benchmark_scale_evidence_reopened": true
+  },
+  "supplemental_T3_experiment": {
+    "completed": true,
+    "summary_path": "/Users/yyyb/.codex/.chatgpt-projects/g-p-6a9fadb9a6ec8191bbc34778fa9b4a7d/.build/rrwr_four_tasks_20261010/review/t3_experiment/t3_summary.json",
+    "summary_sha256": "6db2e25119943175fc9abccf373b99cdee82630d1c82373a79607db10f58b0f0",
+    "local_recompute_audit_path": "/Users/yyyb/.codex/.chatgpt-projects/g-p-6a9fadb9a6ec8191bbc34778fa9b4a7d/.build/rrwr_four_tasks_20261010/review/t3_experiment/local_recompute_audit.json",
+    "existing_original_caption_sources_unchanged": true,
+    "n_real_cached_captions": 6500,
+    "n_new_semantic_judgments": 26000,
+    "EOH_ROH_FAR_now_available_for_all_13_models": true,
+    "metric": "caption false ASSERTION rate, independently model-scored against source edited negative units",
+    "prior_caption_audit_scope": "Original existing object-only outcomes; that historical missing-data finding remains true and is superseded for requested cells by this new authorized experiment.",
+    "family_equal_model_means": {
+      "general": {
+        "n_models": 4,
+        "models": [
+          "InternVL3.5-8B",
+          "Qwen3-VL-8B",
+          "llava-ov-7b",
+          "qwen2.5-vl-7b"
+        ],
+        "EOH_FAR_percent": 7.725,
+        "ROH_FAR_percent": 2.9
+      },
+      "RL": {
+        "n_models": 9,
+        "models": [
+          "LENS",
+          "Orsta-7B",
+          "Seg-R1",
+          "Seg-zero",
+          "TreeVGR",
+          "UniVG-R1",
+          "Vision-R1",
+          "VisionReasoner",
+          "visual-rft"
+        ],
+        "EOH_FAR_percent": 8.733333333333333,
+        "ROH_FAR_percent": 3.2
+      }
+    },
+    "independent_heldout_controls": {
+      "n": 64,
+      "n_valid": 64,
+      "correct": 63,
+      "accuracy": 0.984375,
+      "by_category": {
+        "absent_category": {
+          "n": 2,
+          "correct": 2
+        },
+        "cooccurrence": {
+          "n": 1,
+          "correct": 1
+        },
+        "entity_binding": {
+          "n": 4,
+          "correct": 4
+        },
+        "explicit": {
+          "n": 15,
+          "correct": 15
+        },
+        "explicit_negation": {
+          "n": 5,
+          "correct": 5
+        },
+        "hypernym_negation": {
+          "n": 1,
+          "correct": 1
+        },
+        "material": {
+          "n": 1,
+          "correct": 1
+        },
+        "mixed_negation": {
+          "n": 2,
+          "correct": 2
+        },
+        "negation": {
+          "n": 2,
+          "correct": 2
+        },
+        "non_assertion": {
+          "n": 1,
+          "correct": 1
+        },
+        "opposite_property": {
+          "n": 1,
+          "correct": 1
+        },
+        "opposite_relation": {
+          "n": 1,
+          "correct": 1
+        },
+        "paraphrase": {
+          "n": 4,
+          "correct": 4
+        },
+        "partial_context": {
+          "n": 2,
+          "correct": 2
+        },
+        "plausible_unmentioned": {
+          "n": 2,
+          "correct": 2
+        },
+        "plural": {
+          "n": 2,
+          "correct": 2
+        },
+        "quotation": {
+          "n": 4,
+          "correct": 3
+        },
+        "role_reversal": {
+          "n": 2,
+          "correct": 2
+        },
+        "synonym": {
+          "n": 3,
+          "correct": 3
+        },
+        "uncertainty": {
+          "n": 5,
+          "correct": 5
+        },
+        "wrong_entity": {
+          "n": 3,
+          "correct": 3
+        },
+        "wrong_roles": {
+          "n": 1,
+          "correct": 1
+        }
+      },
+      "n_failed": 1
+    }
+  }
+}

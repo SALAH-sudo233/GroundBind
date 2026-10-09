@@ -1,0 +1,22 @@
+{
+  "arm": "omni",
+  "model": "visionr1",
+  "example_index": 13,
+  "sample_id": "hallu_000247_COCO_train2014_000000488066__cooc",
+  "hallucination_type": "co_occurrence",
+  "query": "the watering can sitting on the chair",
+  "candidate_bbox_xyxy": null,
+  "upstream_record_sha256": "33c117ed66b0cf1071ed1ffe247ba36cd06d5c3cfdf8578f748c39ac339b0f86",
+  "source_record": "/home/u2025141034/benchmark/rrwr_20261010_t3_attention/attention/results/visionr1/13_co_occurrence_grounding.json",
+  "image_sha256": "8e5c93d26f27cd7fea252172461b6592de15abc3fa66f02e05d64630daa9ca75",
+  "source_model_path": "/home/u2025141034/models/OmniVerifier-7B",
+  "torch": "2.12.1+cu126",
+  "transformers": "5.12.1",
+  "drew": false,
+  "original": null,
+  "rivals": [],
+  "reason": "original_no_box",
+  "attention_available": false,
+  "seconds": 0.00022628717124462128,
+  "peak_allocated_gb": 16.592876032
+}

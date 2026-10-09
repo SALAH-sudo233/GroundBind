@@ -1,0 +1,48 @@
+{
+  "arm": "jev",
+  "model": "visionr1",
+  "example_index": 14,
+  "sample_id": "hallu_000457_COCO_train2014_000000271447__cooc",
+  "hallucination_type": "co_occurrence",
+  "query": "the sugar bowl on the saucer",
+  "candidate_bbox_xyxy": [
+    470.0,
+    1103.0,
+    580.0,
+    204.0
+  ],
+  "upstream_record_sha256": "e17231a6b61a887f13d19faa1337024823a1f4a18198dabe57b2b01e256e501c",
+  "source_record": "/home/u2025141034/benchmark/rrwr_20261010_t3_attention/attention/results/visionr1/14_co_occurrence_grounding.json",
+  "image_sha256": "9811e797b9f56647362db198e01fabd0ba5c236b9ac18fce846dcd994ea89da5",
+  "source_model_path": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-2B/snapshots/15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "torch": "2.12.1+cu126",
+  "transformers": "5.12.1",
+  "drew": true,
+  "original": {
+    "z": -7.773112773895264,
+    "prompt": "Inspect the image region [470,1103,580,204]. Determine whether the phrase \"the sugar bowl on the saucer\" is fully true for the object in that exact region. Return exactly one JSON object with exactly these two fields: {\"binding\":\"MATCH\" or \"MISMATCH\" or \"NA\", \"decision\":\"KEEP\" or \"REJECT\"}. Do not explain. Do not use Markdown.",
+    "rendered_prompt": "<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|>Inspect the image region [470,1103,580,204]. Determine whether the phrase \"the sugar bowl on the saucer\" is fully true for the object in that exact region. Return exactly one JSON object with exactly these two fields: {\"binding\":\"MATCH\" or \"MISMATCH\" or \"NA\", \"decision\":\"KEEP\" or \"REJECT\"}. Do not explain. Do not use Markdown.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "prompt_token_count": 365,
+    "model_path": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-2B/snapshots/15852e8c16360a2fea060d615a32b45270f8a8fc",
+    "image_input_size_wh": [
+      640,
+      429
+    ],
+    "coordinate_protocol": "original JEV textual pixel coordinates, integer-rounded identically to collection script",
+    "temperature": 1.7765671239028529,
+    "p_head": 0.012427284382283688
+  },
+  "predicate": "on",
+  "routed_predicate": false,
+  "probe_metadata": {
+    "predicate_surface": "on",
+    "family": "vertical_or_support",
+    "semantic_status": "unsupported",
+    "skip_reason": "ambiguous_surface:on",
+    "n_legal_candidates": 0,
+    "rule_id": null
+  },
+  "rivals": [],
+  "seconds": 0.20056843385100365,
+  "peak_allocated_gb": 4.6993408
+}

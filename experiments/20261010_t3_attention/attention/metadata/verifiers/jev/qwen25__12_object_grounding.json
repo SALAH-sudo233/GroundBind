@@ -1,0 +1,22 @@
+{
+  "arm": "jev",
+  "model": "qwen25",
+  "example_index": 12,
+  "sample_id": "hallu_000379_COCO_train2014_000000560009__obj",
+  "hallucination_type": "object",
+  "query": "the boat behind the fence",
+  "candidate_bbox_xyxy": null,
+  "upstream_record_sha256": "49e9ffb0ee0d622d344f0ce28714f122952578c637dda2e6239c61e32ac7b9ac",
+  "source_record": "/home/u2025141034/benchmark/rrwr_20261010_t3_attention/attention/results/qwen25/12_object_grounding.json",
+  "image_sha256": "9e4e64a01e155afac4ce534684a798d007d7e56afce03f82c26a6a29ae7b4c22",
+  "source_model_path": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-2B/snapshots/15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "torch": "2.12.1+cu126",
+  "transformers": "5.12.1",
+  "drew": false,
+  "original": null,
+  "rivals": [],
+  "reason": "original_no_box",
+  "attention_available": false,
+  "seconds": 0.0002112770453095436,
+  "peak_allocated_gb": 4.44507136
+}

@@ -1,0 +1,22 @@
+{
+  "arm": "omni",
+  "model": "qwen25",
+  "example_index": 8,
+  "sample_id": "hallu_000119_COCO_train2014_000000525342__obj",
+  "hallucination_type": "object",
+  "query": "the banana in front of the apples",
+  "candidate_bbox_xyxy": null,
+  "upstream_record_sha256": "a6934faf597f8e5f991ba3c35aa60a6c879e1e4d5877d6fe4ebf837aac616107",
+  "source_record": "/home/u2025141034/benchmark/rrwr_20261010_t3_attention/attention/results/qwen25/08_object_grounding.json",
+  "image_sha256": "79ec8a0f3df631d39ecc2940c81d75d68fde9f30c3e4995a6911c80c9265aa2c",
+  "source_model_path": "/home/u2025141034/models/OmniVerifier-7B",
+  "torch": "2.12.1+cu126",
+  "transformers": "5.12.1",
+  "drew": false,
+  "original": null,
+  "rivals": [],
+  "reason": "original_no_box",
+  "attention_available": false,
+  "seconds": 0.0002558552660048008,
+  "peak_allocated_gb": 16.592876032
+}

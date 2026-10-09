@@ -1,0 +1,48 @@
+{
+  "arm": "jev",
+  "model": "visionr1",
+  "example_index": 20,
+  "sample_id": "hallu_000560_COCO_train2014_000000205223",
+  "hallucination_type": "positive",
+  "query": "the tie on the person's neck",
+  "candidate_bbox_xyxy": [
+    397.0,
+    37.0,
+    460.0,
+    279.0
+  ],
+  "upstream_record_sha256": "85bd8ae7b2c2dfeaef71954da15b2477735ae16df5b59f6c3f2fffdb04e4d038",
+  "source_record": "/home/u2025141034/benchmark/rrwr_20261010_t3_attention/attention/results/visionr1/20_positive_grounding.json",
+  "image_sha256": "3bddb298f363bd0d298a7ece660c5779edf4ceb63210888cd54cbba830aca82a",
+  "source_model_path": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-2B/snapshots/15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "torch": "2.12.1+cu126",
+  "transformers": "5.12.1",
+  "drew": true,
+  "original": {
+    "z": 4.679879188537598,
+    "prompt": "Inspect the image region [397,37,460,279]. Determine whether the phrase \"the tie on the person's neck\" is fully true for the object in that exact region. Return exactly one JSON object with exactly these two fields: {\"binding\":\"MATCH\" or \"MISMATCH\" or \"NA\", \"decision\":\"KEEP\" or \"REJECT\"}. Do not explain. Do not use Markdown.",
+    "rendered_prompt": "<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|>Inspect the image region [397,37,460,279]. Determine whether the phrase \"the tie on the person's neck\" is fully true for the object in that exact region. Return exactly one JSON object with exactly these two fields: {\"binding\":\"MATCH\" or \"MISMATCH\" or \"NA\", \"decision\":\"KEEP\" or \"REJECT\"}. Do not explain. Do not use Markdown.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "prompt_token_count": 310,
+    "model_path": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-2B/snapshots/15852e8c16360a2fea060d615a32b45270f8a8fc",
+    "image_input_size_wh": [
+      640,
+      238
+    ],
+    "coordinate_protocol": "original JEV textual pixel coordinates, integer-rounded identically to collection script",
+    "temperature": 1.7765671239028529,
+    "p_head": 0.9330320954322815
+  },
+  "predicate": "on",
+  "routed_predicate": false,
+  "probe_metadata": {
+    "predicate_surface": "on",
+    "family": "vertical_or_support",
+    "semantic_status": "unsupported",
+    "skip_reason": "ambiguous_surface:on",
+    "n_legal_candidates": 0,
+    "rule_id": null
+  },
+  "rivals": [],
+  "seconds": 0.1914315652102232,
+  "peak_allocated_gb": 4.641141248
+}

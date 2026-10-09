@@ -1,0 +1,3719 @@
+{
+  "complete_case_count": 15,
+  "models": [
+    "qwen25",
+    "visionr1"
+  ],
+  "expected_upstream_records": 300,
+  "actual_upstream_records": 300,
+  "representative_figures": [
+    {
+      "png": "representative_candidates/case_08_attribute_two_models.png",
+      "pdf": "representative_candidates/case_08_attribute_two_models.pdf"
+    },
+    {
+      "png": "representative_candidates/case_12_relation_two_models.png",
+      "pdf": "representative_candidates/case_12_relation_two_models.pdf"
+    },
+    {
+      "png": "representative_candidates/case_02_co_occurrence_two_models.png",
+      "pdf": "representative_candidates/case_02_co_occurrence_two_models.pdf"
+    },
+    {
+      "png": "representative_candidates/case_14_object_two_models.png",
+      "pdf": "representative_candidates/case_14_object_two_models.pdf"
+    }
+  ],
+  "expected_fresh_candidate_verifier_records": 300,
+  "actual_fresh_candidate_verifier_records": 300,
+  "all_fresh_candidate_sha_bbox_image_crosschecks_passed": true,
+  "frozen_original_policy_decisions_verified_count": 5000,
+  "selected_case_labels_used_for_fit_or_threshold": false,
+  "all_tensor_finite_nonnegative_and_token_grid_alignment_checks_passed": true,
+  "independent_omni_attention_maps_checked": 105,
+  "attention_tensors": [
+    {
+      "record": "results/qwen25/01_attribute_grounding.json",
+      "npz_sha256": "aa184fbad9f76e5775698aaeb0ba59029519023eeb31e2c2575924355d7079a4",
+      "shape": [
+        4,
+        20,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.204833984375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/01_attribute_vqa.json",
+      "npz_sha256": "81f54d7961243bb3ee35de574725b42d6c591be929e2176ba71cce178042662e",
+      "shape": [
+        4,
+        75,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.359375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/01_co_occurrence_grounding.json",
+      "npz_sha256": "28c407d26048514c7b121939c1ab5bc28371719c7f3d97b49473bb28fdf99608",
+      "shape": [
+        4,
+        25,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.19677734375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/01_co_occurrence_vqa.json",
+      "npz_sha256": "3b67c46cfe70d696f44ff862b727304959bff454b9080e3b0ec8ddb8ca60cfbe",
+      "shape": [
+        4,
+        19,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.3994140625,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/01_object_grounding.json",
+      "npz_sha256": "e17577f07536442fafdeb968c3d43ab66f820378b987cf3b896b78f8037bd869",
+      "shape": [
+        4,
+        30,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.1546630859375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/01_object_vqa.json",
+      "npz_sha256": "34555c46cf4d7c05cca3682668152af8debcb25a3a87b1d772418f160239b969",
+      "shape": [
+        4,
+        20,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.44189453125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/01_positive_grounding.json",
+      "npz_sha256": "3a78a1f32a22cd139942d67222b648660569adb39ab106163470ccee3acce850",
+      "shape": [
+        4,
+        23,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.25,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/01_positive_vqa.json",
+      "npz_sha256": "a036498440bb2ea978d42d231595473c459bdc8c680da112d4586334fd4d64ad",
+      "shape": [
+        4,
+        50,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.383544921875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/01_relation_grounding.json",
+      "npz_sha256": "a672221f79c168c41d387d1f967bc54d25855a19115afa2ccfba8aec1f2b7c28",
+      "shape": [
+        4,
+        22,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.2076416015625,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/01_relation_vqa.json",
+      "npz_sha256": "f9a6d53a7c1ac3d8be8cb435ba1481b2f2e860c7e91b6801d374c15571d7e254",
+      "shape": [
+        4,
+        88,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.421875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/02_attribute_grounding.json",
+      "npz_sha256": "b2db93d6f2139c77aa99b3c8bdb08e553fd49e8a1720e1b4a63c31b1daafd213",
+      "shape": [
+        4,
+        21,
+        280
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.1083984375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/02_attribute_vqa.json",
+      "npz_sha256": "9d31355c9e3a1afe5248baf79332ccc3d828f3dc60ed5b81de3c223d43595ce8",
+      "shape": [
+        4,
+        59,
+        280
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.380859375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/02_co_occurrence_grounding.json",
+      "npz_sha256": "7d6dfb87115bf5a7601cc314cb0e47c6bf55699fdc0f70c7d90fcfd0abe1c63b",
+      "shape": [
+        4,
+        21,
+        280
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.09912109375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/02_co_occurrence_vqa.json",
+      "npz_sha256": "c10b3fe7538f9c74d55a778fcfbab0c255b5d5e1d9eb9a4249b8bf6434146ef6",
+      "shape": [
+        4,
+        33,
+        280
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.4794921875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/02_object_grounding.json",
+      "npz_sha256": "a8f52779220d7638832c4673a93115de9e6cceba50d95399a2bc1229628f3257",
+      "shape": [
+        4,
+        8,
+        280
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.15576171875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/02_object_vqa.json",
+      "npz_sha256": "d28f6cdc0aa9c47210d0b4ed328a215a0fbd2584a7f7a94d1149f5b182d12d2c",
+      "shape": [
+        4,
+        17,
+        280
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.37158203125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/02_positive_grounding.json",
+      "npz_sha256": "6708a352b86eb50a472ffa47c907684948ff7a01b90b9f9de109e4a94cc99a9f",
+      "shape": [
+        4,
+        22,
+        280
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.0989990234375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/02_positive_vqa.json",
+      "npz_sha256": "bcccf1f0b275be25c29511b21bcfb9abd1e3bd88c000c6b24bcf5cadf18cb7e5",
+      "shape": [
+        4,
+        29,
+        280
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.37841796875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/02_relation_grounding.json",
+      "npz_sha256": "d9f0250b339be7741284706d648e88c8093e14565ccdef8400672437a480cce3",
+      "shape": [
+        4,
+        20,
+        280
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.106201171875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/02_relation_vqa.json",
+      "npz_sha256": "493ef7c9abdd9a4332b158d2bc8b576615f77e7f9e7f854464a81fe2c1c98438",
+      "shape": [
+        4,
+        64,
+        280
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.437744140625,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/03_attribute_grounding.json",
+      "npz_sha256": "99934f3a02a484bf466e3ed372b093e1c3a73281aea42be80f045c4b51c52eb5",
+      "shape": [
+        4,
+        21,
+        260
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.184814453125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/03_attribute_vqa.json",
+      "npz_sha256": "e78071408e5054945a2aed3fef0fef41c64be4abd16169d3a8867227839a7168",
+      "shape": [
+        4,
+        37,
+        260
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.499755859375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/03_co_occurrence_grounding.json",
+      "npz_sha256": "39baece2f6d5dee058535782aaf77b016368a047b78d86e640f8ae00f13b3f39",
+      "shape": [
+        4,
+        8,
+        260
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.10821533203125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/03_co_occurrence_vqa.json",
+      "npz_sha256": "69182c534eac8b0764f8ddb2ff1ea626cedccc0303fb9a292da916498e90b14c",
+      "shape": [
+        4,
+        583,
+        260
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.477294921875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/03_object_grounding.json",
+      "npz_sha256": "48f13f0af3797eec135286153b6eb94a5a2d5bf396f7d737e568481c3cc35583",
+      "shape": [
+        4,
+        8,
+        260
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.11138916015625,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/03_object_vqa.json",
+      "npz_sha256": "0cc756ac3e4870777f29b32a5a8af139005b5393f1cbb92aa4a8c9f7f5e7ce08",
+      "shape": [
+        4,
+        41,
+        260
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.52734375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/03_positive_grounding.json",
+      "npz_sha256": "8117f06cc30d7b6aa38a950020777127067fc7ffba911410e48d1d9b9d393f0c",
+      "shape": [
+        4,
+        21,
+        260
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.143310546875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/03_positive_vqa.json",
+      "npz_sha256": "00051e75b0cf904f0dabe9d33ff9c77e4d400740d63e586ba8c8662c469ba690",
+      "shape": [
+        4,
+        417,
+        260
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.53466796875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/03_relation_grounding.json",
+      "npz_sha256": "6eb7bed9bffe148eaf96200ecf2eef66527cd1434f08570549e6f48f8f45180d",
+      "shape": [
+        4,
+        21,
+        260
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.1484375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/03_relation_vqa.json",
+      "npz_sha256": "3d493af630a68b854120e8db2986a039e7df317c4ec417908addf0850cd4e0f0",
+      "shape": [
+        4,
+        49,
+        260
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.52001953125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/05_attribute_grounding.json",
+      "npz_sha256": "2ed56180ce9284aee5593df8b7d8c3e9aa869b1c4cbff393208ff7734e6d4dad",
+      "shape": [
+        4,
+        21,
+        299
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.1767578125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/05_attribute_vqa.json",
+      "npz_sha256": "0dadf473f6f44234543c9a6f1792bfe8b282a84fc77cb0189fbca6f0006c3f8f",
+      "shape": [
+        4,
+        73,
+        299
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.429931640625,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/05_co_occurrence_grounding.json",
+      "npz_sha256": "acf9b298e1f726c1394343b03fa43a7ee9d9776733549efd23a06b36de7c0b0c",
+      "shape": [
+        4,
+        21,
+        299
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.1697998046875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/05_co_occurrence_vqa.json",
+      "npz_sha256": "a7b04ac302ada47f4e1fcd976b521643979011a872d075cad1e1dce8749c1052",
+      "shape": [
+        4,
+        39,
+        299
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.467529296875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/05_object_grounding.json",
+      "npz_sha256": "83e798e430458cf2973d4525a83770b79e1e7d8351247e4c94b2cace23c374ba",
+      "shape": [
+        4,
+        21,
+        299
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.165283203125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/05_object_vqa.json",
+      "npz_sha256": "d89b9175649f2542583dd4125aac8da5a8ed578aeb7ea1f832c05be6d4dcfaa0",
+      "shape": [
+        4,
+        37,
+        299
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.452392578125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/05_positive_grounding.json",
+      "npz_sha256": "9f1f5b45ae39e0cc57d4fcba0a0d1fd57e08a0e4c55007f715c383f49b23fbb7",
+      "shape": [
+        4,
+        21,
+        299
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.16552734375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/05_positive_vqa.json",
+      "npz_sha256": "0ff40db7ba28c36efe7bb0e731be679362dbf064c31d6b17756c8e027d2305cf",
+      "shape": [
+        4,
+        67,
+        299
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.434814453125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/05_relation_grounding.json",
+      "npz_sha256": "dd332665136f086a07c4217a6758271b8d2af03a8d9642c1c492880f6b49df0f",
+      "shape": [
+        4,
+        8,
+        299
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.131591796875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/05_relation_vqa.json",
+      "npz_sha256": "e6b122d514b7c5d963c725cfd63b3dfbfe1d231ecd762459a56024dd0eccc186",
+      "shape": [
+        4,
+        69,
+        299
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.433349609375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/06_attribute_grounding.json",
+      "npz_sha256": "8ab164aca09eb626f9ab40c11bd7e8f2250f37715f26a3d53408cbc7b0e3b0f8",
+      "shape": [
+        4,
+        21,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.10595703125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/06_attribute_vqa.json",
+      "npz_sha256": "90680e9be0679b74ff33d59615612d624197c95dedf6646eac4f4c9f34db39f9",
+      "shape": [
+        4,
+        62,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.34033203125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/06_co_occurrence_grounding.json",
+      "npz_sha256": "1d680f48347aa369cd6f6f650d34c51a747cb2997f67029e7a3cc3c9585d8d93",
+      "shape": [
+        4,
+        20,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.11572265625,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/06_co_occurrence_vqa.json",
+      "npz_sha256": "f856477185caae43ed4611201069d21171a183d44a06d7a31751c9e3a43c512c",
+      "shape": [
+        4,
+        18,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.405029296875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/06_object_grounding.json",
+      "npz_sha256": "63e57dae995e2697ccc66ed0e4b7d2db20fcd98c25ef608305be883f4ee8d0c9",
+      "shape": [
+        4,
+        20,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.1173095703125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/06_object_vqa.json",
+      "npz_sha256": "eb4fd115ea43001781ac7cf2df915f3b19fe9ca74057a8e4461211e85711773b",
+      "shape": [
+        4,
+        20,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.372314453125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/06_positive_grounding.json",
+      "npz_sha256": "cfbf498985964cbcc8f431a6906c907cf14ff8e15d3ab11a7725c95c93abbaf2",
+      "shape": [
+        4,
+        20,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.1201171875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/06_positive_vqa.json",
+      "npz_sha256": "afe74abee690fba5d4a89f4bd99c46d992b59a4cd6282c71239a8a5dd9f75250",
+      "shape": [
+        4,
+        59,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.490966796875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/06_relation_grounding.json",
+      "npz_sha256": "fb0be0b471240861f142be267c22bec3de5c12c8ab73d984367e894a0b554df5",
+      "shape": [
+        4,
+        20,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.103515625,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/06_relation_vqa.json",
+      "npz_sha256": "f1d3d4f349f03358832b36ab341829a051c272537cf8de8420862a15268ebe1d",
+      "shape": [
+        4,
+        36,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.386474609375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/08_attribute_grounding.json",
+      "npz_sha256": "570ef16919a4791f32201d47d78cb22d93db4b6e3f20746c4e74cb5f8bc2108e",
+      "shape": [
+        4,
+        22,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.154541015625,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/08_attribute_vqa.json",
+      "npz_sha256": "07b68974764126a3cc03f72d03387a632baa9c4cde997194bdef50a82f6f4a35",
+      "shape": [
+        4,
+        30,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.4287109375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/08_co_occurrence_grounding.json",
+      "npz_sha256": "68e5e21acd0e62d7cfd31cb764b4164ca5a6d2149d580cff05be5e6facb61c28",
+      "shape": [
+        4,
+        22,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.1822509765625,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/08_co_occurrence_vqa.json",
+      "npz_sha256": "816b32b26517ffe18d40d5550fe154f956a4701ed2122f0f36bbb1e91159cede",
+      "shape": [
+        4,
+        80,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.432373046875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/08_object_grounding.json",
+      "npz_sha256": "aeb384d10141b0dcb3c3ecde5903e20cb6dfe938a2a8efbf4d75395b2c71eac3",
+      "shape": [
+        4,
+        37,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.449462890625,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/08_object_vqa.json",
+      "npz_sha256": "1855c714ae1e1edc2cc13acb2b9b08c74a69f569dab927a43be3eeee8c25975b",
+      "shape": [
+        4,
+        59,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.4658203125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/08_positive_grounding.json",
+      "npz_sha256": "8a9c44936a36dacc31cd2b39e5fc0bbbfc08a08a9e695df8445558853b3ec7f1",
+      "shape": [
+        4,
+        22,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.12115478515625,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/08_positive_vqa.json",
+      "npz_sha256": "693bc9454bc5827b4440fe2a9e93cd2adf05d968de1ed3f59e152578d8649533",
+      "shape": [
+        4,
+        66,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.4560546875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/08_relation_grounding.json",
+      "npz_sha256": "8b590d3efc939cec4c4723ee684ca8f218af114dc0b3118e6191aaa35ffc42ad",
+      "shape": [
+        4,
+        107,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.289794921875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/08_relation_vqa.json",
+      "npz_sha256": "0358195fd5a0105182b36ca0c1d73e58bc136339e5ff62feb93eb0559b3515b1",
+      "shape": [
+        4,
+        18,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.39404296875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/09_attribute_grounding.json",
+      "npz_sha256": "10808e016eaa47123b082439e650a679c4341b6284bf9a5c2f81a44afdef19d8",
+      "shape": [
+        4,
+        21,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.1971435546875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/09_attribute_vqa.json",
+      "npz_sha256": "2c0cd6241ef7470e158c529a7c884153c20f1d18c7b4e794ad5de0f33a2a4a54",
+      "shape": [
+        4,
+        48,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.450439453125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/09_co_occurrence_grounding.json",
+      "npz_sha256": "44485edad9ce6f34612b9d88cf4cff5e40979647335802c880e32a2423be5e1d",
+      "shape": [
+        4,
+        18,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.1640625,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/09_co_occurrence_vqa.json",
+      "npz_sha256": "2377d50852f744b7434c008feeba81218fa86370bef0afe692ac190b29932fe6",
+      "shape": [
+        4,
+        27,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.5068359375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/09_object_grounding.json",
+      "npz_sha256": "4d38460726fa317498ff0bbced176fa85b7f97505ac5819f3205577ae53f23fd",
+      "shape": [
+        4,
+        21,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.151611328125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/09_object_vqa.json",
+      "npz_sha256": "bf68d12f33aee13201bf90d5ea1f244a5569eda8b06904c64877e9130dae783d",
+      "shape": [
+        4,
+        44,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.478759765625,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/09_positive_grounding.json",
+      "npz_sha256": "153d8cfaa7403e01a03d2132693827579e166dfeacff4dd6ec2dfc01e3e5df8d",
+      "shape": [
+        4,
+        21,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.14990234375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/09_positive_vqa.json",
+      "npz_sha256": "3cf09798b9134fc26df12b219cee6de1e708e02094a5fafe9876de730e38454f",
+      "shape": [
+        4,
+        38,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.57470703125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/09_relation_grounding.json",
+      "npz_sha256": "d82d4be1565c429348080a3aa95dac90218e8218d9bb1ab0c1ddec4bf4fc0963",
+      "shape": [
+        4,
+        21,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.198486328125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/09_relation_vqa.json",
+      "npz_sha256": "4dfed3f4cfcabc1447a04a7a752af1fa2be9103be9f49f0d6f0d8e56c5e6e3e9",
+      "shape": [
+        4,
+        49,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.51171875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/10_attribute_grounding.json",
+      "npz_sha256": "6a88b3e40070525b0045f7ed91c16a3bc6555cd1e20bde029a13005ec0a763ba",
+      "shape": [
+        4,
+        24,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.153564453125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/10_attribute_vqa.json",
+      "npz_sha256": "850398b807bf0adbef018aada6105ccf74cd60898697988a7e05273b10d7bba9",
+      "shape": [
+        4,
+        73,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.382568359375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/10_co_occurrence_grounding.json",
+      "npz_sha256": "375d8caaeb06b95e4e747bfce3b987a987355cc1ebcd68c2de5063cfc2155ab8",
+      "shape": [
+        4,
+        20,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.2437744140625,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/10_co_occurrence_vqa.json",
+      "npz_sha256": "ed51fc6bba71f8fb1050315f1d84afcd39b5e23db38e412052eda44f80635d48",
+      "shape": [
+        4,
+        41,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.408203125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/10_object_grounding.json",
+      "npz_sha256": "6d07babc755cf19feb020fd5ca9b47fca71fd29d1bf84070c16185d5fbf7d4c6",
+      "shape": [
+        4,
+        24,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.1651611328125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/10_object_vqa.json",
+      "npz_sha256": "2641f5967f9b07f3e816821dd1ad38b795d87184f3ae4b9e846b686c60d056d2",
+      "shape": [
+        4,
+        41,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.406005859375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/10_positive_grounding.json",
+      "npz_sha256": "a9c982d0ec2520629ec62af34f24c5bcadbfb318ca93ffcadc3e6dea22795a59",
+      "shape": [
+        4,
+        22,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.1868896484375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/10_positive_vqa.json",
+      "npz_sha256": "2de8e9199e1fbab2559ffe69a08de740221c799af2b0512efab5241adfc9c48e",
+      "shape": [
+        4,
+        53,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.384521484375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/10_relation_grounding.json",
+      "npz_sha256": "895d4c0ceb5b6cc9e0e1bfdb18617825f58ebacbf1f3aacfc36f66f4b6939df6",
+      "shape": [
+        4,
+        24,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.1749267578125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/10_relation_vqa.json",
+      "npz_sha256": "f92d1e128f704288b37aca320ac14a096436bcc0241ec01f9e15beed4c53a0e8",
+      "shape": [
+        4,
+        32,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.414306640625,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/11_attribute_grounding.json",
+      "npz_sha256": "e4e040bf07a26b37768aa521c40c2139e985ba4c3e27ec064b99508d7c0fcf1c",
+      "shape": [
+        4,
+        31,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.1258544921875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/11_attribute_vqa.json",
+      "npz_sha256": "08694e8c8c631f2e351e17e02ffc7dc24dc4efccf6b59bc0133b6ff926784c0c",
+      "shape": [
+        4,
+        50,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.2281494140625,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/11_co_occurrence_grounding.json",
+      "npz_sha256": "f629382dee9aeae4729c12a6c97bbf6b8ca7b5f3df37854e2985cf048974a5a4",
+      "shape": [
+        4,
+        22,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.09619140625,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/11_co_occurrence_vqa.json",
+      "npz_sha256": "ed83aab7d63813d90feaa6e10d6b09d2dcce76c9acc48f421ff46624b1d6ee25",
+      "shape": [
+        4,
+        34,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.27001953125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/11_object_grounding.json",
+      "npz_sha256": "a2e55e0696088863bb9ae5d189fbaf3c7c55c90211e42537b7e3c8c4cd0fa87b",
+      "shape": [
+        4,
+        21,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.179443359375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/11_object_vqa.json",
+      "npz_sha256": "7f8dcb53679fc6b4e8546e3ac3e6f798cbd3892056ee83af6ede2705e47dd76d",
+      "shape": [
+        4,
+        46,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.34619140625,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/11_positive_grounding.json",
+      "npz_sha256": "a1e6faa3ef48180cefbb26ba56ebf22671f2a36c6f0da710b3766f0ed9196ed8",
+      "shape": [
+        4,
+        22,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.137939453125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/11_positive_vqa.json",
+      "npz_sha256": "d57fd39c05366b21000a8956fd14953f643fdc521e45f34936b2ca1f099f14b3",
+      "shape": [
+        4,
+        41,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.3154296875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/11_relation_grounding.json",
+      "npz_sha256": "6260f19c002101f02b339587e71e39c8f00ae378cae2d9cc507b99f0b94bc457",
+      "shape": [
+        4,
+        22,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.1390380859375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/11_relation_vqa.json",
+      "npz_sha256": "0424e38bb4da4166bdfcd1e341ed0430ff19c4bde92577bec452d1714f951ab2",
+      "shape": [
+        4,
+        91,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.321044921875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/12_attribute_grounding.json",
+      "npz_sha256": "5b4ca1e8b36beda6e535a9c5cd4544984876442a327130b2ba04f7ae70cb54c8",
+      "shape": [
+        4,
+        22,
+        414
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.109375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/12_attribute_vqa.json",
+      "npz_sha256": "78b37253369c8e6d76f67633fc3b41754179d767614d78dbe834aa5b247f3196",
+      "shape": [
+        4,
+        47,
+        414
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.35546875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/12_co_occurrence_grounding.json",
+      "npz_sha256": "0f4d4061c763a3325babec7188ed374dbe6b61a15708f4b1235e84a23bdb40a0",
+      "shape": [
+        4,
+        22,
+        414
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.111083984375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/12_co_occurrence_vqa.json",
+      "npz_sha256": "4f68171dafa2c079779322a3df59839679883e7f53211854a72f8d1b8ac85c3d",
+      "shape": [
+        4,
+        61,
+        414
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.47802734375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/12_object_grounding.json",
+      "npz_sha256": "b88950edea549b8c39e91af97057826297be0c281112bfd24c0262b875470b2a",
+      "shape": [
+        4,
+        18,
+        414
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.2093505859375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/12_object_vqa.json",
+      "npz_sha256": "9eb874922cdc224287a88370fd46b37271a48e0995908dd7aa99ca5cf8fb5e17",
+      "shape": [
+        4,
+        52,
+        414
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.50439453125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/12_positive_grounding.json",
+      "npz_sha256": "7b76f71d2a0f2a90d4d704ad6d67ffc22312f33d0ab38811add1aee9be3365d5",
+      "shape": [
+        4,
+        22,
+        414
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.094970703125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/12_positive_vqa.json",
+      "npz_sha256": "567eae73371f7bdd841688ab83a456f0fa293c7ce492277f1ab0d2e57c4c00a3",
+      "shape": [
+        4,
+        36,
+        414
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.450927734375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/12_relation_grounding.json",
+      "npz_sha256": "e388646251bc349eb91052eb8ced50855cc871414ad581640040d1943cb69849",
+      "shape": [
+        4,
+        22,
+        414
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.0906982421875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/12_relation_vqa.json",
+      "npz_sha256": "8300ca264b4bee3aa26745dcb2980b8e2cecc7d6606329979bcdb842643108ce",
+      "shape": [
+        4,
+        54,
+        414
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.517578125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/13_attribute_grounding.json",
+      "npz_sha256": "21d596e8010724c16ce4ec8cd563c450644d11fd4e7e31d57741e8e45937d262",
+      "shape": [
+        4,
+        21,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.12432861328125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/13_attribute_vqa.json",
+      "npz_sha256": "2aca2729e1adfffbc540e71b5f6e5f4a4b9f70c83fe3c5d3c74034bb24dd14f4",
+      "shape": [
+        4,
+        24,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.3681640625,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/13_co_occurrence_grounding.json",
+      "npz_sha256": "420818a744464d3de3a7b411faad581ef3691a7b31d6f2af982ff30fb17fc2b1",
+      "shape": [
+        4,
+        25,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.129638671875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/13_co_occurrence_vqa.json",
+      "npz_sha256": "f5f03e9e3984d27dc4b12ac40ce8ccb5f49fa13895668370e1947b89318d25d2",
+      "shape": [
+        4,
+        45,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.40869140625,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/13_object_grounding.json",
+      "npz_sha256": "24b55a5c47e2bcf0653a27372c28b3fdee3595c5fabfbcccc59bd88ad4e4b0c2",
+      "shape": [
+        4,
+        21,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.1458740234375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/13_object_vqa.json",
+      "npz_sha256": "bb6a8db77bd59f4e389ba39630f947196b2806eb208c91f3ffe94d8969a5785b",
+      "shape": [
+        4,
+        55,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.3935546875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/13_positive_grounding.json",
+      "npz_sha256": "9b55c209a517fe14fcfaed4ea9b53c1fbbea2dba35f9bac682566593f87a55c2",
+      "shape": [
+        4,
+        21,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.114501953125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/13_positive_vqa.json",
+      "npz_sha256": "e1fd2df4bc0c63cc7df569bc0bca95308e47b1068c664f62cbd847a411db95bf",
+      "shape": [
+        4,
+        64,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.356201171875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/13_relation_grounding.json",
+      "npz_sha256": "9b93ce738d70724e12f69e79ea03d19ec88d7236a2d1451399798f959c702338",
+      "shape": [
+        4,
+        22,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.20947265625,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/13_relation_vqa.json",
+      "npz_sha256": "dc49cc7f6c932d61fc7de071aa72ba66726e20cad3697439ffcd0857bc4de852",
+      "shape": [
+        4,
+        43,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.389892578125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/14_attribute_grounding.json",
+      "npz_sha256": "ae13c96ed81e737f789bbfc2ae96d1fa241b647c7616256e7229d82539c3c91c",
+      "shape": [
+        4,
+        24,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.16650390625,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/14_attribute_vqa.json",
+      "npz_sha256": "3dc3ca53583dadbe595fa5982255c68727c064be12647dda0ab039d90d8aea86",
+      "shape": [
+        4,
+        73,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.3701171875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/14_co_occurrence_grounding.json",
+      "npz_sha256": "5589cc462f08672029772137828d74ffa73e93f836f44c3be76bf51d63d3ae27",
+      "shape": [
+        4,
+        30,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.2220458984375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/14_co_occurrence_vqa.json",
+      "npz_sha256": "d54ef0fb7bc611d90efcb475cebfff02244aa9400a8dc76bcdbee24765c2e3dc",
+      "shape": [
+        4,
+        21,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.376953125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/14_object_grounding.json",
+      "npz_sha256": "fa51883a056a3a0d3aae3063967df05fa2334790b699ba1c8f415f024091aabd",
+      "shape": [
+        4,
+        24,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.1334228515625,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/14_object_vqa.json",
+      "npz_sha256": "b5b224a3e6aaf786ffd998c75021f968635efc3cc77bdfbacb9908aae839eff6",
+      "shape": [
+        4,
+        68,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.339111328125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/14_positive_grounding.json",
+      "npz_sha256": "98674725f22ae90aa0f5d9441d958fbb40122957a441106ae036a58f9576c622",
+      "shape": [
+        4,
+        24,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.1673583984375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/14_positive_vqa.json",
+      "npz_sha256": "f2a487a9e6de4782e173f84b175681532950f7ae59c079a8182b6710e99edb4d",
+      "shape": [
+        4,
+        37,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.29833984375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/14_relation_grounding.json",
+      "npz_sha256": "335358819d66cc35851072656c6ff0d081c180dd7e29fb6349794dc5e86c09e3",
+      "shape": [
+        4,
+        22,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.169677734375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/14_relation_vqa.json",
+      "npz_sha256": "d75af17e12c300e96d830bfdfd2bb4d4de4523b314976ba3bd1dcc1075d8734b",
+      "shape": [
+        4,
+        46,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.333251953125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/15_attribute_grounding.json",
+      "npz_sha256": "cb054ef9adff0ae249540c34ae16510facf693dcc8b86bec12e8fc5102d7ead1",
+      "shape": [
+        4,
+        21,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.1925048828125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/15_attribute_vqa.json",
+      "npz_sha256": "2ff0c89111d83938f3034a2d38840dc6403f60d49c5dc7eb9618dd4d0748f8dc",
+      "shape": [
+        4,
+        41,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.471435546875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/15_co_occurrence_grounding.json",
+      "npz_sha256": "62a1c827a59b8fad6513992572e441f9a5f52bc1e56ee668c1d122e3d65d46b2",
+      "shape": [
+        4,
+        5,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.12005615234375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/15_co_occurrence_vqa.json",
+      "npz_sha256": "204c30fa2daaa6d44ac5985ced0f12c0418b3801f5e6ea37531f16c43aa7c5b2",
+      "shape": [
+        4,
+        46,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.494384765625,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/15_object_grounding.json",
+      "npz_sha256": "98d201be9d9c86eb58f0cebae123e6932dd73e24a2f116f011bf720af8f6c84a",
+      "shape": [
+        4,
+        21,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.1981201171875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/15_object_vqa.json",
+      "npz_sha256": "6a6db638a4e7d62052f324298a807a08109e6c0703d981398406134d8cce3a82",
+      "shape": [
+        4,
+        56,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.489013671875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/15_positive_grounding.json",
+      "npz_sha256": "af15a15124a31ed0f64199d4b5cb52688118c09020ebd0de687d5525408bda71",
+      "shape": [
+        4,
+        21,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.1865234375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/15_positive_vqa.json",
+      "npz_sha256": "d086a78127d3305c53bc97ac505067e16a52f74afbfa7ee31ffd6630b927dbee",
+      "shape": [
+        4,
+        50,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.5009765625,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/15_relation_grounding.json",
+      "npz_sha256": "41a25c4dde92c2f0eb8d04169828410e9472487deda1d03ae8190cd9b5a711a0",
+      "shape": [
+        4,
+        22,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.1495361328125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/15_relation_vqa.json",
+      "npz_sha256": "e1ad424e0c99bd09765afc55b7a907101205911daa03883d59b54b356a19123e",
+      "shape": [
+        4,
+        69,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.5146484375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/16_attribute_grounding.json",
+      "npz_sha256": "1c02f37a8fea56e12d48c68b03e5af6a5756c6e6ce4451dd7c1f31af4ddd7fb0",
+      "shape": [
+        4,
+        19,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.1268310546875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/16_attribute_vqa.json",
+      "npz_sha256": "3c6cd0aad655f5d15fff173d6226181b9be530d4a0036f46f36dd8313748eafa",
+      "shape": [
+        4,
+        65,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.5478515625,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/16_co_occurrence_grounding.json",
+      "npz_sha256": "7bcc41e8324e4ea8d4081c4e35ac4a09de8b9d5981be6f2694ab45cff46120a2",
+      "shape": [
+        4,
+        19,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.1942138671875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/16_co_occurrence_vqa.json",
+      "npz_sha256": "2e420efe2ed04af73e7cf5a9430031a07cfdf48207643339750e8aee96372973",
+      "shape": [
+        4,
+        60,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.544921875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/16_object_grounding.json",
+      "npz_sha256": "a42bb113ac16a55a9ae70f77c935723956d324fd6fbfe923a77c05bf3f4cad94",
+      "shape": [
+        4,
+        19,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.133544921875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/16_object_vqa.json",
+      "npz_sha256": "9568153734c5bf0c63f4932a93f940cd38c6dd591f79ec9d29abf1a00cfb255c",
+      "shape": [
+        4,
+        73,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.52880859375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/16_positive_grounding.json",
+      "npz_sha256": "475e9b1d75c0cb6b9d7aa7cb3f34a971831b1d9b9990dc2cb7491209e234663f",
+      "shape": [
+        4,
+        19,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.1287841796875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/16_positive_vqa.json",
+      "npz_sha256": "2a188b1da49efaf3ff208dc477d29cd8ff0f3d858ba56b4f5a0b1d2c64a55bca",
+      "shape": [
+        4,
+        73,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.49755859375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/16_relation_grounding.json",
+      "npz_sha256": "bca983295ae4b973b38631aad865b1476f34f6551d8446c68d0dcd7baa2b512c",
+      "shape": [
+        4,
+        22,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.245849609375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/16_relation_vqa.json",
+      "npz_sha256": "f4de2d93457e7b7af04228237ae7c8b0c7baf9fc417299d7e9cd2d75f8be4ce0",
+      "shape": [
+        4,
+        59,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.396240234375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/20_attribute_grounding.json",
+      "npz_sha256": "7e9709138384ca5452d8454e1a83e7d5664d5c988240a77f90433e3658346f58",
+      "shape": [
+        4,
+        21,
+        270
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.1343994140625,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/20_attribute_vqa.json",
+      "npz_sha256": "46813f6db0278e909ffb6ea7b9eaa8a841b0c3c19f3850615d0cea4d4391c742",
+      "shape": [
+        4,
+        37,
+        270
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.399169921875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/20_co_occurrence_grounding.json",
+      "npz_sha256": "94e6ce9b0930f5838e5f38d6b0b67cad57784656632c356518ca381c76cef10e",
+      "shape": [
+        4,
+        21,
+        270
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.1719970703125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/20_co_occurrence_vqa.json",
+      "npz_sha256": "8dc36ab7a3df0a2616e19980566d04c1e15480d1dc2e44304743e222113d040a",
+      "shape": [
+        4,
+        62,
+        270
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.4306640625,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/20_object_grounding.json",
+      "npz_sha256": "ff6ec778e0e1a9a7f07b193a8fa2affc57ec5d41e8a2de4d2e2d12fbb58280fa",
+      "shape": [
+        4,
+        20,
+        270
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.1612548828125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/20_object_vqa.json",
+      "npz_sha256": "10a05d09a84eeb9716efca629b4c2b08e06d53790974322c51771fb7132393d1",
+      "shape": [
+        4,
+        26,
+        270
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.50439453125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/20_positive_grounding.json",
+      "npz_sha256": "69b7a5194319ce7ff60d36c4cc31a375eb5d1164390f07013536dee6ed73c60a",
+      "shape": [
+        4,
+        1024,
+        270
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.1328125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/20_positive_vqa.json",
+      "npz_sha256": "895d5efcf0ca90b0c4bb5d7ed5486b7de931a0efb00ad8ff48f843d064c21eb2",
+      "shape": [
+        4,
+        47,
+        270
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.456298828125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/20_relation_grounding.json",
+      "npz_sha256": "80bd3a61aaf5cdbf9cff5bc313eec2bdf1a95a52b133cb7b6991919f60d40caf",
+      "shape": [
+        4,
+        20,
+        270
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.158935546875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/qwen25/20_relation_vqa.json",
+      "npz_sha256": "33f8f8e33a026aa256e2015544a08d60eae2ca84cf17384efd052cf7021e1ea1",
+      "shape": [
+        4,
+        74,
+        270
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.51806640625,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/01_attribute_grounding.json",
+      "npz_sha256": "7bb2f982c1de38a4e92afcc1318780a389f27b25e662edcb62f82b662f183985",
+      "shape": [
+        4,
+        1021,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.207763671875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/01_attribute_vqa.json",
+      "npz_sha256": "1229f78a71b5d32b0715694565c2e85ef6e8d64d11869d777af1b6d8014a6fb3",
+      "shape": [
+        4,
+        48,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.3349609375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/01_co_occurrence_grounding.json",
+      "npz_sha256": "0ad07dda5ba9976c95c1673ba9d47a10ca36a4853a9b3d2246109cbd7ba8182a",
+      "shape": [
+        4,
+        1024,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.2005615234375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/01_co_occurrence_vqa.json",
+      "npz_sha256": "9f1a7e13315e0f598cf0d3755ac74ba2a8790ca436bea67f22dbb1f506a58430",
+      "shape": [
+        4,
+        25,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.366943359375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/01_object_grounding.json",
+      "npz_sha256": "ea6f3d1dbc6bdcf0798259b0ee0e184bc6259f48ee460a86862c16bc23927f4f",
+      "shape": [
+        4,
+        1023,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.1954345703125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/01_object_vqa.json",
+      "npz_sha256": "4714274be87b2ee94449c664556d8a7f46199e95690850cb9190bde342cdac62",
+      "shape": [
+        4,
+        26,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.399658203125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/01_positive_grounding.json",
+      "npz_sha256": "a60e74dad48c1262b6337b6c24a54b3db46b738f3951a171c8203badb60ab431",
+      "shape": [
+        4,
+        1023,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.2069091796875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/01_positive_vqa.json",
+      "npz_sha256": "9dca7992419faaecedd80f52e9f4a27d866cc1033e96835e354ef44137fe7cf9",
+      "shape": [
+        4,
+        26,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.37646484375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/01_relation_grounding.json",
+      "npz_sha256": "f5d3b09fb6f5b96f63db359bd56f9f32e86faaac55efef9d9e3e39a26c97cb82",
+      "shape": [
+        4,
+        30,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.2384033203125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/01_relation_vqa.json",
+      "npz_sha256": "ef080418ae07cbf657da2c2b0c1ec2ec6928df229ddfa7eb0615ecbf1da390d4",
+      "shape": [
+        4,
+        54,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.38623046875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/02_attribute_grounding.json",
+      "npz_sha256": "84717fd4b2797d3f648d17bd0d00a48695a39e00a88eaaa0667668bdb05a03a0",
+      "shape": [
+        4,
+        23,
+        280
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.1109619140625,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/02_attribute_vqa.json",
+      "npz_sha256": "1bbfe2475e6cc4f043775c5bfc3cacc32fd016a372663bc5307e16c06264acc1",
+      "shape": [
+        4,
+        56,
+        280
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.362060546875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/02_co_occurrence_grounding.json",
+      "npz_sha256": "f50b859af33c1379dc2daac3a68f337b90a20c7bcba67e0b52d45444c9d91165",
+      "shape": [
+        4,
+        23,
+        280
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.12213134765625,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/02_co_occurrence_vqa.json",
+      "npz_sha256": "3e3c3e9c86eff4938ccf3e68f1687da1671e4eda1c7e13e7c87f6be2e594af0e",
+      "shape": [
+        4,
+        85,
+        280
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.4716796875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/02_object_grounding.json",
+      "npz_sha256": "2f93f10c21adc170ff09bd7ef01c74b40207e7bb80686c2fe36f7dbb84d8e8d9",
+      "shape": [
+        4,
+        8,
+        280
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.1171875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/02_object_vqa.json",
+      "npz_sha256": "0a35b65a0fc2aaddaf0922606e240487b9b91ae3226f2ea0ea1f5ef2e76f1534",
+      "shape": [
+        4,
+        17,
+        280
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.33740234375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/02_positive_grounding.json",
+      "npz_sha256": "24934eeab08001a9c1c809d5956e66f4eeec34d5b7787d5dc366c1f83b7ebda8",
+      "shape": [
+        4,
+        23,
+        280
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.1190185546875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/02_positive_vqa.json",
+      "npz_sha256": "d77f5ef7e2d60f5d588605c99214f846ea76656d90fceba0deb49db814aa49a9",
+      "shape": [
+        4,
+        24,
+        280
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.37841796875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/02_relation_grounding.json",
+      "npz_sha256": "a3734f6ef829c11a856927c201b498853f2b4b8e320e7b8f04c1f0913b1e7b59",
+      "shape": [
+        4,
+        24,
+        280
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.2166748046875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/02_relation_vqa.json",
+      "npz_sha256": "e815a0c34c1c592a98318e61d4853a938e9576e1f02c02411e01406471f10b0e",
+      "shape": [
+        4,
+        24,
+        280
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.401611328125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/03_attribute_grounding.json",
+      "npz_sha256": "11b1fe6fb149d7fd54a25767bcdbcd6e9da1e99062bde52a82db25844031e900",
+      "shape": [
+        4,
+        8,
+        260
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.11212158203125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/03_attribute_vqa.json",
+      "npz_sha256": "d8dc64d5e95acd305620d4b380f760ebffe699ff7b82a8ff8ed41d3ee53083eb",
+      "shape": [
+        4,
+        56,
+        260
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.428466796875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/03_co_occurrence_grounding.json",
+      "npz_sha256": "e5463d22a751456fac87dbebead9522741d554ebdc51d59e2592febfafd18544",
+      "shape": [
+        4,
+        8,
+        260
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.09820556640625,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/03_co_occurrence_vqa.json",
+      "npz_sha256": "735d10d056a991964e216bbfdca10a7578d90911fd797331a22e0aefc3be908a",
+      "shape": [
+        4,
+        50,
+        260
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.449462890625,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/03_object_grounding.json",
+      "npz_sha256": "a1c469b47e958e065d23183587fb043c35c5b719b63796da8f288923db343579",
+      "shape": [
+        4,
+        8,
+        260
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.10052490234375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/03_object_vqa.json",
+      "npz_sha256": "cd6e126965f3301e6cdf6a11f9b1c86cc08364e8e83968111800e94d3b3b93cd",
+      "shape": [
+        4,
+        16,
+        260
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.407958984375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/03_positive_grounding.json",
+      "npz_sha256": "1f3ce5dd5de0b4d497b386083b693a1ce95fe88163adc2d58554f91a1f42485b",
+      "shape": [
+        4,
+        23,
+        260
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.1513671875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/03_positive_vqa.json",
+      "npz_sha256": "8773eb4fc49fd3a7905a207614e4787039cd0948b5efaf2918529c459a7d80a0",
+      "shape": [
+        4,
+        39,
+        260
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.48828125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/03_relation_grounding.json",
+      "npz_sha256": "25807bbadd2c3d4982caab4d94912e040711970a8cd197d98a160c49429ba9ca",
+      "shape": [
+        4,
+        21,
+        260
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.153076171875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/03_relation_vqa.json",
+      "npz_sha256": "8d607b6fd91a2c59da74c7f7bc5222f40180bf28115a7303f4e503de7162ef65",
+      "shape": [
+        4,
+        66,
+        260
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.40283203125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/05_attribute_grounding.json",
+      "npz_sha256": "528043e73d99040077cb698c89cd9cb6adca9674e2bc2e572d6f75d88e41768a",
+      "shape": [
+        4,
+        20,
+        299
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.159912109375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/05_attribute_vqa.json",
+      "npz_sha256": "c042d955393e336878461d86f99223affb6df112984020a6fdf3e9af16bb433e",
+      "shape": [
+        4,
+        18,
+        299
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.447265625,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/05_co_occurrence_grounding.json",
+      "npz_sha256": "afcad002ceedbea1afad4cdf1848c1c1cf94044e94ac72c3acc4dc2ec8e471ab",
+      "shape": [
+        4,
+        36,
+        299
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.1458740234375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/05_co_occurrence_vqa.json",
+      "npz_sha256": "f463083179a9d3dcea32562ef650e434a876a072f45e3d669c632d2c6a71fee9",
+      "shape": [
+        4,
+        27,
+        299
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.385498046875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/05_object_grounding.json",
+      "npz_sha256": "202e04bb0fd9f5064d37023d38fcaf1803f84765b6157587d2f243d8d2d22822",
+      "shape": [
+        4,
+        34,
+        299
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.1546630859375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/05_object_vqa.json",
+      "npz_sha256": "513e7903d9e322975879decd40e95c65b6cb050b9bee760931eeb4c6d80f9b81",
+      "shape": [
+        4,
+        16,
+        299
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.381591796875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/05_positive_grounding.json",
+      "npz_sha256": "f6b039fbcf8e15eb882a4a777c899ee792976722d7e2c5bf689294da998cd7f2",
+      "shape": [
+        4,
+        1024,
+        299
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.1390380859375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/05_positive_vqa.json",
+      "npz_sha256": "6095e20ae462024342f94c9a519a8fcddb20de864cd6fa195175013091674cde",
+      "shape": [
+        4,
+        33,
+        299
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.4326171875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/05_relation_grounding.json",
+      "npz_sha256": "2d81288834faef08f01f9a79317fe68efe374964f0d7becc5e45987af14ec828",
+      "shape": [
+        4,
+        8,
+        299
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.1409912109375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/05_relation_vqa.json",
+      "npz_sha256": "564d77842f3bb77dec55a042616594e7b48a51a0de890c719558f11183005e60",
+      "shape": [
+        4,
+        76,
+        299
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.420166015625,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/06_attribute_grounding.json",
+      "npz_sha256": "a9db5c2ef9b3ecf8abd22e4fe9ec4dfa85ce56868db80778b7905c8df14d750f",
+      "shape": [
+        4,
+        37,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.1363525390625,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/06_attribute_vqa.json",
+      "npz_sha256": "1f7855acd31af481364ad6cb3f371101180bb0ea2c038b55386493298804b0ae",
+      "shape": [
+        4,
+        24,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.295654296875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/06_co_occurrence_grounding.json",
+      "npz_sha256": "5651f6cb02ed28fe5e79d5b740a960198e15d7bb065d516cef2bd40a38b46738",
+      "shape": [
+        4,
+        8,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.12298583984375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/06_co_occurrence_vqa.json",
+      "npz_sha256": "7a7c28a630b3d9e376c6f4775ffb6f9286d403b215bace79a37a59f363fa35a6",
+      "shape": [
+        4,
+        18,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.37890625,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/06_object_grounding.json",
+      "npz_sha256": "c7e65e51cc1e29845cc1782bfc6b1f610133b2adc628e0d6a898a4d208cc62cd",
+      "shape": [
+        4,
+        22,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.139404296875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/06_object_vqa.json",
+      "npz_sha256": "5e29ed0099babae834f69ab0ea66ed43cbd5414a03873c397edef0a90d10d2ab",
+      "shape": [
+        4,
+        20,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.31884765625,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/06_positive_grounding.json",
+      "npz_sha256": "2a55aafc92cbab1e7128c9adbd6e0094a890c72b66dc9c14cdab25d61f437e9f",
+      "shape": [
+        4,
+        1024,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.13916015625,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/06_positive_vqa.json",
+      "npz_sha256": "2bf2dc34b10d6c1988d72ace306fd6d212847efc9e7a006afee66e034eeeb3a7",
+      "shape": [
+        4,
+        27,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.2529296875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/06_relation_grounding.json",
+      "npz_sha256": "7a60dcfd7c6118b30ce88ee556670607f963e14a6205afe5da17f7efc866ce71",
+      "shape": [
+        4,
+        37,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.1658935546875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/06_relation_vqa.json",
+      "npz_sha256": "843ff59ca5055dc49800c20c0f9cb358f75f31ec458dd553a452399c3c03ab08",
+      "shape": [
+        4,
+        17,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.3642578125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/08_attribute_grounding.json",
+      "npz_sha256": "a0cf0c0d3f9865e96aabe89eebfe826e8e240a65a473859dd5b6d5a7db88e432",
+      "shape": [
+        4,
+        28,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.1732177734375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/08_attribute_vqa.json",
+      "npz_sha256": "c0dfe1adcd3fcfd8aa86c3062e1ac4f9f8bcff773ec55f95269fcd4ebef23479",
+      "shape": [
+        4,
+        32,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.42822265625,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/08_co_occurrence_grounding.json",
+      "npz_sha256": "82a58227fb74b280a65cb3e668a90ac752fc097705a984a2d05a9406ed3bf5b9",
+      "shape": [
+        4,
+        28,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.18505859375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/08_co_occurrence_vqa.json",
+      "npz_sha256": "bb000a17a0ca6e6880190869ffa3af355184efb9c4690cf0434efc43ac03bd39",
+      "shape": [
+        4,
+        29,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.394287109375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/08_object_grounding.json",
+      "npz_sha256": "7e173ab72adc91a495453b4d507349170eb5f9c72539335b394d57d08d599821",
+      "shape": [
+        4,
+        8,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.135498046875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/08_object_vqa.json",
+      "npz_sha256": "d7ccd40c0815002444411007e82bdc16c0b3b56a424cc281d93babb372dc1eb3",
+      "shape": [
+        4,
+        48,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.354736328125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/08_positive_grounding.json",
+      "npz_sha256": "85eaa5de1756bff972a628b4b8314760df41c5838a6646d13c1cd4670ba3bdb7",
+      "shape": [
+        4,
+        28,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.1717529296875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/08_positive_vqa.json",
+      "npz_sha256": "7661aa1a664ae8ade61e7926f40abe5f04d30c60c138a3e4cd2d6e48e58c956d",
+      "shape": [
+        4,
+        16,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.393798828125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/08_relation_grounding.json",
+      "npz_sha256": "954ed29a1da1ae1ed93cac27288e991d46c9e539ed39744c4f82a04e1e6b2c85",
+      "shape": [
+        4,
+        25,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.189453125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/08_relation_vqa.json",
+      "npz_sha256": "c263ef7a5ec48c7a308dd496b4c9c39670c7691a84670058745f6af6ab8f165f",
+      "shape": [
+        4,
+        48,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.390869140625,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/09_attribute_grounding.json",
+      "npz_sha256": "d5ca7f4bb80c9c97dcfad50f4e6223998c7ffba3e57b3076ff02191a6873ddf0",
+      "shape": [
+        4,
+        25,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.2041015625,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/09_attribute_vqa.json",
+      "npz_sha256": "0f56e1b9bf733dc46a257a65d7ec81a85ef66c347989aae64bdb1f8838bd426b",
+      "shape": [
+        4,
+        43,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.422119140625,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/09_co_occurrence_grounding.json",
+      "npz_sha256": "4233c14476fcc14f41b88ba5d9b2c466020c3c3ace1f4f703a6ab26c3f555d68",
+      "shape": [
+        4,
+        8,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.1536865234375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/09_co_occurrence_vqa.json",
+      "npz_sha256": "14b7139078fa849af9af539572d843e7409eb4e1598e1129ab7af3be5fdb3da4",
+      "shape": [
+        4,
+        57,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.429443359375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/09_object_grounding.json",
+      "npz_sha256": "33d2120bafb8f3b1b12483c3abb3d82f3e8969df403d33d67662c572cd70ceae",
+      "shape": [
+        4,
+        25,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.2091064453125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/09_object_vqa.json",
+      "npz_sha256": "f214bd992a0c08cc1fde95dce7308a94f657e1ad62c138fe8794ddd3886be470",
+      "shape": [
+        4,
+        39,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.421630859375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/09_positive_grounding.json",
+      "npz_sha256": "bea151c8655c6e9d9d72c4a4448426a7a39f631faecd8289fcf36b97e7312c80",
+      "shape": [
+        4,
+        19,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.2056884765625,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/09_positive_vqa.json",
+      "npz_sha256": "26d81988f2a816c545f4f03fc9f508de894f42c04f766d710d55a24a6196d411",
+      "shape": [
+        4,
+        20,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.409423828125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/09_relation_grounding.json",
+      "npz_sha256": "661dbb09964654a7c3dba51988fe7b839399c72a983406f1bd0c42fc47f7de22",
+      "shape": [
+        4,
+        25,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.225830078125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/09_relation_vqa.json",
+      "npz_sha256": "41852b0094ba7a644067d3c35286e5a639200ee449199b1f235d7d21a4729111",
+      "shape": [
+        4,
+        63,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.49609375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/10_attribute_grounding.json",
+      "npz_sha256": "67fb42242d9515fcf1d8f46dd40fb0d885123ecdfa7e80c7be6f073902450348",
+      "shape": [
+        4,
+        28,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.1881103515625,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/10_attribute_vqa.json",
+      "npz_sha256": "455f377f6b420e1aa2e734e3cceca6c0db0dd7b497d950d7428348d79f9796c7",
+      "shape": [
+        4,
+        23,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.3173828125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/10_co_occurrence_grounding.json",
+      "npz_sha256": "663b571e02979631a2cf7f74280a15c6695ced999232fbbadad53ec5db7ef76e",
+      "shape": [
+        4,
+        29,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.18994140625,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/10_co_occurrence_vqa.json",
+      "npz_sha256": "999e0305b647ba7e8f336a270c97debfd81cfb5af22bf66de60f18633f037fbc",
+      "shape": [
+        4,
+        52,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.3642578125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/10_object_grounding.json",
+      "npz_sha256": "fa96f2b04545c98db453503d7d0a7886d44b1e45d19e3f5f7fd307595aee63ab",
+      "shape": [
+        4,
+        27,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.170166015625,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/10_object_vqa.json",
+      "npz_sha256": "ddc306c80b220db907d58cd0e3f09e87c37c6ceba1b429122a8c74e8194aa83c",
+      "shape": [
+        4,
+        12,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.352294921875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/10_positive_grounding.json",
+      "npz_sha256": "7ce98141ef1d0af062f035ab5cc04dce8728680fd1abb43567036a438126df8a",
+      "shape": [
+        4,
+        21,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.1890869140625,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/10_positive_vqa.json",
+      "npz_sha256": "a94a94bfcc66da57578245597e4931409c5dceb73a7d702ed793ddeacfb4db72",
+      "shape": [
+        4,
+        23,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.33935546875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/10_relation_grounding.json",
+      "npz_sha256": "27f02c644e97f055c7a032f9644ee11bbc25cef25b3127b00ca4190f93964170",
+      "shape": [
+        4,
+        22,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.176513671875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/10_relation_vqa.json",
+      "npz_sha256": "d06acf7242b83f2ed138139e74b6aef001bdb95b22f5ef6378c8d111537ae677",
+      "shape": [
+        4,
+        12,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.328369140625,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/11_attribute_grounding.json",
+      "npz_sha256": "ce0df1d83635e341cc4fd700b70215425e89b786af9aa7bfbc404364db941726",
+      "shape": [
+        4,
+        23,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.1854248046875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/11_attribute_vqa.json",
+      "npz_sha256": "4ac01c3f8ad9f234eb0cb0d24c8aeb20e3dc25ba226864747e6d1212a6394854",
+      "shape": [
+        4,
+        56,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.2734375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/11_co_occurrence_grounding.json",
+      "npz_sha256": "5380c79f1a76902292251a6fa1f91e702d5cc21c05405ccc06bf61f5064c4046",
+      "shape": [
+        4,
+        26,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.1343994140625,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/11_co_occurrence_vqa.json",
+      "npz_sha256": "61bd3fdf317590496cb595a463f8e758de8b4168e4ad07236d07222f74647d1b",
+      "shape": [
+        4,
+        90,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.31884765625,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/11_object_grounding.json",
+      "npz_sha256": "8b0570859e2a03462ca2f36aced2bd25a5e66293962e5f5a324c4305adc6c6b8",
+      "shape": [
+        4,
+        8,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.10784912109375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/11_object_vqa.json",
+      "npz_sha256": "8a3392841bec4a5682355e58121c21d4000739bcd07d853e4e00019596d416f2",
+      "shape": [
+        4,
+        54,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.3017578125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/11_positive_grounding.json",
+      "npz_sha256": "adcffaa8021de2eaa6a8e87beb59f488c1a0eb85ab0e2de2c90b74e300825069",
+      "shape": [
+        4,
+        27,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.1463623046875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/11_positive_vqa.json",
+      "npz_sha256": "c0a01a340fd9ce76b8ba88bb3c986371e841dfd3a16200e13f2ad87152137983",
+      "shape": [
+        4,
+        68,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.336181640625,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/11_relation_grounding.json",
+      "npz_sha256": "38a32b4010991f8dd65fdb780127afb3c696fd83e2fd67cd79ab5e3a58ccfe58",
+      "shape": [
+        4,
+        23,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.16015625,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/11_relation_vqa.json",
+      "npz_sha256": "d87d160c54c49c108bb00b1dbadcb73fb48f7b0ca11bda04e5ce55eb82a9f326",
+      "shape": [
+        4,
+        59,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.301513671875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/12_attribute_grounding.json",
+      "npz_sha256": "b1f9cf458985d25f05c989a4c97ddb0fe3ef2227ac7a805c9d1693b8931bdd22",
+      "shape": [
+        4,
+        28,
+        414
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.146484375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/12_attribute_vqa.json",
+      "npz_sha256": "f7c881de15b81b3f6334d946440b142ed1f77e2363e29bdd8e19ab25666a37aa",
+      "shape": [
+        4,
+        51,
+        414
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.42041015625,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/12_co_occurrence_grounding.json",
+      "npz_sha256": "dba2e130f4a16416f4ad5aea0af99dda88b80b0610ccac5aaf8d7560a78ee4fa",
+      "shape": [
+        4,
+        23,
+        414
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.1451416015625,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/12_co_occurrence_vqa.json",
+      "npz_sha256": "f0d822519ad0fec00f5689d09c4acd175be14cca0499382449662f340e1ccfa7",
+      "shape": [
+        4,
+        99,
+        414
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.4716796875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/12_object_grounding.json",
+      "npz_sha256": "8e7a458a127ab2aebe69edd1a31d91f1223887358dadf6373146db16990d0442",
+      "shape": [
+        4,
+        28,
+        414
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.13818359375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/12_object_vqa.json",
+      "npz_sha256": "39a66251fd04bae2b9b1995a3f05519a10eed324661a4c22df29334ac59d626d",
+      "shape": [
+        4,
+        98,
+        414
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.399658203125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/12_positive_grounding.json",
+      "npz_sha256": "046063dbca86ec4e10f769d695b2ad7d06c48e001c258c59378c2aa01303d8f6",
+      "shape": [
+        4,
+        23,
+        414
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.139892578125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/12_positive_vqa.json",
+      "npz_sha256": "d6090fb201094744a41b107b1ba0713d3f33a1cfb872bb54cb9b1a4cfc1143a1",
+      "shape": [
+        4,
+        67,
+        414
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.437744140625,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/12_relation_grounding.json",
+      "npz_sha256": "99f44d48e89ef0cb8949fa53305654a5762a371545e2ff6aa7dd7dd657779a54",
+      "shape": [
+        4,
+        23,
+        414
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.15625,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/12_relation_vqa.json",
+      "npz_sha256": "55745e3779316cb644b304e856f2fb72f1ee3d82236000ea065723dcb6b49397",
+      "shape": [
+        4,
+        59,
+        414
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.427001953125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/13_attribute_grounding.json",
+      "npz_sha256": "f93cde6364a1f7efa63763489c74c035dc5255b145c7daadd6248998eb83025d",
+      "shape": [
+        4,
+        23,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.1571044921875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/13_attribute_vqa.json",
+      "npz_sha256": "e8dc797e9cbd6987ee04a56a66a8b1d9d6120cf58f65f7e4e49add6f74e6cdc1",
+      "shape": [
+        4,
+        31,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.337646484375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/13_co_occurrence_grounding.json",
+      "npz_sha256": "82d471d8af030b20984e674d484a1983832180c3108d966935564386b17c83fe",
+      "shape": [
+        4,
+        8,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.11993408203125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/13_co_occurrence_vqa.json",
+      "npz_sha256": "36524f952485b657dc6278cefee7d196389696813cbf9d5fe2ac16f1808586ec",
+      "shape": [
+        4,
+        32,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.40625,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/13_object_grounding.json",
+      "npz_sha256": "057c63a291d602472ff7770d4640d8c1c90db24abac6173014388b38f3433323",
+      "shape": [
+        4,
+        27,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.1429443359375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/13_object_vqa.json",
+      "npz_sha256": "9061a2a8a0838fd7daa3edbc7c98b2dc67b510fbc59a478df5eea1042c04eed6",
+      "shape": [
+        4,
+        20,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.359375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/13_positive_grounding.json",
+      "npz_sha256": "d79aef93fbe080d0bfa1795ad54e2130fe6ddcce3b7f6686d853b97586890963",
+      "shape": [
+        4,
+        25,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.1484375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/13_positive_vqa.json",
+      "npz_sha256": "853155eed3b8c115015f0c276ff558701401c0bfe4ec9b127d2e980bf9727a2d",
+      "shape": [
+        4,
+        20,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.3193359375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/13_relation_grounding.json",
+      "npz_sha256": "2c4287ca94243a9533a85deaf2ccc3ddf4428933b33835deefcaf25d7dbfe262",
+      "shape": [
+        4,
+        12,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.07476806640625,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/13_relation_vqa.json",
+      "npz_sha256": "42fabfa0dd3f2741ec65c870717540e0a72d5fcec3019c6b2534ad2b6947105c",
+      "shape": [
+        4,
+        30,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.40185546875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/14_attribute_grounding.json",
+      "npz_sha256": "c6c65e193914e68fb921cdd3de77a26c938ec67860c4694b62191a39b8a1d52e",
+      "shape": [
+        4,
+        23,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.160888671875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/14_attribute_vqa.json",
+      "npz_sha256": "45baeffae93593427100f73522a8755e302b82cdc4464240e2ad171cea6e7cd9",
+      "shape": [
+        4,
+        32,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.291015625,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/14_co_occurrence_grounding.json",
+      "npz_sha256": "1d5fb9b6500b5724f0a2e783c1148105739fd460db6c1e8ae200e73816fab89a",
+      "shape": [
+        4,
+        29,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.1357421875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/14_co_occurrence_vqa.json",
+      "npz_sha256": "6a8e334c9052f7cb7f1bbd847f32674a04757573357cee9d023a8bc8a7de9a50",
+      "shape": [
+        4,
+        12,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.3349609375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/14_object_grounding.json",
+      "npz_sha256": "441398029550b3487dbc251efbf8386773988cbedbe856063009824faad8e363",
+      "shape": [
+        4,
+        13,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.157470703125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/14_object_vqa.json",
+      "npz_sha256": "c8883acd927ad069c1c15729a43a1dbd1dc359a15c6647f1722227a651dbc655",
+      "shape": [
+        4,
+        74,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.374755859375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/14_positive_grounding.json",
+      "npz_sha256": "0899b7998526d4d1f5d6ec1b661991629ff905c6c2380bd461fd8861aba3351d",
+      "shape": [
+        4,
+        23,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.1644287109375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/14_positive_vqa.json",
+      "npz_sha256": "f36a5076ba01312a744c41277d486a8aa67d19f84df347e8098dc55e8cf68b6a",
+      "shape": [
+        4,
+        47,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.329345703125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/14_relation_grounding.json",
+      "npz_sha256": "211a2d7ade41a8ce044a5f23f8dadd76fdf15bec8f7093f083c0993d33a0137c",
+      "shape": [
+        4,
+        21,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.1280517578125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/14_relation_vqa.json",
+      "npz_sha256": "1e0906ad3edd2456e90026149b3d18afe55598fcd4ca19f8e20f225a29140c05",
+      "shape": [
+        4,
+        50,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.315185546875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/15_attribute_grounding.json",
+      "npz_sha256": "d6d127467f263744affa978ba33e472774f662007f415a4ec2419542422fc5a6",
+      "shape": [
+        4,
+        379,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.1785888671875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/15_attribute_vqa.json",
+      "npz_sha256": "024a3c947444fbd6b171dafbcb92f04cbe07ccc7d5233b977aa9bcbb2b340d22",
+      "shape": [
+        4,
+        17,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.439453125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/15_co_occurrence_grounding.json",
+      "npz_sha256": "bed423a6d1e40c2294c0704771fab7c6162d95e6e0d16709e242d3366bfa407c",
+      "shape": [
+        4,
+        8,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.13720703125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/15_co_occurrence_vqa.json",
+      "npz_sha256": "cad7d826f23dcb5b773e6fc247d773734cc1181f45f7b876d2821812b1d3588f",
+      "shape": [
+        4,
+        28,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.453125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/15_object_grounding.json",
+      "npz_sha256": "981f783fd74994b27e46480c477a68ded49b5e0175d6523c71cc8babd15c9ac2",
+      "shape": [
+        4,
+        379,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.1844482421875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/15_object_vqa.json",
+      "npz_sha256": "587666a3d311daa5cc18778e3168a0127e51d1058eea963e5b890bc6e8d9eab1",
+      "shape": [
+        4,
+        60,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.439697265625,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/15_positive_grounding.json",
+      "npz_sha256": "330b06a3d40b082cf6a66e0af3e31dc06c338299336b929a0ecbae84a482d3b8",
+      "shape": [
+        4,
+        48,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.1651611328125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/15_positive_vqa.json",
+      "npz_sha256": "9558a8e6bd3dc93a6ab5a210c313b925d0975f39e6773dd29684739818b6b8c6",
+      "shape": [
+        4,
+        15,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.453369140625,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/15_relation_grounding.json",
+      "npz_sha256": "4553d12aec2df7cfac35ab21b2551bf208ff6c872255be46ee6e02b266fd5e5b",
+      "shape": [
+        4,
+        26,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.1416015625,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/15_relation_vqa.json",
+      "npz_sha256": "902605689334ab8184d926856b37bab50ccc636a28de4df869684bfe7db7fc73",
+      "shape": [
+        4,
+        18,
+        391
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.47705078125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/16_attribute_grounding.json",
+      "npz_sha256": "d68d5ccaaf04450a544a45259fb447f7087944fddf35d95dea31226b3a815267",
+      "shape": [
+        4,
+        19,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.130615234375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/16_attribute_vqa.json",
+      "npz_sha256": "cb96714e6a9078a4ee5e0dfbada724f44b8a381caa1b9907a835578247bb862e",
+      "shape": [
+        4,
+        85,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.46875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/16_co_occurrence_grounding.json",
+      "npz_sha256": "ff0983a2ebb600b2fed19c868f77ff44a5da44495ed974339994ca8f16ea2a3b",
+      "shape": [
+        4,
+        19,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.1346435546875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/16_co_occurrence_vqa.json",
+      "npz_sha256": "791d39f82a2f677170ca0950c26e49280517aa789555dabaa40f699cd874d295",
+      "shape": [
+        4,
+        68,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.4755859375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/16_object_grounding.json",
+      "npz_sha256": "bbded0b1dbd2394be99b0493fdc61cc0667967d950fd8a02ddb9050b294e48ae",
+      "shape": [
+        4,
+        19,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.134033203125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/16_object_vqa.json",
+      "npz_sha256": "0baab19979d7da1b145f21d5addd3e4e7a7447b038aa0df7d6db5d9548932971",
+      "shape": [
+        4,
+        131,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.378173828125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/16_positive_grounding.json",
+      "npz_sha256": "6ed56da14d8cc399adb76f2fee97ea237f29bf80d085b163ae6e89d497d8df47",
+      "shape": [
+        4,
+        19,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.1356201171875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/16_positive_vqa.json",
+      "npz_sha256": "520f733c90a3ac921f0de077c34574f16c32a907fb0fe7f24c997419905dc285",
+      "shape": [
+        4,
+        1024,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.452880859375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/16_relation_grounding.json",
+      "npz_sha256": "ec61163ada8a0b3b4459ca0dd2292b3d3f95140c15602126e8c60a249875df87",
+      "shape": [
+        4,
+        19,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.158935546875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/16_relation_vqa.json",
+      "npz_sha256": "2fd42a0e2d4d7a9e86afa1cc88eca8f81bd66c83dd914d8f52782d59861b7dc6",
+      "shape": [
+        4,
+        51,
+        345
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.35009765625,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/20_attribute_grounding.json",
+      "npz_sha256": "de9a8841d121a1592099383b46038945a031d2aceca9a7815c2c5353ca5da170",
+      "shape": [
+        4,
+        15,
+        270
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.1707763671875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/20_attribute_vqa.json",
+      "npz_sha256": "58b25ad9248098a1e7c52620742a2a5622fde5a0016cd510c575c266382a4a88",
+      "shape": [
+        4,
+        36,
+        270
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.349853515625,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/20_co_occurrence_grounding.json",
+      "npz_sha256": "611ef3540e94cf5518b892a2b3546345cab2f61a1bdac858d31f354a8296aec8",
+      "shape": [
+        4,
+        8,
+        270
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.156982421875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/20_co_occurrence_vqa.json",
+      "npz_sha256": "7aa9d30bfb1e462473e6e413a2a217ba650836edd0a7ce445745020f9a6ad751",
+      "shape": [
+        4,
+        38,
+        270
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.4794921875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/20_object_grounding.json",
+      "npz_sha256": "4862fa5959154814a2be0e7d8fd4266f6a6958f240fb31a98ef95c04c1f0289d",
+      "shape": [
+        4,
+        8,
+        270
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.134521484375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/20_object_vqa.json",
+      "npz_sha256": "b48980ef62518eb23d36e9514891a7e09b9f5fbe96011744e1155e4556fa9203",
+      "shape": [
+        4,
+        48,
+        270
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.455322265625,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/20_positive_grounding.json",
+      "npz_sha256": "cdd40b266de6fcfbf28346941a8e8214daa6a6f6b98355b3986f4cfe96617542",
+      "shape": [
+        4,
+        118,
+        270
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.1944580078125,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/20_positive_vqa.json",
+      "npz_sha256": "73945acd8d35661348ae122bb84e90fd83da0c65d7450023354f27f17fb3384b",
+      "shape": [
+        4,
+        61,
+        270
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.410888671875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/20_relation_grounding.json",
+      "npz_sha256": "3b098be3c3d3ce7c586aa4a1326ddce024e358236daa0156186027d3005ac603",
+      "shape": [
+        4,
+        36,
+        270
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.1590576171875,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    },
+    {
+      "record": "results/visionr1/20_relation_vqa.json",
+      "npz_sha256": "9903fe9170531d77fa2f508942ea31c2e4a37822757d76c0dfad860f687e27e4",
+      "shape": [
+        4,
+        58,
+        270
+      ],
+      "all_finite_nonnegative": true,
+      "max_image_attention_mass": 0.4609375,
+      "real_attention_source": "Actual decoder self-attention returned by output_attentions=True during teacher-forced causal replay of the exact greedy generated token sequence. Row indices refer to consumed emitted output tokens; last-prompt row produces the first generated token."
+    }
+  ],
+  "all_case_sheets": [
+    "visuals/case_01_qwen25_all_queries.png",
+    "visuals/case_01_visionr1_all_queries.png",
+    "visuals/case_02_qwen25_all_queries.png",
+    "visuals/case_02_visionr1_all_queries.png",
+    "visuals/case_03_qwen25_all_queries.png",
+    "visuals/case_03_visionr1_all_queries.png",
+    "visuals/case_05_qwen25_all_queries.png",
+    "visuals/case_05_visionr1_all_queries.png",
+    "visuals/case_06_qwen25_all_queries.png",
+    "visuals/case_06_visionr1_all_queries.png",
+    "visuals/case_08_qwen25_all_queries.png",
+    "visuals/case_08_visionr1_all_queries.png",
+    "visuals/case_09_qwen25_all_queries.png",
+    "visuals/case_09_visionr1_all_queries.png",
+    "visuals/case_10_qwen25_all_queries.png",
+    "visuals/case_10_visionr1_all_queries.png",
+    "visuals/case_11_qwen25_all_queries.png",
+    "visuals/case_11_visionr1_all_queries.png",
+    "visuals/case_12_qwen25_all_queries.png",
+    "visuals/case_12_visionr1_all_queries.png",
+    "visuals/case_13_qwen25_all_queries.png",
+    "visuals/case_13_visionr1_all_queries.png",
+    "visuals/case_14_qwen25_all_queries.png",
+    "visuals/case_14_visionr1_all_queries.png",
+    "visuals/case_15_qwen25_all_queries.png",
+    "visuals/case_15_visionr1_all_queries.png",
+    "visuals/case_16_qwen25_all_queries.png",
+    "visuals/case_16_visionr1_all_queries.png",
+    "visuals/case_20_qwen25_all_queries.png",
+    "visuals/case_20_visionr1_all_queries.png"
+  ],
+  "normalization": "Per-map mean image patch=1; shared colors within each sheet; color strength does not compare absolute attention across models.",
+  "grounding_before_after_uses_identical_attention_array": true,
+  "paper_or_main_table_modified": false,
+  "vision_spatial_projection_source_check": "vision_token_projection_qa.json",
+  "generation_budget_history": "generation_budget_manifest.json",
+  "visual_qa": {
+    "status": "passed",
+    "root_preview_approved": [
+      "representative_candidates/case_08_attribute_two_models.png",
+      "representative_candidates/case_12_relation_two_models.png"
+    ],
+    "additional_final_checks": [
+      "visuals/case_08_qwen25_all_queries.png",
+      "visuals/query_10_visionr1_object.png",
+      "representative_candidates/case_08_attribute_two_models.png"
+    ],
+    "criteria": [
+      "Photos recognizable; true Blues overlays with pooled 95th-percentile clipping and max alpha0.67",
+      "No title, colorbar or footer overlap in checked landscape/portrait sheets",
+      "DG orange candidate before; after REJ removes only candidate; same real upstream map",
+      "Independent Omni uses actual red-input candidate and its own real final-prompt weights",
+      "Explicit model names in representative figures; TNR PDF fonts embedded; minimum fontsize7pt"
+    ],
+    "pdf_count": 34,
+    "pdf_fonts": [
+      "/BCFGQX+TimesNewRomanPSMT",
+      "/BOBWGI+TimesNewRomanPSMT",
+      "/BOOTAF+TimesNewRomanPSMT",
+      "/CXBHUD+TimesNewRomanPSMT",
+      "/DAUAVG+TimesNewRomanPSMT",
+      "/DKAQPA+TimesNewRomanPSMT",
+      "/DKAZGT+TimesNewRomanPSMT",
+      "/DKGBDS+TimesNewRomanPSMT",
+      "/DOPCSN+TimesNewRomanPSMT",
+      "/EQWSJD+TimesNewRomanPSMT",
+      "/ESNBSB+TimesNewRomanPSMT",
+      "/EZWAWT+TimesNewRomanPSMT",
+      "/FJFGBM+TimesNewRomanPSMT",
+      "/FXVQRS+TimesNewRomanPSMT",
+      "/FZHOID+TimesNewRomanPSMT",
+      "/GKPQQP+TimesNewRomanPSMT",
+      "/HFQZHW+TimesNewRomanPSMT",
+      "/MBATHF+TimesNewRomanPSMT",
+      "/OVOLOC+TimesNewRomanPSMT",
+      "/ZZJUYQ+TimesNewRomanPSMT"
+    ],
+    "minimum_pdf_fontsize_pt": 7.0
+  },
+  "gallery_qa": "gallery_qa.json",
+  "local_raw_tensor_qa": "raw_tensor_local_qa.json",
+  "compact_bundle_verify": "405 average maps exactly recomputed from source JSON SHA, raw NPZ SHA and actual selected token indices."
+}

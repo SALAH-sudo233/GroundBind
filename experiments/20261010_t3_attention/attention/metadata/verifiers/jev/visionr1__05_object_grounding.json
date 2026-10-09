@@ -1,0 +1,48 @@
+{
+  "arm": "jev",
+  "model": "visionr1",
+  "example_index": 5,
+  "sample_id": "hallu_000215_COCO_train2014_000000106438__obj",
+  "hallucination_type": "object",
+  "query": "the laptop in the person's hand",
+  "candidate_bbox_xyxy": [
+    332.0,
+    25.0,
+    662.0,
+    318.0
+  ],
+  "upstream_record_sha256": "76a0ed96253ac99cd3c3f4bd35cbb1d625b62348ec8580fcfa96dcd510b00eaa",
+  "source_record": "/home/u2025141034/benchmark/rrwr_20261010_t3_attention/attention/results/visionr1/05_object_grounding.json",
+  "image_sha256": "5ddddd877cf5fb63a7bd0cd015f8c2f1e98f1c8d96c0eb49ed86a4a3b1e5b0c6",
+  "source_model_path": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-2B/snapshots/15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "torch": "2.12.1+cu126",
+  "transformers": "5.12.1",
+  "drew": true,
+  "original": {
+    "z": -7.513937950134277,
+    "prompt": "Inspect the image region [332,25,662,318]. Determine whether the phrase \"the laptop in the person's hand\" is fully true for the object in that exact region. Return exactly one JSON object with exactly these two fields: {\"binding\":\"MATCH\" or \"MISMATCH\" or \"NA\", \"decision\":\"KEEP\" or \"REJECT\"}. Do not explain. Do not use Markdown.",
+    "rendered_prompt": "<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|>Inspect the image region [332,25,662,318]. Determine whether the phrase \"the laptop in the person's hand\" is fully true for the object in that exact region. Return exactly one JSON object with exactly these two fields: {\"binding\":\"MATCH\" or \"MISMATCH\" or \"NA\", \"decision\":\"KEEP\" or \"REJECT\"}. Do not explain. Do not use Markdown.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "prompt_token_count": 343,
+    "model_path": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-2B/snapshots/15852e8c16360a2fea060d615a32b45270f8a8fc",
+    "image_input_size_wh": [
+      640,
+      373
+    ],
+    "coordinate_protocol": "original JEV textual pixel coordinates, integer-rounded identically to collection script",
+    "temperature": 1.7765671239028529,
+    "p_head": 0.01435114722698927
+  },
+  "predicate": "on",
+  "routed_predicate": false,
+  "probe_metadata": {
+    "predicate_surface": "in",
+    "family": null,
+    "semantic_status": "unsupported",
+    "skip_reason": "ambiguous_surface:in",
+    "n_legal_candidates": 0,
+    "rule_id": null
+  },
+  "rivals": [],
+  "seconds": 0.19462646590545774,
+  "peak_allocated_gb": 4.669597184
+}

@@ -1,0 +1,22 @@
+{
+  "arm": "omni",
+  "model": "visionr1",
+  "example_index": 13,
+  "sample_id": "hallu_000247_COCO_train2014_000000488066__obj",
+  "hallucination_type": "object",
+  "query": "the robot sitting on the chair",
+  "candidate_bbox_xyxy": null,
+  "upstream_record_sha256": "30009eb5e21dd5b890147b1f2ce1129058d97b048b1ceb45bba03ba46e94b0f5",
+  "source_record": "/home/u2025141034/benchmark/rrwr_20261010_t3_attention/attention/results/visionr1/13_object_grounding.json",
+  "image_sha256": "8e5c93d26f27cd7fea252172461b6592de15abc3fa66f02e05d64630daa9ca75",
+  "source_model_path": "/home/u2025141034/models/OmniVerifier-7B",
+  "torch": "2.12.1+cu126",
+  "transformers": "5.12.1",
+  "drew": false,
+  "original": null,
+  "rivals": [],
+  "reason": "original_no_box",
+  "attention_available": false,
+  "seconds": 0.00022564316168427467,
+  "peak_allocated_gb": 16.592876032
+}

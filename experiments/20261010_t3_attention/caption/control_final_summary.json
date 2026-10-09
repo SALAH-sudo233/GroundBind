@@ -1,0 +1,195 @@
+{
+  "n": 64,
+  "n_valid": 64,
+  "correct": 63,
+  "accuracy_all_controls": 0.984375,
+  "by_category": {
+    "EOH_definite_assertion": {
+      "n": 2,
+      "correct": 2
+    },
+    "EOH_omitted_positive_context": {
+      "n": 4,
+      "correct": 4
+    },
+    "EOH_scoped_same_object_elsewhere": {
+      "n": 8,
+      "correct": 8
+    },
+    "absent_unit": {
+      "n": 4,
+      "correct": 4
+    },
+    "attribute_changed_unit_absent": {
+      "n": 2,
+      "correct": 2
+    },
+    "attribute_target_binding": {
+      "n": 4,
+      "correct": 3
+    },
+    "attribute_wrong_entity": {
+      "n": 4,
+      "correct": 4
+    },
+    "hypothetical": {
+      "n": 4,
+      "correct": 4
+    },
+    "negation": {
+      "n": 6,
+      "correct": 6
+    },
+    "question": {
+      "n": 2,
+      "correct": 2
+    },
+    "quotation": {
+      "n": 4,
+      "correct": 4
+    },
+    "relation_changed_unit_absent": {
+      "n": 2,
+      "correct": 2
+    },
+    "relation_inverse_paraphrase": {
+      "n": 1,
+      "correct": 1
+    },
+    "relation_roles_reversed": {
+      "n": 2,
+      "correct": 2
+    },
+    "relation_target_roles": {
+      "n": 2,
+      "correct": 2
+    },
+    "relation_wrong_entity": {
+      "n": 2,
+      "correct": 2
+    },
+    "synonym_paraphrase": {
+      "n": 6,
+      "correct": 6
+    },
+    "unbound_entity_cooccurrence": {
+      "n": 1,
+      "correct": 1
+    },
+    "uncertainty": {
+      "n": 4,
+      "correct": 4
+    }
+  },
+  "controls_are": "Explicitly authored semantic diagnostic controls, not claimed to be human-labeled benchmark samples.",
+  "model_metadata": {
+    "judge_model": "Qwen/Qwen3.5-9B",
+    "judge_snapshot": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+    "judge_path": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-9B/snapshots/c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+    "torch_version": "2.12.1+cu126",
+    "transformers_version": "5.12.1",
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "device": "4",
+    "generation": "deterministic first-token vocabulary argmax, exact YES/NO, retry unconstrained up to 16 tokens if needed",
+    "enable_thinking": false,
+    "model_load_seconds": 8.417042970657349,
+    "model_files": [
+      {
+        "name": "preprocessor_config.json",
+        "target": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-9B/blobs/2ea84a437d448ff71b08df68fdd949d5cc4ebb64",
+        "sha256": "27225450ac9c6529872ee1924fcb0962ff5634834f817040f444118116f4e516"
+      },
+      {
+        "name": "model.safetensors-00002-of-00004.safetensors",
+        "target": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-9B/blobs/31c7d7e2dd5d207840b31cc59083c8f4c4718959149e0358c0364052bb9a0330",
+        "sha256": "31c7d7e2dd5d207840b31cc59083c8f4c4718959149e0358c0364052bb9a0330"
+      },
+      {
+        "name": "video_preprocessor_config.json",
+        "target": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-9B/blobs/3ba673a5ad7d4d13f54155ecd38b2a94a6dac8fe",
+        "sha256": "7768af27c1fafa9cc9011c1dc20067e03f8915e03b63504550e11d5066986d13"
+      },
+      {
+        "name": "vocab.json",
+        "target": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-9B/blobs/0aa0ce0658d60ac4a5d609f4eadb0e8e43514176",
+        "sha256": "ce99b4cb2983d118806ce0a8b777a35b093e2000a503ebde25853284c9dfa003"
+      },
+      {
+        "name": "tokenizer_config.json",
+        "target": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-9B/blobs/eda48d3e75a8e59a8479ee4ec8b37f76e711d9c1",
+        "sha256": "316230d6a809701f4db5ea8f8fc862bc3a6f3229c937c174e674ff3ca0a64ac8"
+      },
+      {
+        "name": "model.safetensors-00003-of-00004.safetensors",
+        "target": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-9B/blobs/7ec36ba3a4176a44c3c0876ad80c56a2f70c84bf008d82e9501df642f17dadec",
+        "sha256": "7ec36ba3a4176a44c3c0876ad80c56a2f70c84bf008d82e9501df642f17dadec"
+      },
+      {
+        "name": "model.safetensors.index.json",
+        "target": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-9B/blobs/e4c1cb7dba5096b43b9d92bc781aba5e3aa8acd8",
+        "sha256": "26d3539b516be613f39563617cb9d33b3f83d401298125be392c80cefb8f7fe5"
+      },
+      {
+        "name": "tokenizer.json",
+        "target": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-9B/blobs/5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42",
+        "sha256": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42"
+      },
+      {
+        "name": "config.json",
+        "target": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-9B/blobs/273ce437e01baf96a07cd9eb3d5f48bac8d7c657",
+        "sha256": "d0883072e01861ed0b2d47be3c16c36a8e81c224c7ffaa310c6558fb3f932b05"
+      },
+      {
+        "name": "model.safetensors-00004-of-00004.safetensors",
+        "target": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-9B/blobs/b62b0c4cd7e44edee103ee8f4fe225f246d5e768e07bfd5f25b63a8aa1fdd0c6",
+        "sha256": "b62b0c4cd7e44edee103ee8f4fe225f246d5e768e07bfd5f25b63a8aa1fdd0c6"
+      },
+      {
+        "name": "model.safetensors-00001-of-00004.safetensors",
+        "target": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-9B/blobs/db6f444b43d318c92f360a13a25561a6a65b10c0631b8ed305a426dbaa6c380e",
+        "sha256": "db6f444b43d318c92f360a13a25561a6a65b10c0631b8ed305a426dbaa6c380e"
+      }
+    ]
+  },
+  "failed_controls": [
+    {
+      "index": 37,
+      "model": "semantic_control",
+      "caption": "A person holds a red cup.",
+      "hallucination_type": "attribute",
+      "positive_text": "the cup on the desk",
+      "negative_text": "the red cup on the desk",
+      "target_eval_units": {
+        "negative_head_object": "cup",
+        "hallucination_units": [
+          {
+            "type": "attribute",
+            "object": "cup",
+            "attribute": "red",
+            "subject": "",
+            "relation": "",
+            "target_object": "",
+            "count_as_hallucination_if_mentioned": true,
+            "note": "The edited negative unit assigns the color red to the target cup."
+          }
+        ]
+      },
+      "expected_asserted": true,
+      "control_category": "attribute_target_binding",
+      "scope_object_to_target": false,
+      "asserted": false,
+      "raw_judge_output": "NO",
+      "judge_parse_valid": true,
+      "p_asserted_conditional_binary": 0.3775406777858734,
+      "retry_used": false,
+      "input_token_count": 436,
+      "judge_model": "Qwen/Qwen3.5-9B",
+      "judge_snapshot": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+      "protocol_sha256": "c70432b355d94fc8b0536abe031d5855f91e99c47303fda4ec452a7edc44d353",
+      "judge_payload": "TARGET ENTITY REFERENCE (use only to bind the target when multiple entities are mentioned; do not require unrelated unchanged modifiers): the cup on the desk\nEDITED PROPOSITION: The target cup has this property: red.\nCAPTION: A person holds a red cup.\nAnswer:",
+      "shard": 0,
+      "nshards": 4
+    }
+  ]
+}

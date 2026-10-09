@@ -1,0 +1,85 @@
+{
+  "arm": "jev",
+  "model": "qwen25",
+  "example_index": 10,
+  "sample_id": "hallu_000544_COCO_train2014_000000500634__rel",
+  "hallucination_type": "relation",
+  "query": "the fork on top of the spoon",
+  "candidate_bbox_xyxy": [
+    245.0,
+    463.0,
+    357.0,
+    644.0
+  ],
+  "upstream_record_sha256": "7b446a47815afe5784c899ff628b844444eb43806fc0f9679f7e3e0c3fe33812",
+  "source_record": "/home/u2025141034/benchmark/rrwr_20261010_t3_attention/attention/results/qwen25/10_relation_grounding.json",
+  "image_sha256": "032f9247bfefcfed11e5e38fc04de77b12e80b866f4c4ae7f1b138b1fd910613",
+  "source_model_path": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-2B/snapshots/15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "torch": "2.12.1+cu126",
+  "transformers": "5.12.1",
+  "drew": true,
+  "original": {
+    "z": -8.118070602416992,
+    "prompt": "Inspect the image region [245,463,357,644]. Determine whether the phrase \"the fork on top of the spoon\" is fully true for the object in that exact region. Return exactly one JSON object with exactly these two fields: {\"binding\":\"MATCH\" or \"MISMATCH\" or \"NA\", \"decision\":\"KEEP\" or \"REJECT\"}. Do not explain. Do not use Markdown.",
+    "rendered_prompt": "<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|>Inspect the image region [245,463,357,644]. Determine whether the phrase \"the fork on top of the spoon\" is fully true for the object in that exact region. Return exactly one JSON object with exactly these two fields: {\"binding\":\"MATCH\" or \"MISMATCH\" or \"NA\", \"decision\":\"KEEP\" or \"REJECT\"}. Do not explain. Do not use Markdown.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "prompt_token_count": 404,
+    "model_path": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-2B/snapshots/15852e8c16360a2fea060d615a32b45270f8a8fc",
+    "image_input_size_wh": [
+      480,
+      640
+    ],
+    "coordinate_protocol": "original JEV textual pixel coordinates, integer-rounded identically to collection script",
+    "temperature": 1.7765671239028529,
+    "p_head": 0.010256576351821423
+  },
+  "predicate": "on top of",
+  "routed_predicate": true,
+  "probe_metadata": {
+    "predicate_surface": "on top of",
+    "family": "vertical_or_support",
+    "semantic_status": "supported",
+    "skip_reason": null,
+    "n_legal_candidates": 2,
+    "rule_id": "comp:on top of->under"
+  },
+  "rivals": [
+    {
+      "query": "the fork under the spoon",
+      "probe_type": "competitive",
+      "rule_id": "comp:on top of->under",
+      "edited_surface": "under",
+      "z": -6.833483695983887,
+      "prompt": "Inspect the image region [245,463,357,644]. Determine whether the phrase \"the fork under the spoon\" is fully true for the object in that exact region. Return exactly one JSON object with exactly these two fields: {\"binding\":\"MATCH\" or \"MISMATCH\" or \"NA\", \"decision\":\"KEEP\" or \"REJECT\"}. Do not explain. Do not use Markdown.",
+      "rendered_prompt": "<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|>Inspect the image region [245,463,357,644]. Determine whether the phrase \"the fork under the spoon\" is fully true for the object in that exact region. Return exactly one JSON object with exactly these two fields: {\"binding\":\"MATCH\" or \"MISMATCH\" or \"NA\", \"decision\":\"KEEP\" or \"REJECT\"}. Do not explain. Do not use Markdown.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+      "prompt_token_count": 402,
+      "model_path": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-2B/snapshots/15852e8c16360a2fea060d615a32b45270f8a8fc",
+      "image_input_size_wh": [
+        480,
+        640
+      ],
+      "coordinate_protocol": "original JEV textual pixel coordinates, integer-rounded identically to collection script",
+      "temperature": 1.7765671239028529,
+      "p_head": 0.020908815786242485
+    },
+    {
+      "query": "the fork next to the spoon",
+      "probe_type": "competitive",
+      "rule_id": "comp:on top of->next to",
+      "edited_surface": "next to",
+      "z": -3.963977098464966,
+      "prompt": "Inspect the image region [245,463,357,644]. Determine whether the phrase \"the fork next to the spoon\" is fully true for the object in that exact region. Return exactly one JSON object with exactly these two fields: {\"binding\":\"MATCH\" or \"MISMATCH\" or \"NA\", \"decision\":\"KEEP\" or \"REJECT\"}. Do not explain. Do not use Markdown.",
+      "rendered_prompt": "<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|>Inspect the image region [245,463,357,644]. Determine whether the phrase \"the fork next to the spoon\" is fully true for the object in that exact region. Return exactly one JSON object with exactly these two fields: {\"binding\":\"MATCH\" or \"MISMATCH\" or \"NA\", \"decision\":\"KEEP\" or \"REJECT\"}. Do not explain. Do not use Markdown.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+      "prompt_token_count": 403,
+      "model_path": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-2B/snapshots/15852e8c16360a2fea060d615a32b45270f8a8fc",
+      "image_input_size_wh": [
+        480,
+        640
+      ],
+      "coordinate_protocol": "original JEV textual pixel coordinates, integer-rounded identically to collection script",
+      "temperature": 1.7765671239028529,
+      "p_head": 0.09697854518890381
+    }
+  ],
+  "seconds": 0.6357298321090639,
+  "peak_allocated_gb": 4.769235968
+}

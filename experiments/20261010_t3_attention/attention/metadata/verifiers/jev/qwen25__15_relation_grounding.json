@@ -1,0 +1,85 @@
+{
+  "arm": "jev",
+  "model": "qwen25",
+  "example_index": 15,
+  "sample_id": "hallu_000290_COCO_train2014_000000372156__rel",
+  "hallucination_type": "relation",
+  "query": "the cake under the table",
+  "candidate_bbox_xyxy": [
+    172.0,
+    253.0,
+    500.0,
+    459.0
+  ],
+  "upstream_record_sha256": "0353da04e115cf9b8fe2fe13527a216c5c02f7d1e6313f7cc337dda7a9c8fb81",
+  "source_record": "/home/u2025141034/benchmark/rrwr_20261010_t3_attention/attention/results/qwen25/15_relation_grounding.json",
+  "image_sha256": "59c66fcb6251b7ae55ab4be8365a0cc5e45835755f8d9165c53e29201aa4153c",
+  "source_model_path": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-2B/snapshots/15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "torch": "2.12.1+cu126",
+  "transformers": "5.12.1",
+  "drew": true,
+  "original": {
+    "z": -9.288912773132324,
+    "prompt": "Inspect the image region [172,253,500,459]. Determine whether the phrase \"the cake under the table\" is fully true for the object in that exact region. Return exactly one JSON object with exactly these two fields: {\"binding\":\"MATCH\" or \"MISMATCH\" or \"NA\", \"decision\":\"KEEP\" or \"REJECT\"}. Do not explain. Do not use Markdown.",
+    "rendered_prompt": "<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|>Inspect the image region [172,253,500,459]. Determine whether the phrase \"the cake under the table\" is fully true for the object in that exact region. Return exactly one JSON object with exactly these two fields: {\"binding\":\"MATCH\" or \"MISMATCH\" or \"NA\", \"decision\":\"KEEP\" or \"REJECT\"}. Do not explain. Do not use Markdown.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "prompt_token_count": 402,
+    "model_path": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-2B/snapshots/15852e8c16360a2fea060d615a32b45270f8a8fc",
+    "image_input_size_wh": [
+      640,
+      480
+    ],
+    "coordinate_protocol": "original JEV textual pixel coordinates, integer-rounded identically to collection script",
+    "temperature": 1.7765671239028529,
+    "p_head": 0.005332574713975191
+  },
+  "predicate": "under",
+  "routed_predicate": true,
+  "probe_metadata": {
+    "predicate_surface": "under",
+    "family": "vertical_or_support",
+    "semantic_status": "supported",
+    "skip_reason": null,
+    "n_legal_candidates": 2,
+    "rule_id": "comp:under->on top of"
+  },
+  "rivals": [
+    {
+      "query": "the cake on top of the table",
+      "probe_type": "competitive",
+      "rule_id": "comp:under->on top of",
+      "edited_surface": "on top of",
+      "z": -5.237033367156982,
+      "prompt": "Inspect the image region [172,253,500,459]. Determine whether the phrase \"the cake on top of the table\" is fully true for the object in that exact region. Return exactly one JSON object with exactly these two fields: {\"binding\":\"MATCH\" or \"MISMATCH\" or \"NA\", \"decision\":\"KEEP\" or \"REJECT\"}. Do not explain. Do not use Markdown.",
+      "rendered_prompt": "<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|>Inspect the image region [172,253,500,459]. Determine whether the phrase \"the cake on top of the table\" is fully true for the object in that exact region. Return exactly one JSON object with exactly these two fields: {\"binding\":\"MATCH\" or \"MISMATCH\" or \"NA\", \"decision\":\"KEEP\" or \"REJECT\"}. Do not explain. Do not use Markdown.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+      "prompt_token_count": 404,
+      "model_path": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-2B/snapshots/15852e8c16360a2fea060d615a32b45270f8a8fc",
+      "image_input_size_wh": [
+        640,
+        480
+      ],
+      "coordinate_protocol": "original JEV textual pixel coordinates, integer-rounded identically to collection script",
+      "temperature": 1.7765671239028529,
+      "p_head": 0.049838755279779434
+    },
+    {
+      "query": "the cake next to the table",
+      "probe_type": "competitive",
+      "rule_id": "comp:under->next to",
+      "edited_surface": "next to",
+      "z": -5.853868007659912,
+      "prompt": "Inspect the image region [172,253,500,459]. Determine whether the phrase \"the cake next to the table\" is fully true for the object in that exact region. Return exactly one JSON object with exactly these two fields: {\"binding\":\"MATCH\" or \"MISMATCH\" or \"NA\", \"decision\":\"KEEP\" or \"REJECT\"}. Do not explain. Do not use Markdown.",
+      "rendered_prompt": "<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|>Inspect the image region [172,253,500,459]. Determine whether the phrase \"the cake next to the table\" is fully true for the object in that exact region. Return exactly one JSON object with exactly these two fields: {\"binding\":\"MATCH\" or \"MISMATCH\" or \"NA\", \"decision\":\"KEEP\" or \"REJECT\"}. Do not explain. Do not use Markdown.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+      "prompt_token_count": 403,
+      "model_path": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-2B/snapshots/15852e8c16360a2fea060d615a32b45270f8a8fc",
+      "image_input_size_wh": [
+        640,
+        480
+      ],
+      "coordinate_protocol": "original JEV textual pixel coordinates, integer-rounded identically to collection script",
+      "temperature": 1.7765671239028529,
+      "p_head": 0.03574157878756523
+    }
+  ],
+  "seconds": 0.6410682839341462,
+  "peak_allocated_gb": 4.769235968
+}

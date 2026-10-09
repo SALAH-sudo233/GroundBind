@@ -1,0 +1,22 @@
+{
+  "arm": "omni",
+  "model": "qwen25",
+  "example_index": 15,
+  "sample_id": "hallu_000290_COCO_train2014_000000372156__cooc",
+  "hallucination_type": "co_occurrence",
+  "query": "the candle on the table",
+  "candidate_bbox_xyxy": null,
+  "upstream_record_sha256": "e8220a2ae23e3300f58720bcfbbbb7bd2fc28dc1545b6b0230aa69fab3e75a5c",
+  "source_record": "/home/u2025141034/benchmark/rrwr_20261010_t3_attention/attention/results/qwen25/15_co_occurrence_grounding.json",
+  "image_sha256": "59c66fcb6251b7ae55ab4be8365a0cc5e45835755f8d9165c53e29201aa4153c",
+  "source_model_path": "/home/u2025141034/models/OmniVerifier-7B",
+  "torch": "2.12.1+cu126",
+  "transformers": "5.12.1",
+  "drew": false,
+  "original": null,
+  "rivals": [],
+  "reason": "original_no_box",
+  "attention_available": false,
+  "seconds": 0.0005265837535262108,
+  "peak_allocated_gb": 16.592876032
+}

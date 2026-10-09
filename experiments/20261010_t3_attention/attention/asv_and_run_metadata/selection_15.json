@@ -1,0 +1,2383 @@
+{
+  "source_samples": "/Users/yyyb/Documents/论文/examples_20/samples.json",
+  "source_sha256": "1a59db2916310b7012a45d78dcba06e33a1760b9362864ff3b619942e816a6f1",
+  "selection_rule": "Use all 16 local example PNG identities except #17 potted plant on table, a weaker redundant on-table relation compared with cup and cake cases.",
+  "excluded_example": 17,
+  "selected_indices": [
+    1,
+    2,
+    3,
+    5,
+    6,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    20
+  ],
+  "image_count": 15,
+  "query_count": 75,
+  "input_image_source": "Original COCO photograph on vlm1, matched by image_filename; uploaded local composite PNG is reference only, never a model input.",
+  "cases": [
+    {
+      "index": 1,
+      "visualization": "01_COCO_000000500400.png",
+      "base_sample_id": "hallu_000335_COCO_train2014_000000500400",
+      "image_filename": "COCO_train2014_000000500400.jpg",
+      "image_size": [
+        480,
+        640
+      ],
+      "positive_bbox_xyxy": [
+        34.52,
+        371.06,
+        442.96999999999997,
+        640.0
+      ],
+      "positive_text": "the pizza in front of the person",
+      "pairs": [
+        {
+          "difficulty_tier": "object",
+          "label_zh": "物体幻觉",
+          "sample_id": "hallu_000335_COCO_train2014_000000500400__obj",
+          "pair_id": "hallu_000335_COCO_train2014_000000500400::object",
+          "positive_text": "the pizza in front of the person",
+          "negative_text": "the burger in front of the person",
+          "semantic_status": "needs_human_review",
+          "hallucination_units": [
+            {
+              "type": "object",
+              "object": "burger",
+              "attribute": "",
+              "subject": "",
+              "relation": "",
+              "target_object": "",
+              "count_as_hallucination_if_mentioned": true,
+              "note": "There is no burger in front of the person; the object is a pizza."
+            }
+          ]
+        },
+        {
+          "difficulty_tier": "co_occurrence",
+          "label_zh": "共现幻觉",
+          "sample_id": "hallu_000335_COCO_train2014_000000500400__cooc",
+          "pair_id": "hallu_000335_COCO_train2014_000000500400::co_occurrence",
+          "positive_text": "the pizza in front of the person",
+          "negative_text": "the pasta in front of the person",
+          "semantic_status": "needs_human_review",
+          "hallucination_units": [
+            {
+              "type": "co_occurrence",
+              "object": "pasta",
+              "attribute": "",
+              "subject": "",
+              "relation": "",
+              "target_object": "",
+              "count_as_hallucination_if_mentioned": true,
+              "note": "There is no pasta in front of the person; the object is a pizza."
+            }
+          ]
+        },
+        {
+          "difficulty_tier": "attribute",
+          "label_zh": "属性幻觉",
+          "sample_id": "hallu_000335_COCO_train2014_000000500400__attr",
+          "pair_id": "hallu_000335_COCO_train2014_000000500400::attribute",
+          "positive_text": "the pizza in front of the person",
+          "negative_text": "the square pizza in front of the person",
+          "semantic_status": "needs_human_review",
+          "hallucination_units": [
+            {
+              "type": "attribute",
+              "object": "",
+              "attribute": "square",
+              "subject": "",
+              "relation": "",
+              "target_object": "",
+              "count_as_hallucination_if_mentioned": true,
+              "note": "The pizza in front of the person is round, not square."
+            }
+          ]
+        },
+        {
+          "difficulty_tier": "relation",
+          "label_zh": "关系幻觉",
+          "sample_id": "hallu_000335_COCO_train2014_000000500400__rel",
+          "pair_id": "hallu_000335_COCO_train2014_000000500400::relation",
+          "positive_text": "the pizza in front of the person",
+          "negative_text": "the pizza behind the person",
+          "semantic_status": "needs_human_review",
+          "hallucination_units": [
+            {
+              "type": "relation",
+              "object": "",
+              "attribute": "",
+              "subject": "pizza",
+              "relation": "behind",
+              "target_object": "person",
+              "count_as_hallucination_if_mentioned": true,
+              "note": "The pizza is in front of the person, not behind them."
+            }
+          ]
+        }
+      ],
+      "render_layout": [
+        {
+          "tier": "object",
+          "positive": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          },
+          "negative": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          }
+        },
+        {
+          "tier": "co_occurrence",
+          "positive": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          },
+          "negative": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          }
+        },
+        {
+          "tier": "attribute",
+          "positive": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          },
+          "negative": {
+            "font_size": 34,
+            "lines": 2,
+            "height": 96
+          }
+        },
+        {
+          "tier": "relation",
+          "positive": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          },
+          "negative": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          }
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "visualization": "02_COCO_000000390969.png",
+      "base_sample_id": "hallu_000222_COCO_train2014_000000390969",
+      "image_filename": "COCO_train2014_000000390969.jpg",
+      "image_size": [
+        500,
+        332
+      ],
+      "positive_bbox_xyxy": [
+        109.46,
+        107.86,
+        297.3,
+        310.82
+      ],
+      "positive_text": "the person sitting on the bench",
+      "pairs": [
+        {
+          "difficulty_tier": "object",
+          "label_zh": "物体幻觉",
+          "sample_id": "hallu_000222_COCO_train2014_000000390969__obj",
+          "pair_id": "hallu_000222_COCO_train2014_000000390969::object",
+          "positive_text": "the person sitting on the bench",
+          "negative_text": "the dog sitting on the bench",
+          "semantic_status": "needs_human_review",
+          "hallucination_units": [
+            {
+              "type": "object",
+              "object": "dog",
+              "attribute": "",
+              "subject": "",
+              "relation": "",
+              "target_object": "",
+              "count_as_hallucination_if_mentioned": true,
+              "note": "There is no dog present in the image; the entity occupying the bench is a human."
+            }
+          ]
+        },
+        {
+          "difficulty_tier": "co_occurrence",
+          "label_zh": "共现幻觉",
+          "sample_id": "hallu_000222_COCO_train2014_000000390969__cooc",
+          "pair_id": "hallu_000222_COCO_train2014_000000390969::co_occurrence",
+          "positive_text": "the person sitting on the bench",
+          "negative_text": "the person sitting on the bench with a laptop",
+          "semantic_status": "needs_human_review",
+          "hallucination_units": [
+            {
+              "type": "co_occurrence",
+              "object": "laptop",
+              "attribute": "",
+              "subject": "",
+              "relation": "",
+              "target_object": "",
+              "count_as_hallucination_if_mentioned": true,
+              "note": "While laptops are common objects for people sitting on benches, this specific person is holding a mobile phone, not a laptop."
+            }
+          ]
+        },
+        {
+          "difficulty_tier": "attribute",
+          "label_zh": "属性幻觉",
+          "sample_id": "hallu_000222_COCO_train2014_000000390969__attr",
+          "pair_id": "hallu_000222_COCO_train2014_000000390969::attribute",
+          "positive_text": "the person sitting on the bench",
+          "negative_text": "the person wearing a red shirt sitting on the bench",
+          "semantic_status": "needs_human_review",
+          "hallucination_units": [
+            {
+              "type": "attribute",
+              "object": "",
+              "attribute": "red shirt",
+              "subject": "",
+              "relation": "",
+              "target_object": "",
+              "count_as_hallucination_if_mentioned": true,
+              "note": "The person sitting on the bench is wearing an orange t-shirt, not a red one."
+            }
+          ]
+        },
+        {
+          "difficulty_tier": "relation",
+          "label_zh": "关系幻觉",
+          "sample_id": "hallu_000222_COCO_train2014_000000390969__rel",
+          "pair_id": "hallu_000222_COCO_train2014_000000390969::relation",
+          "positive_text": "the person sitting on the bench",
+          "negative_text": "the person standing next to the bench",
+          "semantic_status": "needs_human_review",
+          "hallucination_units": [
+            {
+              "type": "relation",
+              "object": "",
+              "attribute": "",
+              "subject": "person",
+              "relation": "standing next to",
+              "target_object": "bench",
+              "count_as_hallucination_if_mentioned": true,
+              "note": "The person is clearly seated on the edge of the bench structure, not standing beside it."
+            }
+          ]
+        }
+      ],
+      "render_layout": [
+        {
+          "tier": "object",
+          "positive": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          },
+          "negative": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          }
+        },
+        {
+          "tier": "co_occurrence",
+          "positive": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          },
+          "negative": {
+            "font_size": 34,
+            "lines": 2,
+            "height": 96
+          }
+        },
+        {
+          "tier": "attribute",
+          "positive": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          },
+          "negative": {
+            "font_size": 34,
+            "lines": 2,
+            "height": 96
+          }
+        },
+        {
+          "tier": "relation",
+          "positive": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          },
+          "negative": {
+            "font_size": 34,
+            "lines": 2,
+            "height": 96
+          }
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "visualization": "03_COCO_000000231414.png",
+      "base_sample_id": "hallu_000294_COCO_train2014_000000231414",
+      "image_filename": "COCO_train2014_000000231414.jpg",
+      "image_size": [
+        500,
+        330
+      ],
+      "positive_bbox_xyxy": [
+        227.0,
+        40.77,
+        366.57,
+        278.17
+      ],
+      "positive_text": "the dog in front of the person",
+      "pairs": [
+        {
+          "difficulty_tier": "object",
+          "label_zh": "物体幻觉",
+          "sample_id": "hallu_000294_COCO_train2014_000000231414__obj",
+          "pair_id": "hallu_000294_COCO_train2014_000000231414::object",
+          "positive_text": "the dog in front of the person",
+          "negative_text": "the cat in front of the person",
+          "semantic_status": "needs_human_review",
+          "hallucination_units": [
+            {
+              "type": "object",
+              "object": "cat",
+              "attribute": "",
+              "subject": "",
+              "relation": "",
+              "target_object": "",
+              "count_as_hallucination_if_mentioned": true,
+              "note": "There is no cat in the image; the animal in front of the person is a dog."
+            }
+          ]
+        },
+        {
+          "difficulty_tier": "co_occurrence",
+          "label_zh": "共现幻觉",
+          "sample_id": "hallu_000294_COCO_train2014_000000231414__cooc",
+          "pair_id": "hallu_000294_COCO_train2014_000000231414::co_occurrence",
+          "positive_text": "the dog in front of the person",
+          "negative_text": "the ball in front of the person",
+          "semantic_status": "needs_human_review",
+          "hallucination_units": [
+            {
+              "type": "co_occurrence",
+              "object": "ball",
+              "attribute": "",
+              "subject": "",
+              "relation": "",
+              "target_object": "",
+              "count_as_hallucination_if_mentioned": true,
+              "note": "There is no ball visible in front of the person; a dog is present instead."
+            }
+          ]
+        },
+        {
+          "difficulty_tier": "attribute",
+          "label_zh": "属性幻觉",
+          "sample_id": "hallu_000294_COCO_train2014_000000231414__attr",
+          "pair_id": "hallu_000294_COCO_train2014_000000231414::attribute",
+          "positive_text": "the dog in front of the person",
+          "negative_text": "the black dog in front of the person",
+          "semantic_status": "needs_human_review",
+          "hallucination_units": [
+            {
+              "type": "attribute",
+              "object": "",
+              "attribute": "black",
+              "subject": "",
+              "relation": "",
+              "target_object": "",
+              "count_as_hallucination_if_mentioned": true,
+              "note": "The dog in front of the person is white, not black."
+            }
+          ]
+        },
+        {
+          "difficulty_tier": "relation",
+          "label_zh": "关系幻觉",
+          "sample_id": "hallu_000294_COCO_train2014_000000231414__rel",
+          "pair_id": "hallu_000294_COCO_train2014_000000231414::relation",
+          "positive_text": "the dog in front of the person",
+          "negative_text": "the dog behind the person",
+          "semantic_status": "needs_human_review",
+          "hallucination_units": [
+            {
+              "type": "relation",
+              "object": "",
+              "attribute": "",
+              "subject": "dog",
+              "relation": "behind",
+              "target_object": "person",
+              "count_as_hallucination_if_mentioned": true,
+              "note": "The dog is walking ahead of or beside the person, not behind them."
+            }
+          ]
+        }
+      ],
+      "render_layout": [
+        {
+          "tier": "object",
+          "positive": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          },
+          "negative": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          }
+        },
+        {
+          "tier": "co_occurrence",
+          "positive": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          },
+          "negative": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          }
+        },
+        {
+          "tier": "attribute",
+          "positive": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          },
+          "negative": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          }
+        },
+        {
+          "tier": "relation",
+          "positive": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          },
+          "negative": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          }
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "visualization": "05_COCO_000000106438.png",
+      "base_sample_id": "hallu_000215_COCO_train2014_000000106438",
+      "image_filename": "COCO_train2014_000000106438.jpg",
+      "image_size": [
+        640,
+        373
+      ],
+      "positive_bbox_xyxy": [
+        328.43,
+        26.16,
+        634.5799999999999,
+        323.59000000000003
+      ],
+      "positive_text": "the cell phone in the person's hand",
+      "pairs": [
+        {
+          "difficulty_tier": "object",
+          "label_zh": "物体幻觉",
+          "sample_id": "hallu_000215_COCO_train2014_000000106438__obj",
+          "pair_id": "hallu_000215_COCO_train2014_000000106438::object",
+          "positive_text": "the cell phone in the person's hand",
+          "negative_text": "the laptop in the person's hand",
+          "semantic_status": "needs_human_review",
+          "hallucination_units": [
+            {
+              "type": "object",
+              "object": "laptop",
+              "attribute": "",
+              "subject": "",
+              "relation": "",
+              "target_object": "",
+              "count_as_hallucination_if_mentioned": true,
+              "note": "The object being held is a cell phone, not a laptop."
+            }
+          ]
+        },
+        {
+          "difficulty_tier": "co_occurrence",
+          "label_zh": "共现幻觉",
+          "sample_id": "hallu_000215_COCO_train2014_000000106438__cooc",
+          "pair_id": "hallu_000215_COCO_train2014_000000106438::co_occurrence",
+          "positive_text": "the cell phone in the person's hand",
+          "negative_text": "the tablet in the person's hand",
+          "semantic_status": "needs_human_review",
+          "hallucination_units": [
+            {
+              "type": "co_occurrence",
+              "object": "tablet",
+              "attribute": "",
+              "subject": "",
+              "relation": "",
+              "target_object": "",
+              "count_as_hallucination_if_mentioned": true,
+              "note": "The device held is a small flip phone, not a tablet."
+            }
+          ]
+        },
+        {
+          "difficulty_tier": "attribute",
+          "label_zh": "属性幻觉",
+          "sample_id": "hallu_000215_COCO_train2014_000000106438__attr",
+          "pair_id": "hallu_000215_COCO_train2014_000000106438::attribute",
+          "positive_text": "the cell phone in the person's hand",
+          "negative_text": "the blue cell phone in the person's hand",
+          "semantic_status": "needs_human_review",
+          "hallucination_units": [
+            {
+              "type": "attribute",
+              "object": "",
+              "attribute": "blue",
+              "subject": "",
+              "relation": "",
+              "target_object": "",
+              "count_as_hallucination_if_mentioned": true,
+              "note": "The cell phone in the right hand has an orange case, not blue."
+            }
+          ]
+        },
+        {
+          "difficulty_tier": "relation",
+          "label_zh": "关系幻觉",
+          "sample_id": "hallu_000215_COCO_train2014_000000106438__rel",
+          "pair_id": "hallu_000215_COCO_train2014_000000106438::relation",
+          "positive_text": "the cell phone in the person's hand",
+          "negative_text": "the cell phone in the person's hand to the left of the purple phone",
+          "semantic_status": "needs_human_review",
+          "hallucination_units": [
+            {
+              "type": "relation",
+              "object": "",
+              "attribute": "",
+              "subject": "cell phone",
+              "relation": "to the left of",
+              "target_object": "purple phone",
+              "count_as_hallucination_if_mentioned": true,
+              "note": "The orange cell phone is to the right of the purple phone, not to the left."
+            }
+          ]
+        }
+      ],
+      "render_layout": [
+        {
+          "tier": "object",
+          "positive": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          },
+          "negative": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          }
+        },
+        {
+          "tier": "co_occurrence",
+          "positive": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          },
+          "negative": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          }
+        },
+        {
+          "tier": "attribute",
+          "positive": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          },
+          "negative": {
+            "font_size": 34,
+            "lines": 2,
+            "height": 96
+          }
+        },
+        {
+          "tier": "relation",
+          "positive": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          },
+          "negative": {
+            "font_size": 34,
+            "lines": 2,
+            "height": 96
+          }
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "visualization": "06_COCO_000000319430.png",
+      "base_sample_id": "hallu_000312_COCO_train2014_000000319430",
+      "image_filename": "COCO_train2014_000000319430.jpg",
+      "image_size": [
+        480,
+        640
+      ],
+      "positive_bbox_xyxy": [
+        140.31,
+        90.34,
+        360.81,
+        620.09
+      ],
+      "positive_text": "the wine glass in the person's hand",
+      "pairs": [
+        {
+          "difficulty_tier": "object",
+          "label_zh": "物体幻觉",
+          "sample_id": "hallu_000312_COCO_train2014_000000319430__obj",
+          "pair_id": "hallu_000312_COCO_train2014_000000319430::object",
+          "positive_text": "the wine glass in the person's hand",
+          "negative_text": "the coffee mug in the person's hand",
+          "semantic_status": "needs_human_review",
+          "hallucination_units": [
+            {
+              "type": "object",
+              "object": "coffee mug",
+              "attribute": "",
+              "subject": "",
+              "relation": "",
+              "target_object": "",
+              "count_as_hallucination_if_mentioned": true,
+              "note": "The object being held is a wine glass, not a coffee mug."
+            }
+          ]
+        },
+        {
+          "difficulty_tier": "co_occurrence",
+          "label_zh": "共现幻觉",
+          "sample_id": "hallu_000312_COCO_train2014_000000319430__cooc",
+          "pair_id": "hallu_000312_COCO_train2014_000000319430::co_occurrence",
+          "positive_text": "the wine glass in the person's hand",
+          "negative_text": "the wine bottle in the person's hand",
+          "semantic_status": "needs_human_review",
+          "hallucination_units": [
+            {
+              "type": "co_occurrence",
+              "object": "wine bottle",
+              "attribute": "",
+              "subject": "",
+              "relation": "",
+              "target_object": "",
+              "count_as_hallucination_if_mentioned": true,
+              "note": "The person is holding a wine glass, not a wine bottle, although wine bottles are visible in the background rack."
+            }
+          ]
+        },
+        {
+          "difficulty_tier": "attribute",
+          "label_zh": "属性幻觉",
+          "sample_id": "hallu_000312_COCO_train2014_000000319430__attr",
+          "pair_id": "hallu_000312_COCO_train2014_000000319430::attribute",
+          "positive_text": "the wine glass in the person's hand",
+          "negative_text": "the empty wine glass in the person's hand",
+          "semantic_status": "needs_human_review",
+          "hallucination_units": [
+            {
+              "type": "attribute",
+              "object": "",
+              "attribute": "empty",
+              "subject": "",
+              "relation": "",
+              "target_object": "",
+              "count_as_hallucination_if_mentioned": true,
+              "note": "The wine glass contains red wine at the bottom, so it is not empty."
+            }
+          ]
+        },
+        {
+          "difficulty_tier": "relation",
+          "label_zh": "关系幻觉",
+          "sample_id": "hallu_000312_COCO_train2014_000000319430__rel",
+          "pair_id": "hallu_000312_COCO_train2014_000000319430::relation",
+          "positive_text": "the wine glass in the person's hand",
+          "negative_text": "the wine glass on the wooden counter",
+          "semantic_status": "needs_human_review",
+          "hallucination_units": [
+            {
+              "type": "relation",
+              "object": "",
+              "attribute": "",
+              "subject": "wine glass",
+              "relation": "on",
+              "target_object": "person's hand",
+              "count_as_hallucination_if_mentioned": true,
+              "note": "The wine glass is being held in a person's hand, not resting on the wooden counter."
+            }
+          ]
+        }
+      ],
+      "render_layout": [
+        {
+          "tier": "object",
+          "positive": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          },
+          "negative": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          }
+        },
+        {
+          "tier": "co_occurrence",
+          "positive": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          },
+          "negative": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          }
+        },
+        {
+          "tier": "attribute",
+          "positive": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          },
+          "negative": {
+            "font_size": 34,
+            "lines": 2,
+            "height": 96
+          }
+        },
+        {
+          "tier": "relation",
+          "positive": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          },
+          "negative": {
+            "font_size": 34,
+            "lines": 2,
+            "height": 96
+          }
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "visualization": "08_COCO_000000525342.png",
+      "base_sample_id": "hallu_000119_COCO_train2014_000000525342",
+      "image_filename": "COCO_train2014_000000525342.jpg",
+      "image_size": [
+        640,
+        427
+      ],
+      "positive_bbox_xyxy": [
+        225.44,
+        164.64,
+        469.56,
+        417.14
+      ],
+      "positive_text": "the orange in front of the apples",
+      "pairs": [
+        {
+          "difficulty_tier": "object",
+          "label_zh": "物体幻觉",
+          "sample_id": "hallu_000119_COCO_train2014_000000525342__obj",
+          "pair_id": "hallu_000119_COCO_train2014_000000525342::object",
+          "positive_text": "the orange in front of the apples",
+          "negative_text": "the banana in front of the apples",
+          "semantic_status": "needs_human_review",
+          "hallucination_units": [
+            {
+              "type": "object",
+              "object": "banana",
+              "attribute": "",
+              "subject": "",
+              "relation": "",
+              "target_object": "",
+              "count_as_hallucination_if_mentioned": true,
+              "note": "There is no banana present in the image; the object at the specified location is an orange."
+            }
+          ]
+        },
+        {
+          "difficulty_tier": "co_occurrence",
+          "label_zh": "共现幻觉",
+          "sample_id": "hallu_000119_COCO_train2014_000000525342__cooc",
+          "pair_id": "hallu_000119_COCO_train2014_000000525342::co_occurrence",
+          "positive_text": "the orange in front of the apples",
+          "negative_text": "the lemon in front of the apples",
+          "semantic_status": "needs_human_review",
+          "hallucination_units": [
+            {
+              "type": "co_occurrence",
+              "object": "lemon",
+              "attribute": "",
+              "subject": "",
+              "relation": "",
+              "target_object": "",
+              "count_as_hallucination_if_mentioned": true,
+              "note": "While lemons are citrus fruits often found with apples and oranges, there is no lemon at the referred location; it is an orange."
+            }
+          ]
+        },
+        {
+          "difficulty_tier": "attribute",
+          "label_zh": "属性幻觉",
+          "sample_id": "hallu_000119_COCO_train2014_000000525342__attr",
+          "pair_id": "hallu_000119_COCO_train2014_000000525342::attribute",
+          "positive_text": "the orange in front of the apples",
+          "negative_text": "the green orange in front of the apples",
+          "semantic_status": "needs_human_review",
+          "hallucination_units": [
+            {
+              "type": "attribute",
+              "object": "",
+              "attribute": "green",
+              "subject": "",
+              "relation": "",
+              "target_object": "",
+              "count_as_hallucination_if_mentioned": true,
+              "note": "The orange at the specified location is distinctly orange in color, not green."
+            }
+          ]
+        },
+        {
+          "difficulty_tier": "relation",
+          "label_zh": "关系幻觉",
+          "sample_id": "hallu_000119_COCO_train2014_000000525342__rel",
+          "pair_id": "hallu_000119_COCO_train2014_000000525342::relation",
+          "positive_text": "the orange in front of the apples",
+          "negative_text": "the orange behind the apples",
+          "semantic_status": "needs_human_review",
+          "hallucination_units": [
+            {
+              "type": "relation",
+              "object": "",
+              "attribute": "",
+              "subject": "orange",
+              "relation": "behind",
+              "target_object": "apples",
+              "count_as_hallucination_if_mentioned": true,
+              "note": "The orange is positioned in the foreground relative to the apples, not behind them."
+            }
+          ]
+        }
+      ],
+      "render_layout": [
+        {
+          "tier": "object",
+          "positive": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          },
+          "negative": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          }
+        },
+        {
+          "tier": "co_occurrence",
+          "positive": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          },
+          "negative": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          }
+        },
+        {
+          "tier": "attribute",
+          "positive": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          },
+          "negative": {
+            "font_size": 34,
+            "lines": 2,
+            "height": 96
+          }
+        },
+        {
+          "tier": "relation",
+          "positive": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          },
+          "negative": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          }
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "visualization": "09_COCO_000000239654.png",
+      "base_sample_id": "hallu_000436_COCO_train2014_000000239654",
+      "image_filename": "COCO_train2014_000000239654.jpg",
+      "image_size": [
+        640,
+        427
+      ],
+      "positive_bbox_xyxy": [
+        284.13,
+        201.41,
+        516.66,
+        367.4
+      ],
+      "positive_text": "the cat next to the toilet",
+      "pairs": [
+        {
+          "difficulty_tier": "object",
+          "label_zh": "物体幻觉",
+          "sample_id": "hallu_000436_COCO_train2014_000000239654__obj",
+          "pair_id": "hallu_000436_COCO_train2014_000000239654::object",
+          "positive_text": "the cat next to the toilet",
+          "negative_text": "the dog next to the toilet",
+          "semantic_status": "needs_human_review",
+          "hallucination_units": [
+            {
+              "type": "object",
+              "object": "dog",
+              "attribute": "",
+              "subject": "",
+              "relation": "",
+              "target_object": "",
+              "count_as_hallucination_if_mentioned": true,
+              "note": "The object in the bounding box is a cat, not a dog. There is no dog present next to the toilet."
+            }
+          ]
+        },
+        {
+          "difficulty_tier": "co_occurrence",
+          "label_zh": "共现幻觉",
+          "sample_id": "hallu_000436_COCO_train2014_000000239654__cooc",
+          "pair_id": "hallu_000436_COCO_train2014_000000239654::co_occurrence",
+          "positive_text": "the cat next to the toilet",
+          "negative_text": "the litter box next to the toilet",
+          "semantic_status": "needs_human_review",
+          "hallucination_units": [
+            {
+              "type": "co_occurrence",
+              "object": "litter box",
+              "attribute": "",
+              "subject": "",
+              "relation": "",
+              "target_object": "",
+              "count_as_hallucination_if_mentioned": true,
+              "note": "While a litter box is contextually plausible near a toilet in a bathroom scene, the object at the specified location is a cat, not a litter box."
+            }
+          ]
+        },
+        {
+          "difficulty_tier": "attribute",
+          "label_zh": "属性幻觉",
+          "sample_id": "hallu_000436_COCO_train2014_000000239654__attr",
+          "pair_id": "hallu_000436_COCO_train2014_000000239654::attribute",
+          "positive_text": "the cat next to the toilet",
+          "negative_text": "the white cat next to the toilet",
+          "semantic_status": "needs_human_review",
+          "hallucination_units": [
+            {
+              "type": "attribute",
+              "object": "",
+              "attribute": "white",
+              "subject": "",
+              "relation": "",
+              "target_object": "",
+              "count_as_hallucination_if_mentioned": true,
+              "note": "The cat next to the toilet is a grey tabby, not white. The attribute 'white' is visually false for this target."
+            }
+          ]
+        },
+        {
+          "difficulty_tier": "relation",
+          "label_zh": "关系幻觉",
+          "sample_id": "hallu_000436_COCO_train2014_000000239654__rel",
+          "pair_id": "hallu_000436_COCO_train2014_000000239654::relation",
+          "positive_text": "the cat next to the toilet",
+          "negative_text": "the cat on top of the toilet",
+          "semantic_status": "needs_human_review",
+          "hallucination_units": [
+            {
+              "type": "relation",
+              "object": "",
+              "attribute": "",
+              "subject": "cat",
+              "relation": "on top of",
+              "target_object": "toilet",
+              "count_as_hallucination_if_mentioned": true,
+              "note": "The cat is positioned on the floor beside the toilet base, not on top of the toilet lid or tank."
+            }
+          ]
+        }
+      ],
+      "render_layout": [
+        {
+          "tier": "object",
+          "positive": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          },
+          "negative": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          }
+        },
+        {
+          "tier": "co_occurrence",
+          "positive": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          },
+          "negative": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          }
+        },
+        {
+          "tier": "attribute",
+          "positive": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          },
+          "negative": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          }
+        },
+        {
+          "tier": "relation",
+          "positive": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          },
+          "negative": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          }
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "visualization": "10_COCO_000000500634.png",
+      "base_sample_id": "hallu_000544_COCO_train2014_000000500634",
+      "image_filename": "COCO_train2014_000000500634.jpg",
+      "image_size": [
+        480,
+        640
+      ],
+      "positive_bbox_xyxy": [
+        128.7,
+        427.17,
+        236.37,
+        640.0
+      ],
+      "positive_text": "the fork next to the spoon",
+      "pairs": [
+        {
+          "difficulty_tier": "object",
+          "label_zh": "物体幻觉",
+          "sample_id": "hallu_000544_COCO_train2014_000000500634__obj",
+          "pair_id": "hallu_000544_COCO_train2014_000000500634::object",
+          "positive_text": "the fork next to the spoon",
+          "negative_text": "the spatula next to the spoon",
+          "semantic_status": "needs_human_review",
+          "hallucination_units": [
+            {
+              "type": "object",
+              "object": "spatula",
+              "attribute": "",
+              "subject": "",
+              "relation": "",
+              "target_object": "",
+              "count_as_hallucination_if_mentioned": true,
+              "note": "There is no spatula next to the spoon; the object at that location is a fork."
+            }
+          ]
+        },
+        {
+          "difficulty_tier": "co_occurrence",
+          "label_zh": "共现幻觉",
+          "sample_id": "hallu_000544_COCO_train2014_000000500634__cooc",
+          "pair_id": "hallu_000544_COCO_train2014_000000500634::co_occurrence",
+          "positive_text": "the fork next to the spoon",
+          "negative_text": "the ladle next to the spoon",
+          "semantic_status": "needs_human_review",
+          "hallucination_units": [
+            {
+              "type": "co_occurrence",
+              "object": "ladle",
+              "attribute": "",
+              "subject": "",
+              "relation": "",
+              "target_object": "",
+              "count_as_hallucination_if_mentioned": true,
+              "note": "There is no ladle next to the spoon; the object is a fork, though a ladle is a plausible kitchen utensil."
+            }
+          ]
+        },
+        {
+          "difficulty_tier": "attribute",
+          "label_zh": "属性幻觉",
+          "sample_id": "hallu_000544_COCO_train2014_000000500634__attr",
+          "pair_id": "hallu_000544_COCO_train2014_000000500634::attribute",
+          "positive_text": "the fork next to the spoon",
+          "negative_text": "the golden fork next to the spoon",
+          "semantic_status": "needs_human_review",
+          "hallucination_units": [
+            {
+              "type": "attribute",
+              "object": "",
+              "attribute": "golden",
+              "subject": "",
+              "relation": "",
+              "target_object": "",
+              "count_as_hallucination_if_mentioned": true,
+              "note": "The fork next to the spoon is silver/metallic, not golden."
+            }
+          ]
+        },
+        {
+          "difficulty_tier": "relation",
+          "label_zh": "关系幻觉",
+          "sample_id": "hallu_000544_COCO_train2014_000000500634__rel",
+          "pair_id": "hallu_000544_COCO_train2014_000000500634::relation",
+          "positive_text": "the fork next to the spoon",
+          "negative_text": "the fork on top of the spoon",
+          "semantic_status": "needs_human_review",
+          "hallucination_units": [
+            {
+              "type": "relation",
+              "object": "",
+              "attribute": "",
+              "subject": "fork",
+              "relation": "on top of",
+              "target_object": "spoon",
+              "count_as_hallucination_if_mentioned": true,
+              "note": "The fork is lying next to the spoon on the table, not on top of it."
+            }
+          ]
+        }
+      ],
+      "render_layout": [
+        {
+          "tier": "object",
+          "positive": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          },
+          "negative": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          }
+        },
+        {
+          "tier": "co_occurrence",
+          "positive": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          },
+          "negative": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          }
+        },
+        {
+          "tier": "attribute",
+          "positive": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          },
+          "negative": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          }
+        },
+        {
+          "tier": "relation",
+          "positive": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          },
+          "negative": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          }
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "visualization": "11_COCO_000000253945.png",
+      "base_sample_id": "hallu_000000_COCO_train2014_000000253945",
+      "image_filename": "COCO_train2014_000000253945.jpg",
+      "image_size": [
+        640,
+        427
+      ],
+      "positive_bbox_xyxy": [
+        134.45,
+        26.02,
+        288.28,
+        147.98
+      ],
+      "positive_text": "the umbrella held by the person",
+      "pairs": [
+        {
+          "difficulty_tier": "object",
+          "label_zh": "物体幻觉",
+          "sample_id": "hallu_000000_COCO_train2014_000000253945__obj",
+          "pair_id": "hallu_000000_COCO_train2014_000000253945::object",
+          "positive_text": "the umbrella held by the person",
+          "negative_text": "the balloon held by the person",
+          "semantic_status": "needs_human_review",
+          "hallucination_units": [
+            {
+              "type": "object",
+              "object": "balloon",
+              "attribute": "",
+              "subject": "",
+              "relation": "",
+              "target_object": "",
+              "count_as_hallucination_if_mentioned": true,
+              "note": "The object at the specified location is an umbrella, not a balloon."
+            }
+          ]
+        },
+        {
+          "difficulty_tier": "co_occurrence",
+          "label_zh": "共现幻觉",
+          "sample_id": "hallu_000000_COCO_train2014_000000253945__cooc",
+          "pair_id": "hallu_000000_COCO_train2014_000000253945::co_occurrence",
+          "positive_text": "the umbrella held by the person",
+          "negative_text": "the shopping bag held by the person",
+          "semantic_status": "needs_human_review",
+          "hallucination_units": [
+            {
+              "type": "co_occurrence",
+              "object": "shopping bag",
+              "attribute": "",
+              "subject": "",
+              "relation": "",
+              "target_object": "",
+              "count_as_hallucination_if_mentioned": true,
+              "note": "While people often carry bags, the specific object being held overhead at this location is an umbrella, not a shopping bag."
+            }
+          ]
+        },
+        {
+          "difficulty_tier": "attribute",
+          "label_zh": "属性幻觉",
+          "sample_id": "hallu_000000_COCO_train2014_000000253945__attr",
+          "pair_id": "hallu_000000_COCO_train2014_000000253945::attribute",
+          "positive_text": "the umbrella held by the person",
+          "negative_text": "the transparent umbrella held by the person",
+          "semantic_status": "needs_human_review",
+          "hallucination_units": [
+            {
+              "type": "attribute",
+              "object": "",
+              "attribute": "transparent",
+              "subject": "",
+              "relation": "",
+              "target_object": "",
+              "count_as_hallucination_if_mentioned": true,
+              "note": "The umbrella is dark and opaque with a pattern, not transparent."
+            }
+          ]
+        },
+        {
+          "difficulty_tier": "relation",
+          "label_zh": "关系幻觉",
+          "sample_id": "hallu_000000_COCO_train2014_000000253945__rel",
+          "pair_id": "hallu_000000_COCO_train2014_000000253945::relation",
+          "positive_text": "the umbrella held by the person",
+          "negative_text": "the umbrella worn by the person",
+          "semantic_status": "needs_human_review",
+          "hallucination_units": [
+            {
+              "type": "relation",
+              "object": "",
+              "attribute": "",
+              "subject": "person",
+              "relation": "worn by",
+              "target_object": "umbrella",
+              "count_as_hallucination_if_mentioned": true,
+              "note": "The person is holding the umbrella in their hand, not wearing it like a hat or clothing."
+            }
+          ]
+        }
+      ],
+      "render_layout": [
+        {
+          "tier": "object",
+          "positive": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          },
+          "negative": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          }
+        },
+        {
+          "tier": "co_occurrence",
+          "positive": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          },
+          "negative": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          }
+        },
+        {
+          "tier": "attribute",
+          "positive": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          },
+          "negative": {
+            "font_size": 34,
+            "lines": 2,
+            "height": 96
+          }
+        },
+        {
+          "tier": "relation",
+          "positive": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          },
+          "negative": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          }
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "visualization": "12_COCO_000000560009.png",
+      "base_sample_id": "hallu_000379_COCO_train2014_000000560009",
+      "image_filename": "COCO_train2014_000000560009.jpg",
+      "image_size": [
+        640,
+        501
+      ],
+      "positive_bbox_xyxy": [
+        302.4,
+        188.82,
+        446.71999999999997,
+        336.34000000000003
+      ],
+      "positive_text": "the car behind the fence",
+      "pairs": [
+        {
+          "difficulty_tier": "object",
+          "label_zh": "物体幻觉",
+          "sample_id": "hallu_000379_COCO_train2014_000000560009__obj",
+          "pair_id": "hallu_000379_COCO_train2014_000000560009::object",
+          "positive_text": "the car behind the fence",
+          "negative_text": "the boat behind the fence",
+          "semantic_status": "needs_human_review",
+          "hallucination_units": [
+            {
+              "type": "object",
+              "object": "boat",
+              "attribute": "",
+              "subject": "",
+              "relation": "",
+              "target_object": "",
+              "count_as_hallucination_if_mentioned": true,
+              "note": "There is no boat behind the fence; the object is a car."
+            }
+          ]
+        },
+        {
+          "difficulty_tier": "co_occurrence",
+          "label_zh": "共现幻觉",
+          "sample_id": "hallu_000379_COCO_train2014_000000560009__cooc",
+          "pair_id": "hallu_000379_COCO_train2014_000000560009::co_occurrence",
+          "positive_text": "the car behind the fence",
+          "negative_text": "the truck behind the fence",
+          "semantic_status": "needs_human_review",
+          "hallucination_units": [
+            {
+              "type": "co_occurrence",
+              "object": "truck",
+              "attribute": "",
+              "subject": "",
+              "relation": "",
+              "target_object": "",
+              "count_as_hallucination_if_mentioned": true,
+              "note": "There is no truck behind the fence; the object is a car."
+            }
+          ]
+        },
+        {
+          "difficulty_tier": "attribute",
+          "label_zh": "属性幻觉",
+          "sample_id": "hallu_000379_COCO_train2014_000000560009__attr",
+          "pair_id": "hallu_000379_COCO_train2014_000000560009::attribute",
+          "positive_text": "the car behind the fence",
+          "negative_text": "the red car behind the fence",
+          "semantic_status": "needs_human_review",
+          "hallucination_units": [
+            {
+              "type": "attribute",
+              "object": "",
+              "attribute": "red",
+              "subject": "",
+              "relation": "",
+              "target_object": "",
+              "count_as_hallucination_if_mentioned": true,
+              "note": "The car behind the fence is black, not red."
+            }
+          ]
+        },
+        {
+          "difficulty_tier": "relation",
+          "label_zh": "关系幻觉",
+          "sample_id": "hallu_000379_COCO_train2014_000000560009__rel",
+          "pair_id": "hallu_000379_COCO_train2014_000000560009::relation",
+          "positive_text": "the car behind the fence",
+          "negative_text": "the car in front of the fence",
+          "semantic_status": "needs_human_review",
+          "hallucination_units": [
+            {
+              "type": "relation",
+              "object": "",
+              "attribute": "",
+              "subject": "car",
+              "relation": "in front of",
+              "target_object": "fence",
+              "count_as_hallucination_if_mentioned": true,
+              "note": "The car is located behind the fence, not in front of it."
+            }
+          ]
+        }
+      ],
+      "render_layout": [
+        {
+          "tier": "object",
+          "positive": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          },
+          "negative": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          }
+        },
+        {
+          "tier": "co_occurrence",
+          "positive": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          },
+          "negative": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          }
+        },
+        {
+          "tier": "attribute",
+          "positive": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          },
+          "negative": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          }
+        },
+        {
+          "tier": "relation",
+          "positive": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          },
+          "negative": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          }
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "visualization": "13_COCO_000000488066.png",
+      "base_sample_id": "hallu_000247_COCO_train2014_000000488066",
+      "image_filename": "COCO_train2014_000000488066.jpg",
+      "image_size": [
+        640,
+        427
+      ],
+      "positive_bbox_xyxy": [
+        285.63,
+        83.19,
+        397.19,
+        271.68
+      ],
+      "positive_text": "the teddy bear sitting on the chair",
+      "pairs": [
+        {
+          "difficulty_tier": "object",
+          "label_zh": "物体幻觉",
+          "sample_id": "hallu_000247_COCO_train2014_000000488066__obj",
+          "pair_id": "hallu_000247_COCO_train2014_000000488066::object",
+          "positive_text": "the teddy bear sitting on the chair",
+          "negative_text": "the robot sitting on the chair",
+          "semantic_status": "needs_human_review",
+          "hallucination_units": [
+            {
+              "type": "object",
+              "object": "robot",
+              "attribute": "",
+              "subject": "",
+              "relation": "",
+              "target_object": "",
+              "count_as_hallucination_if_mentioned": true,
+              "note": "The object on the chair is a plush teddy bear, not a mechanical robot."
+            }
+          ]
+        },
+        {
+          "difficulty_tier": "co_occurrence",
+          "label_zh": "共现幻觉",
+          "sample_id": "hallu_000247_COCO_train2014_000000488066__cooc",
+          "pair_id": "hallu_000247_COCO_train2014_000000488066::co_occurrence",
+          "positive_text": "the teddy bear sitting on the chair",
+          "negative_text": "the watering can sitting on the chair",
+          "semantic_status": "needs_human_review",
+          "hallucination_units": [
+            {
+              "type": "co_occurrence",
+              "object": "watering can",
+              "attribute": "",
+              "subject": "",
+              "relation": "",
+              "target_object": "",
+              "count_as_hallucination_if_mentioned": true,
+              "note": "While a watering can is contextually plausible in this garden scene, the object actually occupying the chair is a teddy bear."
+            }
+          ]
+        },
+        {
+          "difficulty_tier": "attribute",
+          "label_zh": "属性幻觉",
+          "sample_id": "hallu_000247_COCO_train2014_000000488066__attr",
+          "pair_id": "hallu_000247_COCO_train2014_000000488066::attribute",
+          "positive_text": "the teddy bear sitting on the chair",
+          "negative_text": "the plastic teddy bear sitting on the chair",
+          "semantic_status": "needs_human_review",
+          "hallucination_units": [
+            {
+              "type": "attribute",
+              "object": "",
+              "attribute": "plastic",
+              "subject": "",
+              "relation": "",
+              "target_object": "",
+              "count_as_hallucination_if_mentioned": true,
+              "note": "The teddy bear is made of soft fabric/plush material, not hard plastic."
+            }
+          ]
+        },
+        {
+          "difficulty_tier": "relation",
+          "label_zh": "关系幻觉",
+          "sample_id": "hallu_000247_COCO_train2014_000000488066__rel",
+          "pair_id": "hallu_000247_COCO_train2014_000000488066::relation",
+          "positive_text": "the teddy bear sitting on the chair",
+          "negative_text": "the teddy bear standing next to the chair",
+          "semantic_status": "needs_human_review",
+          "hallucination_units": [
+            {
+              "type": "relation",
+              "object": "",
+              "attribute": "",
+              "subject": "teddy bear",
+              "relation": "standing next to",
+              "target_object": "chair",
+              "count_as_hallucination_if_mentioned": true,
+              "note": "The teddy bear is physically located on the seat of the chair, not standing on the ground beside it."
+            }
+          ]
+        }
+      ],
+      "render_layout": [
+        {
+          "tier": "object",
+          "positive": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          },
+          "negative": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          }
+        },
+        {
+          "tier": "co_occurrence",
+          "positive": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          },
+          "negative": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          }
+        },
+        {
+          "tier": "attribute",
+          "positive": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          },
+          "negative": {
+            "font_size": 34,
+            "lines": 2,
+            "height": 96
+          }
+        },
+        {
+          "tier": "relation",
+          "positive": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          },
+          "negative": {
+            "font_size": 34,
+            "lines": 2,
+            "height": 96
+          }
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "visualization": "14_COCO_000000271447.png",
+      "base_sample_id": "hallu_000457_COCO_train2014_000000271447",
+      "image_filename": "COCO_train2014_000000271447.jpg",
+      "image_size": [
+        640,
+        429
+      ],
+      "positive_bbox_xyxy": [
+        42.34,
+        215.06,
+        229.54,
+        376.63
+      ],
+      "positive_text": "the cup on the saucer",
+      "pairs": [
+        {
+          "difficulty_tier": "object",
+          "label_zh": "物体幻觉",
+          "sample_id": "hallu_000457_COCO_train2014_000000271447__obj",
+          "pair_id": "hallu_000457_COCO_train2014_000000271447::object",
+          "positive_text": "the cup on the saucer",
+          "negative_text": "the teapot on the saucer",
+          "semantic_status": "needs_human_review",
+          "hallucination_units": [
+            {
+              "type": "object",
+              "object": "teapot",
+              "attribute": "",
+              "subject": "",
+              "relation": "",
+              "target_object": "",
+              "count_as_hallucination_if_mentioned": true,
+              "note": "The object resting on the saucer is a cup, not a teapot; no teapot is present at that location."
+            }
+          ]
+        },
+        {
+          "difficulty_tier": "co_occurrence",
+          "label_zh": "共现幻觉",
+          "sample_id": "hallu_000457_COCO_train2014_000000271447__cooc",
+          "pair_id": "hallu_000457_COCO_train2014_000000271447::co_occurrence",
+          "positive_text": "the cup on the saucer",
+          "negative_text": "the sugar bowl on the saucer",
+          "semantic_status": "needs_human_review",
+          "hallucination_units": [
+            {
+              "type": "co_occurrence",
+              "object": "sugar bowl",
+              "attribute": "",
+              "subject": "",
+              "relation": "",
+              "target_object": "",
+              "count_as_hallucination_if_mentioned": true,
+              "note": "While a sugar container is visible elsewhere on the table, the specific item sitting on the saucer is a cup, not a sugar bowl."
+            }
+          ]
+        },
+        {
+          "difficulty_tier": "attribute",
+          "label_zh": "属性幻觉",
+          "sample_id": "hallu_000457_COCO_train2014_000000271447__attr",
+          "pair_id": "hallu_000457_COCO_train2014_000000271447::attribute",
+          "positive_text": "the cup on the saucer",
+          "negative_text": "the blue cup on the saucer",
+          "semantic_status": "needs_human_review",
+          "hallucination_units": [
+            {
+              "type": "attribute",
+              "object": "",
+              "attribute": "blue",
+              "subject": "",
+              "relation": "",
+              "target_object": "",
+              "count_as_hallucination_if_mentioned": true,
+              "note": "The cup positioned on the saucer is white, whereas the counterfactual claims it is blue."
+            }
+          ]
+        },
+        {
+          "difficulty_tier": "relation",
+          "label_zh": "关系幻觉",
+          "sample_id": "hallu_000457_COCO_train2014_000000271447__rel",
+          "pair_id": "hallu_000457_COCO_train2014_000000271447::relation",
+          "positive_text": "the cup on the saucer",
+          "negative_text": "the cup beside the saucer",
+          "semantic_status": "needs_human_review",
+          "hallucination_units": [
+            {
+              "type": "relation",
+              "object": "",
+              "attribute": "",
+              "subject": "cup",
+              "relation": "beside",
+              "target_object": "saucer",
+              "count_as_hallucination_if_mentioned": true,
+              "note": "The cup is physically resting on top of the saucer, not positioned next to or beside it."
+            }
+          ]
+        }
+      ],
+      "render_layout": [
+        {
+          "tier": "object",
+          "positive": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          },
+          "negative": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          }
+        },
+        {
+          "tier": "co_occurrence",
+          "positive": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          },
+          "negative": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          }
+        },
+        {
+          "tier": "attribute",
+          "positive": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          },
+          "negative": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          }
+        },
+        {
+          "tier": "relation",
+          "positive": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          },
+          "negative": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          }
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "visualization": "15_COCO_000000372156.png",
+      "base_sample_id": "hallu_000290_COCO_train2014_000000372156",
+      "image_filename": "COCO_train2014_000000372156.jpg",
+      "image_size": [
+        640,
+        480
+      ],
+      "positive_bbox_xyxy": [
+        167.19,
+        283.69,
+        494.02,
+        460.58
+      ],
+      "positive_text": "the cake on the table",
+      "pairs": [
+        {
+          "difficulty_tier": "object",
+          "label_zh": "物体幻觉",
+          "sample_id": "hallu_000290_COCO_train2014_000000372156__obj",
+          "pair_id": "hallu_000290_COCO_train2014_000000372156::object",
+          "positive_text": "the cake on the table",
+          "negative_text": "the pizza on the table",
+          "semantic_status": "needs_human_review",
+          "hallucination_units": [
+            {
+              "type": "object",
+              "object": "pizza",
+              "attribute": "",
+              "subject": "",
+              "relation": "",
+              "target_object": "",
+              "count_as_hallucination_if_mentioned": true,
+              "note": "The object at the specified location is a train-shaped cake, not a pizza."
+            }
+          ]
+        },
+        {
+          "difficulty_tier": "co_occurrence",
+          "label_zh": "共现幻觉",
+          "sample_id": "hallu_000290_COCO_train2014_000000372156__cooc",
+          "pair_id": "hallu_000290_COCO_train2014_000000372156::co_occurrence",
+          "positive_text": "the cake on the table",
+          "negative_text": "the candle on the table",
+          "semantic_status": "needs_human_review",
+          "hallucination_units": [
+            {
+              "type": "co_occurrence",
+              "object": "candle",
+              "attribute": "",
+              "subject": "",
+              "relation": "",
+              "target_object": "",
+              "count_as_hallucination_if_mentioned": true,
+              "note": "While candles often accompany cakes, there is no candle visible on the table at the referred location; only the cake is present."
+            }
+          ]
+        },
+        {
+          "difficulty_tier": "attribute",
+          "label_zh": "属性幻觉",
+          "sample_id": "hallu_000290_COCO_train2014_000000372156__attr",
+          "pair_id": "hallu_000290_COCO_train2014_000000372156::attribute",
+          "positive_text": "the cake on the table",
+          "negative_text": "the round cake on the table",
+          "semantic_status": "needs_human_review",
+          "hallucination_units": [
+            {
+              "type": "attribute",
+              "object": "",
+              "attribute": "round",
+              "subject": "",
+              "relation": "",
+              "target_object": "",
+              "count_as_hallucination_if_mentioned": true,
+              "note": "The cake is shaped like a train engine, not round."
+            }
+          ]
+        },
+        {
+          "difficulty_tier": "relation",
+          "label_zh": "关系幻觉",
+          "sample_id": "hallu_000290_COCO_train2014_000000372156__rel",
+          "pair_id": "hallu_000290_COCO_train2014_000000372156::relation",
+          "positive_text": "the cake on the table",
+          "negative_text": "the cake under the table",
+          "semantic_status": "needs_human_review",
+          "hallucination_units": [
+            {
+              "type": "relation",
+              "object": "",
+              "attribute": "",
+              "subject": "cake",
+              "relation": "under",
+              "target_object": "table",
+              "count_as_hallucination_if_mentioned": true,
+              "note": "The cake is resting on top of the table surface, not underneath it."
+            }
+          ]
+        }
+      ],
+      "render_layout": [
+        {
+          "tier": "object",
+          "positive": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          },
+          "negative": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          }
+        },
+        {
+          "tier": "co_occurrence",
+          "positive": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          },
+          "negative": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          }
+        },
+        {
+          "tier": "attribute",
+          "positive": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          },
+          "negative": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          }
+        },
+        {
+          "tier": "relation",
+          "positive": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          },
+          "negative": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          }
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "visualization": "16_COCO_000000522240.png",
+      "base_sample_id": "hallu_000037_COCO_train2014_000000522240",
+      "image_filename": "COCO_train2014_000000522240.jpg",
+      "image_size": [
+        640,
+        429
+      ],
+      "positive_bbox_xyxy": [
+        0.0,
+        303.46,
+        210.67,
+        429.0
+      ],
+      "positive_text": "the bowl with a spoon next to the pizza",
+      "pairs": [
+        {
+          "difficulty_tier": "object",
+          "label_zh": "物体幻觉",
+          "sample_id": "hallu_000037_COCO_train2014_000000522240__obj",
+          "pair_id": "hallu_000037_COCO_train2014_000000522240::object",
+          "positive_text": "the bowl with a spoon next to the pizza",
+          "negative_text": "the mug with a spoon next to the pizza",
+          "semantic_status": "needs_human_review",
+          "hallucination_units": [
+            {
+              "type": "object",
+              "object": "mug",
+              "attribute": "",
+              "subject": "",
+              "relation": "",
+              "target_object": "",
+              "count_as_hallucination_if_mentioned": true,
+              "note": "There is no mug at the referred location; the object is a white bowl containing stew/sauce, not a mug."
+            }
+          ]
+        },
+        {
+          "difficulty_tier": "co_occurrence",
+          "label_zh": "共现幻觉",
+          "sample_id": "hallu_000037_COCO_train2014_000000522240__cooc",
+          "pair_id": "hallu_000037_COCO_train2014_000000522240::co_occurrence",
+          "positive_text": "the bowl with a spoon next to the pizza",
+          "negative_text": "the bowl with a fork next to the pizza",
+          "semantic_status": "needs_human_review",
+          "hallucination_units": [
+            {
+              "type": "co_occurrence",
+              "object": "fork",
+              "attribute": "",
+              "subject": "",
+              "relation": "",
+              "target_object": "",
+              "count_as_hallucination_if_mentioned": true,
+              "note": "There is no fork in the bowl; the utensil visible in the bowl is a white spoon, not a fork. A fork is contextually plausible at a food table but is absent here."
+            }
+          ]
+        },
+        {
+          "difficulty_tier": "attribute",
+          "label_zh": "属性幻觉",
+          "sample_id": "hallu_000037_COCO_train2014_000000522240__attr",
+          "pair_id": "hallu_000037_COCO_train2014_000000522240::attribute",
+          "positive_text": "the bowl with a spoon next to the pizza",
+          "negative_text": "the red bowl with a spoon next to the pizza",
+          "semantic_status": "needs_human_review",
+          "hallucination_units": [
+            {
+              "type": "attribute",
+              "object": "",
+              "attribute": "red",
+              "subject": "",
+              "relation": "",
+              "target_object": "",
+              "count_as_hallucination_if_mentioned": true,
+              "note": "The bowl is white, not red. The color attribute 'red' is visually false for this bowl."
+            }
+          ]
+        },
+        {
+          "difficulty_tier": "relation",
+          "label_zh": "关系幻觉",
+          "sample_id": "hallu_000037_COCO_train2014_000000522240__rel",
+          "pair_id": "hallu_000037_COCO_train2014_000000522240::relation",
+          "positive_text": "the bowl with a spoon next to the pizza",
+          "negative_text": "the bowl with a spoon on top of the pizza",
+          "semantic_status": "needs_human_review",
+          "hallucination_units": [
+            {
+              "type": "relation",
+              "object": "",
+              "attribute": "",
+              "subject": "bowl",
+              "relation": "on top of",
+              "target_object": "pizza",
+              "count_as_hallucination_if_mentioned": true,
+              "note": "The bowl is positioned next to the pizza on the table, not on top of the pizza. The spatial relation 'on top of' is false."
+            }
+          ]
+        }
+      ],
+      "render_layout": [
+        {
+          "tier": "object",
+          "positive": {
+            "font_size": 34,
+            "lines": 2,
+            "height": 96
+          },
+          "negative": {
+            "font_size": 34,
+            "lines": 2,
+            "height": 96
+          }
+        },
+        {
+          "tier": "co_occurrence",
+          "positive": {
+            "font_size": 34,
+            "lines": 2,
+            "height": 96
+          },
+          "negative": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          }
+        },
+        {
+          "tier": "attribute",
+          "positive": {
+            "font_size": 34,
+            "lines": 2,
+            "height": 96
+          },
+          "negative": {
+            "font_size": 34,
+            "lines": 2,
+            "height": 96
+          }
+        },
+        {
+          "tier": "relation",
+          "positive": {
+            "font_size": 34,
+            "lines": 2,
+            "height": 96
+          },
+          "negative": {
+            "font_size": 34,
+            "lines": 2,
+            "height": 96
+          }
+        }
+      ]
+    },
+    {
+      "index": 20,
+      "visualization": "20_COCO_000000205223.png",
+      "base_sample_id": "hallu_000560_COCO_train2014_000000205223",
+      "image_filename": "COCO_train2014_000000205223.jpg",
+      "image_size": [
+        640,
+        238
+      ],
+      "positive_bbox_xyxy": [
+        174.25,
+        41.24,
+        229.27,
+        237.10000000000002
+      ],
+      "positive_text": "the tie on the person's neck",
+      "pairs": [
+        {
+          "difficulty_tier": "object",
+          "label_zh": "物体幻觉",
+          "sample_id": "hallu_000560_COCO_train2014_000000205223__obj",
+          "pair_id": "hallu_000560_COCO_train2014_000000205223::object",
+          "positive_text": "the tie on the person's neck",
+          "negative_text": "the scarf on the person's neck",
+          "semantic_status": "needs_human_review",
+          "hallucination_units": [
+            {
+              "type": "object",
+              "object": "scarf",
+              "attribute": "",
+              "subject": "",
+              "relation": "",
+              "target_object": "",
+              "count_as_hallucination_if_mentioned": true,
+              "note": "The object at the specified location is a necktie, not a scarf. A scarf is not present in the image."
+            }
+          ]
+        },
+        {
+          "difficulty_tier": "co_occurrence",
+          "label_zh": "共现幻觉",
+          "sample_id": "hallu_000560_COCO_train2014_000000205223__cooc",
+          "pair_id": "hallu_000560_COCO_train2014_000000205223::co_occurrence",
+          "positive_text": "the tie on the person's neck",
+          "negative_text": "the pocket square on the person's neck",
+          "semantic_status": "needs_human_review",
+          "hallucination_units": [
+            {
+              "type": "co_occurrence",
+              "object": "pocket square",
+              "attribute": "",
+              "subject": "",
+              "relation": "",
+              "target_object": "",
+              "count_as_hallucination_if_mentioned": true,
+              "note": "While pocket squares are common accessories in formal wear scenes like this, the item located on the neck is a tie. There is no pocket square on the neck."
+            }
+          ]
+        },
+        {
+          "difficulty_tier": "attribute",
+          "label_zh": "属性幻觉",
+          "sample_id": "hallu_000560_COCO_train2014_000000205223__attr",
+          "pair_id": "hallu_000560_COCO_train2014_000000205223::attribute",
+          "positive_text": "the tie on the person's neck",
+          "negative_text": "the red tie on the person's neck",
+          "semantic_status": "needs_human_review",
+          "hallucination_units": [
+            {
+              "type": "attribute",
+              "object": "",
+              "attribute": "red",
+              "subject": "",
+              "relation": "",
+              "target_object": "",
+              "count_as_hallucination_if_mentioned": true,
+              "note": "The tie visible in the bounding box is grey/silver, not red. The color attribute has been falsified."
+            }
+          ]
+        },
+        {
+          "difficulty_tier": "relation",
+          "label_zh": "关系幻觉",
+          "sample_id": "hallu_000560_COCO_train2014_000000205223__rel",
+          "pair_id": "hallu_000560_COCO_train2014_000000205223::relation",
+          "positive_text": "the tie on the person's neck",
+          "negative_text": "the tie on the person's wrist",
+          "semantic_status": "needs_human_review",
+          "hallucination_units": [
+            {
+              "type": "relation",
+              "object": "",
+              "attribute": "",
+              "subject": "tie",
+              "relation": "on",
+              "target_object": "person's wrist",
+              "count_as_hallucination_if_mentioned": true,
+              "note": "The tie is located on the person's neck/chest area, not on their wrist. The spatial relation to the body part is incorrect."
+            }
+          ]
+        }
+      ],
+      "render_layout": [
+        {
+          "tier": "object",
+          "positive": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          },
+          "negative": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          }
+        },
+        {
+          "tier": "co_occurrence",
+          "positive": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          },
+          "negative": {
+            "font_size": 34,
+            "lines": 2,
+            "height": 96
+          }
+        },
+        {
+          "tier": "attribute",
+          "positive": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          },
+          "negative": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          }
+        },
+        {
+          "tier": "relation",
+          "positive": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          },
+          "negative": {
+            "font_size": 34,
+            "lines": 1,
+            "height": 48
+          }
+        }
+      ]
+    }
+  ]
+}

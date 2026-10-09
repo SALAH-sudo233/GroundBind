@@ -1,0 +1,48 @@
+{
+  "arm": "jev",
+  "model": "qwen25",
+  "example_index": 2,
+  "sample_id": "hallu_000222_COCO_train2014_000000390969__rel",
+  "hallucination_type": "relation",
+  "query": "the person standing next to the bench",
+  "candidate_bbox_xyxy": [
+    148.0,
+    0.0,
+    191.0,
+    129.0
+  ],
+  "upstream_record_sha256": "a42f159f9f999c30617f548093d9faacfca266f35b7a9282b31b104e18d04cd0",
+  "source_record": "/home/u2025141034/benchmark/rrwr_20261010_t3_attention/attention/results/qwen25/02_relation_grounding.json",
+  "image_sha256": "acc5770abc5c4bf7495183d28b938df322e97ea232577571324e1d6863ca9b32",
+  "source_model_path": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-2B/snapshots/15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "torch": "2.12.1+cu126",
+  "transformers": "5.12.1",
+  "drew": true,
+  "original": {
+    "z": -8.67642879486084,
+    "prompt": "Inspect the image region [148,0,191,129]. Determine whether the phrase \"the person standing next to the bench\" is fully true for the object in that exact region. Return exactly one JSON object with exactly these two fields: {\"binding\":\"MATCH\" or \"MISMATCH\" or \"NA\", \"decision\":\"KEEP\" or \"REJECT\"}. Do not explain. Do not use Markdown.",
+    "rendered_prompt": "<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|>Inspect the image region [148,0,191,129]. Determine whether the phrase \"the person standing next to the bench\" is fully true for the object in that exact region. Return exactly one JSON object with exactly these two fields: {\"binding\":\"MATCH\" or \"MISMATCH\" or \"NA\", \"decision\":\"KEEP\" or \"REJECT\"}. Do not explain. Do not use Markdown.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "prompt_token_count": 318,
+    "model_path": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-2B/snapshots/15852e8c16360a2fea060d615a32b45270f8a8fc",
+    "image_input_size_wh": [
+      500,
+      332
+    ],
+    "coordinate_protocol": "original JEV textual pixel coordinates, integer-rounded identically to collection script",
+    "temperature": 1.7765671239028529,
+    "p_head": 0.007511225063353777
+  },
+  "predicate": "next to",
+  "routed_predicate": false,
+  "probe_metadata": {
+    "predicate_surface": "standing next to",
+    "family": "proximity",
+    "semantic_status": "unsupported",
+    "skip_reason": "no_legal_template",
+    "n_legal_candidates": 0,
+    "rule_id": null
+  },
+  "rivals": [],
+  "seconds": 0.19083770690485835,
+  "peak_allocated_gb": 4.644885504
+}

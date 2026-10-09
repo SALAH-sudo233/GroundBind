@@ -1,0 +1,427 @@
+{
+  "original_budget": 160,
+  "initial_capped_record_count": 12,
+  "untouched_record_count": 288,
+  "budget_only_rerun_count": 12,
+  "final_still_capped_count": 5,
+  "records": [
+    {
+      "model": "qwen25",
+      "case": 3,
+      "query_type": "co_occurrence",
+      "task": "vqa",
+      "original_prompt_and_greedy_unchanged": true,
+      "stages": [
+        {
+          "max_new_tokens": 160,
+          "generated_token_count": 160,
+          "truncated": true,
+          "seconds": 4.794371939729899,
+          "peak_allocated_gb": 17.116038144,
+          "json": "budget_archive_max160/qwen25/03_co_occurrence_vqa.json",
+          "npz": "budget_archive_max160/qwen25/03_co_occurrence_vqa.npz"
+        },
+        {
+          "max_new_tokens": 512,
+          "generated_token_count": 512,
+          "truncated": true,
+          "seconds": 14.52427926985547,
+          "peak_allocated_gb": 17.965196288,
+          "json": "budget_archive_max512/qwen25/03_co_occurrence_vqa.json",
+          "npz": "budget_archive_max512/qwen25/03_co_occurrence_vqa.npz"
+        },
+        {
+          "max_new_tokens": 1024,
+          "generated_token_count": 583,
+          "truncated": false,
+          "seconds": 16.18569201603532,
+          "peak_allocated_gb": 18.189868032,
+          "json": "results/qwen25/03_co_occurrence_vqa.json",
+          "npz": "results/qwen25/03_co_occurrence_vqa.npz"
+        }
+      ],
+      "still_capped": false
+    },
+    {
+      "model": "qwen25",
+      "case": 3,
+      "query_type": "positive",
+      "task": "vqa",
+      "original_prompt_and_greedy_unchanged": true,
+      "stages": [
+        {
+          "max_new_tokens": 160,
+          "generated_token_count": 160,
+          "truncated": true,
+          "seconds": 4.843315961770713,
+          "peak_allocated_gb": 17.116038144,
+          "json": "budget_archive_max160/qwen25/03_positive_vqa.json",
+          "npz": "budget_archive_max160/qwen25/03_positive_vqa.npz"
+        },
+        {
+          "max_new_tokens": 512,
+          "generated_token_count": 417,
+          "truncated": false,
+          "seconds": 12.399972274899483,
+          "peak_allocated_gb": 17.69782272,
+          "json": "results/qwen25/03_positive_vqa.json",
+          "npz": "results/qwen25/03_positive_vqa.npz"
+        }
+      ],
+      "still_capped": false
+    },
+    {
+      "model": "qwen25",
+      "case": 20,
+      "query_type": "positive",
+      "task": "grounding",
+      "original_prompt_and_greedy_unchanged": true,
+      "stages": [
+        {
+          "max_new_tokens": 160,
+          "generated_token_count": 160,
+          "truncated": true,
+          "seconds": 4.884798513259739,
+          "peak_allocated_gb": 17.235543552,
+          "json": "budget_archive_max160/qwen25/20_positive_grounding.json",
+          "npz": "budget_archive_max160/qwen25/20_positive_grounding.npz"
+        },
+        {
+          "max_new_tokens": 512,
+          "generated_token_count": 512,
+          "truncated": true,
+          "seconds": 14.829320362303406,
+          "peak_allocated_gb": 18.155956736,
+          "json": "budget_archive_max512/qwen25/20_positive_grounding.json",
+          "npz": "budget_archive_max512/qwen25/20_positive_grounding.npz"
+        },
+        {
+          "max_new_tokens": 1024,
+          "generated_token_count": 1024,
+          "truncated": true,
+          "seconds": 27.7505562719889,
+          "peak_allocated_gb": 20.229481472,
+          "json": "results/qwen25/20_positive_grounding.json",
+          "npz": "results/qwen25/20_positive_grounding.npz"
+        }
+      ],
+      "still_capped": true
+    },
+    {
+      "model": "visionr1",
+      "case": 1,
+      "query_type": "attribute",
+      "task": "grounding",
+      "original_prompt_and_greedy_unchanged": true,
+      "stages": [
+        {
+          "max_new_tokens": 160,
+          "generated_token_count": 160,
+          "truncated": true,
+          "seconds": 5.231136297341436,
+          "peak_allocated_gb": 17.509328384,
+          "json": "budget_archive_max160/visionr1/01_attribute_grounding.json",
+          "npz": "budget_archive_max160/visionr1/01_attribute_grounding.npz"
+        },
+        {
+          "max_new_tokens": 512,
+          "generated_token_count": 512,
+          "truncated": true,
+          "seconds": 15.504787941928953,
+          "peak_allocated_gb": 18.565776384,
+          "json": "budget_archive_max512/visionr1/01_attribute_grounding.json",
+          "npz": "budget_archive_max512/visionr1/01_attribute_grounding.npz"
+        },
+        {
+          "max_new_tokens": 1024,
+          "generated_token_count": 1021,
+          "truncated": false,
+          "seconds": 28.631888119038194,
+          "peak_allocated_gb": 20.853605376,
+          "json": "results/visionr1/01_attribute_grounding.json",
+          "npz": "results/visionr1/01_attribute_grounding.npz"
+        }
+      ],
+      "still_capped": false
+    },
+    {
+      "model": "visionr1",
+      "case": 1,
+      "query_type": "co_occurrence",
+      "task": "grounding",
+      "original_prompt_and_greedy_unchanged": true,
+      "stages": [
+        {
+          "max_new_tokens": 160,
+          "generated_token_count": 160,
+          "truncated": true,
+          "seconds": 5.185483546927571,
+          "peak_allocated_gb": 17.506428416,
+          "json": "budget_archive_max160/visionr1/01_co_occurrence_grounding.json",
+          "npz": "budget_archive_max160/visionr1/01_co_occurrence_grounding.npz"
+        },
+        {
+          "max_new_tokens": 512,
+          "generated_token_count": 512,
+          "truncated": true,
+          "seconds": 15.508391533978283,
+          "peak_allocated_gb": 18.562275328,
+          "json": "budget_archive_max512/visionr1/01_co_occurrence_grounding.json",
+          "npz": "budget_archive_max512/visionr1/01_co_occurrence_grounding.npz"
+        },
+        {
+          "max_new_tokens": 1024,
+          "generated_token_count": 1024,
+          "truncated": true,
+          "seconds": 33.09823805699125,
+          "peak_allocated_gb": 20.873247232,
+          "json": "results/visionr1/01_co_occurrence_grounding.json",
+          "npz": "results/visionr1/01_co_occurrence_grounding.npz"
+        }
+      ],
+      "still_capped": true
+    },
+    {
+      "model": "visionr1",
+      "case": 1,
+      "query_type": "object",
+      "task": "grounding",
+      "original_prompt_and_greedy_unchanged": true,
+      "stages": [
+        {
+          "max_new_tokens": 160,
+          "generated_token_count": 160,
+          "truncated": true,
+          "seconds": 5.077836690004915,
+          "peak_allocated_gb": 17.506428416,
+          "json": "budget_archive_max160/visionr1/01_object_grounding.json",
+          "npz": "budget_archive_max160/visionr1/01_object_grounding.npz"
+        },
+        {
+          "max_new_tokens": 512,
+          "generated_token_count": 512,
+          "truncated": true,
+          "seconds": 15.365636703092605,
+          "peak_allocated_gb": 18.562275328,
+          "json": "budget_archive_max512/visionr1/01_object_grounding.json",
+          "npz": "budget_archive_max512/visionr1/01_object_grounding.npz"
+        },
+        {
+          "max_new_tokens": 1024,
+          "generated_token_count": 1023,
+          "truncated": false,
+          "seconds": 28.388345879036933,
+          "peak_allocated_gb": 20.872519168,
+          "json": "results/visionr1/01_object_grounding.json",
+          "npz": "results/visionr1/01_object_grounding.npz"
+        }
+      ],
+      "still_capped": false
+    },
+    {
+      "model": "visionr1",
+      "case": 1,
+      "query_type": "positive",
+      "task": "grounding",
+      "original_prompt_and_greedy_unchanged": true,
+      "stages": [
+        {
+          "max_new_tokens": 160,
+          "generated_token_count": 160,
+          "truncated": true,
+          "seconds": 5.793529445771128,
+          "peak_allocated_gb": 17.506428416,
+          "json": "budget_archive_max160/visionr1/01_positive_grounding.json",
+          "npz": "budget_archive_max160/visionr1/01_positive_grounding.npz"
+        },
+        {
+          "max_new_tokens": 512,
+          "generated_token_count": 512,
+          "truncated": true,
+          "seconds": 15.901046379934996,
+          "peak_allocated_gb": 18.562275328,
+          "json": "budget_archive_max512/visionr1/01_positive_grounding.json",
+          "npz": "budget_archive_max512/visionr1/01_positive_grounding.npz"
+        },
+        {
+          "max_new_tokens": 1024,
+          "generated_token_count": 1023,
+          "truncated": false,
+          "seconds": 28.636582601815462,
+          "peak_allocated_gb": 20.872519168,
+          "json": "results/visionr1/01_positive_grounding.json",
+          "npz": "results/visionr1/01_positive_grounding.npz"
+        }
+      ],
+      "still_capped": false
+    },
+    {
+      "model": "visionr1",
+      "case": 5,
+      "query_type": "positive",
+      "task": "grounding",
+      "original_prompt_and_greedy_unchanged": true,
+      "stages": [
+        {
+          "max_new_tokens": 160,
+          "generated_token_count": 160,
+          "truncated": true,
+          "seconds": 4.843605129048228,
+          "peak_allocated_gb": 17.296869376,
+          "json": "budget_archive_max160/visionr1/05_positive_grounding.json",
+          "npz": "budget_archive_max160/visionr1/05_positive_grounding.npz"
+        },
+        {
+          "max_new_tokens": 512,
+          "generated_token_count": 512,
+          "truncated": true,
+          "seconds": 14.92721475707367,
+          "peak_allocated_gb": 18.255474176,
+          "json": "budget_archive_max512/visionr1/05_positive_grounding.json",
+          "npz": "budget_archive_max512/visionr1/05_positive_grounding.npz"
+        },
+        {
+          "max_new_tokens": 1024,
+          "generated_token_count": 1024,
+          "truncated": true,
+          "seconds": 31.763733697589487,
+          "peak_allocated_gb": 20.375380992,
+          "json": "results/visionr1/05_positive_grounding.json",
+          "npz": "results/visionr1/05_positive_grounding.npz"
+        }
+      ],
+      "still_capped": true
+    },
+    {
+      "model": "visionr1",
+      "case": 6,
+      "query_type": "positive",
+      "task": "grounding",
+      "original_prompt_and_greedy_unchanged": true,
+      "stages": [
+        {
+          "max_new_tokens": 160,
+          "generated_token_count": 160,
+          "truncated": true,
+          "seconds": 4.903917595744133,
+          "peak_allocated_gb": 17.509328384,
+          "json": "budget_archive_max160/visionr1/06_positive_grounding.json",
+          "npz": "budget_archive_max160/visionr1/06_positive_grounding.npz"
+        },
+        {
+          "max_new_tokens": 512,
+          "generated_token_count": 512,
+          "truncated": true,
+          "seconds": 15.139236330986023,
+          "peak_allocated_gb": 18.565776384,
+          "json": "budget_archive_max512/visionr1/06_positive_grounding.json",
+          "npz": "budget_archive_max512/visionr1/06_positive_grounding.npz"
+        },
+        {
+          "max_new_tokens": 1024,
+          "generated_token_count": 1024,
+          "truncated": true,
+          "seconds": 28.241782635916024,
+          "peak_allocated_gb": 20.875490304,
+          "json": "results/visionr1/06_positive_grounding.json",
+          "npz": "results/visionr1/06_positive_grounding.npz"
+        }
+      ],
+      "still_capped": true
+    },
+    {
+      "model": "visionr1",
+      "case": 15,
+      "query_type": "attribute",
+      "task": "grounding",
+      "original_prompt_and_greedy_unchanged": true,
+      "stages": [
+        {
+          "max_new_tokens": 160,
+          "generated_token_count": 160,
+          "truncated": true,
+          "seconds": 5.357747321948409,
+          "peak_allocated_gb": 17.503242752,
+          "json": "budget_archive_max160/visionr1/15_attribute_grounding.json",
+          "npz": "budget_archive_max160/visionr1/15_attribute_grounding.npz"
+        },
+        {
+          "max_new_tokens": 512,
+          "generated_token_count": 379,
+          "truncated": false,
+          "seconds": 12.45884049590677,
+          "peak_allocated_gb": 18.122556416,
+          "json": "results/visionr1/15_attribute_grounding.json",
+          "npz": "results/visionr1/15_attribute_grounding.npz"
+        }
+      ],
+      "still_capped": false
+    },
+    {
+      "model": "visionr1",
+      "case": 15,
+      "query_type": "object",
+      "task": "grounding",
+      "original_prompt_and_greedy_unchanged": true,
+      "stages": [
+        {
+          "max_new_tokens": 160,
+          "generated_token_count": 160,
+          "truncated": true,
+          "seconds": 5.450710921082646,
+          "peak_allocated_gb": 17.501008384,
+          "json": "budget_archive_max160/visionr1/15_object_grounding.json",
+          "npz": "budget_archive_max160/visionr1/15_object_grounding.npz"
+        },
+        {
+          "max_new_tokens": 512,
+          "generated_token_count": 379,
+          "truncated": false,
+          "seconds": 12.779656267724931,
+          "peak_allocated_gb": 18.111218688,
+          "json": "results/visionr1/15_object_grounding.json",
+          "npz": "results/visionr1/15_object_grounding.npz"
+        }
+      ],
+      "still_capped": false
+    },
+    {
+      "model": "visionr1",
+      "case": 16,
+      "query_type": "positive",
+      "task": "vqa",
+      "original_prompt_and_greedy_unchanged": true,
+      "stages": [
+        {
+          "max_new_tokens": 160,
+          "generated_token_count": 160,
+          "truncated": true,
+          "seconds": 4.801998533774167,
+          "peak_allocated_gb": 17.291266048,
+          "json": "budget_archive_max160/visionr1/16_positive_vqa.json",
+          "npz": "budget_archive_max160/visionr1/16_positive_vqa.npz"
+        },
+        {
+          "max_new_tokens": 512,
+          "generated_token_count": 512,
+          "truncated": true,
+          "seconds": 14.753387398086488,
+          "peak_allocated_gb": 18.240853504,
+          "json": "budget_archive_max512/visionr1/16_positive_vqa.json",
+          "npz": "budget_archive_max512/visionr1/16_positive_vqa.npz"
+        },
+        {
+          "max_new_tokens": 1024,
+          "generated_token_count": 1024,
+          "truncated": true,
+          "seconds": 29.930829628836364,
+          "peak_allocated_gb": 20.36434176,
+          "json": "results/visionr1/16_positive_vqa.json",
+          "npz": "results/visionr1/16_positive_vqa.npz"
+        }
+      ],
+      "still_capped": true
+    }
+  ],
+  "capped_semantics": "An incomplete output prefix is not a complete model decision. A parseable emitted coordinate quadruple may be scored as a prefix candidate; it remains explicitly capped."
+}

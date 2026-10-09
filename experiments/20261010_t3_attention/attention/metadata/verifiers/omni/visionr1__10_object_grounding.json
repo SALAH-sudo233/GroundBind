@@ -1,0 +1,28 @@
+{
+  "arm": "omni",
+  "model": "visionr1",
+  "example_index": 10,
+  "sample_id": "hallu_000544_COCO_train2014_000000500634__obj",
+  "hallucination_type": "object",
+  "query": "the spatula next to the spoon",
+  "candidate_bbox_xyxy": [
+    1179.0,
+    423.0,
+    289.0,
+    660.0
+  ],
+  "upstream_record_sha256": "72a9b45d4dfaba93e4bac22eb872d16ffb3a47eb9790c39a29393bee6283fde8",
+  "source_record": "/home/u2025141034/benchmark/rrwr_20261010_t3_attention/attention/results/visionr1/10_object_grounding.json",
+  "image_sha256": "032f9247bfefcfed11e5e38fc04de77b12e80b866f4c4ae7f1b138b1fd910613",
+  "source_model_path": "/home/u2025141034/models/OmniVerifier-7B",
+  "torch": "2.12.1+cu126",
+  "transformers": "5.12.1",
+  "drew": true,
+  "original": null,
+  "rivals": [],
+  "error": "ValueError('x1 must be greater than or equal to x0')",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/u2025141034/benchmark/rrwr_20261010_t3_attention/attention/run_fresh_verifiers.py\", line 81, in <module>\n    row['original']=score(ip,bbox,query,save_attention=a.arm=='omni',stem=key)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/u2025141034/benchmark/rrwr_20261010_t3_attention/attention/run_fresh_verifiers.py\", line 51, in score\n    inp,prompt,rendered,processed_size=get_inputs(ip,bbox,query)\n                                       ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/u2025141034/benchmark/rrwr_20261010_t3_attention/attention/run_fresh_verifiers.py\", line 39, in get_inputs\n    image=O.draw_box(str(ip),bbox)\n          ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/u2025141034/SVD/grpo_verifier/s5_omni_filter.py\", line 60, in draw_box\n    d.rectangle([x0, y0, x1, y1], outline=(255, 0, 0), width=w)\n  File \"/home/u2025141034/.miniconda3/envs/grpo_ayb/lib/python3.11/site-packages/PIL/ImageDraw.py\", line 396, in rectangle\n    self.draw.draw_rectangle(xy, ink, 0, width)\nValueError: x1 must be greater than or equal to x0\n",
+  "reason": "verifier_input_unscorable",
+  "seconds": 0.007826121058315039,
+  "attention_available": false
+}

@@ -1,0 +1,48 @@
+{
+  "arm": "jev",
+  "model": "visionr1",
+  "example_index": 11,
+  "sample_id": "hallu_000000_COCO_train2014_000000253945__rel",
+  "hallucination_type": "relation",
+  "query": "the umbrella worn by the person",
+  "candidate_bbox_xyxy": [
+    113.0,
+    0.0,
+    298.0,
+    45.0
+  ],
+  "upstream_record_sha256": "eba4746360e615f43d9dc00e9409a3a7a3887b811eea1b855f566aed44a320b2",
+  "source_record": "/home/u2025141034/benchmark/rrwr_20261010_t3_attention/attention/results/visionr1/11_relation_grounding.json",
+  "image_sha256": "c45f5120c7877a5ba43e0e906fc663dc9b47c85ee77854a64f6b797e586c139d",
+  "source_model_path": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-2B/snapshots/15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "torch": "2.12.1+cu126",
+  "transformers": "5.12.1",
+  "drew": true,
+  "original": {
+    "z": -0.17524565756320953,
+    "prompt": "Inspect the image region [113,0,298,45]. Determine whether the phrase \"the umbrella worn by the person\" is fully true for the object in that exact region. Return exactly one JSON object with exactly these two fields: {\"binding\":\"MATCH\" or \"MISMATCH\" or \"NA\", \"decision\":\"KEEP\" or \"REJECT\"}. Do not explain. Do not use Markdown.",
+    "rendered_prompt": "<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|>Inspect the image region [113,0,298,45]. Determine whether the phrase \"the umbrella worn by the person\" is fully true for the object in that exact region. Return exactly one JSON object with exactly these two fields: {\"binding\":\"MATCH\" or \"MISMATCH\" or \"NA\", \"decision\":\"KEEP\" or \"REJECT\"}. Do not explain. Do not use Markdown.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "prompt_token_count": 360,
+    "model_path": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-2B/snapshots/15852e8c16360a2fea060d615a32b45270f8a8fc",
+    "image_input_size_wh": [
+      640,
+      427
+    ],
+    "coordinate_protocol": "original JEV textual pixel coordinates, integer-rounded identically to collection script",
+    "temperature": 1.7765671239028529,
+    "p_head": 0.4753592610359192
+  },
+  "predicate": "on",
+  "routed_predicate": false,
+  "probe_metadata": {
+    "predicate_surface": "worn by",
+    "family": null,
+    "semantic_status": "unsupported",
+    "skip_reason": "no_family_for:worn by",
+    "n_legal_candidates": 0,
+    "rule_id": null
+  },
+  "rivals": [],
+  "seconds": 0.20220716623589396,
+  "peak_allocated_gb": 4.69932032
+}

@@ -1,0 +1,22 @@
+{
+  "arm": "omni",
+  "model": "visionr1",
+  "example_index": 13,
+  "sample_id": "hallu_000247_COCO_train2014_000000488066__attr",
+  "hallucination_type": "attribute",
+  "query": "the plastic teddy bear sitting on the chair",
+  "candidate_bbox_xyxy": null,
+  "upstream_record_sha256": "7640e578bb20067874ab940779e9eb1fdee2ef807618ee4812212d1d72ebf550",
+  "source_record": "/home/u2025141034/benchmark/rrwr_20261010_t3_attention/attention/results/visionr1/13_attribute_grounding.json",
+  "image_sha256": "8e5c93d26f27cd7fea252172461b6592de15abc3fa66f02e05d64630daa9ca75",
+  "source_model_path": "/home/u2025141034/models/OmniVerifier-7B",
+  "torch": "2.12.1+cu126",
+  "transformers": "5.12.1",
+  "drew": false,
+  "original": null,
+  "rivals": [],
+  "reason": "original_no_box",
+  "attention_available": false,
+  "seconds": 0.00022818613797426224,
+  "peak_allocated_gb": 16.592876032
+}

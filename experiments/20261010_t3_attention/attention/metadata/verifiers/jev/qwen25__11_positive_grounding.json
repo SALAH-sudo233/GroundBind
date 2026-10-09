@@ -1,0 +1,48 @@
+{
+  "arm": "jev",
+  "model": "qwen25",
+  "example_index": 11,
+  "sample_id": "hallu_000000_COCO_train2014_000000253945",
+  "hallucination_type": "positive",
+  "query": "the umbrella held by the person",
+  "candidate_bbox_xyxy": [
+    135.0,
+    22.0,
+    289.0,
+    70.0
+  ],
+  "upstream_record_sha256": "c368c47efe4064357b68196950375e5a59984f722838a0c4f198cecf3d95ffb6",
+  "source_record": "/home/u2025141034/benchmark/rrwr_20261010_t3_attention/attention/results/qwen25/11_positive_grounding.json",
+  "image_sha256": "c45f5120c7877a5ba43e0e906fc663dc9b47c85ee77854a64f6b797e586c139d",
+  "source_model_path": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-2B/snapshots/15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "torch": "2.12.1+cu126",
+  "transformers": "5.12.1",
+  "drew": true,
+  "original": {
+    "z": 3.599320888519287,
+    "prompt": "Inspect the image region [135,22,289,70]. Determine whether the phrase \"the umbrella held by the person\" is fully true for the object in that exact region. Return exactly one JSON object with exactly these two fields: {\"binding\":\"MATCH\" or \"MISMATCH\" or \"NA\", \"decision\":\"KEEP\" or \"REJECT\"}. Do not explain. Do not use Markdown.",
+    "rendered_prompt": "<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|>Inspect the image region [135,22,289,70]. Determine whether the phrase \"the umbrella held by the person\" is fully true for the object in that exact region. Return exactly one JSON object with exactly these two fields: {\"binding\":\"MATCH\" or \"MISMATCH\" or \"NA\", \"decision\":\"KEEP\" or \"REJECT\"}. Do not explain. Do not use Markdown.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "prompt_token_count": 361,
+    "model_path": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-2B/snapshots/15852e8c16360a2fea060d615a32b45270f8a8fc",
+    "image_input_size_wh": [
+      640,
+      427
+    ],
+    "coordinate_protocol": "original JEV textual pixel coordinates, integer-rounded identically to collection script",
+    "temperature": 1.7765671239028529,
+    "p_head": 0.883499801158905
+  },
+  "predicate": "on",
+  "routed_predicate": false,
+  "probe_metadata": {
+    "predicate_surface": "held by",
+    "family": "holding",
+    "semantic_status": "unsupported",
+    "skip_reason": "no_legal_template",
+    "n_legal_candidates": 0,
+    "rule_id": null
+  },
+  "rivals": [],
+  "seconds": 0.20410609291866422,
+  "peak_allocated_gb": 4.699324416
+}

@@ -1,0 +1,22 @@
+{
+  "arm": "omni",
+  "model": "visionr1",
+  "example_index": 1,
+  "sample_id": "hallu_000335_COCO_train2014_000000500400__cooc",
+  "hallucination_type": "co_occurrence",
+  "query": "the pasta in front of the person",
+  "candidate_bbox_xyxy": null,
+  "upstream_record_sha256": "1669fa66d8316355bf822bf0fcee39845e3ae6ef07d4a901708213eb0cfc9655",
+  "source_record": "/home/u2025141034/benchmark/rrwr_20261010_t3_attention/attention/results/visionr1/01_co_occurrence_grounding.json",
+  "image_sha256": "9e9fd924f20a8358127552d9229c15485faba9a8c42c6a8e6230254149e87dc1",
+  "source_model_path": "/home/u2025141034/models/OmniVerifier-7B",
+  "torch": "2.12.1+cu126",
+  "transformers": "5.12.1",
+  "drew": false,
+  "original": null,
+  "rivals": [],
+  "reason": "original_no_box",
+  "attention_available": false,
+  "seconds": 0.0003687432035803795,
+  "peak_allocated_gb": 16.592876032
+}

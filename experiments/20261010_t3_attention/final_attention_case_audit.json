@@ -1,0 +1,694 @@
+{
+  "audit_date_utc": "2026-10-09T18:30:51.388824+00:00",
+  "scope": "Independent read-only audit of finalized attention-case qualitative summary; only this audit JSON is written. No manuscript source, inference, or verifier scores modified.",
+  "root": "/Users/yyyb/.codex/.chatgpt-projects/g-p-6a9fadb9a6ec8191bbc34778fa9b4a7d/.build/rrwr_four_tasks_20261010/figures_work/attention_cases",
+  "source_files_sha256": {
+    "build_attention_visuals.py": "1ea2ea7b6dab0da98491a61d7c6169e28e9699d197a557776670e8bcb0e4658d",
+    "observed_case_summary.json": "ea5989b95c1fb023719bee720eb0b547a6ba1bbd24acb111fdd02335f45239b6",
+    "discussion_report.html": "93ebed63e54f2be45b4021cd318dcb462e756176751fac1f7ed8df09ba4a25e4",
+    "fresh_asv_decisions.json": "591a7b4330ffea3e794c6e1aa2ac42be34485abc0e92a9efa4ba5dfb0f03e160",
+    "attention_spatial_metrics.json": "acd00b5b06595cb502b583e9783730359039f855fb2370364753ed0faae70d5e",
+    "visualization_metadata.json": "804430286c182f979005ea4dfb3e0ff2f49ac89317b5a881b695a9eeae8798ef",
+    "generation_budget_manifest.json": "72f18cc1b3cae7145008f3f281527e6d3309b664848b45b90b2ba4a0495892bf",
+    "restored_asv_policy.json": "b7c5e58539b783b408f8437096081b1ba2729fae37e83272183f8f3e35e87fb8"
+  },
+  "actual_records": {
+    "upstream_VQA_DG_records": 300,
+    "Omni_fresh_candidate_records": 150,
+    "JEV_fresh_candidate_records": 150,
+    "ASV_candidate_decisions": 150,
+    "image_cases_per_model": 15,
+    "query_pairs_per_model": 75,
+    "negative_queries_per_model": 60
+  },
+  "per_model": {
+    "qwen25": {
+      "reported_counts": {
+        "total_images": 15,
+        "vqa_queries": 75,
+        "grounding_queries": 75,
+        "vqa_explicit_yes": 20,
+        "vqa_explicit_no": 41,
+        "vqa_unparsed": 14,
+        "grounding_parseable_coordinates": 59,
+        "grounding_no_parsed_bbox": 16,
+        "grounding_invalid_order_or_zero_area": 0,
+        "generation_truncated_records": 1,
+        "negative_vqa_no_with_coordinates": 27,
+        "negative_vqa_yes_with_coordinates": 9,
+        "asv_rejected_emitted_candidates": 42,
+        "asv_retained_emitted_candidates": 17,
+        "asv_missing_verifier_fallback_retain": 0,
+        "negative_complete_coordinate_maps": 44,
+        "anchor_density_above_uniform_maps": 23,
+        "cosine_eligible_complete_positive_reference_maps": 44,
+        "cosine_excluded_incomplete_or_invalid_positive_reference_maps": 0,
+        "cosine_ge_08_with_complete_positive_reference_maps": 43
+      },
+      "VQA_no_with_complete_positive_area_DG_bbox": 27,
+      "ASV_removed_among_that_pattern": 27,
+      "pattern_truncated_or_invalid_bbox_count": 0,
+      "pattern_cases": [
+        {
+          "case": 1,
+          "type": "object",
+          "bbox": [
+            152.0,
+            293.0,
+            397.0,
+            379.0
+          ],
+          "ASV_reason": "support_reject",
+          "VQA_source": "results/qwen25/01_object_vqa.json",
+          "DG_source": "results/qwen25/01_object_grounding.json"
+        },
+        {
+          "case": 1,
+          "type": "co_occurrence",
+          "bbox": [
+            152.0,
+            293.0,
+            397.0,
+            379.0
+          ],
+          "ASV_reason": "support_reject",
+          "VQA_source": "results/qwen25/01_co_occurrence_vqa.json",
+          "DG_source": "results/qwen25/01_co_occurrence_grounding.json"
+        },
+        {
+          "case": 2,
+          "type": "co_occurrence",
+          "bbox": [
+            124.0,
+            127.0,
+            336.0,
+            368.0
+          ],
+          "ASV_reason": "support_reject",
+          "VQA_source": "results/qwen25/02_co_occurrence_vqa.json",
+          "DG_source": "results/qwen25/02_co_occurrence_grounding.json"
+        },
+        {
+          "case": 6,
+          "type": "object",
+          "bbox": [
+            135.0,
+            92.0,
+            357.0,
+            626.0
+          ],
+          "ASV_reason": "support_reject",
+          "VQA_source": "results/qwen25/06_object_vqa.json",
+          "DG_source": "results/qwen25/06_object_grounding.json"
+        },
+        {
+          "case": 6,
+          "type": "co_occurrence",
+          "bbox": [
+            135.0,
+            92.0,
+            357.0,
+            627.0
+          ],
+          "ASV_reason": "support_reject",
+          "VQA_source": "results/qwen25/06_co_occurrence_vqa.json",
+          "DG_source": "results/qwen25/06_co_occurrence_grounding.json"
+        },
+        {
+          "case": 6,
+          "type": "attribute",
+          "bbox": [
+            137.0,
+            92.0,
+            353.0,
+            627.0
+          ],
+          "ASV_reason": "support_reject",
+          "VQA_source": "results/qwen25/06_attribute_vqa.json",
+          "DG_source": "results/qwen25/06_attribute_grounding.json"
+        },
+        {
+          "case": 8,
+          "type": "co_occurrence",
+          "bbox": [
+            453.0,
+            139.0,
+            644.0,
+            378.0
+          ],
+          "ASV_reason": "support_reject",
+          "VQA_source": "results/qwen25/08_co_occurrence_vqa.json",
+          "DG_source": "results/qwen25/08_co_occurrence_grounding.json"
+        },
+        {
+          "case": 8,
+          "type": "attribute",
+          "bbox": [
+            228.0,
+            159.0,
+            473.0,
+            409.0
+          ],
+          "ASV_reason": "support_reject",
+          "VQA_source": "results/qwen25/08_attribute_vqa.json",
+          "DG_source": "results/qwen25/08_attribute_grounding.json"
+        },
+        {
+          "case": 9,
+          "type": "object",
+          "bbox": [
+            193.0,
+            80.0,
+            320.0,
+            252.0
+          ],
+          "ASV_reason": "support_reject",
+          "VQA_source": "results/qwen25/09_object_vqa.json",
+          "DG_source": "results/qwen25/09_object_grounding.json"
+        },
+        {
+          "case": 9,
+          "type": "co_occurrence",
+          "bbox": [
+            0.0,
+            0.0,
+            258.0,
+            243.0
+          ],
+          "ASV_reason": "support_reject",
+          "VQA_source": "results/qwen25/09_co_occurrence_vqa.json",
+          "DG_source": "results/qwen25/09_co_occurrence_grounding.json"
+        },
+        {
+          "case": 9,
+          "type": "attribute",
+          "bbox": [
+            193.0,
+            80.0,
+            320.0,
+            252.0
+          ],
+          "ASV_reason": "support_reject",
+          "VQA_source": "results/qwen25/09_attribute_vqa.json",
+          "DG_source": "results/qwen25/09_attribute_grounding.json"
+        },
+        {
+          "case": 9,
+          "type": "relation",
+          "bbox": [
+            193.0,
+            80.0,
+            320.0,
+            252.0
+          ],
+          "ASV_reason": "structural_reject",
+          "VQA_source": "results/qwen25/09_relation_vqa.json",
+          "DG_source": "results/qwen25/09_relation_grounding.json"
+        },
+        {
+          "case": 10,
+          "type": "object",
+          "bbox": [
+            179.0,
+            423.0,
+            250.0,
+            644.0
+          ],
+          "ASV_reason": "support_reject",
+          "VQA_source": "results/qwen25/10_object_vqa.json",
+          "DG_source": "results/qwen25/10_object_grounding.json"
+        },
+        {
+          "case": 10,
+          "type": "attribute",
+          "bbox": [
+            129.0,
+            427.0,
+            235.0,
+            644.0
+          ],
+          "ASV_reason": "support_reject",
+          "VQA_source": "results/qwen25/10_attribute_vqa.json",
+          "DG_source": "results/qwen25/10_attribute_grounding.json"
+        },
+        {
+          "case": 11,
+          "type": "co_occurrence",
+          "bbox": [
+            578.0,
+            139.0,
+            606.0,
+            267.0
+          ],
+          "ASV_reason": "support_reject",
+          "VQA_source": "results/qwen25/11_co_occurrence_vqa.json",
+          "DG_source": "results/qwen25/11_co_occurrence_grounding.json"
+        },
+        {
+          "case": 12,
+          "type": "co_occurrence",
+          "bbox": [
+            238.0,
+            197.0,
+            439.0,
+            346.0
+          ],
+          "ASV_reason": "support_reject",
+          "VQA_source": "results/qwen25/12_co_occurrence_vqa.json",
+          "DG_source": "results/qwen25/12_co_occurrence_grounding.json"
+        },
+        {
+          "case": 12,
+          "type": "attribute",
+          "bbox": [
+            298.0,
+            193.0,
+            479.0,
+            347.0
+          ],
+          "ASV_reason": "support_reject",
+          "VQA_source": "results/qwen25/12_attribute_vqa.json",
+          "DG_source": "results/qwen25/12_attribute_grounding.json"
+        },
+        {
+          "case": 13,
+          "type": "object",
+          "bbox": [
+            289.0,
+            83.0,
+            460.0,
+            275.0
+          ],
+          "ASV_reason": "support_reject",
+          "VQA_source": "results/qwen25/13_object_vqa.json",
+          "DG_source": "results/qwen25/13_object_grounding.json"
+        },
+        {
+          "case": 13,
+          "type": "co_occurrence",
+          "bbox": [
+            458.0,
+            243.0,
+            644.0,
+            415.0
+          ],
+          "ASV_reason": "support_reject",
+          "VQA_source": "results/qwen25/13_co_occurrence_vqa.json",
+          "DG_source": "results/qwen25/13_co_occurrence_grounding.json"
+        },
+        {
+          "case": 13,
+          "type": "attribute",
+          "bbox": [
+            289.0,
+            83.0,
+            460.0,
+            275.0
+          ],
+          "ASV_reason": "support_reject",
+          "VQA_source": "results/qwen25/13_attribute_vqa.json",
+          "DG_source": "results/qwen25/13_attribute_grounding.json"
+        },
+        {
+          "case": 14,
+          "type": "object",
+          "bbox": [
+            43.0,
+            210.0,
+            225.0,
+            378.0
+          ],
+          "ASV_reason": "support_reject",
+          "VQA_source": "results/qwen25/14_object_vqa.json",
+          "DG_source": "results/qwen25/14_object_grounding.json"
+        },
+        {
+          "case": 15,
+          "type": "object",
+          "bbox": [
+            197.0,
+            77.0,
+            465.0,
+            213.0
+          ],
+          "ASV_reason": "support_reject",
+          "VQA_source": "results/qwen25/15_object_vqa.json",
+          "DG_source": "results/qwen25/15_object_grounding.json"
+        },
+        {
+          "case": 15,
+          "type": "attribute",
+          "bbox": [
+            172.0,
+            53.0,
+            529.0,
+            242.0
+          ],
+          "ASV_reason": "support_reject",
+          "VQA_source": "results/qwen25/15_attribute_vqa.json",
+          "DG_source": "results/qwen25/15_attribute_grounding.json"
+        },
+        {
+          "case": 15,
+          "type": "relation",
+          "bbox": [
+            172.0,
+            253.0,
+            500.0,
+            459.0
+          ],
+          "ASV_reason": "support_reject",
+          "VQA_source": "results/qwen25/15_relation_vqa.json",
+          "DG_source": "results/qwen25/15_relation_grounding.json"
+        },
+        {
+          "case": 16,
+          "type": "object",
+          "bbox": [
+            0.0,
+            287.0,
+            213.0,
+            415.0
+          ],
+          "ASV_reason": "support_reject",
+          "VQA_source": "results/qwen25/16_object_vqa.json",
+          "DG_source": "results/qwen25/16_object_grounding.json"
+        },
+        {
+          "case": 16,
+          "type": "co_occurrence",
+          "bbox": [
+            0.0,
+            287.0,
+            213.0,
+            415.0
+          ],
+          "ASV_reason": "support_reject",
+          "VQA_source": "results/qwen25/16_co_occurrence_vqa.json",
+          "DG_source": "results/qwen25/16_co_occurrence_grounding.json"
+        },
+        {
+          "case": 16,
+          "type": "relation",
+          "bbox": [
+            3.0,
+            287.0,
+            215.0,
+            415.0
+          ],
+          "ASV_reason": "support_reject",
+          "VQA_source": "results/qwen25/16_relation_vqa.json",
+          "DG_source": "results/qwen25/16_relation_grounding.json"
+        }
+      ],
+      "attention_descriptive_counts_independently_recomputed": {
+        "negative_complete_coordinate_maps": 44,
+        "anchor_density_above_uniform_maps": 23,
+        "cosine_eligible_complete_positive_reference_maps": 44,
+        "cosine_excluded_incomplete_or_invalid_positive_reference_maps": 0,
+        "cosine_ge_08_with_complete_positive_reference_maps": 43
+      },
+      "attention_descriptive_counts_match_final_summary": true
+    },
+    "visionr1": {
+      "reported_counts": {
+        "total_images": 15,
+        "vqa_queries": 75,
+        "grounding_queries": 75,
+        "vqa_explicit_yes": 18,
+        "vqa_explicit_no": 33,
+        "vqa_unparsed": 24,
+        "grounding_parseable_coordinates": 48,
+        "grounding_no_parsed_bbox": 27,
+        "grounding_invalid_order_or_zero_area": 3,
+        "generation_truncated_records": 4,
+        "negative_vqa_no_with_coordinates": 16,
+        "negative_vqa_yes_with_coordinates": 10,
+        "asv_rejected_emitted_candidates": 30,
+        "asv_retained_emitted_candidates": 18,
+        "asv_missing_verifier_fallback_retain": 2,
+        "negative_complete_coordinate_maps": 32,
+        "anchor_density_above_uniform_maps": 11,
+        "cosine_eligible_complete_positive_reference_maps": 27,
+        "cosine_excluded_incomplete_or_invalid_positive_reference_maps": 5,
+        "cosine_ge_08_with_complete_positive_reference_maps": 27
+      },
+      "VQA_no_with_complete_positive_area_DG_bbox": 16,
+      "ASV_removed_among_that_pattern": 16,
+      "pattern_truncated_or_invalid_bbox_count": 0,
+      "pattern_cases": [
+        {
+          "case": 2,
+          "type": "co_occurrence",
+          "bbox": [
+            119.0,
+            118.0,
+            334.0,
+            367.0
+          ],
+          "ASV_reason": "support_reject",
+          "VQA_source": "results/visionr1/02_co_occurrence_vqa.json",
+          "DG_source": "results/visionr1/02_co_occurrence_grounding.json"
+        },
+        {
+          "case": 2,
+          "type": "attribute",
+          "bbox": [
+            119.0,
+            118.0,
+            334.0,
+            367.0
+          ],
+          "ASV_reason": "support_reject",
+          "VQA_source": "results/visionr1/02_attribute_vqa.json",
+          "DG_source": "results/visionr1/02_attribute_grounding.json"
+        },
+        {
+          "case": 5,
+          "type": "object",
+          "bbox": [
+            332.0,
+            25.0,
+            662.0,
+            318.0
+          ],
+          "ASV_reason": "support_reject",
+          "VQA_source": "results/visionr1/05_object_vqa.json",
+          "DG_source": "results/visionr1/05_object_grounding.json"
+        },
+        {
+          "case": 6,
+          "type": "object",
+          "bbox": [
+            11.0,
+            235.0,
+            87.0,
+            299.0
+          ],
+          "ASV_reason": "support_reject",
+          "VQA_source": "results/visionr1/06_object_vqa.json",
+          "DG_source": "results/visionr1/06_object_grounding.json"
+        },
+        {
+          "case": 8,
+          "type": "attribute",
+          "bbox": [
+            228.0,
+            113.0,
+            475.0,
+            409.0
+          ],
+          "ASV_reason": "support_reject",
+          "VQA_source": "results/visionr1/08_attribute_vqa.json",
+          "DG_source": "results/visionr1/08_attribute_grounding.json"
+        },
+        {
+          "case": 8,
+          "type": "relation",
+          "bbox": [
+            458.0,
+            119.0,
+            663.0,
+            371.0
+          ],
+          "ASV_reason": "support_reject",
+          "VQA_source": "results/visionr1/08_relation_vqa.json",
+          "DG_source": "results/visionr1/08_relation_grounding.json"
+        },
+        {
+          "case": 9,
+          "type": "object",
+          "bbox": [
+            119.0,
+            78.0,
+            320.0,
+            254.0
+          ],
+          "ASV_reason": "support_reject",
+          "VQA_source": "results/visionr1/09_object_vqa.json",
+          "DG_source": "results/visionr1/09_object_grounding.json"
+        },
+        {
+          "case": 9,
+          "type": "relation",
+          "bbox": [
+            119.0,
+            80.0,
+            320.0,
+            253.0
+          ],
+          "ASV_reason": "structural_reject",
+          "VQA_source": "results/visionr1/09_relation_vqa.json",
+          "DG_source": "results/visionr1/09_relation_grounding.json"
+        },
+        {
+          "case": 12,
+          "type": "object",
+          "bbox": [
+            289.0,
+            117.0,
+            483.0,
+            340.0
+          ],
+          "ASV_reason": "support_reject",
+          "VQA_source": "results/visionr1/12_object_vqa.json",
+          "DG_source": "results/visionr1/12_object_grounding.json"
+        },
+        {
+          "case": 12,
+          "type": "co_occurrence",
+          "bbox": [
+            298.0,
+            117.0,
+            530.0,
+            339.0
+          ],
+          "ASV_reason": "support_reject",
+          "VQA_source": "results/visionr1/12_co_occurrence_vqa.json",
+          "DG_source": "results/visionr1/12_co_occurrence_grounding.json"
+        },
+        {
+          "case": 12,
+          "type": "attribute",
+          "bbox": [
+            503.0,
+            118.0,
+            597.0,
+            374.0
+          ],
+          "ASV_reason": "support_reject",
+          "VQA_source": "results/visionr1/12_attribute_vqa.json",
+          "DG_source": "results/visionr1/12_attribute_grounding.json"
+        },
+        {
+          "case": 15,
+          "type": "object",
+          "bbox": [
+            113.0,
+            250.0,
+            593.0,
+            470.0
+          ],
+          "ASV_reason": "support_reject",
+          "VQA_source": "results/visionr1/15_object_vqa.json",
+          "DG_source": "results/visionr1/15_object_grounding.json"
+        },
+        {
+          "case": 15,
+          "type": "attribute",
+          "bbox": [
+            113.0,
+            250.0,
+            593.0,
+            470.0
+          ],
+          "ASV_reason": "support_reject",
+          "VQA_source": "results/visionr1/15_attribute_vqa.json",
+          "DG_source": "results/visionr1/15_attribute_grounding.json"
+        },
+        {
+          "case": 16,
+          "type": "co_occurrence",
+          "bbox": [
+            0.0,
+            295.0,
+            210.0,
+            418.0
+          ],
+          "ASV_reason": "support_reject",
+          "VQA_source": "results/visionr1/16_co_occurrence_vqa.json",
+          "DG_source": "results/visionr1/16_co_occurrence_grounding.json"
+        },
+        {
+          "case": 16,
+          "type": "relation",
+          "bbox": [
+            0.0,
+            295.0,
+            210.0,
+            418.0
+          ],
+          "ASV_reason": "support_reject",
+          "VQA_source": "results/visionr1/16_relation_vqa.json",
+          "DG_source": "results/visionr1/16_relation_grounding.json"
+        },
+        {
+          "case": 20,
+          "type": "relation",
+          "bbox": [
+            397.0,
+            37.0,
+            460.0,
+            279.0
+          ],
+          "ASV_reason": "support_reject",
+          "VQA_source": "results/visionr1/20_relation_vqa.json",
+          "DG_source": "results/visionr1/20_relation_grounding.json"
+        }
+      ],
+      "attention_descriptive_counts_independently_recomputed": {
+        "negative_complete_coordinate_maps": 32,
+        "anchor_density_above_uniform_maps": 11,
+        "cosine_eligible_complete_positive_reference_maps": 27,
+        "cosine_excluded_incomplete_or_invalid_positive_reference_maps": 5,
+        "cosine_ge_08_with_complete_positive_reference_maps": 27
+      },
+      "attention_descriptive_counts_match_final_summary": true
+    }
+  },
+  "completed_candidate_provenance_checks": {
+    "VQA_DG_same_image_and_query_pairs_checked": 150,
+    "fresh_verifier_upstream_SHA_bbox_image_SHA_crosschecks_checked": 300,
+    "errors": 0,
+    "same_upstream_candidate_used_for_ASV": true,
+    "ASV_kept_bbox_equals_original_or_None": true,
+    "original_frozen_policy_keep_reason_routing_fold_decisions_recomputed": 150,
+    "policy_decision_errors": 0,
+    "policy_score_floating_point_max_abs_difference": 2.7755575615628914e-17,
+    "policy_score_comparison_tolerance": 1e-12,
+    "before_after_identical_upstream_attention_hash_pairs": 150,
+    "before_after_all_match": true
+  },
+  "truncation_handling": {
+    "initial_capped_records": 12,
+    "budget_only_rerun_records": 12,
+    "untouched_records": 288,
+    "final_still_capped_records": 5,
+    "truncated_VQA_not_parsed_as_complete_yes_or_no": true,
+    "emitted_prefix_coordinate_candidates_preserved_with_explicit_prefix_labels": true,
+    "prefix_and_invalid_coordinate_totals_separately_reported": true,
+    "core_43_pattern_all_complete_valid": true,
+    "attention_cosine_summary_requires_complete_valid_positive_reference": true
+  },
+  "interpretation_limits": [
+    "Nonrandom illustrative 15-image cohort with new explanation-plus-answer prompts; counts do not replace manuscript baseline/ASV metrics.",
+    "Original annotation labels remain needs_human_review and are explicitly disclosed.",
+    "Supported-positive anchor is not a negative-query GT box.",
+    "Decoder attention is descriptive; report explicitly states that it does not prove causal mechanism.",
+    "ASV filters the same candidate; before/after upstream attention arrays are identical.",
+    "Attention cosine statistics exclude truncated/invalid positive references; invalid current coordinate geometry is excluded from descriptive primary map summaries."
+  ],
+  "final_report_causal_limit_explicit": true,
+  "pass": true,
+  "unresolved_findings": []
+}

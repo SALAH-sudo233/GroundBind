@@ -1,0 +1,22 @@
+{
+  "arm": "jev",
+  "model": "qwen25",
+  "example_index": 11,
+  "sample_id": "hallu_000000_COCO_train2014_000000253945__obj",
+  "hallucination_type": "object",
+  "query": "the balloon held by the person",
+  "candidate_bbox_xyxy": null,
+  "upstream_record_sha256": "edbb997d96ca763ed7a638b125f840be3a1b0e8b8a73c1d90a50b795f75185f8",
+  "source_record": "/home/u2025141034/benchmark/rrwr_20261010_t3_attention/attention/results/qwen25/11_object_grounding.json",
+  "image_sha256": "c45f5120c7877a5ba43e0e906fc663dc9b47c85ee77854a64f6b797e586c139d",
+  "source_model_path": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-2B/snapshots/15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "torch": "2.12.1+cu126",
+  "transformers": "5.12.1",
+  "drew": false,
+  "original": null,
+  "rivals": [],
+  "reason": "original_no_box",
+  "attention_available": false,
+  "seconds": 0.00020505813881754875,
+  "peak_allocated_gb": 4.44507136
+}

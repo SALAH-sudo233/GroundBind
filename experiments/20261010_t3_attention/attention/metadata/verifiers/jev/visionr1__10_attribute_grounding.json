@@ -1,0 +1,22 @@
+{
+  "arm": "jev",
+  "model": "visionr1",
+  "example_index": 10,
+  "sample_id": "hallu_000544_COCO_train2014_000000500634__attr",
+  "hallucination_type": "attribute",
+  "query": "the golden fork next to the spoon",
+  "candidate_bbox_xyxy": null,
+  "upstream_record_sha256": "3cd482d77e93bfa224755a49a0f3bc1e191a0625569f8f598e2629a4fc0a3322",
+  "source_record": "/home/u2025141034/benchmark/rrwr_20261010_t3_attention/attention/results/visionr1/10_attribute_grounding.json",
+  "image_sha256": "032f9247bfefcfed11e5e38fc04de77b12e80b866f4c4ae7f1b138b1fd910613",
+  "source_model_path": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-2B/snapshots/15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "torch": "2.12.1+cu126",
+  "transformers": "5.12.1",
+  "drew": false,
+  "original": null,
+  "rivals": [],
+  "reason": "original_no_box",
+  "attention_available": false,
+  "seconds": 0.0002199653536081314,
+  "peak_allocated_gb": 4.44507136
+}

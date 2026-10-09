@@ -1,0 +1,22 @@
+{
+  "arm": "omni",
+  "model": "qwen25",
+  "example_index": 13,
+  "sample_id": "hallu_000247_COCO_train2014_000000488066__rel",
+  "hallucination_type": "relation",
+  "query": "the teddy bear standing next to the chair",
+  "candidate_bbox_xyxy": null,
+  "upstream_record_sha256": "9b776f9a0688c24d630e1fac2d0c9dcb500cb921d4968b2aa7678e27dbfa385b",
+  "source_record": "/home/u2025141034/benchmark/rrwr_20261010_t3_attention/attention/results/qwen25/13_relation_grounding.json",
+  "image_sha256": "8e5c93d26f27cd7fea252172461b6592de15abc3fa66f02e05d64630daa9ca75",
+  "source_model_path": "/home/u2025141034/models/OmniVerifier-7B",
+  "torch": "2.12.1+cu126",
+  "transformers": "5.12.1",
+  "drew": false,
+  "original": null,
+  "rivals": [],
+  "reason": "original_no_box",
+  "attention_available": false,
+  "seconds": 0.00020861392840743065,
+  "peak_allocated_gb": 16.592876032
+}

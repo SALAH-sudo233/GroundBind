@@ -1,0 +1,85 @@
+{
+  "arm": "jev",
+  "model": "qwen25",
+  "example_index": 8,
+  "sample_id": "hallu_000119_COCO_train2014_000000525342",
+  "hallucination_type": "positive",
+  "query": "the orange in front of the apples",
+  "candidate_bbox_xyxy": [
+    228.0,
+    159.0,
+    473.0,
+    409.0
+  ],
+  "upstream_record_sha256": "4c3b3722afe78a2bf25dc4ffac3adb492521d29b798e45397372c208cd5b7b4f",
+  "source_record": "/home/u2025141034/benchmark/rrwr_20261010_t3_attention/attention/results/qwen25/08_positive_grounding.json",
+  "image_sha256": "79ec8a0f3df631d39ecc2940c81d75d68fde9f30c3e4995a6911c80c9265aa2c",
+  "source_model_path": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-2B/snapshots/15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "torch": "2.12.1+cu126",
+  "transformers": "5.12.1",
+  "drew": true,
+  "original": {
+    "z": -1.9380565881729126,
+    "prompt": "Inspect the image region [228,159,473,409]. Determine whether the phrase \"the orange in front of the apples\" is fully true for the object in that exact region. Return exactly one JSON object with exactly these two fields: {\"binding\":\"MATCH\" or \"MISMATCH\" or \"NA\", \"decision\":\"KEEP\" or \"REJECT\"}. Do not explain. Do not use Markdown.",
+    "rendered_prompt": "<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|>Inspect the image region [228,159,473,409]. Determine whether the phrase \"the orange in front of the apples\" is fully true for the object in that exact region. Return exactly one JSON object with exactly these two fields: {\"binding\":\"MATCH\" or \"MISMATCH\" or \"NA\", \"decision\":\"KEEP\" or \"REJECT\"}. Do not explain. Do not use Markdown.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "prompt_token_count": 364,
+    "model_path": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-2B/snapshots/15852e8c16360a2fea060d615a32b45270f8a8fc",
+    "image_input_size_wh": [
+      640,
+      427
+    ],
+    "coordinate_protocol": "original JEV textual pixel coordinates, integer-rounded identically to collection script",
+    "temperature": 1.7765671239028529,
+    "p_head": 0.2514488995075226
+  },
+  "predicate": "in front of",
+  "routed_predicate": true,
+  "probe_metadata": {
+    "predicate_surface": "in front of",
+    "family": "depth_order",
+    "semantic_status": "supported",
+    "skip_reason": null,
+    "n_legal_candidates": 2,
+    "rule_id": "comp:in front of->behind"
+  },
+  "rivals": [
+    {
+      "query": "the orange behind the apples",
+      "probe_type": "competitive",
+      "rule_id": "comp:in front of->behind",
+      "edited_surface": "behind",
+      "z": -7.4993109703063965,
+      "prompt": "Inspect the image region [228,159,473,409]. Determine whether the phrase \"the orange behind the apples\" is fully true for the object in that exact region. Return exactly one JSON object with exactly these two fields: {\"binding\":\"MATCH\" or \"MISMATCH\" or \"NA\", \"decision\":\"KEEP\" or \"REJECT\"}. Do not explain. Do not use Markdown.",
+      "rendered_prompt": "<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|>Inspect the image region [228,159,473,409]. Determine whether the phrase \"the orange behind the apples\" is fully true for the object in that exact region. Return exactly one JSON object with exactly these two fields: {\"binding\":\"MATCH\" or \"MISMATCH\" or \"NA\", \"decision\":\"KEEP\" or \"REJECT\"}. Do not explain. Do not use Markdown.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+      "prompt_token_count": 362,
+      "model_path": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-2B/snapshots/15852e8c16360a2fea060d615a32b45270f8a8fc",
+      "image_input_size_wh": [
+        640,
+        427
+      ],
+      "coordinate_protocol": "original JEV textual pixel coordinates, integer-rounded identically to collection script",
+      "temperature": 1.7765671239028529,
+      "p_head": 0.014468072913587093
+    },
+    {
+      "query": "the orange next to the apples",
+      "probe_type": "competitive",
+      "rule_id": "comp:in front of->next to",
+      "edited_surface": "next to",
+      "z": -1.0320554971694946,
+      "prompt": "Inspect the image region [228,159,473,409]. Determine whether the phrase \"the orange next to the apples\" is fully true for the object in that exact region. Return exactly one JSON object with exactly these two fields: {\"binding\":\"MATCH\" or \"MISMATCH\" or \"NA\", \"decision\":\"KEEP\" or \"REJECT\"}. Do not explain. Do not use Markdown.",
+      "rendered_prompt": "<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|>Inspect the image region [228,159,473,409]. Determine whether the phrase \"the orange next to the apples\" is fully true for the object in that exact region. Return exactly one JSON object with exactly these two fields: {\"binding\":\"MATCH\" or \"MISMATCH\" or \"NA\", \"decision\":\"KEEP\" or \"REJECT\"}. Do not explain. Do not use Markdown.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+      "prompt_token_count": 363,
+      "model_path": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-2B/snapshots/15852e8c16360a2fea060d615a32b45270f8a8fc",
+      "image_input_size_wh": [
+        640,
+        427
+      ],
+      "coordinate_protocol": "original JEV textual pixel coordinates, integer-rounded identically to collection script",
+      "temperature": 1.7765671239028529,
+      "p_head": 0.3587193787097931
+    }
+  ],
+  "seconds": 0.6056496477685869,
+  "peak_allocated_gb": 4.699336704
+}

@@ -1,0 +1,48 @@
+{
+  "arm": "jev",
+  "model": "qwen25",
+  "example_index": 13,
+  "sample_id": "hallu_000247_COCO_train2014_000000488066__obj",
+  "hallucination_type": "object",
+  "query": "the robot sitting on the chair",
+  "candidate_bbox_xyxy": [
+    289.0,
+    83.0,
+    460.0,
+    275.0
+  ],
+  "upstream_record_sha256": "0f6fc1fffe82c013d8159b7f9869ea4c186b78eda03f0e3052b8bed30601661f",
+  "source_record": "/home/u2025141034/benchmark/rrwr_20261010_t3_attention/attention/results/qwen25/13_object_grounding.json",
+  "image_sha256": "8e5c93d26f27cd7fea252172461b6592de15abc3fa66f02e05d64630daa9ca75",
+  "source_model_path": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-2B/snapshots/15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "torch": "2.12.1+cu126",
+  "transformers": "5.12.1",
+  "drew": true,
+  "original": {
+    "z": -8.900732040405273,
+    "prompt": "Inspect the image region [289,83,460,275]. Determine whether the phrase \"the robot sitting on the chair\" is fully true for the object in that exact region. Return exactly one JSON object with exactly these two fields: {\"binding\":\"MATCH\" or \"MISMATCH\" or \"NA\", \"decision\":\"KEEP\" or \"REJECT\"}. Do not explain. Do not use Markdown.",
+    "rendered_prompt": "<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|>Inspect the image region [289,83,460,275]. Determine whether the phrase \"the robot sitting on the chair\" is fully true for the object in that exact region. Return exactly one JSON object with exactly these two fields: {\"binding\":\"MATCH\" or \"MISMATCH\" or \"NA\", \"decision\":\"KEEP\" or \"REJECT\"}. Do not explain. Do not use Markdown.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "prompt_token_count": 362,
+    "model_path": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-2B/snapshots/15852e8c16360a2fea060d615a32b45270f8a8fc",
+    "image_input_size_wh": [
+      640,
+      427
+    ],
+    "coordinate_protocol": "original JEV textual pixel coordinates, integer-rounded identically to collection script",
+    "temperature": 1.7765671239028529,
+    "p_head": 0.006626212503761053
+  },
+  "predicate": "on",
+  "routed_predicate": false,
+  "probe_metadata": {
+    "predicate_surface": "sitting on",
+    "family": "vertical_or_support",
+    "semantic_status": "unsupported",
+    "skip_reason": "no_legal_template",
+    "n_legal_candidates": 0,
+    "rule_id": null
+  },
+  "rivals": [],
+  "seconds": 0.2038291171193123,
+  "peak_allocated_gb": 4.699328512
+}

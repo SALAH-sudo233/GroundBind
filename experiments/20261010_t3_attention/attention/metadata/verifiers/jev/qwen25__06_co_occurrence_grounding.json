@@ -1,0 +1,48 @@
+{
+  "arm": "jev",
+  "model": "qwen25",
+  "example_index": 6,
+  "sample_id": "hallu_000312_COCO_train2014_000000319430__cooc",
+  "hallucination_type": "co_occurrence",
+  "query": "the wine bottle in the person's hand",
+  "candidate_bbox_xyxy": [
+    135.0,
+    92.0,
+    357.0,
+    627.0
+  ],
+  "upstream_record_sha256": "452845a34aa24818955e1cd2641f26e3df99ab811afa3279bcde805b35caf3ac",
+  "source_record": "/home/u2025141034/benchmark/rrwr_20261010_t3_attention/attention/results/qwen25/06_co_occurrence_grounding.json",
+  "image_sha256": "fe7d93080b5866fe40d8f5f987c57b6b370ff216ec0a283332065c33232fe363",
+  "source_model_path": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-2B/snapshots/15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "torch": "2.12.1+cu126",
+  "transformers": "5.12.1",
+  "drew": true,
+  "original": {
+    "z": -9.370548248291016,
+    "prompt": "Inspect the image region [135,92,357,627]. Determine whether the phrase \"the wine bottle in the person's hand\" is fully true for the object in that exact region. Return exactly one JSON object with exactly these two fields: {\"binding\":\"MATCH\" or \"MISMATCH\" or \"NA\", \"decision\":\"KEEP\" or \"REJECT\"}. Do not explain. Do not use Markdown.",
+    "rendered_prompt": "<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|>Inspect the image region [135,92,357,627]. Determine whether the phrase \"the wine bottle in the person's hand\" is fully true for the object in that exact region. Return exactly one JSON object with exactly these two fields: {\"binding\":\"MATCH\" or \"MISMATCH\" or \"NA\", \"decision\":\"KEEP\" or \"REJECT\"}. Do not explain. Do not use Markdown.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "prompt_token_count": 404,
+    "model_path": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-2B/snapshots/15852e8c16360a2fea060d615a32b45270f8a8fc",
+    "image_input_size_wh": [
+      480,
+      640
+    ],
+    "coordinate_protocol": "original JEV textual pixel coordinates, integer-rounded identically to collection script",
+    "temperature": 1.7765671239028529,
+    "p_head": 0.0050943028181791306
+  },
+  "predicate": "on",
+  "routed_predicate": false,
+  "probe_metadata": {
+    "predicate_surface": "in",
+    "family": null,
+    "semantic_status": "unsupported",
+    "skip_reason": "ambiguous_surface:in",
+    "n_legal_candidates": 0,
+    "rule_id": null
+  },
+  "rivals": [],
+  "seconds": 0.2201118590310216,
+  "peak_allocated_gb": 4.769235968
+}

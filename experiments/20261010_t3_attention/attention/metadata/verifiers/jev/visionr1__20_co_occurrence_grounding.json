@@ -1,0 +1,22 @@
+{
+  "arm": "jev",
+  "model": "visionr1",
+  "example_index": 20,
+  "sample_id": "hallu_000560_COCO_train2014_000000205223__cooc",
+  "hallucination_type": "co_occurrence",
+  "query": "the pocket square on the person's neck",
+  "candidate_bbox_xyxy": null,
+  "upstream_record_sha256": "203e8e2d07d67ffa6dde98f389cba4f6d770f5e34259cd71de5e5269397c9870",
+  "source_record": "/home/u2025141034/benchmark/rrwr_20261010_t3_attention/attention/results/visionr1/20_co_occurrence_grounding.json",
+  "image_sha256": "3bddb298f363bd0d298a7ece660c5779edf4ceb63210888cd54cbba830aca82a",
+  "source_model_path": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-2B/snapshots/15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "torch": "2.12.1+cu126",
+  "transformers": "5.12.1",
+  "drew": false,
+  "original": null,
+  "rivals": [],
+  "reason": "original_no_box",
+  "attention_available": false,
+  "seconds": 0.00024226820096373558,
+  "peak_allocated_gb": 4.44507136
+}

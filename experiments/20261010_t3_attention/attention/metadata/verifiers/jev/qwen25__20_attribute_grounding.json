@@ -1,0 +1,22 @@
+{
+  "arm": "jev",
+  "model": "qwen25",
+  "example_index": 20,
+  "sample_id": "hallu_000560_COCO_train2014_000000205223__attr",
+  "hallucination_type": "attribute",
+  "query": "the red tie on the person's neck",
+  "candidate_bbox_xyxy": null,
+  "upstream_record_sha256": "6a39639f701b9d7e02646cc9001aa386706e4e08f0eaadb02ded62089a1326bb",
+  "source_record": "/home/u2025141034/benchmark/rrwr_20261010_t3_attention/attention/results/qwen25/20_attribute_grounding.json",
+  "image_sha256": "3bddb298f363bd0d298a7ece660c5779edf4ceb63210888cd54cbba830aca82a",
+  "source_model_path": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-2B/snapshots/15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "torch": "2.12.1+cu126",
+  "transformers": "5.12.1",
+  "drew": false,
+  "original": null,
+  "rivals": [],
+  "reason": "original_no_box",
+  "attention_available": false,
+  "seconds": 0.00022747600451111794,
+  "peak_allocated_gb": 4.44507136
+}

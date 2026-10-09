@@ -1,0 +1,831 @@
+{
+  "scope": "read-only final publication engineering/scientific consistency audit; only this report is written",
+  "candidate_root": "/Users/yyyb/.codex/.chatgpt-projects/g-p-6a9fadb9a6ec8191bbc34778fa9b4a7d/.build/rrwr_four_tasks_20261010/candidate",
+  "repository_experiment_root": "/Users/yyyb/.codex/.chatgpt-projects/g-p-6a9fadb9a6ec8191bbc34778fa9b4a7d/.build/rrwr_four_tasks_20261010/repository/experiments/20261010_t3_attention",
+  "candidate_files": {
+    "n_files": 73,
+    "expected_n": 73,
+    "sha256_by_path": {
+      "README.md": "9bc67b2b9f759fc7c6093632f669ff1eeb4bb5f99386d7f20e8a53efbe9eb8c6",
+      "acl.sty": "19dfeddc2c0e448f3926a0bef048a9db3f3611b46265b760caabd7ada4f361de",
+      "acl_latex.tex": "b2e68d4efac790c2dcc9dbbceb7e1f5c766a6b4126152b0771d0edfe4a8b0e51",
+      "acl_natbib.bst": "6fbb306202290f4b68e74ac1460a8b27398500cb6dfeb4492e74c457eae7cd1e",
+      "custom.bib": "4679d6d6909eeebe4a6858e461a25bead0ca10dc9c7ced15a6b4881f955e710e",
+      "figures/apd_caption_scope.pdf": "a380847d69ece4d2bcf794151ed73fb88ebc2dc7eea3fafbc4d3b95ca24dfa34",
+      "figures/apd_caption_scope_content.tex": "9253989b8189ef5b7305340285a11a03ef590bfe99ae8fc504151459c4753226",
+      "figures/apd_cbr_profile.pdf": "46fc4e8648f0e8e9aba598ffe379dcfd9a88ef1d80cf6acbaf44ea4d5454bf8e",
+      "figures/apd_cbr_profile_content.tex": "465d2819f2feb4f9a3fdacedbb4c0b0c90223b71998c451cc0fad516e9d35bef",
+      "figures/apd_family_profile.pdf": "8fa46658a6048f165d0ad18e0a04b80a21705c0c491b36090aa060d1862ac7fd",
+      "figures/apd_family_profile_content.tex": "2e10296f96bde590ee0841f95b50c66aad20d9efe01dbea41758d158c254e5b4",
+      "figures/apd_fgr_ecdf.pdf": "f7f7e9f19dbcb60be6d6dc7e165ad79d1f66a66a189f86c3fc2a3acff33fca69",
+      "figures/apd_fgr_ecdf_content.tex": "dc54d5b07796a266300f6c8018c83292383f3857c91e2552fd32fbfebd145d69",
+      "figures/apd_fgr_waterfall.pdf": "02848dd0745f937bb301e2ee81c51eacaabee66eba71830feeff2052b3213362",
+      "figures/apd_fgr_waterfall_content.tex": "06d2ad9833ced25dada70c89c1253ad1e1f76f4aa7137bb4e8e109fb0d99d580",
+      "figures/apd_four_type_mitigation.pdf": "c8a0c4be922806376d1fd6905e190e85fdfa7a9cc0c9fa5d2e22bae3ec6b5023",
+      "figures/apd_four_type_mitigation_content.tex": "a0a79deb7b27507ce35a1955f983e1ce1210be283ca6e2109f0ede1d8d81415e",
+      "figures/apd_joint_protocol_change.pdf": "57bb8f8a5844f66474fee25a484b8072f1c6b86091b3104a7da972dabb6069f7",
+      "figures/apd_joint_protocol_change_content.tex": "c1b903630f995745a53a8408471e4676cecd37aa3f3ac68f7bcf08ddd7ee184f",
+      "figures/apd_language_region_bounds.pdf": "8569d365a5d7de6426748ec8a99b5d56ee172a5610b6790dc0f91afc58d5ec25",
+      "figures/apd_language_region_bounds_content.tex": "62c1d1e77b91763450e594459d357eceecd52be48b1ce9867e05a07c30016c7b",
+      "figures/apd_localization_fgr_scatter.pdf": "d329a10a7f9ffd9027febfc79f2872129b72ef30574d5759bc6efe0efe4404a6",
+      "figures/apd_localization_fgr_scatter_content.tex": "0feb0c6e9a3b1bb96fab8a914e27a8f8c97c189eb2009d0eb4718f6f71a95ca0",
+      "figures/apd_mitigation_qwen25.pdf": "7b42c1d60ec974fc655bcfa34fa9971c2f7a0debffea7259dd8e5cbf6dde3888",
+      "figures/apd_mitigation_qwen25_content.tex": "c23efebbd5d0c0ffb9f8bd856b0be1f7499a1e5fa01542cdb897bb1d26c33170",
+      "figures/apd_mitigation_tradeoffs_content.tex": "1af1e3b9b5922f45baac0fbdb022bd40bc20aba7ccbfba2b2fae128e911150d3",
+      "figures/apd_mitigation_treevgr.pdf": "6398012a6a78b954650489700a4ea53b4fed7b0fa57e50ee874bd512eebf0213",
+      "figures/apd_mitigation_visionr1.pdf": "65022f11bda5511325209a66f3f066d7db45734220833dd34823029ff89fb7f1",
+      "figures/apd_semantic_grounding_slope.pdf": "0f5af2bf60e870d16f21ecb415dc1e786657a3069de88e9857737cb872f76d9f",
+      "figures/apd_semantic_grounding_slope_content.tex": "cd1e5f13eb5923ebb93f033b5ecda9425a1c7678fa91d3fb8fda5c4c5a6e5d56",
+      "figures/main_language_grounding.pdf": "8ffaf3ab67a06cfcc1786fd4747b2a3f8dfc8b73b6e9d337d116393bb49d5525",
+      "figures/main_language_grounding_content.tex": "18a1756ee808a29e16673500c59a170e723fba18448b577a59752f8e19dbd092",
+      "figures/main_mitigation_examples_content.tex": "1e934587de1f66ad924e4485ac5b2bcefcc76ee9cf094a3c46207dda81be351a",
+      "figures/main_mitigation_four_models.pdf": "4b59a72fc93de78c0cf6fa665482aa3811247ac053e1511b415a20bd8af5de54",
+      "figures/main_semantic_difficulty_content.tex": "da7917cd357f5a2f06305046f87c8c6d222f3a580f737cf82397ed2a48676d56",
+      "figures/main_semantic_verification.pdf": "41bcf7708c0b7494f0f90fc211852a54bc938db7e41c43fee47de117a2f8fff0",
+      "figures/main_task_overview.pdf": "543d9b344dcf72622c642c52ff4092d131a520a5c7a29ef06752953217a1d726",
+      "figures/main_task_overview_content.tex": "c608c914051021028fb4028ebc36913fb5c0058c4c500aa6cee0342637e47ee6",
+      "figures/main_teaser.pdf": "d14feebdb6dd871bafbea105e36407ca3da6c5e7d337f8ef01b4912891f8f38c",
+      "figures/main_teaser_content.tex": "d5a453ee08865bdd333ca02fe63716ce08af39c43d9ae8b1bb62b20a2b7fdbff",
+      "figures/main_verification_framework.pdf": "6945d5ace0fbb0ac7d16fe059743d7fdc919ae82aac348afe50d178479c33426",
+      "figures/main_verification_framework_content.tex": "50f55dd219cdca31507dd922dce697d2bda0f99fc238d3e14ea7d5bd38560f16",
+      "sec/0_abstract.tex": "4bc1c9949e10bb457b0d2f9c415d8d77f9e0a9cbbe6484fd178b75134e259432",
+      "sec/1_introduction.tex": "e4fc99236bc399bac0ad88aef0959a21f2ec98673fa95cfcc05753b52416a677",
+      "sec/2_related_work.tex": "742fd32bb79ab29d683ed2e4d4831ca6c61d23f691d13078f72d8daa8a6fd64a",
+      "sec/3_benchmark.tex": "bf082ae507603551eb8048363e540e50ebe175190a018fac0a5f312146827e3d",
+      "sec/4_method.tex": "f8e0d0365700f92a64f348ffaa71e16a684d7b111e4b91fd55347f5029c01899",
+      "sec/5_experiments.tex": "b1adac23fa64ef60b12e0ba602e42afa1a254d3fe21a77ba059958b98cb614d2",
+      "sec/6_conclusion.tex": "2441b24a371bf7962f7a3ec72051a8eabcae72195e3632f1a968f1e18e6cbe4a",
+      "sec/7_appendix.tex": "7d506dd191586934e6c4c2960bfc25b26ad9abe8bd196d73c83268ed845549bd",
+      "sec/apd_diagnostics.tex": "3648339ac04da5d83ca163b01441267db56c3985d057ba0c2c323ed559c97e15",
+      "sec/apd_scoring.tex": "c0f6d6b5477e22fcd4e35005d8885b9eb5cad2eca5e3100dbc17c2eace1ba6c7",
+      "sec/apd_verification.tex": "b37d723c3a7389070b282a886f8f77004d099bbd2dc5353ea049ba34254937b6",
+      "sec/limitations_ethics.tex": "4c29476e893fe4bb893adeaa9c46a9a52fe9907b4b7318aa84e69794773de90a",
+      "sec/main_benchmark_eval.tex": "b20f57f861bb5edd225539881e955639ca9f7f71e038d6a4068bbe10d29f6c75",
+      "sec/main_mitigation_eval.tex": "5709e92d8282e2c4dcf707d83987c077726e26ddc355fa3e7c11c036136600e8",
+      "sec/main_problem_formulation.tex": "e0686ce3e2fb61577aa108f1f59edb16eca4d37b915fe2fa9a6d3fa840be7c40",
+      "styles/presentation.tex": "02e3d119418310d9556518b93e762f18e3e38e8d014b4d2f285c0adb29a658b2",
+      "tables/apd_cbr_direct_en.tex": "f82200f2047aa92bb6e5b45651d9c1a3e23dd6647271988fc86b517b59553f67",
+      "tables/apd_cbr_joint_en.tex": "8b4694c561114238e47e6163a487fb4255e0059c8cdd195c535fee807791cd0c",
+      "tables/apd_description_protocols_en.tex": "d64d01d281984b801ea80c5d8aa0e7a9ef2bcded5549d6f86117025cde74a542",
+      "tables/apd_family_summary_en.tex": "0eed83b35b9326afe4102c0ae68c9827ff488787986bdb1bbd48dad50f3efcfb",
+      "tables/apd_joint_mitigation_en.tex": "1074e13393b1f687e0eae516b97ab2c6d5be56c51c4fb5f11caabfb52827b265",
+      "tables/apd_joint_summary_en.tex": "7429b052d698f49139a2c0023d6a99b7e25f1f82564d6d52b0a4c60b2587744e",
+      "tables/apd_other_tasks_en.tex": "5cc9459e62082bb9647c0d3f81378284f6127946ca49eaa90e530561f10cf4ac",
+      "tables/apd_output_states_en.tex": "4f4285f80095641a4b56d11a02ad943de940ed66ba07895d082af2bc0bb99ce7",
+      "tables/apd_semantic_breakdown_en.tex": "68b66dfd35bf09894d40c2aac97b158090fe96cf49fca797489e6a88ca01faea",
+      "tables/apd_shared_support_results_en.tex": "ae976f963f5a93e7aa76cd1074a2613b708f6c0ca0ca4e9f67af3891f07e2e7b",
+      "tables/apd_type_effects_en.tex": "37b5d30b68152857450f5789d75616e0028ff3b9bdbdd6b9d863d9a95a14cc40",
+      "tables/main_benchmark_results_en.tex": "63fa65071240dbf1bce12b31f10522ef9f99d0cf2e84938cbbc30ec3c81af9a3",
+      "tables/main_cbr_family_en.tex": "1bf076ed411da75bf868db418061821e2ed6e0925d77b675244759370025ae9f",
+      "tables/main_mitigation_results_en.tex": "66e9f4bc8a8f77c415cc1bc9efe0873711745d16f26ff397e9e8075cfa701263",
+      "tables/main_tasks_en.tex": "70bc7b6895b1f821fd29880525228718ba346d65fb7dbb0cdbe5ad3c31f9c54f"
+    },
+    "unchanged_by_audit": true
+  },
+  "protected_sources": {
+    "sec/0_abstract.tex": {
+      "original_sha256": "4bc1c9949e10bb457b0d2f9c415d8d77f9e0a9cbbe6484fd178b75134e259432",
+      "candidate_sha256": "4bc1c9949e10bb457b0d2f9c415d8d77f9e0a9cbbe6484fd178b75134e259432",
+      "unchanged": true
+    },
+    "sec/1_introduction.tex": {
+      "original_sha256": "e4fc99236bc399bac0ad88aef0959a21f2ec98673fa95cfcc05753b52416a677",
+      "candidate_sha256": "e4fc99236bc399bac0ad88aef0959a21f2ec98673fa95cfcc05753b52416a677",
+      "unchanged": true
+    },
+    "sec/2_related_work.tex": {
+      "original_sha256": "742fd32bb79ab29d683ed2e4d4831ca6c61d23f691d13078f72d8daa8a6fd64a",
+      "candidate_sha256": "742fd32bb79ab29d683ed2e4d4831ca6c61d23f691d13078f72d8daa8a6fd64a",
+      "unchanged": true
+    },
+    "sec/4_method.tex": {
+      "original_sha256": "f8e0d0365700f92a64f348ffaa71e16a684d7b111e4b91fd55347f5029c01899",
+      "candidate_sha256": "f8e0d0365700f92a64f348ffaa71e16a684d7b111e4b91fd55347f5029c01899",
+      "unchanged": true
+    }
+  },
+  "candidate_changes_from_original": [
+    "README.md",
+    "figures/main_language_grounding_content.tex",
+    "figures/main_mitigation_examples_content.tex",
+    "figures/main_mitigation_four_models.pdf",
+    "figures/main_semantic_difficulty_content.tex",
+    "sec/3_benchmark.tex",
+    "sec/apd_diagnostics.tex",
+    "sec/main_benchmark_eval.tex",
+    "tables/apd_other_tasks_en.tex",
+    "tables/main_benchmark_results_en.tex",
+    "tables/main_cbr_family_en.tex",
+    "tables/main_mitigation_results_en.tex",
+    "tables/main_tasks_en.tex"
+  ],
+  "references": {
+    "n_literal_refs": 70,
+    "resolved": [
+      {
+        "source": "acl.sty",
+        "kind": "bibliographystyle",
+        "target": "acl_natbib",
+        "resolved": "acl_natbib.bst"
+      },
+      {
+        "source": "acl_latex.tex",
+        "kind": "input",
+        "target": "styles/presentation.tex",
+        "resolved": "styles/presentation.tex"
+      },
+      {
+        "source": "acl_latex.tex",
+        "kind": "input",
+        "target": "sec/0_abstract.tex",
+        "resolved": "sec/0_abstract.tex"
+      },
+      {
+        "source": "acl_latex.tex",
+        "kind": "input",
+        "target": "sec/1_introduction.tex",
+        "resolved": "sec/1_introduction.tex"
+      },
+      {
+        "source": "acl_latex.tex",
+        "kind": "input",
+        "target": "sec/2_related_work.tex",
+        "resolved": "sec/2_related_work.tex"
+      },
+      {
+        "source": "acl_latex.tex",
+        "kind": "input",
+        "target": "sec/3_benchmark.tex",
+        "resolved": "sec/3_benchmark.tex"
+      },
+      {
+        "source": "acl_latex.tex",
+        "kind": "input",
+        "target": "sec/4_method.tex",
+        "resolved": "sec/4_method.tex"
+      },
+      {
+        "source": "acl_latex.tex",
+        "kind": "input",
+        "target": "sec/5_experiments.tex",
+        "resolved": "sec/5_experiments.tex"
+      },
+      {
+        "source": "acl_latex.tex",
+        "kind": "input",
+        "target": "sec/6_conclusion.tex",
+        "resolved": "sec/6_conclusion.tex"
+      },
+      {
+        "source": "acl_latex.tex",
+        "kind": "input",
+        "target": "sec/limitations_ethics.tex",
+        "resolved": "sec/limitations_ethics.tex"
+      },
+      {
+        "source": "acl_latex.tex",
+        "kind": "input",
+        "target": "sec/7_appendix.tex",
+        "resolved": "sec/7_appendix.tex"
+      },
+      {
+        "source": "acl_latex.tex",
+        "kind": "bibliography",
+        "target": "custom",
+        "resolved": "custom.bib"
+      },
+      {
+        "source": "figures/apd_caption_scope_content.tex",
+        "kind": "graphics",
+        "target": "figures/apd_caption_scope.pdf",
+        "resolved": "figures/apd_caption_scope.pdf"
+      },
+      {
+        "source": "figures/apd_cbr_profile_content.tex",
+        "kind": "graphics",
+        "target": "figures/apd_cbr_profile.pdf",
+        "resolved": "figures/apd_cbr_profile.pdf"
+      },
+      {
+        "source": "figures/apd_family_profile_content.tex",
+        "kind": "graphics",
+        "target": "figures/apd_family_profile.pdf",
+        "resolved": "figures/apd_family_profile.pdf"
+      },
+      {
+        "source": "figures/apd_fgr_ecdf_content.tex",
+        "kind": "graphics",
+        "target": "figures/apd_fgr_ecdf.pdf",
+        "resolved": "figures/apd_fgr_ecdf.pdf"
+      },
+      {
+        "source": "figures/apd_fgr_waterfall_content.tex",
+        "kind": "graphics",
+        "target": "figures/apd_fgr_waterfall.pdf",
+        "resolved": "figures/apd_fgr_waterfall.pdf"
+      },
+      {
+        "source": "figures/apd_four_type_mitigation_content.tex",
+        "kind": "graphics",
+        "target": "figures/apd_four_type_mitigation.pdf",
+        "resolved": "figures/apd_four_type_mitigation.pdf"
+      },
+      {
+        "source": "figures/apd_joint_protocol_change_content.tex",
+        "kind": "graphics",
+        "target": "figures/apd_joint_protocol_change.pdf",
+        "resolved": "figures/apd_joint_protocol_change.pdf"
+      },
+      {
+        "source": "figures/apd_language_region_bounds_content.tex",
+        "kind": "graphics",
+        "target": "figures/apd_language_region_bounds.pdf",
+        "resolved": "figures/apd_language_region_bounds.pdf"
+      },
+      {
+        "source": "figures/apd_localization_fgr_scatter_content.tex",
+        "kind": "graphics",
+        "target": "figures/apd_localization_fgr_scatter.pdf",
+        "resolved": "figures/apd_localization_fgr_scatter.pdf"
+      },
+      {
+        "source": "figures/apd_mitigation_qwen25_content.tex",
+        "kind": "graphics",
+        "target": "figures/apd_mitigation_qwen25.pdf",
+        "resolved": "figures/apd_mitigation_qwen25.pdf"
+      },
+      {
+        "source": "figures/apd_mitigation_tradeoffs_content.tex",
+        "kind": "graphics",
+        "target": "figures/apd_mitigation_treevgr.pdf",
+        "resolved": "figures/apd_mitigation_treevgr.pdf"
+      },
+      {
+        "source": "figures/apd_mitigation_tradeoffs_content.tex",
+        "kind": "graphics",
+        "target": "figures/apd_mitigation_visionr1.pdf",
+        "resolved": "figures/apd_mitigation_visionr1.pdf"
+      },
+      {
+        "source": "figures/apd_semantic_grounding_slope_content.tex",
+        "kind": "graphics",
+        "target": "figures/apd_semantic_grounding_slope.pdf",
+        "resolved": "figures/apd_semantic_grounding_slope.pdf"
+      },
+      {
+        "source": "figures/main_language_grounding_content.tex",
+        "kind": "graphics",
+        "target": "figures/main_language_grounding.pdf",
+        "resolved": "figures/main_language_grounding.pdf"
+      },
+      {
+        "source": "figures/main_mitigation_examples_content.tex",
+        "kind": "graphics",
+        "target": "figures/main_mitigation_four_models.pdf",
+        "resolved": "figures/main_mitigation_four_models.pdf"
+      },
+      {
+        "source": "figures/main_semantic_difficulty_content.tex",
+        "kind": "graphics",
+        "target": "figures/main_semantic_verification.pdf",
+        "resolved": "figures/main_semantic_verification.pdf"
+      },
+      {
+        "source": "figures/main_task_overview_content.tex",
+        "kind": "graphics",
+        "target": "figures/main_task_overview.pdf",
+        "resolved": "figures/main_task_overview.pdf"
+      },
+      {
+        "source": "figures/main_teaser_content.tex",
+        "kind": "graphics",
+        "target": "figures/main_teaser.pdf",
+        "resolved": "figures/main_teaser.pdf"
+      },
+      {
+        "source": "figures/main_verification_framework_content.tex",
+        "kind": "graphics",
+        "target": "figures/main_verification_framework.pdf",
+        "resolved": "figures/main_verification_framework.pdf"
+      },
+      {
+        "source": "sec/1_introduction.tex",
+        "kind": "input",
+        "target": "figures/main_teaser_content.tex",
+        "resolved": "figures/main_teaser_content.tex"
+      },
+      {
+        "source": "sec/3_benchmark.tex",
+        "kind": "input",
+        "target": "sec/main_problem_formulation.tex",
+        "resolved": "sec/main_problem_formulation.tex"
+      },
+      {
+        "source": "sec/3_benchmark.tex",
+        "kind": "input",
+        "target": "figures/main_task_overview_content.tex",
+        "resolved": "figures/main_task_overview_content.tex"
+      },
+      {
+        "source": "sec/3_benchmark.tex",
+        "kind": "input",
+        "target": "tables/main_tasks_en.tex",
+        "resolved": "tables/main_tasks_en.tex"
+      },
+      {
+        "source": "sec/4_method.tex",
+        "kind": "input",
+        "target": "figures/main_verification_framework_content.tex",
+        "resolved": "figures/main_verification_framework_content.tex"
+      },
+      {
+        "source": "sec/5_experiments.tex",
+        "kind": "input",
+        "target": "tables/main_benchmark_results_en.tex",
+        "resolved": "tables/main_benchmark_results_en.tex"
+      },
+      {
+        "source": "sec/5_experiments.tex",
+        "kind": "input",
+        "target": "tables/main_mitigation_results_en.tex",
+        "resolved": "tables/main_mitigation_results_en.tex"
+      },
+      {
+        "source": "sec/5_experiments.tex",
+        "kind": "input",
+        "target": "figures/main_language_grounding_content.tex",
+        "resolved": "figures/main_language_grounding_content.tex"
+      },
+      {
+        "source": "sec/5_experiments.tex",
+        "kind": "input",
+        "target": "figures/main_semantic_difficulty_content.tex",
+        "resolved": "figures/main_semantic_difficulty_content.tex"
+      },
+      {
+        "source": "sec/5_experiments.tex",
+        "kind": "input",
+        "target": "figures/main_mitigation_examples_content.tex",
+        "resolved": "figures/main_mitigation_examples_content.tex"
+      },
+      {
+        "source": "sec/5_experiments.tex",
+        "kind": "input",
+        "target": "sec/main_benchmark_eval.tex",
+        "resolved": "sec/main_benchmark_eval.tex"
+      },
+      {
+        "source": "sec/5_experiments.tex",
+        "kind": "input",
+        "target": "sec/main_mitigation_eval.tex",
+        "resolved": "sec/main_mitigation_eval.tex"
+      },
+      {
+        "source": "sec/7_appendix.tex",
+        "kind": "input",
+        "target": "sec/apd_scoring.tex",
+        "resolved": "sec/apd_scoring.tex"
+      },
+      {
+        "source": "sec/7_appendix.tex",
+        "kind": "input",
+        "target": "sec/apd_diagnostics.tex",
+        "resolved": "sec/apd_diagnostics.tex"
+      },
+      {
+        "source": "sec/7_appendix.tex",
+        "kind": "input",
+        "target": "sec/apd_verification.tex",
+        "resolved": "sec/apd_verification.tex"
+      },
+      {
+        "source": "sec/apd_diagnostics.tex",
+        "kind": "input",
+        "target": "tables/apd_other_tasks_en.tex",
+        "resolved": "tables/apd_other_tasks_en.tex"
+      },
+      {
+        "source": "sec/apd_diagnostics.tex",
+        "kind": "input",
+        "target": "tables/apd_family_summary_en.tex",
+        "resolved": "tables/apd_family_summary_en.tex"
+      },
+      {
+        "source": "sec/apd_diagnostics.tex",
+        "kind": "input",
+        "target": "figures/apd_family_profile_content.tex",
+        "resolved": "figures/apd_family_profile_content.tex"
+      },
+      {
+        "source": "sec/apd_diagnostics.tex",
+        "kind": "input",
+        "target": "tables/apd_description_protocols_en.tex",
+        "resolved": "tables/apd_description_protocols_en.tex"
+      },
+      {
+        "source": "sec/apd_diagnostics.tex",
+        "kind": "input",
+        "target": "figures/apd_caption_scope_content.tex",
+        "resolved": "figures/apd_caption_scope_content.tex"
+      },
+      {
+        "source": "sec/apd_diagnostics.tex",
+        "kind": "input",
+        "target": "figures/apd_localization_fgr_scatter_content.tex",
+        "resolved": "figures/apd_localization_fgr_scatter_content.tex"
+      },
+      {
+        "source": "sec/apd_diagnostics.tex",
+        "kind": "input",
+        "target": "figures/apd_joint_protocol_change_content.tex",
+        "resolved": "figures/apd_joint_protocol_change_content.tex"
+      },
+      {
+        "source": "sec/apd_diagnostics.tex",
+        "kind": "input",
+        "target": "figures/apd_cbr_profile_content.tex",
+        "resolved": "figures/apd_cbr_profile_content.tex"
+      },
+      {
+        "source": "sec/apd_diagnostics.tex",
+        "kind": "input",
+        "target": "tables/apd_semantic_breakdown_en.tex",
+        "resolved": "tables/apd_semantic_breakdown_en.tex"
+      },
+      {
+        "source": "sec/apd_diagnostics.tex",
+        "kind": "input",
+        "target": "tables/apd_cbr_direct_en.tex",
+        "resolved": "tables/apd_cbr_direct_en.tex"
+      },
+      {
+        "source": "sec/apd_diagnostics.tex",
+        "kind": "input",
+        "target": "tables/apd_cbr_joint_en.tex",
+        "resolved": "tables/apd_cbr_joint_en.tex"
+      },
+      {
+        "source": "sec/apd_diagnostics.tex",
+        "kind": "input",
+        "target": "figures/apd_semantic_grounding_slope_content.tex",
+        "resolved": "figures/apd_semantic_grounding_slope_content.tex"
+      },
+      {
+        "source": "sec/apd_diagnostics.tex",
+        "kind": "input",
+        "target": "figures/apd_language_region_bounds_content.tex",
+        "resolved": "figures/apd_language_region_bounds_content.tex"
+      },
+      {
+        "source": "sec/apd_scoring.tex",
+        "kind": "input",
+        "target": "tables/apd_output_states_en.tex",
+        "resolved": "tables/apd_output_states_en.tex"
+      },
+      {
+        "source": "sec/apd_verification.tex",
+        "kind": "input",
+        "target": "tables/apd_type_effects_en.tex",
+        "resolved": "tables/apd_type_effects_en.tex"
+      },
+      {
+        "source": "sec/apd_verification.tex",
+        "kind": "input",
+        "target": "tables/apd_shared_support_results_en.tex",
+        "resolved": "tables/apd_shared_support_results_en.tex"
+      },
+      {
+        "source": "sec/apd_verification.tex",
+        "kind": "input",
+        "target": "figures/apd_fgr_ecdf_content.tex",
+        "resolved": "figures/apd_fgr_ecdf_content.tex"
+      },
+      {
+        "source": "sec/apd_verification.tex",
+        "kind": "input",
+        "target": "figures/apd_fgr_waterfall_content.tex",
+        "resolved": "figures/apd_fgr_waterfall_content.tex"
+      },
+      {
+        "source": "sec/apd_verification.tex",
+        "kind": "input",
+        "target": "figures/apd_four_type_mitigation_content.tex",
+        "resolved": "figures/apd_four_type_mitigation_content.tex"
+      },
+      {
+        "source": "sec/apd_verification.tex",
+        "kind": "input",
+        "target": "figures/apd_mitigation_tradeoffs_content.tex",
+        "resolved": "figures/apd_mitigation_tradeoffs_content.tex"
+      },
+      {
+        "source": "sec/apd_verification.tex",
+        "kind": "input",
+        "target": "figures/apd_mitigation_qwen25_content.tex",
+        "resolved": "figures/apd_mitigation_qwen25_content.tex"
+      },
+      {
+        "source": "sec/apd_verification.tex",
+        "kind": "input",
+        "target": "tables/apd_joint_summary_en.tex",
+        "resolved": "tables/apd_joint_summary_en.tex"
+      },
+      {
+        "source": "sec/apd_verification.tex",
+        "kind": "input",
+        "target": "tables/apd_joint_mitigation_en.tex",
+        "resolved": "tables/apd_joint_mitigation_en.tex"
+      },
+      {
+        "source": "sec/main_benchmark_eval.tex",
+        "kind": "input",
+        "target": "tables/main_cbr_family_en.tex",
+        "resolved": "tables/main_cbr_family_en.tex"
+      }
+    ],
+    "missing": [],
+    "absolute_local_dependencies": [],
+    "unresolved_citation_keys": [],
+    "reachable_tex_count": 50,
+    "unreachable_tex_files": [],
+    "excluded_citation_macro_placeholders": [
+      "#1",
+      "\\citep"
+    ]
+  },
+  "pdf": {
+    "path": "/Users/yyyb/.codex/.chatgpt-projects/g-p-6a9fadb9a6ec8191bbc34778fa9b4a7d/.build/rrwr_four_tasks_20261010/compile_en/acl_latex.pdf",
+    "sha256": "df0362b7650f892a4f7a0be56a1eb9ef8f7b83b8f4e589a0c4d9949faf8f2145",
+    "n_pages": 25,
+    "expected_total_pages": 25,
+    "conclusion_pages": [
+      8
+    ],
+    "first_limitations_page": 9,
+    "main_body_pages": 8,
+    "expected_main_body_pages": 8,
+    "caption_subset_wording_present": true,
+    "missing_cross_reference_marker_present": false,
+    "main_table_row_match": [
+      {
+        "model": "Qwen3-VL",
+        "all_table_numbers_present_in_order": true
+      },
+      {
+        "model": "Qwen2.5-VL",
+        "all_table_numbers_present_in_order": true
+      },
+      {
+        "model": "InternVL3.5",
+        "all_table_numbers_present_in_order": true
+      },
+      {
+        "model": "LLaVA-OV",
+        "all_table_numbers_present_in_order": true
+      },
+      {
+        "model": "LENS",
+        "all_table_numbers_present_in_order": true
+      },
+      {
+        "model": "Orsta",
+        "all_table_numbers_present_in_order": true
+      },
+      {
+        "model": "Seg-R1",
+        "all_table_numbers_present_in_order": true
+      },
+      {
+        "model": "Seg-Zero",
+        "all_table_numbers_present_in_order": true
+      },
+      {
+        "model": "TreeVGR",
+        "all_table_numbers_present_in_order": true
+      },
+      {
+        "model": "UniVG-R1",
+        "all_table_numbers_present_in_order": true
+      },
+      {
+        "model": "Vision-R1",
+        "all_table_numbers_present_in_order": true
+      },
+      {
+        "model": "VisionReasoner",
+        "all_table_numbers_present_in_order": true
+      },
+      {
+        "model": "Visual-RFT",
+        "all_table_numbers_present_in_order": true
+      },
+      {
+        "model": "InternVL3.5 w/ ASV",
+        "all_table_numbers_present_in_order": true
+      },
+      {
+        "model": "UniVG-R1 w/ ASV",
+        "all_table_numbers_present_in_order": true
+      }
+    ],
+    "all_15_main_rows_match_tex": true
+  },
+  "archive_verify": {
+    "script": "/Users/yyyb/.codex/.chatgpt-projects/g-p-6a9fadb9a6ec8191bbc34778fa9b4a7d/.build/rrwr_four_tasks_20261010/repository/experiments/20261010_t3_attention/caption/reproduce_archive.py",
+    "script_sha256": "76dc34e67686f6d8e7ad1a60d01124f4178cb7fe62a6384a7b2e156388152b4a",
+    "exit_code": 0,
+    "result": {
+      "records": 26000,
+      "models": 13,
+      "captions_per_model": 500,
+      "negative_units_per_type_per_model": 500,
+      "summary_counts_verified": true,
+      "caption_sha_verified": true,
+      "unique_record_ids_verified": true
+    },
+    "stderr": ""
+  },
+  "caption_main_table": {
+    "baseline_models_checked": 13,
+    "total_model_rows": 15,
+    "all_13_matched": true,
+    "per_model": [
+      {
+        "model": "InternVL3.5-8B",
+        "caption_n": 500,
+        "expected_FAR_percent": {
+          "EOH": "8.10",
+          "ROH": "3.10"
+        },
+        "main_table_FAR_percent": {
+          "EOH": "8.10",
+          "ROH": "3.10"
+        },
+        "matched": true
+      },
+      {
+        "model": "LENS",
+        "caption_n": 500,
+        "expected_FAR_percent": {
+          "EOH": "7.70",
+          "ROH": "2.50"
+        },
+        "main_table_FAR_percent": {
+          "EOH": "7.70",
+          "ROH": "2.50"
+        },
+        "matched": true
+      },
+      {
+        "model": "Orsta-7B",
+        "caption_n": 500,
+        "expected_FAR_percent": {
+          "EOH": "8.70",
+          "ROH": "3.20"
+        },
+        "main_table_FAR_percent": {
+          "EOH": "8.70",
+          "ROH": "3.20"
+        },
+        "matched": true
+      },
+      {
+        "model": "Qwen3-VL-8B",
+        "caption_n": 500,
+        "expected_FAR_percent": {
+          "EOH": "10.10",
+          "ROH": "3.60"
+        },
+        "main_table_FAR_percent": {
+          "EOH": "10.10",
+          "ROH": "3.60"
+        },
+        "matched": true
+      },
+      {
+        "model": "Seg-R1",
+        "caption_n": 500,
+        "expected_FAR_percent": {
+          "EOH": "9.70",
+          "ROH": "3.50"
+        },
+        "main_table_FAR_percent": {
+          "EOH": "9.70",
+          "ROH": "3.50"
+        },
+        "matched": true
+      },
+      {
+        "model": "Seg-zero",
+        "caption_n": 500,
+        "expected_FAR_percent": {
+          "EOH": "9.20",
+          "ROH": "3.60"
+        },
+        "main_table_FAR_percent": {
+          "EOH": "9.20",
+          "ROH": "3.60"
+        },
+        "matched": true
+      },
+      {
+        "model": "TreeVGR",
+        "caption_n": 500,
+        "expected_FAR_percent": {
+          "EOH": "8.90",
+          "ROH": "3.20"
+        },
+        "main_table_FAR_percent": {
+          "EOH": "8.90",
+          "ROH": "3.20"
+        },
+        "matched": true
+      },
+      {
+        "model": "UniVG-R1",
+        "caption_n": 500,
+        "expected_FAR_percent": {
+          "EOH": "7.80",
+          "ROH": "2.60"
+        },
+        "main_table_FAR_percent": {
+          "EOH": "7.80",
+          "ROH": "2.60"
+        },
+        "matched": true
+      },
+      {
+        "model": "Vision-R1",
+        "caption_n": 500,
+        "expected_FAR_percent": {
+          "EOH": "8.90",
+          "ROH": "3.00"
+        },
+        "main_table_FAR_percent": {
+          "EOH": "8.90",
+          "ROH": "3.00"
+        },
+        "matched": true
+      },
+      {
+        "model": "VisionReasoner",
+        "caption_n": 500,
+        "expected_FAR_percent": {
+          "EOH": "8.70",
+          "ROH": "3.50"
+        },
+        "main_table_FAR_percent": {
+          "EOH": "8.70",
+          "ROH": "3.50"
+        },
+        "matched": true
+      },
+      {
+        "model": "llava-ov-7b",
+        "caption_n": 500,
+        "expected_FAR_percent": {
+          "EOH": "4.10",
+          "ROH": "1.50"
+        },
+        "main_table_FAR_percent": {
+          "EOH": "4.10",
+          "ROH": "1.50"
+        },
+        "matched": true
+      },
+      {
+        "model": "qwen2.5-vl-7b",
+        "caption_n": 500,
+        "expected_FAR_percent": {
+          "EOH": "8.60",
+          "ROH": "3.40"
+        },
+        "main_table_FAR_percent": {
+          "EOH": "8.60",
+          "ROH": "3.40"
+        },
+        "matched": true
+      },
+      {
+        "model": "visual-rft",
+        "caption_n": 500,
+        "expected_FAR_percent": {
+          "EOH": "9.00",
+          "ROH": "3.70"
+        },
+        "main_table_FAR_percent": {
+          "EOH": "9.00",
+          "ROH": "3.70"
+        },
+        "matched": true
+      }
+    ],
+    "ASV_language_columns_preserve_backbone": {
+      "InternVL3.5": true,
+      "UniVG-R1": true
+    },
+    "summary_sha256": "6db2e25119943175fc9abccf373b99cdee82630d1c82373a79607db10f58b0f0"
+  },
+  "pass": true,
+  "publication_findings": []
+}

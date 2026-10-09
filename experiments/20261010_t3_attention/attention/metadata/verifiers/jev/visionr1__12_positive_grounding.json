@@ -1,0 +1,85 @@
+{
+  "arm": "jev",
+  "model": "visionr1",
+  "example_index": 12,
+  "sample_id": "hallu_000379_COCO_train2014_000000560009",
+  "hallucination_type": "positive",
+  "query": "the car behind the fence",
+  "candidate_bbox_xyxy": [
+    298.0,
+    117.0,
+    503.0,
+    340.0
+  ],
+  "upstream_record_sha256": "7a7e365d21f7772b0a61046258f167b41a06982a3c41efc13c07e1188db00e54",
+  "source_record": "/home/u2025141034/benchmark/rrwr_20261010_t3_attention/attention/results/visionr1/12_positive_grounding.json",
+  "image_sha256": "9e4e64a01e155afac4ce534684a798d007d7e56afce03f82c26a6a29ae7b4c22",
+  "source_model_path": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-2B/snapshots/15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "torch": "2.12.1+cu126",
+  "transformers": "5.12.1",
+  "drew": true,
+  "original": {
+    "z": -5.852702617645264,
+    "prompt": "Inspect the image region [298,117,503,340]. Determine whether the phrase \"the car behind the fence\" is fully true for the object in that exact region. Return exactly one JSON object with exactly these two fields: {\"binding\":\"MATCH\" or \"MISMATCH\" or \"NA\", \"decision\":\"KEEP\" or \"REJECT\"}. Do not explain. Do not use Markdown.",
+    "rendered_prompt": "<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|>Inspect the image region [298,117,503,340]. Determine whether the phrase \"the car behind the fence\" is fully true for the object in that exact region. Return exactly one JSON object with exactly these two fields: {\"binding\":\"MATCH\" or \"MISMATCH\" or \"NA\", \"decision\":\"KEEP\" or \"REJECT\"}. Do not explain. Do not use Markdown.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "prompt_token_count": 422,
+    "model_path": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-2B/snapshots/15852e8c16360a2fea060d615a32b45270f8a8fc",
+    "image_input_size_wh": [
+      640,
+      501
+    ],
+    "coordinate_protocol": "original JEV textual pixel coordinates, integer-rounded identically to collection script",
+    "temperature": 1.7765671239028529,
+    "p_head": 0.035764191299676895
+  },
+  "predicate": "behind",
+  "routed_predicate": true,
+  "probe_metadata": {
+    "predicate_surface": "behind",
+    "family": "depth_order",
+    "semantic_status": "supported",
+    "skip_reason": null,
+    "n_legal_candidates": 2,
+    "rule_id": "comp:behind->in front of"
+  },
+  "rivals": [
+    {
+      "query": "the car in front of the fence",
+      "probe_type": "competitive",
+      "rule_id": "comp:behind->in front of",
+      "edited_surface": "in front of",
+      "z": -4.527063846588135,
+      "prompt": "Inspect the image region [298,117,503,340]. Determine whether the phrase \"the car in front of the fence\" is fully true for the object in that exact region. Return exactly one JSON object with exactly these two fields: {\"binding\":\"MATCH\" or \"MISMATCH\" or \"NA\", \"decision\":\"KEEP\" or \"REJECT\"}. Do not explain. Do not use Markdown.",
+      "rendered_prompt": "<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|>Inspect the image region [298,117,503,340]. Determine whether the phrase \"the car in front of the fence\" is fully true for the object in that exact region. Return exactly one JSON object with exactly these two fields: {\"binding\":\"MATCH\" or \"MISMATCH\" or \"NA\", \"decision\":\"KEEP\" or \"REJECT\"}. Do not explain. Do not use Markdown.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+      "prompt_token_count": 424,
+      "model_path": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-2B/snapshots/15852e8c16360a2fea060d615a32b45270f8a8fc",
+      "image_input_size_wh": [
+        640,
+        501
+      ],
+      "coordinate_protocol": "original JEV textual pixel coordinates, integer-rounded identically to collection script",
+      "temperature": 1.7765671239028529,
+      "p_head": 0.07254691421985626
+    },
+    {
+      "query": "the car next to the fence",
+      "probe_type": "competitive",
+      "rule_id": "comp:behind->next to",
+      "edited_surface": "next to",
+      "z": -4.2800188064575195,
+      "prompt": "Inspect the image region [298,117,503,340]. Determine whether the phrase \"the car next to the fence\" is fully true for the object in that exact region. Return exactly one JSON object with exactly these two fields: {\"binding\":\"MATCH\" or \"MISMATCH\" or \"NA\", \"decision\":\"KEEP\" or \"REJECT\"}. Do not explain. Do not use Markdown.",
+      "rendered_prompt": "<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|>Inspect the image region [298,117,503,340]. Determine whether the phrase \"the car next to the fence\" is fully true for the object in that exact region. Return exactly one JSON object with exactly these two fields: {\"binding\":\"MATCH\" or \"MISMATCH\" or \"NA\", \"decision\":\"KEEP\" or \"REJECT\"}. Do not explain. Do not use Markdown.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+      "prompt_token_count": 423,
+      "model_path": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-2B/snapshots/15852e8c16360a2fea060d615a32b45270f8a8fc",
+      "image_input_size_wh": [
+        640,
+        501
+      ],
+      "coordinate_protocol": "original JEV textual pixel coordinates, integer-rounded identically to collection script",
+      "temperature": 1.7765671239028529,
+      "p_head": 0.08247753232717514
+    }
+  ],
+  "seconds": 0.6497594062238932,
+  "peak_allocated_gb": 4.806641664
+}

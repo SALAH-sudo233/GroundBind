@@ -1,0 +1,1195 @@
+{
+  "task": "T3 query-free captioning",
+  "metric": "caption false ASSERTION rate (FAR)",
+  "caption_generation": "Existing cached query-free outputs reused byte-for-byte; no query sent to the caption generation models.",
+  "cohort": {
+    "distinct_images_per_model": 500,
+    "captions_per_model": 500,
+    "n_models": 13,
+    "n_real_captions_total": 6500,
+    "negative_units_per_type_per_model": 500,
+    "EOH_units_per_model": 1000,
+    "ROH_units_per_model": 1000,
+    "n_judgments": 26000
+  },
+  "judge_model": {
+    "judge_model": "Qwen/Qwen3.5-9B",
+    "judge_snapshot": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+    "judge_path": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-9B/snapshots/c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+    "torch_version": "2.12.1+cu126",
+    "transformers_version": "5.12.1",
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "device": "4",
+    "generation": "deterministic first-token vocabulary argmax, exact YES/NO, retry unconstrained up to 16 tokens if needed",
+    "enable_thinking": false,
+    "model_load_seconds": 8.774970054626465,
+    "model_files": [
+      {
+        "name": "preprocessor_config.json",
+        "target": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-9B/blobs/2ea84a437d448ff71b08df68fdd949d5cc4ebb64",
+        "sha256": "27225450ac9c6529872ee1924fcb0962ff5634834f817040f444118116f4e516"
+      },
+      {
+        "name": "model.safetensors-00002-of-00004.safetensors",
+        "target": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-9B/blobs/31c7d7e2dd5d207840b31cc59083c8f4c4718959149e0358c0364052bb9a0330",
+        "sha256": "31c7d7e2dd5d207840b31cc59083c8f4c4718959149e0358c0364052bb9a0330"
+      },
+      {
+        "name": "video_preprocessor_config.json",
+        "target": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-9B/blobs/3ba673a5ad7d4d13f54155ecd38b2a94a6dac8fe",
+        "sha256": "7768af27c1fafa9cc9011c1dc20067e03f8915e03b63504550e11d5066986d13"
+      },
+      {
+        "name": "vocab.json",
+        "target": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-9B/blobs/0aa0ce0658d60ac4a5d609f4eadb0e8e43514176",
+        "sha256": "ce99b4cb2983d118806ce0a8b777a35b093e2000a503ebde25853284c9dfa003"
+      },
+      {
+        "name": "tokenizer_config.json",
+        "target": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-9B/blobs/eda48d3e75a8e59a8479ee4ec8b37f76e711d9c1",
+        "sha256": "316230d6a809701f4db5ea8f8fc862bc3a6f3229c937c174e674ff3ca0a64ac8"
+      },
+      {
+        "name": "model.safetensors-00003-of-00004.safetensors",
+        "target": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-9B/blobs/7ec36ba3a4176a44c3c0876ad80c56a2f70c84bf008d82e9501df642f17dadec",
+        "sha256": "7ec36ba3a4176a44c3c0876ad80c56a2f70c84bf008d82e9501df642f17dadec"
+      },
+      {
+        "name": "model.safetensors.index.json",
+        "target": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-9B/blobs/e4c1cb7dba5096b43b9d92bc781aba5e3aa8acd8",
+        "sha256": "26d3539b516be613f39563617cb9d33b3f83d401298125be392c80cefb8f7fe5"
+      },
+      {
+        "name": "tokenizer.json",
+        "target": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-9B/blobs/5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42",
+        "sha256": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42"
+      },
+      {
+        "name": "config.json",
+        "target": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-9B/blobs/273ce437e01baf96a07cd9eb3d5f48bac8d7c657",
+        "sha256": "d0883072e01861ed0b2d47be3c16c36a8e81c224c7ffaa310c6558fb3f932b05"
+      },
+      {
+        "name": "model.safetensors-00004-of-00004.safetensors",
+        "target": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-9B/blobs/b62b0c4cd7e44edee103ee8f4fe225f246d5e768e07bfd5f25b63a8aa1fdd0c6",
+        "sha256": "b62b0c4cd7e44edee103ee8f4fe225f246d5e768e07bfd5f25b63a8aa1fdd0c6"
+      },
+      {
+        "name": "model.safetensors-00001-of-00004.safetensors",
+        "target": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-9B/blobs/db6f444b43d318c92f360a13a25561a6a65b10c0631b8ed305a426dbaa6c380e",
+        "sha256": "db6f444b43d318c92f360a13a25561a6a65b10c0631b8ed305a426dbaa6c380e"
+      }
+    ]
+  },
+  "control_accuracy": 0.984375,
+  "control_n": 64,
+  "per_model": {
+    "InternVL3.5-8B": {
+      "family": "general",
+      "n_captions": 500,
+      "n_images": 500,
+      "n_negative_units": 2000,
+      "by_type": {
+        "object": {
+          "n_units": 500,
+          "n_judge_valid": 500,
+          "n_judge_invalid": 0,
+          "assertion_count": 19,
+          "FAR": 0.038,
+          "FAR_valid_only": 0.038
+        },
+        "co_occurrence": {
+          "n_units": 500,
+          "n_judge_valid": 500,
+          "n_judge_invalid": 0,
+          "assertion_count": 62,
+          "FAR": 0.124,
+          "FAR_valid_only": 0.124
+        },
+        "attribute": {
+          "n_units": 500,
+          "n_judge_valid": 500,
+          "n_judge_invalid": 0,
+          "assertion_count": 19,
+          "FAR": 0.038,
+          "FAR_valid_only": 0.038
+        },
+        "relation": {
+          "n_units": 500,
+          "n_judge_valid": 500,
+          "n_judge_invalid": 0,
+          "assertion_count": 12,
+          "FAR": 0.024,
+          "FAR_valid_only": 0.024
+        }
+      },
+      "EOH": {
+        "n_units": 1000,
+        "assertion_count": 81,
+        "n_judge_invalid": 0,
+        "FAR": 0.081,
+        "FAR_percent": 8.1
+      },
+      "ROH": {
+        "n_units": 1000,
+        "assertion_count": 31,
+        "n_judge_invalid": 0,
+        "FAR": 0.031,
+        "FAR_percent": 3.1
+      }
+    },
+    "LENS": {
+      "family": "RL",
+      "n_captions": 500,
+      "n_images": 500,
+      "n_negative_units": 2000,
+      "by_type": {
+        "object": {
+          "n_units": 500,
+          "n_judge_valid": 500,
+          "n_judge_invalid": 0,
+          "assertion_count": 22,
+          "FAR": 0.044,
+          "FAR_valid_only": 0.044
+        },
+        "co_occurrence": {
+          "n_units": 500,
+          "n_judge_valid": 500,
+          "n_judge_invalid": 0,
+          "assertion_count": 55,
+          "FAR": 0.11,
+          "FAR_valid_only": 0.11
+        },
+        "attribute": {
+          "n_units": 500,
+          "n_judge_valid": 500,
+          "n_judge_invalid": 0,
+          "assertion_count": 21,
+          "FAR": 0.042,
+          "FAR_valid_only": 0.042
+        },
+        "relation": {
+          "n_units": 500,
+          "n_judge_valid": 500,
+          "n_judge_invalid": 0,
+          "assertion_count": 4,
+          "FAR": 0.008,
+          "FAR_valid_only": 0.008
+        }
+      },
+      "EOH": {
+        "n_units": 1000,
+        "assertion_count": 77,
+        "n_judge_invalid": 0,
+        "FAR": 0.077,
+        "FAR_percent": 7.7
+      },
+      "ROH": {
+        "n_units": 1000,
+        "assertion_count": 25,
+        "n_judge_invalid": 0,
+        "FAR": 0.025,
+        "FAR_percent": 2.5
+      }
+    },
+    "Orsta-7B": {
+      "family": "RL",
+      "n_captions": 500,
+      "n_images": 500,
+      "n_negative_units": 2000,
+      "by_type": {
+        "object": {
+          "n_units": 500,
+          "n_judge_valid": 500,
+          "n_judge_invalid": 0,
+          "assertion_count": 20,
+          "FAR": 0.04,
+          "FAR_valid_only": 0.04
+        },
+        "co_occurrence": {
+          "n_units": 500,
+          "n_judge_valid": 500,
+          "n_judge_invalid": 0,
+          "assertion_count": 67,
+          "FAR": 0.134,
+          "FAR_valid_only": 0.134
+        },
+        "attribute": {
+          "n_units": 500,
+          "n_judge_valid": 500,
+          "n_judge_invalid": 0,
+          "assertion_count": 24,
+          "FAR": 0.048,
+          "FAR_valid_only": 0.048
+        },
+        "relation": {
+          "n_units": 500,
+          "n_judge_valid": 500,
+          "n_judge_invalid": 0,
+          "assertion_count": 8,
+          "FAR": 0.016,
+          "FAR_valid_only": 0.016
+        }
+      },
+      "EOH": {
+        "n_units": 1000,
+        "assertion_count": 87,
+        "n_judge_invalid": 0,
+        "FAR": 0.087,
+        "FAR_percent": 8.7
+      },
+      "ROH": {
+        "n_units": 1000,
+        "assertion_count": 32,
+        "n_judge_invalid": 0,
+        "FAR": 0.032,
+        "FAR_percent": 3.2
+      }
+    },
+    "Qwen3-VL-8B": {
+      "family": "general",
+      "n_captions": 500,
+      "n_images": 500,
+      "n_negative_units": 2000,
+      "by_type": {
+        "object": {
+          "n_units": 500,
+          "n_judge_valid": 500,
+          "n_judge_invalid": 0,
+          "assertion_count": 21,
+          "FAR": 0.042,
+          "FAR_valid_only": 0.042
+        },
+        "co_occurrence": {
+          "n_units": 500,
+          "n_judge_valid": 500,
+          "n_judge_invalid": 0,
+          "assertion_count": 80,
+          "FAR": 0.16,
+          "FAR_valid_only": 0.16
+        },
+        "attribute": {
+          "n_units": 500,
+          "n_judge_valid": 500,
+          "n_judge_invalid": 0,
+          "assertion_count": 26,
+          "FAR": 0.052,
+          "FAR_valid_only": 0.052
+        },
+        "relation": {
+          "n_units": 500,
+          "n_judge_valid": 500,
+          "n_judge_invalid": 0,
+          "assertion_count": 10,
+          "FAR": 0.02,
+          "FAR_valid_only": 0.02
+        }
+      },
+      "EOH": {
+        "n_units": 1000,
+        "assertion_count": 101,
+        "n_judge_invalid": 0,
+        "FAR": 0.101,
+        "FAR_percent": 10.1
+      },
+      "ROH": {
+        "n_units": 1000,
+        "assertion_count": 36,
+        "n_judge_invalid": 0,
+        "FAR": 0.036,
+        "FAR_percent": 3.6
+      }
+    },
+    "Seg-R1": {
+      "family": "RL",
+      "n_captions": 500,
+      "n_images": 500,
+      "n_negative_units": 2000,
+      "by_type": {
+        "object": {
+          "n_units": 500,
+          "n_judge_valid": 500,
+          "n_judge_invalid": 0,
+          "assertion_count": 21,
+          "FAR": 0.042,
+          "FAR_valid_only": 0.042
+        },
+        "co_occurrence": {
+          "n_units": 500,
+          "n_judge_valid": 500,
+          "n_judge_invalid": 0,
+          "assertion_count": 76,
+          "FAR": 0.152,
+          "FAR_valid_only": 0.152
+        },
+        "attribute": {
+          "n_units": 500,
+          "n_judge_valid": 500,
+          "n_judge_invalid": 0,
+          "assertion_count": 26,
+          "FAR": 0.052,
+          "FAR_valid_only": 0.052
+        },
+        "relation": {
+          "n_units": 500,
+          "n_judge_valid": 500,
+          "n_judge_invalid": 0,
+          "assertion_count": 9,
+          "FAR": 0.018,
+          "FAR_valid_only": 0.018
+        }
+      },
+      "EOH": {
+        "n_units": 1000,
+        "assertion_count": 97,
+        "n_judge_invalid": 0,
+        "FAR": 0.097,
+        "FAR_percent": 9.7
+      },
+      "ROH": {
+        "n_units": 1000,
+        "assertion_count": 35,
+        "n_judge_invalid": 0,
+        "FAR": 0.035,
+        "FAR_percent": 3.5
+      }
+    },
+    "Seg-zero": {
+      "family": "RL",
+      "n_captions": 500,
+      "n_images": 500,
+      "n_negative_units": 2000,
+      "by_type": {
+        "object": {
+          "n_units": 500,
+          "n_judge_valid": 500,
+          "n_judge_invalid": 0,
+          "assertion_count": 23,
+          "FAR": 0.046,
+          "FAR_valid_only": 0.046
+        },
+        "co_occurrence": {
+          "n_units": 500,
+          "n_judge_valid": 500,
+          "n_judge_invalid": 0,
+          "assertion_count": 69,
+          "FAR": 0.138,
+          "FAR_valid_only": 0.138
+        },
+        "attribute": {
+          "n_units": 500,
+          "n_judge_valid": 500,
+          "n_judge_invalid": 0,
+          "assertion_count": 24,
+          "FAR": 0.048,
+          "FAR_valid_only": 0.048
+        },
+        "relation": {
+          "n_units": 500,
+          "n_judge_valid": 500,
+          "n_judge_invalid": 0,
+          "assertion_count": 12,
+          "FAR": 0.024,
+          "FAR_valid_only": 0.024
+        }
+      },
+      "EOH": {
+        "n_units": 1000,
+        "assertion_count": 92,
+        "n_judge_invalid": 0,
+        "FAR": 0.092,
+        "FAR_percent": 9.2
+      },
+      "ROH": {
+        "n_units": 1000,
+        "assertion_count": 36,
+        "n_judge_invalid": 0,
+        "FAR": 0.036,
+        "FAR_percent": 3.6
+      }
+    },
+    "TreeVGR": {
+      "family": "RL",
+      "n_captions": 500,
+      "n_images": 500,
+      "n_negative_units": 2000,
+      "by_type": {
+        "object": {
+          "n_units": 500,
+          "n_judge_valid": 500,
+          "n_judge_invalid": 0,
+          "assertion_count": 18,
+          "FAR": 0.036,
+          "FAR_valid_only": 0.036
+        },
+        "co_occurrence": {
+          "n_units": 500,
+          "n_judge_valid": 500,
+          "n_judge_invalid": 0,
+          "assertion_count": 71,
+          "FAR": 0.142,
+          "FAR_valid_only": 0.142
+        },
+        "attribute": {
+          "n_units": 500,
+          "n_judge_valid": 500,
+          "n_judge_invalid": 0,
+          "assertion_count": 25,
+          "FAR": 0.05,
+          "FAR_valid_only": 0.05
+        },
+        "relation": {
+          "n_units": 500,
+          "n_judge_valid": 500,
+          "n_judge_invalid": 0,
+          "assertion_count": 7,
+          "FAR": 0.014,
+          "FAR_valid_only": 0.014
+        }
+      },
+      "EOH": {
+        "n_units": 1000,
+        "assertion_count": 89,
+        "n_judge_invalid": 0,
+        "FAR": 0.089,
+        "FAR_percent": 8.9
+      },
+      "ROH": {
+        "n_units": 1000,
+        "assertion_count": 32,
+        "n_judge_invalid": 0,
+        "FAR": 0.032,
+        "FAR_percent": 3.2
+      }
+    },
+    "UniVG-R1": {
+      "family": "RL",
+      "n_captions": 500,
+      "n_images": 500,
+      "n_negative_units": 2000,
+      "by_type": {
+        "object": {
+          "n_units": 500,
+          "n_judge_valid": 500,
+          "n_judge_invalid": 0,
+          "assertion_count": 22,
+          "FAR": 0.044,
+          "FAR_valid_only": 0.044
+        },
+        "co_occurrence": {
+          "n_units": 500,
+          "n_judge_valid": 500,
+          "n_judge_invalid": 0,
+          "assertion_count": 56,
+          "FAR": 0.112,
+          "FAR_valid_only": 0.112
+        },
+        "attribute": {
+          "n_units": 500,
+          "n_judge_valid": 500,
+          "n_judge_invalid": 0,
+          "assertion_count": 13,
+          "FAR": 0.026,
+          "FAR_valid_only": 0.026
+        },
+        "relation": {
+          "n_units": 500,
+          "n_judge_valid": 500,
+          "n_judge_invalid": 0,
+          "assertion_count": 13,
+          "FAR": 0.026,
+          "FAR_valid_only": 0.026
+        }
+      },
+      "EOH": {
+        "n_units": 1000,
+        "assertion_count": 78,
+        "n_judge_invalid": 0,
+        "FAR": 0.078,
+        "FAR_percent": 7.8
+      },
+      "ROH": {
+        "n_units": 1000,
+        "assertion_count": 26,
+        "n_judge_invalid": 0,
+        "FAR": 0.026,
+        "FAR_percent": 2.6
+      }
+    },
+    "Vision-R1": {
+      "family": "RL",
+      "n_captions": 500,
+      "n_images": 500,
+      "n_negative_units": 2000,
+      "by_type": {
+        "object": {
+          "n_units": 500,
+          "n_judge_valid": 500,
+          "n_judge_invalid": 0,
+          "assertion_count": 21,
+          "FAR": 0.042,
+          "FAR_valid_only": 0.042
+        },
+        "co_occurrence": {
+          "n_units": 500,
+          "n_judge_valid": 500,
+          "n_judge_invalid": 0,
+          "assertion_count": 68,
+          "FAR": 0.136,
+          "FAR_valid_only": 0.136
+        },
+        "attribute": {
+          "n_units": 500,
+          "n_judge_valid": 500,
+          "n_judge_invalid": 0,
+          "assertion_count": 22,
+          "FAR": 0.044,
+          "FAR_valid_only": 0.044
+        },
+        "relation": {
+          "n_units": 500,
+          "n_judge_valid": 500,
+          "n_judge_invalid": 0,
+          "assertion_count": 8,
+          "FAR": 0.016,
+          "FAR_valid_only": 0.016
+        }
+      },
+      "EOH": {
+        "n_units": 1000,
+        "assertion_count": 89,
+        "n_judge_invalid": 0,
+        "FAR": 0.089,
+        "FAR_percent": 8.9
+      },
+      "ROH": {
+        "n_units": 1000,
+        "assertion_count": 30,
+        "n_judge_invalid": 0,
+        "FAR": 0.03,
+        "FAR_percent": 3.0
+      }
+    },
+    "VisionReasoner": {
+      "family": "RL",
+      "n_captions": 500,
+      "n_images": 500,
+      "n_negative_units": 2000,
+      "by_type": {
+        "object": {
+          "n_units": 500,
+          "n_judge_valid": 500,
+          "n_judge_invalid": 0,
+          "assertion_count": 21,
+          "FAR": 0.042,
+          "FAR_valid_only": 0.042
+        },
+        "co_occurrence": {
+          "n_units": 500,
+          "n_judge_valid": 500,
+          "n_judge_invalid": 0,
+          "assertion_count": 66,
+          "FAR": 0.132,
+          "FAR_valid_only": 0.132
+        },
+        "attribute": {
+          "n_units": 500,
+          "n_judge_valid": 500,
+          "n_judge_invalid": 0,
+          "assertion_count": 21,
+          "FAR": 0.042,
+          "FAR_valid_only": 0.042
+        },
+        "relation": {
+          "n_units": 500,
+          "n_judge_valid": 500,
+          "n_judge_invalid": 0,
+          "assertion_count": 14,
+          "FAR": 0.028,
+          "FAR_valid_only": 0.028
+        }
+      },
+      "EOH": {
+        "n_units": 1000,
+        "assertion_count": 87,
+        "n_judge_invalid": 0,
+        "FAR": 0.087,
+        "FAR_percent": 8.7
+      },
+      "ROH": {
+        "n_units": 1000,
+        "assertion_count": 35,
+        "n_judge_invalid": 0,
+        "FAR": 0.035,
+        "FAR_percent": 3.5
+      }
+    },
+    "llava-ov-7b": {
+      "family": "general",
+      "n_captions": 500,
+      "n_images": 500,
+      "n_negative_units": 2000,
+      "by_type": {
+        "object": {
+          "n_units": 500,
+          "n_judge_valid": 500,
+          "n_judge_invalid": 0,
+          "assertion_count": 9,
+          "FAR": 0.018,
+          "FAR_valid_only": 0.018
+        },
+        "co_occurrence": {
+          "n_units": 500,
+          "n_judge_valid": 500,
+          "n_judge_invalid": 0,
+          "assertion_count": 32,
+          "FAR": 0.064,
+          "FAR_valid_only": 0.064
+        },
+        "attribute": {
+          "n_units": 500,
+          "n_judge_valid": 500,
+          "n_judge_invalid": 0,
+          "assertion_count": 7,
+          "FAR": 0.014,
+          "FAR_valid_only": 0.014
+        },
+        "relation": {
+          "n_units": 500,
+          "n_judge_valid": 500,
+          "n_judge_invalid": 0,
+          "assertion_count": 8,
+          "FAR": 0.016,
+          "FAR_valid_only": 0.016
+        }
+      },
+      "EOH": {
+        "n_units": 1000,
+        "assertion_count": 41,
+        "n_judge_invalid": 0,
+        "FAR": 0.041,
+        "FAR_percent": 4.1
+      },
+      "ROH": {
+        "n_units": 1000,
+        "assertion_count": 15,
+        "n_judge_invalid": 0,
+        "FAR": 0.015,
+        "FAR_percent": 1.5
+      }
+    },
+    "qwen2.5-vl-7b": {
+      "family": "general",
+      "n_captions": 500,
+      "n_images": 500,
+      "n_negative_units": 2000,
+      "by_type": {
+        "object": {
+          "n_units": 500,
+          "n_judge_valid": 500,
+          "n_judge_invalid": 0,
+          "assertion_count": 19,
+          "FAR": 0.038,
+          "FAR_valid_only": 0.038
+        },
+        "co_occurrence": {
+          "n_units": 500,
+          "n_judge_valid": 500,
+          "n_judge_invalid": 0,
+          "assertion_count": 67,
+          "FAR": 0.134,
+          "FAR_valid_only": 0.134
+        },
+        "attribute": {
+          "n_units": 500,
+          "n_judge_valid": 500,
+          "n_judge_invalid": 0,
+          "assertion_count": 24,
+          "FAR": 0.048,
+          "FAR_valid_only": 0.048
+        },
+        "relation": {
+          "n_units": 500,
+          "n_judge_valid": 500,
+          "n_judge_invalid": 0,
+          "assertion_count": 10,
+          "FAR": 0.02,
+          "FAR_valid_only": 0.02
+        }
+      },
+      "EOH": {
+        "n_units": 1000,
+        "assertion_count": 86,
+        "n_judge_invalid": 0,
+        "FAR": 0.086,
+        "FAR_percent": 8.6
+      },
+      "ROH": {
+        "n_units": 1000,
+        "assertion_count": 34,
+        "n_judge_invalid": 0,
+        "FAR": 0.034,
+        "FAR_percent": 3.4
+      }
+    },
+    "visual-rft": {
+      "family": "RL",
+      "n_captions": 500,
+      "n_images": 500,
+      "n_negative_units": 2000,
+      "by_type": {
+        "object": {
+          "n_units": 500,
+          "n_judge_valid": 500,
+          "n_judge_invalid": 0,
+          "assertion_count": 19,
+          "FAR": 0.038,
+          "FAR_valid_only": 0.038
+        },
+        "co_occurrence": {
+          "n_units": 500,
+          "n_judge_valid": 500,
+          "n_judge_invalid": 0,
+          "assertion_count": 71,
+          "FAR": 0.142,
+          "FAR_valid_only": 0.142
+        },
+        "attribute": {
+          "n_units": 500,
+          "n_judge_valid": 500,
+          "n_judge_invalid": 0,
+          "assertion_count": 23,
+          "FAR": 0.046,
+          "FAR_valid_only": 0.046
+        },
+        "relation": {
+          "n_units": 500,
+          "n_judge_valid": 500,
+          "n_judge_invalid": 0,
+          "assertion_count": 14,
+          "FAR": 0.028,
+          "FAR_valid_only": 0.028
+        }
+      },
+      "EOH": {
+        "n_units": 1000,
+        "assertion_count": 90,
+        "n_judge_invalid": 0,
+        "FAR": 0.09,
+        "FAR_percent": 9.0
+      },
+      "ROH": {
+        "n_units": 1000,
+        "assertion_count": 37,
+        "n_judge_invalid": 0,
+        "FAR": 0.037,
+        "FAR_percent": 3.7
+      }
+    }
+  },
+  "family_equal_model_means": {
+    "general": {
+      "n_models": 4,
+      "models": [
+        "InternVL3.5-8B",
+        "Qwen3-VL-8B",
+        "llava-ov-7b",
+        "qwen2.5-vl-7b"
+      ],
+      "EOH_FAR_percent": 7.725,
+      "ROH_FAR_percent": 2.9
+    },
+    "RL": {
+      "n_models": 9,
+      "models": [
+        "LENS",
+        "Orsta-7B",
+        "Seg-R1",
+        "Seg-zero",
+        "TreeVGR",
+        "UniVG-R1",
+        "Vision-R1",
+        "VisionReasoner",
+        "visual-rft"
+      ],
+      "EOH_FAR_percent": 8.733333333333333,
+      "ROH_FAR_percent": 3.2
+    }
+  },
+  "protocol_system_prompt": "Judge TEXTUAL ENTAILMENT. The CAPTION is the premise, and the EDITED PROPOSITION is the hypothesis. Does the caption definitely assert the proposition? You must decide what the caption says, not whether anything is true in an unseen image. Treat the supplied proposition as a claim to look for, never as evidence.\n\nAnswer YES only if the caption affirmatively asserts the proposition, including faithful synonyms or paraphrases. Answer NO when it is absent, negated, merely possible, hypothetical, a question, or only quoted. Attributes must attach to the named target entity, and relations must have the specified subject/object roles and direction. Mentioning two nouns separately does not entail a relation.\n\nFor an object-presence proposition, definite mention of that object is sufficient; unchanged location/background modifiers are not needed. For a scoped object proposition, the object must occupy the specified target role/location. For attribute or relation propositions, match the edited property or relation to its entity/roles without demanding unrelated positive contextual details.\n\nExamples:\nCAPTION: A feline rests on the sofa.\nEDITED PROPOSITION: A cat is present.\nAnswer: YES\nCAPTION: The man does not carry a suitcase.\nEDITED PROPOSITION: The man carries a suitcase.\nAnswer: NO\nCAPTION: A silver jug is beside a golden tray.\nEDITED PROPOSITION: The jug is golden.\nAnswer: NO\nCAPTION: A book lies under a lamp.\nEDITED PROPOSITION: A lamp is above a book.\nAnswer: YES\nCAPTION: The sign reads 'a purple elephant'; only a wall is shown.\nEDITED PROPOSITION: An elephant is present.\nAnswer: NO\n\nReturn exactly YES or NO. No other text.",
+  "input_manifest_sha256": "ed4650238f01c7502cbb97b3e23e49ad80595465e3eb5eda27636e67cf84bae0",
+  "judgments_all_sha256": "22e11d0d890949c24643fba2a25be06beb7379828e371f4df72034818fc782e6",
+  "source_files_unchanged": true,
+  "all_judgments_parse_valid": true,
+  "no_caption_cohort_doubling": true,
+  "original_legacy_object_scores_preserved": true,
+  "control_validation": {
+    "development_v1": {
+      "n": 64,
+      "n_valid": 64,
+      "correct": 36,
+      "accuracy": 0.5625,
+      "by_category": {
+        "EOH_definite_assertion": {
+          "n": 2,
+          "correct": 0
+        },
+        "EOH_omitted_positive_context": {
+          "n": 4,
+          "correct": 0
+        },
+        "EOH_scoped_same_object_elsewhere": {
+          "n": 8,
+          "correct": 3
+        },
+        "absent_unit": {
+          "n": 4,
+          "correct": 4
+        },
+        "attribute_changed_unit_absent": {
+          "n": 2,
+          "correct": 2
+        },
+        "attribute_target_binding": {
+          "n": 4,
+          "correct": 3
+        },
+        "attribute_wrong_entity": {
+          "n": 4,
+          "correct": 3
+        },
+        "hypothetical": {
+          "n": 4,
+          "correct": 4
+        },
+        "negation": {
+          "n": 6,
+          "correct": 0
+        },
+        "question": {
+          "n": 2,
+          "correct": 2
+        },
+        "quotation": {
+          "n": 4,
+          "correct": 1
+        },
+        "relation_changed_unit_absent": {
+          "n": 2,
+          "correct": 2
+        },
+        "relation_inverse_paraphrase": {
+          "n": 1,
+          "correct": 0
+        },
+        "relation_roles_reversed": {
+          "n": 2,
+          "correct": 2
+        },
+        "relation_target_roles": {
+          "n": 2,
+          "correct": 2
+        },
+        "relation_wrong_entity": {
+          "n": 2,
+          "correct": 0
+        },
+        "synonym_paraphrase": {
+          "n": 6,
+          "correct": 3
+        },
+        "unbound_entity_cooccurrence": {
+          "n": 1,
+          "correct": 1
+        },
+        "uncertainty": {
+          "n": 4,
+          "correct": 4
+        }
+      },
+      "n_failed": 28
+    },
+    "development_v2": {
+      "n": 64,
+      "n_valid": 64,
+      "correct": 64,
+      "accuracy": 1.0,
+      "by_category": {
+        "EOH_definite_assertion": {
+          "n": 2,
+          "correct": 2
+        },
+        "EOH_omitted_positive_context": {
+          "n": 4,
+          "correct": 4
+        },
+        "EOH_scoped_same_object_elsewhere": {
+          "n": 8,
+          "correct": 8
+        },
+        "absent_unit": {
+          "n": 4,
+          "correct": 4
+        },
+        "attribute_changed_unit_absent": {
+          "n": 2,
+          "correct": 2
+        },
+        "attribute_target_binding": {
+          "n": 4,
+          "correct": 4
+        },
+        "attribute_wrong_entity": {
+          "n": 4,
+          "correct": 4
+        },
+        "hypothetical": {
+          "n": 4,
+          "correct": 4
+        },
+        "negation": {
+          "n": 6,
+          "correct": 6
+        },
+        "question": {
+          "n": 2,
+          "correct": 2
+        },
+        "quotation": {
+          "n": 4,
+          "correct": 4
+        },
+        "relation_changed_unit_absent": {
+          "n": 2,
+          "correct": 2
+        },
+        "relation_inverse_paraphrase": {
+          "n": 1,
+          "correct": 1
+        },
+        "relation_roles_reversed": {
+          "n": 2,
+          "correct": 2
+        },
+        "relation_target_roles": {
+          "n": 2,
+          "correct": 2
+        },
+        "relation_wrong_entity": {
+          "n": 2,
+          "correct": 2
+        },
+        "synonym_paraphrase": {
+          "n": 6,
+          "correct": 6
+        },
+        "unbound_entity_cooccurrence": {
+          "n": 1,
+          "correct": 1
+        },
+        "uncertainty": {
+          "n": 4,
+          "correct": 4
+        }
+      },
+      "n_failed": 0
+    },
+    "development_final": {
+      "n": 64,
+      "n_valid": 64,
+      "correct": 63,
+      "accuracy": 0.984375,
+      "by_category": {
+        "EOH_definite_assertion": {
+          "n": 2,
+          "correct": 2
+        },
+        "EOH_omitted_positive_context": {
+          "n": 4,
+          "correct": 4
+        },
+        "EOH_scoped_same_object_elsewhere": {
+          "n": 8,
+          "correct": 8
+        },
+        "absent_unit": {
+          "n": 4,
+          "correct": 4
+        },
+        "attribute_changed_unit_absent": {
+          "n": 2,
+          "correct": 2
+        },
+        "attribute_target_binding": {
+          "n": 4,
+          "correct": 3
+        },
+        "attribute_wrong_entity": {
+          "n": 4,
+          "correct": 4
+        },
+        "hypothetical": {
+          "n": 4,
+          "correct": 4
+        },
+        "negation": {
+          "n": 6,
+          "correct": 6
+        },
+        "question": {
+          "n": 2,
+          "correct": 2
+        },
+        "quotation": {
+          "n": 4,
+          "correct": 4
+        },
+        "relation_changed_unit_absent": {
+          "n": 2,
+          "correct": 2
+        },
+        "relation_inverse_paraphrase": {
+          "n": 1,
+          "correct": 1
+        },
+        "relation_roles_reversed": {
+          "n": 2,
+          "correct": 2
+        },
+        "relation_target_roles": {
+          "n": 2,
+          "correct": 2
+        },
+        "relation_wrong_entity": {
+          "n": 2,
+          "correct": 2
+        },
+        "synonym_paraphrase": {
+          "n": 6,
+          "correct": 6
+        },
+        "unbound_entity_cooccurrence": {
+          "n": 1,
+          "correct": 1
+        },
+        "uncertainty": {
+          "n": 4,
+          "correct": 4
+        }
+      },
+      "n_failed": 1
+    },
+    "heldout_independent": {
+      "n": 64,
+      "n_valid": 64,
+      "correct": 63,
+      "accuracy": 0.984375,
+      "by_category": {
+        "absent_category": {
+          "n": 2,
+          "correct": 2
+        },
+        "cooccurrence": {
+          "n": 1,
+          "correct": 1
+        },
+        "entity_binding": {
+          "n": 4,
+          "correct": 4
+        },
+        "explicit": {
+          "n": 15,
+          "correct": 15
+        },
+        "explicit_negation": {
+          "n": 5,
+          "correct": 5
+        },
+        "hypernym_negation": {
+          "n": 1,
+          "correct": 1
+        },
+        "material": {
+          "n": 1,
+          "correct": 1
+        },
+        "mixed_negation": {
+          "n": 2,
+          "correct": 2
+        },
+        "negation": {
+          "n": 2,
+          "correct": 2
+        },
+        "non_assertion": {
+          "n": 1,
+          "correct": 1
+        },
+        "opposite_property": {
+          "n": 1,
+          "correct": 1
+        },
+        "opposite_relation": {
+          "n": 1,
+          "correct": 1
+        },
+        "paraphrase": {
+          "n": 4,
+          "correct": 4
+        },
+        "partial_context": {
+          "n": 2,
+          "correct": 2
+        },
+        "plausible_unmentioned": {
+          "n": 2,
+          "correct": 2
+        },
+        "plural": {
+          "n": 2,
+          "correct": 2
+        },
+        "quotation": {
+          "n": 4,
+          "correct": 3
+        },
+        "role_reversal": {
+          "n": 2,
+          "correct": 2
+        },
+        "synonym": {
+          "n": 3,
+          "correct": 3
+        },
+        "uncertainty": {
+          "n": 5,
+          "correct": 5
+        },
+        "wrong_entity": {
+          "n": 3,
+          "correct": 3
+        },
+        "wrong_roles": {
+          "n": 1,
+          "correct": 1
+        }
+      },
+      "n_failed": 1
+    }
+  },
+  "control_accuracy_scope": "Independent authored held-out textual diagnostic set; not human-review benchmark accuracy.",
+  "protocol_lock": {
+    "locked_system_sha256": "c70432b355d94fc8b0536abe031d5855f91e99c47303fda4ec452a7edc44d353",
+    "locked_script_sha256": "b4e86563d84ca113de082ddeffe9f1b5734612097647efe80af06e387780998d",
+    "locked_before_independent_heldout_judgments": true,
+    "final_input_definition": "ROH target reference supplied only for entity identity binding; projection is edited unit, not conjunction of all unchanged positive conditions. No controls gold/expected/provenance/category enter judge input.",
+    "heldout_file_sha256_predeclared": "1fc655415579282f2b64adfa78b9c4e3bc4f598b37646460e86867b01e4abd80",
+    "development_v1_accuracy": 0.5625,
+    "development_v2_accuracy": 1.0
+  },
+  "locked_scoring_script_sha256": "b4e86563d84ca113de082ddeffe9f1b5734612097647efe80af06e387780998d",
+  "independent_control_source_sha256": "1fc655415579282f2b64adfa78b9c4e3bc4f598b37646460e86867b01e4abd80",
+  "source_annotation_scope_note": "Object proposition scope is resolved from existing annotated inventories; no judgment is assigned by keyword checks.",
+  "evaluator_limitations": "The independent judge made one held-out quoted-claim error out of 64. All benchmark labels here are model-assisted semantic judgments; developmental and held-out failures remain available."
+}

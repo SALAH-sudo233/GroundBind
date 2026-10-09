@@ -1,0 +1,48 @@
+{
+  "arm": "jev",
+  "model": "qwen25",
+  "example_index": 2,
+  "sample_id": "hallu_000222_COCO_train2014_000000390969__cooc",
+  "hallucination_type": "co_occurrence",
+  "query": "the person sitting on the bench with a laptop",
+  "candidate_bbox_xyxy": [
+    124.0,
+    127.0,
+    336.0,
+    368.0
+  ],
+  "upstream_record_sha256": "e8411294422f4d3ec79c31242852cf52498d5e2003daa30fb551c79465cb8efb",
+  "source_record": "/home/u2025141034/benchmark/rrwr_20261010_t3_attention/attention/results/qwen25/02_co_occurrence_grounding.json",
+  "image_sha256": "acc5770abc5c4bf7495183d28b938df322e97ea232577571324e1d6863ca9b32",
+  "source_model_path": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-2B/snapshots/15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "torch": "2.12.1+cu126",
+  "transformers": "5.12.1",
+  "drew": true,
+  "original": {
+    "z": -10.104028701782227,
+    "prompt": "Inspect the image region [124,127,336,368]. Determine whether the phrase \"the person sitting on the bench with a laptop\" is fully true for the object in that exact region. Return exactly one JSON object with exactly these two fields: {\"binding\":\"MATCH\" or \"MISMATCH\" or \"NA\", \"decision\":\"KEEP\" or \"REJECT\"}. Do not explain. Do not use Markdown.",
+    "rendered_prompt": "<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|>Inspect the image region [124,127,336,368]. Determine whether the phrase \"the person sitting on the bench with a laptop\" is fully true for the object in that exact region. Return exactly one JSON object with exactly these two fields: {\"binding\":\"MATCH\" or \"MISMATCH\" or \"NA\", \"decision\":\"KEEP\" or \"REJECT\"}. Do not explain. Do not use Markdown.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "prompt_token_count": 322,
+    "model_path": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-2B/snapshots/15852e8c16360a2fea060d615a32b45270f8a8fc",
+    "image_input_size_wh": [
+      500,
+      332
+    ],
+    "coordinate_protocol": "original JEV textual pixel coordinates, integer-rounded identically to collection script",
+    "temperature": 1.7765671239028529,
+    "p_head": 0.0033769847359508276
+  },
+  "predicate": "on",
+  "routed_predicate": false,
+  "probe_metadata": {
+    "predicate_surface": "sitting on",
+    "family": "vertical_or_support",
+    "semantic_status": "unsupported",
+    "skip_reason": "multi_relation_scope",
+    "n_legal_candidates": 0,
+    "rule_id": null
+  },
+  "rivals": [],
+  "seconds": 0.19487919798120856,
+  "peak_allocated_gb": 4.647564288
+}

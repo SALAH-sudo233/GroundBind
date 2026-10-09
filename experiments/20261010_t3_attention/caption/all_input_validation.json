@@ -1,0 +1,14 @@
+{
+  "n_input_pairs_checked": 26000,
+  "all_propositions_constructible": true,
+  "all_captions_present_in_judge_input": true,
+  "gold_never_in_model_inputs": true,
+  "semantic_units_per_pair_counts": {
+    "1": 26000
+  },
+  "scoped_object_pairs_count": {
+    "co_occurrence": 169,
+    "object": 169
+  },
+  "judgment_input_sha256": "5649afe989a091037c1897ecdfc67b203750f598f8955e2fc774cd0af24f6b14"
+}

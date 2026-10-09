@@ -1,0 +1,10 @@
+{
+  "rows": 64,
+  "affirmative": 32,
+  "not_asserted": 32,
+  "per_type": 16,
+  "sha256": "1fc655415579282f2b64adfa78b9c4e3bc4f598b37646460e86867b01e4abd80",
+  "path": "/Users/yyyb/.codex/.chatgpt-projects/g-p-6a9fadb9a6ec8191bbc34778fa9b4a7d/.build/rrwr_four_tasks_20261010/review/t3_experiment/heldout_controls_independent.jsonl",
+  "independent": true,
+  "gold_basis": "explicit linguistic assertion in caption; entity, property and relation-role binding; no invented image facts"
+}

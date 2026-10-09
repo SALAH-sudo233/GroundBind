@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "n_records": 26000,
+  "n_models": 13,
+  "unique_captions_per_model": 500,
+  "type_denominator_per_model": 500,
+  "EOH_denominator_per_model": 1000,
+  "ROH_denominator_per_model": 1000,
+  "all_record_indices_unique_and_complete": true,
+  "integer_counts_independently_recomputed": true,
+  "original_caption_SHA_match_in_every_judgment": true,
+  "judge_payload_reproduces_locked_projection_in_every_judgment": true,
+  "all_outputs_use_locked_protocol": true,
+  "all_outputs_valid": true,
+  "summary_sha256": "6db2e25119943175fc9abccf373b99cdee82630d1c82373a79607db10f58b0f0",
+  "judgments_sha256": "22e11d0d890949c24643fba2a25be06beb7379828e371f4df72034818fc782e6",
+  "locked_script_sha256": "b4e86563d84ca113de082ddeffe9f1b5734612097647efe80af06e387780998d"
+}

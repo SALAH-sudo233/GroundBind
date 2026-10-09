@@ -1,0 +1,48 @@
+{
+  "arm": "jev",
+  "model": "qwen25",
+  "example_index": 9,
+  "sample_id": "hallu_000436_COCO_train2014_000000239654__attr",
+  "hallucination_type": "attribute",
+  "query": "the white cat next to the toilet",
+  "candidate_bbox_xyxy": [
+    193.0,
+    80.0,
+    320.0,
+    252.0
+  ],
+  "upstream_record_sha256": "355bd63a34cdd8c872bb18219289b369693d9e2eb7fd858d33068ac9f5ace8d3",
+  "source_record": "/home/u2025141034/benchmark/rrwr_20261010_t3_attention/attention/results/qwen25/09_attribute_grounding.json",
+  "image_sha256": "142fb4423d3274abe007853478df6f3b27c5406d43fad8861b6f3320209abad8",
+  "source_model_path": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-2B/snapshots/15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "torch": "2.12.1+cu126",
+  "transformers": "5.12.1",
+  "drew": true,
+  "original": {
+    "z": -9.225821495056152,
+    "prompt": "Inspect the image region [193,80,320,252]. Determine whether the phrase \"the white cat next to the toilet\" is fully true for the object in that exact region. Return exactly one JSON object with exactly these two fields: {\"binding\":\"MATCH\" or \"MISMATCH\" or \"NA\", \"decision\":\"KEEP\" or \"REJECT\"}. Do not explain. Do not use Markdown.",
+    "rendered_prompt": "<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|>Inspect the image region [193,80,320,252]. Determine whether the phrase \"the white cat next to the toilet\" is fully true for the object in that exact region. Return exactly one JSON object with exactly these two fields: {\"binding\":\"MATCH\" or \"MISMATCH\" or \"NA\", \"decision\":\"KEEP\" or \"REJECT\"}. Do not explain. Do not use Markdown.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "prompt_token_count": 363,
+    "model_path": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-2B/snapshots/15852e8c16360a2fea060d615a32b45270f8a8fc",
+    "image_input_size_wh": [
+      640,
+      427
+    ],
+    "coordinate_protocol": "original JEV textual pixel coordinates, integer-rounded identically to collection script",
+    "temperature": 1.7765671239028529,
+    "p_head": 0.005524290259927511
+  },
+  "predicate": "next to",
+  "routed_predicate": false,
+  "probe_metadata": {
+    "predicate_surface": "next to",
+    "family": "proximity",
+    "semantic_status": "supported",
+    "skip_reason": null,
+    "n_legal_candidates": 2,
+    "rule_id": "comp:next to->behind"
+  },
+  "rivals": [],
+  "seconds": 0.2019457402639091,
+  "peak_allocated_gb": 4.699332608
+}

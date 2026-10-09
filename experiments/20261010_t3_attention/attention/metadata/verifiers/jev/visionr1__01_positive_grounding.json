@@ -1,0 +1,22 @@
+{
+  "arm": "jev",
+  "model": "visionr1",
+  "example_index": 1,
+  "sample_id": "hallu_000335_COCO_train2014_000000500400",
+  "hallucination_type": "positive",
+  "query": "the pizza in front of the person",
+  "candidate_bbox_xyxy": null,
+  "upstream_record_sha256": "0cd2704851dc8446b76e0eabd27ef6fbf82a44a7b08b890fdcbc05c8b179439a",
+  "source_record": "/home/u2025141034/benchmark/rrwr_20261010_t3_attention/attention/results/visionr1/01_positive_grounding.json",
+  "image_sha256": "9e9fd924f20a8358127552d9229c15485faba9a8c42c6a8e6230254149e87dc1",
+  "source_model_path": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-2B/snapshots/15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "torch": "2.12.1+cu126",
+  "transformers": "5.12.1",
+  "drew": false,
+  "original": null,
+  "rivals": [],
+  "reason": "original_no_box",
+  "attention_available": false,
+  "seconds": 0.00042180996388196945,
+  "peak_allocated_gb": 4.44507136
+}

@@ -1,0 +1,22 @@
+{
+  "arm": "omni",
+  "model": "visionr1",
+  "example_index": 6,
+  "sample_id": "hallu_000312_COCO_train2014_000000319430__attr",
+  "hallucination_type": "attribute",
+  "query": "the empty wine glass in the person's hand",
+  "candidate_bbox_xyxy": null,
+  "upstream_record_sha256": "96c836bd0bb2b7a6543f705edfade80e0119949dd33dea7d3ef35c0e3f73de16",
+  "source_record": "/home/u2025141034/benchmark/rrwr_20261010_t3_attention/attention/results/visionr1/06_attribute_grounding.json",
+  "image_sha256": "fe7d93080b5866fe40d8f5f987c57b6b370ff216ec0a283332065c33232fe363",
+  "source_model_path": "/home/u2025141034/models/OmniVerifier-7B",
+  "torch": "2.12.1+cu126",
+  "transformers": "5.12.1",
+  "drew": false,
+  "original": null,
+  "rivals": [],
+  "reason": "original_no_box",
+  "attention_available": false,
+  "seconds": 0.00018599582836031914,
+  "peak_allocated_gb": 16.592876032
+}

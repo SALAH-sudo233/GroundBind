@@ -1,0 +1,99 @@
+{
+  "annotation_source": "/home/u2025141034/benchmark/repaired/refcocog_500_dev.semantic_strict.json",
+  "annotation_source_sha256": "23ad4c0d93128a787995f7810b977745f9747378ac21b2bd13f4a6f14b58311f",
+  "n_distinct_images": 500,
+  "n_base_groups": 500,
+  "n_annotation_pairs": 2000,
+  "annotation_counts_by_type": {
+    "object": 500,
+    "co_occurrence": 500,
+    "attribute": 500,
+    "relation": 500
+  },
+  "caption_sources": {
+    "InternVL3.5-8B": {
+      "path": "/home/u2025141034/benchmark/refcocog_eval_13models_4tasks_500/run_20260918_125802/InternVL3.5-8B/records.jsonl",
+      "sha256": "46d9f7228207d545f24c5855627a91617fe70c65e40fd33080f13402c5489309",
+      "n_captions": 500,
+      "n_unique_bases": 500
+    },
+    "LENS": {
+      "path": "/home/u2025141034/benchmark/refcocog_eval_13models_4tasks_500/run_20260918_125802/LENS/records.jsonl",
+      "sha256": "e3e05c84a011aac0caaba187358dc1644a2fe0d9cfee02d9607881212d57c49f",
+      "n_captions": 500,
+      "n_unique_bases": 500
+    },
+    "Orsta-7B": {
+      "path": "/home/u2025141034/benchmark/refcocog_eval_13models_4tasks_500/run_20260918_125802/Orsta-7B/records.jsonl",
+      "sha256": "48f7ec3150c99987571817530650f62a8ea838eb683072b60b3cea736e842c32",
+      "n_captions": 500,
+      "n_unique_bases": 500
+    },
+    "Qwen3-VL-8B": {
+      "path": "/home/u2025141034/benchmark/refcocog_eval_13models_4tasks_500/run_20260918_125802/Qwen3-VL-8B/records.jsonl",
+      "sha256": "7b49cb4717ef17a2e3bc653daa375eaa3972eb1997cfac046d0196fc54449347",
+      "n_captions": 500,
+      "n_unique_bases": 500
+    },
+    "Seg-R1": {
+      "path": "/home/u2025141034/benchmark/refcocog_eval_13models_4tasks_500/run_20260918_125802/Seg-R1/records.jsonl",
+      "sha256": "06634f3d3b40f57094b214366767ea5e15da56ea544a096c43ee80ce15466857",
+      "n_captions": 500,
+      "n_unique_bases": 500
+    },
+    "Seg-zero": {
+      "path": "/home/u2025141034/benchmark/refcocog_eval_13models_4tasks_500/run_20260918_125802/Seg-zero/records.jsonl",
+      "sha256": "3446be6a8a0a17a0929cf65de5bfd90bdb97810d829931c979b660a9acca775a",
+      "n_captions": 500,
+      "n_unique_bases": 500
+    },
+    "TreeVGR": {
+      "path": "/home/u2025141034/benchmark/refcocog_eval_13models_4tasks_500/run_20260918_125802/TreeVGR/records.jsonl",
+      "sha256": "20025e439a5cc9dcee1fbc9cd14cbc9ba195baba2120cbd1e50b259c332edef6",
+      "n_captions": 500,
+      "n_unique_bases": 500
+    },
+    "UniVG-R1": {
+      "path": "/home/u2025141034/benchmark/refcocog_eval_13models_4tasks_500/run_20260918_125802/UniVG-R1/records.jsonl",
+      "sha256": "8d9a1710cc84c74d0aa178271f9dc5efe2dbcc6eba85ba2507f5d8aad43701b1",
+      "n_captions": 500,
+      "n_unique_bases": 500
+    },
+    "Vision-R1": {
+      "path": "/home/u2025141034/benchmark/refcocog_eval_13models_4tasks_500/run_20260918_125802/Vision-R1/records.jsonl",
+      "sha256": "fa000e3a026c77fba35345d2c9b568ed6a88023b8350fbce148f93123972c354",
+      "n_captions": 500,
+      "n_unique_bases": 500
+    },
+    "VisionReasoner": {
+      "path": "/home/u2025141034/benchmark/refcocog_eval_13models_4tasks_500/run_20260918_125802/VisionReasoner/records.jsonl",
+      "sha256": "367b027de0698c661779e0f0256f25b951838b73d071a1942a6013ae2fc878b7",
+      "n_captions": 500,
+      "n_unique_bases": 500
+    },
+    "llava-ov-7b": {
+      "path": "/home/u2025141034/benchmark/refcocog_eval_13models_4tasks_500/run_20260918_125802/llava-ov-7b/records.jsonl",
+      "sha256": "6e681fa8014952edca9fd9d5086546d7867107b0a8e456111239dddcd15b0456",
+      "n_captions": 500,
+      "n_unique_bases": 500
+    },
+    "qwen2.5-vl-7b": {
+      "path": "/home/u2025141034/benchmark/refcocog_eval_13models_4tasks_500/run_20260918_125802/qwen2.5-vl-7b/records.jsonl",
+      "sha256": "551af1e5ff05560cd8cf3b11645dbe450f829e4f357909a027ac25c7346d5023",
+      "n_captions": 500,
+      "n_unique_bases": 500
+    },
+    "visual-rft": {
+      "path": "/home/u2025141034/benchmark/refcocog_eval_13models_4tasks_500/run_20260918_125802/visual-rft/records.jsonl",
+      "sha256": "09e922f38ac286069883c7bbd93d7538e96e873ae0ea433826fae9d05f2139c2",
+      "n_captions": 500,
+      "n_unique_bases": 500
+    }
+  },
+  "metadata_review_status": "Original pre-review flags preserved; final human-review status is supplied by the user and manuscript, not fabricated in these source rows.",
+  "n_real_cached_captions": 6500,
+  "n_new_semantic_judgments": 26000,
+  "cached_captions.jsonl_sha256": "3b19ec72eaf5e9573af4b0f0ab7c7673a1f308914457beff34e5300e10c249c4",
+  "source_annotations.jsonl_sha256": "d60bf8b1baef1f085116a36f924960271b59d81c0e643d048c7583c02c24c919",
+  "judgment_inputs.jsonl_sha256": "5649afe989a091037c1897ecdfc67b203750f598f8955e2fc774cd0af24f6b14"
+}

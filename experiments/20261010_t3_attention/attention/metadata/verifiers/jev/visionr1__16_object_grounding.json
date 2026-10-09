@@ -1,0 +1,48 @@
+{
+  "arm": "jev",
+  "model": "visionr1",
+  "example_index": 16,
+  "sample_id": "hallu_000037_COCO_train2014_000000522240__obj",
+  "hallucination_type": "object",
+  "query": "the mug with a spoon next to the pizza",
+  "candidate_bbox_xyxy": [
+    0.0,
+    295.0,
+    210.0,
+    418.0
+  ],
+  "upstream_record_sha256": "e097bd148a48d688394ba8220dc07445d5e9df21c228bae490481278b76f3317",
+  "source_record": "/home/u2025141034/benchmark/rrwr_20261010_t3_attention/attention/results/visionr1/16_object_grounding.json",
+  "image_sha256": "e1cac734bc193ae1a56b07c11206aea8cb26aefb019dc773eff85618efbc784c",
+  "source_model_path": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-2B/snapshots/15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "torch": "2.12.1+cu126",
+  "transformers": "5.12.1",
+  "drew": true,
+  "original": {
+    "z": -9.517989158630371,
+    "prompt": "Inspect the image region [0,295,210,418]. Determine whether the phrase \"the mug with a spoon next to the pizza\" is fully true for the object in that exact region. Return exactly one JSON object with exactly these two fields: {\"binding\":\"MATCH\" or \"MISMATCH\" or \"NA\", \"decision\":\"KEEP\" or \"REJECT\"}. Do not explain. Do not use Markdown.",
+    "rendered_prompt": "<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|>Inspect the image region [0,295,210,418]. Determine whether the phrase \"the mug with a spoon next to the pizza\" is fully true for the object in that exact region. Return exactly one JSON object with exactly these two fields: {\"binding\":\"MATCH\" or \"MISMATCH\" or \"NA\", \"decision\":\"KEEP\" or \"REJECT\"}. Do not explain. Do not use Markdown.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "prompt_token_count": 364,
+    "model_path": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-2B/snapshots/15852e8c16360a2fea060d615a32b45270f8a8fc",
+    "image_input_size_wh": [
+      640,
+      429
+    ],
+    "coordinate_protocol": "original JEV textual pixel coordinates, integer-rounded identically to collection script",
+    "temperature": 1.7765671239028529,
+    "p_head": 0.004690487403422594
+  },
+  "predicate": "next to",
+  "routed_predicate": false,
+  "probe_metadata": {
+    "predicate_surface": "with",
+    "family": null,
+    "semantic_status": "unsupported",
+    "skip_reason": "multi_relation_scope",
+    "n_legal_candidates": 0,
+    "rule_id": null
+  },
+  "rivals": [],
+  "seconds": 0.202526796143502,
+  "peak_allocated_gb": 4.699336704
+}

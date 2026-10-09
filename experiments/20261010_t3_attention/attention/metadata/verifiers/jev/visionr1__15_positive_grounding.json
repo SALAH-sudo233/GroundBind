@@ -1,0 +1,48 @@
+{
+  "arm": "jev",
+  "model": "visionr1",
+  "example_index": 15,
+  "sample_id": "hallu_000290_COCO_train2014_000000372156",
+  "hallucination_type": "positive",
+  "query": "the cake on the table",
+  "candidate_bbox_xyxy": [
+    119.0,
+    253.0,
+    570.0,
+    470.0
+  ],
+  "upstream_record_sha256": "17c3c09e1f4c95526094e0454adf552e5b098df7384dae9097e6973d5f4da5d7",
+  "source_record": "/home/u2025141034/benchmark/rrwr_20261010_t3_attention/attention/results/visionr1/15_positive_grounding.json",
+  "image_sha256": "59c66fcb6251b7ae55ab4be8365a0cc5e45835755f8d9165c53e29201aa4153c",
+  "source_model_path": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-2B/snapshots/15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "torch": "2.12.1+cu126",
+  "transformers": "5.12.1",
+  "drew": true,
+  "original": {
+    "z": 7.0597920417785645,
+    "prompt": "Inspect the image region [119,253,570,470]. Determine whether the phrase \"the cake on the table\" is fully true for the object in that exact region. Return exactly one JSON object with exactly these two fields: {\"binding\":\"MATCH\" or \"MISMATCH\" or \"NA\", \"decision\":\"KEEP\" or \"REJECT\"}. Do not explain. Do not use Markdown.",
+    "rendered_prompt": "<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|>Inspect the image region [119,253,570,470]. Determine whether the phrase \"the cake on the table\" is fully true for the object in that exact region. Return exactly one JSON object with exactly these two fields: {\"binding\":\"MATCH\" or \"MISMATCH\" or \"NA\", \"decision\":\"KEEP\" or \"REJECT\"}. Do not explain. Do not use Markdown.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "prompt_token_count": 402,
+    "model_path": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-2B/snapshots/15852e8c16360a2fea060d615a32b45270f8a8fc",
+    "image_input_size_wh": [
+      640,
+      480
+    ],
+    "coordinate_protocol": "original JEV textual pixel coordinates, integer-rounded identically to collection script",
+    "temperature": 1.7765671239028529,
+    "p_head": 0.9815458655357361
+  },
+  "predicate": "on",
+  "routed_predicate": false,
+  "probe_metadata": {
+    "predicate_surface": "on",
+    "family": "vertical_or_support",
+    "semantic_status": "unsupported",
+    "skip_reason": "ambiguous_surface:on",
+    "n_legal_candidates": 0,
+    "rule_id": null
+  },
+  "rivals": [],
+  "seconds": 0.20987007999792695,
+  "peak_allocated_gb": 4.769227776
+}

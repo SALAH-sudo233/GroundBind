@@ -1,0 +1,22 @@
+{
+  "arm": "omni",
+  "model": "qwen25",
+  "example_index": 11,
+  "sample_id": "hallu_000000_COCO_train2014_000000253945__attr",
+  "hallucination_type": "attribute",
+  "query": "the transparent umbrella held by the person",
+  "candidate_bbox_xyxy": null,
+  "upstream_record_sha256": "d3df1a19be7fa9c16132f7fcfb3d0fddb6676c2a55ccfcabe2c4f2e9b34ed086",
+  "source_record": "/home/u2025141034/benchmark/rrwr_20261010_t3_attention/attention/results/qwen25/11_attribute_grounding.json",
+  "image_sha256": "c45f5120c7877a5ba43e0e906fc663dc9b47c85ee77854a64f6b797e586c139d",
+  "source_model_path": "/home/u2025141034/models/OmniVerifier-7B",
+  "torch": "2.12.1+cu126",
+  "transformers": "5.12.1",
+  "drew": false,
+  "original": null,
+  "rivals": [],
+  "reason": "original_no_box",
+  "attention_available": false,
+  "seconds": 0.00023703090846538544,
+  "peak_allocated_gb": 16.592876032
+}

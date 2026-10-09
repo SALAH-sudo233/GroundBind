@@ -1,0 +1,22 @@
+{
+  "arm": "jev",
+  "model": "visionr1",
+  "example_index": 5,
+  "sample_id": "hallu_000215_COCO_train2014_000000106438__rel",
+  "hallucination_type": "relation",
+  "query": "the cell phone in the person's hand to the left of the purple phone",
+  "candidate_bbox_xyxy": null,
+  "upstream_record_sha256": "22a5364b2e77b02e59bc4461d1d78bba561f150c4d0095598b53ab65bcf68506",
+  "source_record": "/home/u2025141034/benchmark/rrwr_20261010_t3_attention/attention/results/visionr1/05_relation_grounding.json",
+  "image_sha256": "5ddddd877cf5fb63a7bd0cd015f8c2f1e98f1c8d96c0eb49ed86a4a3b1e5b0c6",
+  "source_model_path": "/home/u2025141034/.cache/huggingface/hub/models--Qwen--Qwen3.5-2B/snapshots/15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "torch": "2.12.1+cu126",
+  "transformers": "5.12.1",
+  "drew": false,
+  "original": null,
+  "rivals": [],
+  "reason": "original_no_box",
+  "attention_available": false,
+  "seconds": 0.00028623268008232117,
+  "peak_allocated_gb": 4.44507136
+}

@@ -1,0 +1,9 @@
+{
+  "locked_system_sha256": "c70432b355d94fc8b0536abe031d5855f91e99c47303fda4ec452a7edc44d353",
+  "locked_script_sha256": "b4e86563d84ca113de082ddeffe9f1b5734612097647efe80af06e387780998d",
+  "locked_before_independent_heldout_judgments": true,
+  "final_input_definition": "ROH target reference supplied only for entity identity binding; projection is edited unit, not conjunction of all unchanged positive conditions. No controls gold/expected/provenance/category enter judge input.",
+  "heldout_file_sha256_predeclared": "1fc655415579282f2b64adfa78b9c4e3bc4f598b37646460e86867b01e4abd80",
+  "development_v1_accuracy": 0.5625,
+  "development_v2_accuracy": 1.0
+}
